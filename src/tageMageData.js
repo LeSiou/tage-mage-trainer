@@ -13,1250 +13,1300 @@ export function shuffleArray(array) {
 
 export const TM_COMPREHENSION_QUESTIONS = [
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°1 : Quel est le dilemme central de l'autorité de régulation européenne ?</div>",
     "options": [
-      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
-      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
-      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
-      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+      "Supprimer les amendes fiscales pour les géants du web",
+      "Concilier la modernisation des outils anti-cartels avec la préservation de l'innovation",
+      "Sanctionner l'ensemble des fusions transfrontalières",
+      "Interdire la gratuité des services en ligne"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°2 : Pourquoi les modèles du numérique échappent-ils en partie au droit classique ?</div>",
     "options": [
-      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
-      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
-      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
-      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+      "Parce qu'ils reposent sur la gratuité d'usage et la captation de données plutôt que des ententes tarifaires",
+      "Parce qu'ils ne réalisent aucun chiffre d'affaires en Europe",
+      "Parce qu'ils sont exemptés de toute obligation par les traités internationaux",
+      "Parce qu'ils appartiennent tous au secteur public américain"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°3 : Quelle conséquence des cartels est dénoncée par la Commission ?</div>",
     "options": [
-      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
-      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
-      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
-      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+      "La hausse automatique des taux d'intérêt des banques centrales",
+      "L'atteinte au pouvoir d'achat des consommateurs et à la compétitivité du marché unique",
+      "L'interdiction d'exporter des matières premières",
+      "La baisse des investissements dans les transports ferroviaires"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°4 : Quelle est l'opinion des économistes cités quant aux réglementations actuelles ?</div>",
     "options": [
-      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
-      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
-      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
-      "Indifférente aux mutations technologiques apportées par la collecte de données"
+      "Ils estiment que les amendes sont trop faibles pour décourager les cartels",
+      "Ils préconisent la suppression pure et simple de la Commission européenne",
+      "Ils déplorent leur rigidité face à l'émergence des nouveaux modèles du numérique",
+      "Ils considèrent que la captation de données est sans impact économique"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°5 : Quelle est l'idée générale de cet extrait ?</div>",
     "options": [
-      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
-      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
-      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
-      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+      "Les ententes industrielles doivent être légalisées dans le secteur de la tech",
+      "Le droit de la concurrence doit évoluer pour s'adapter aux mutations numériques sans étouffer l'innovation",
+      "Les entreprises européennes doivent cesser toute coopération commerciale",
+      "La gratuité des applications est la principale cause d'inflation en Europe"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (Cloud Service Providers américains et chinois), les organisations s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives communautaires tentent de promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°6 : Quelle menace juridique étrangère suscite l'inquiétude des acteurs européens ?</div>",
     "options": [
-      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
-      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
-      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
-      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+      "La taxation à 50% des transactions bancaires transfrontalières",
+      "L'interdiction de commercialiser des processeurs en Europe continentale",
+      "L'extraterritorialité de lois permettant la saisie de données sensibles par des autorités étrangères",
+      "L'obligation légale de traduire les codes sources en chinois"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (Cloud Service Providers américains et chinois), les organisations s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives communautaires tentent de promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°7 : Quel obstacle entrave la conquête d'une véritable autonomie numérique en Europe ?</div>",
     "options": [
-      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
-      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
-      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
-      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+      "L'interdiction européenne de construire des centres de données",
+      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs de taille critique",
+      "La gratuité totale des serveurs hébergés aux États-Unis",
+      "Le refus des entreprises privées de protéger leurs secrets industriels"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (Cloud Service Providers américains et chinois), les organisations s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives communautaires tentent de promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°8 : Comment est qualifié l'arbitrage auquel font face les entreprises ?</div>",
     "options": [
-      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
-      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
-      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
-      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+      "Une obligation d'héberger leurs données sur des disques durs externes uniquement",
+      "Un arbitrage entre l'ergonomie des offres dominantes et l'exigence de sécurité souveraine",
+      "Un choix imposé par la loi entre l'abandon de l'informatique et le retour au papier",
+      "Un conflit social majeur entre la direction et les salariés du secteur informatique"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (Cloud Service Providers américains et chinois), les organisations s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives communautaires tentent de promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°9 : Quelle est l'intention principale de l'auteur dans cet extrait ?</div>",
     "options": [
-      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
-      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
-      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
-      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+      "Démontrer que la confidentialité des données est un sujet secondaire",
+      "Recommander l'adoption obligatoire des Cloud Service Providers asiatiques",
+      "Analyser la complexité stratégique et les obstacles de la souveraineté numérique européenne",
+      "Encourager la fermeture de tous les réseaux de télécommunication intercontinentaux"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (Cloud Service Providers américains et chinois), les organisations s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives communautaires tentent de promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°10 : Que garantissent idéalement les initiatives de cloud souverain évoquées ?</div>",
     "options": [
-      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
-      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
-      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
-      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+      "L'accès libre et non restreint à tous les brevet industriels américains",
+      "Le remboursement automatique des factures informatiques des PME",
+      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle des infrastructures",
+      "La baisse de moitié de la consommation électrique mondiale des serveurs"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Nearshoring et la Réorganisation des Chaînes de Valeur</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et sanitaires ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°11 : Quelle mutation caractérise les nouvelles stratégies d'approvisionnement ?</div>",
     "options": [
-      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
-      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
-      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
-      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+      "Le retour à une économie agricole fermée sans échanges internationaux",
+      "L'abandon complet du transport maritime au profit de l'aviation",
+      "La substitution du critère du coût le plus bas par celui de la résilience globale",
+      "La suppression de l'ensemble des droits de douane industriels"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Nearshoring et la Réorganisation des Chaînes de Valeur</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et sanitaires ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°12 : Que désigne précisément le terme « friendshoring » ?</div>",
     "options": [
-      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
-      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
-      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
-      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+      "La relocalisation prioritaire dans des pays partenaires stratégiques et politiques",
+      "Le recrutement exclusif de salariés recommandés par les employés actuels",
+      "L'obligation de sous-traiter la production à des associations à but non lucratif",
+      "La baisse des prix de vente pour les clients fidèles d'une marque"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Nearshoring et la Réorganisation des Chaînes de Valeur</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et sanitaires ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°13 : Quels obstacles freinent la relocalisation rapide de la production ?</div>",
     "options": [
-      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
-      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
-      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
-      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+      "L'absence de machines automatisées dans les usines européennes",
+      "L'opposition massive des consommateurs aux produits fabriqués localement",
+      "L'ampleur des investissements requis et le déficit local de compétences spécialisées",
+      "La surabondance de matières premières qui déprécie les produits finis"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Nearshoring et la Réorganisation des Chaînes de Valeur</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et sanitaires ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°14 : Quelle vulnérabilité du modèle historique a été révélée par les crises récentes ?</div>",
     "options": [
-      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
-      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
-      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
-      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+      "Le refus des pays émergents de fabriquer des biens de grande consommation",
+      "La fragilité de l'organisation en flux tendus dépendante de hubs éloignés",
+      "La baisse continue des tarifs de transport maritime transocéanique",
+      "L'excès de stocks accumulés dans les entrepôts de proximité"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Le Nearshoring et la Réorganisation des Chaînes de Valeur</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et sanitaires ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°15 : Quelle conclusion l'auteur tire-t-il sur la mondialisation actuelle ?</div>",
     "options": [
-      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
-      "La recherche systématique de l'impact environnemental le plus neutre possible",
-      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
-      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+      "Elle s'accélère sans aucune prise en compte des risques géopolitiques",
+      "Elle est définitivement morte et remplacée par le troc local",
+      "Elle évolue vers une réorganisation axée sur la sécurité plutôt qu'un simple repli autarcique",
+      "Elle impose la fermeture de toutes les filiales industrielles situées à l'étranger"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Crise de Légitimité de la Gestion des Hauts Potentiels</strong><br>Les dispositifs d'identification des « hauts potentiels » en entreprise traversent une crise de légitimité. Conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres expriment un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses DRH reconfigurent leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante la recherche du charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°16 : Quelle transformation des attentes des cadres est soulignée par le texte ?</div>",
     "options": [
-      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
-      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
-      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
-      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+      "Le souhait d'effectuer leur travail exclusivement de manière bénévole",
+      "Le refus de sacrifier leur équilibre personnel au profit d'une carrière rigide",
+      "L'exigence d'une mobilité internationale tous les six mois",
+      "La demande d'un retour aux parcours professionnels à ancienneté obligatoire"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Crise de Légitimité de la Gestion des Hauts Potentiels</strong><br>Les dispositifs d'identification des « hauts potentiels » en entreprise traversent une crise de légitimité. Conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres expriment un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses DRH reconfigurent leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante la recherche du charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°17 : Comment évoluent les critères d'évaluation des talents au sein des DRH ?</div>",
     "options": [
-      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
-      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
-      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
-      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+      "L'expertise terrain et la résilience l'emportent sur le charisme d'appareil statutaire",
+      "Les compétences relationnelles sont totalement exclues des évaluations",
+      "La sélection repose désormais uniquement sur la moyenne obtenue au baccalauréat",
+      "La priorité absolue est accordée à la maîtrise des langages informatiques anciens"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Crise de Légitimité de la Gestion des Hauts Potentiels</strong><br>Les dispositifs d'identification des « hauts potentiels » en entreprise traversent une crise de légitimité. Conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres expriment un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses DRH reconfigurent leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante la recherche du charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°18 : Quel reproche est adressé aux systèmes traditionnels de hauts potentiels ?</div>",
     "options": [
-      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
-      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
-      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
-      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+      "L'obligation d'embaucher uniquement des diplômés de l'enseignement public",
+      "Leur refus d'accorder des congés payés aux cadres dirigeants",
+      "Leur opacité organisationnelle et la rigidité de leurs parcours accélérés",
+      "Leur coût financier nul qui dévalorise le travail des consultants"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Crise de Légitimité de la Gestion des Hauts Potentiels</strong><br>Les dispositifs d'identification des « hauts potentiels » en entreprise traversent une crise de légitimité. Conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres expriment un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses DRH reconfigurent leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante la recherche du charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°19 : Quel risque représente le maintien de statuts étanches et opaques ?</div>",
     "options": [
-      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
-      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
-      "Entraîner la fermeture automatique des filiales situées à l'étranger",
-      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+      "Générer de vives frustrations chez les collaborateurs non sélectionnés",
+      "Entraîner la faillite automatique des filiales internationales",
+      "Empêcher la signature des contrats commerciaux avec les clients",
+      "Provoquer une baisse immédiate du cours de bourse de l'entreprise"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Crise de Légitimité de la Gestion des Hauts Potentiels</strong><br>Les dispositifs d'identification des « hauts potentiels » en entreprise traversent une crise de légitimité. Conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres expriment un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses DRH reconfigurent leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante la recherche du charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°20 : Quel titre résume l'essentiel du propos de l'auteur ?</div>",
     "options": [
-      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
-      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
-      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
-      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+      "La hausse ininterrompue des heures de travail chez les jeunes diplômés",
+      "Gestion des talents : vers la rénovation des critères et la fin de l'opacité",
+      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs managers",
+      "L'efficacité inégalée des promotions à l'ancienneté dans le secteur privé"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition ne réside plus dans le coût des capteurs ou des turbines, mais dans le développement industriel de solutions de flexibilité : batteries stationnaires, pompage-turbinage et hydrogène décarboné. La neutralité carbone exige une mutation systémique de toute l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°21 : Quel est le problème fondamental posé par le solaire et l'éolien ?</div>",
     "options": [
-      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
-      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
-      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
-      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+      "L'interdiction de raccorder ces installations aux lignes à haute tension",
+      "Leur coût de fabrication qui reste supérieur à celui des centrales thermiques au charbon",
+      "L'impossibilité de mesurer précisément la quantité d'électricité produite",
+      "Leur nature intermittente qui s'oppose à la régulation centralisée des réseaux historiques"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition ne réside plus dans le coût des capteurs ou des turbines, mais dans le développement industriel de solutions de flexibilité : batteries stationnaires, pompage-turbinage et hydrogène décarboné. La neutralité carbone exige une mutation systémique de toute l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°22 : Où se situe le goulot d'étranglement majeur de la transition écologique ?</div>",
     "options": [
-      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
-      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
-      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
-      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+      "Dans le refus des consommateurs d'utiliser de l'électricité d'origine renouvelable",
+      "Dans l'absence de politiques publiques de soutien à la décarbonation dans le monde",
+      "Dans le développement industriel des capacités de stockage et de flexibilité du réseau",
+      "Dans la hausse du prix de l'acier nécessaire à la construction des éoliennes"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition ne réside plus dans le coût des capteurs ou des turbines, mais dans le développement industriel de solutions de flexibilité : batteries stationnaires, pompage-turbinage et hydrogène décarboné. La neutralité carbone exige une mutation systémique de toute l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°23 : Quelle conséquence paradoxale découle des pics de production renouvelable ?</div>",
     "options": [
-      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
-      "La destruction physique immédiate des transformateurs de quartier",
-      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
-      "La baisse automatique de la température moyenne des villes côtières"
+      "La baisse brutale de la consommation électrique des ménages",
+      "La destruction physique systématique des transformateurs électriques",
+      "L'augmentation immédiate des émissions de gaz à effet de serre",
+      "L'apparition de prix négatifs sur les marchés de gros de l'électricité"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition ne réside plus dans le coût des capteurs ou des turbines, mais dans le développement industriel de solutions de flexibilité : batteries stationnaires, pompage-turbinage et hydrogène décarboné. La neutralité carbone exige une mutation systémique de toute l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°24 : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
     "options": [
-      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
-      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
-      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
-      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+      "Le remplacement des lignes électriques par des conduites d'essence",
+      "L'arrêt complet de la production hydraulique pendant les périodes ensoleillées",
+      "Les batteries stationnaires, le pompage-turbinage et l'hydrogène décarboné",
+      "Le renforcement exclusif des centrales thermiques au fioul lourd"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition ne réside plus dans le coût des capteurs ou des turbines, mais dans le développement industriel de solutions de flexibilité : batteries stationnaires, pompage-turbinage et hydrogène décarboné. La neutralité carbone exige une mutation systémique de toute l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°25 : Quelle conclusion s'impose selon l'auteur pour atteindre la neutralité carbone ?</div>",
     "options": [
-      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
-      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
-      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
-      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+      "La gratuité universelle de l'énergie pour l'ensemble de la population",
+      "La réduction de 90% de la consommation d'électricité des industries",
+      "Une mutation systémique globale de l'architecture et du stockage électrique",
+      "L'abandon immédiat des énergies renouvelables au profit du charbon"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : Intelligence Artificielle et Productivité au Travail</strong><br>L'intégration des modèles de langage dans les processus tertiaires redéfinit la productivité administrative. Si les gains d'efficacité sont indéniables pour la rédaction et l'analyse de données, des biais algorithmiques et des risques de confidentialité persistent. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°26 : Quel est le thème principal abordé dans l'analyse de 'Intelligence Artificielle et Productivité au Travail' ?</div>",
     "options": [
-      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
-      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
-      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
-      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+      "La suppression des taxes commerciales",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La fermeture immédiate des frontières",
+      "L'impact stratégique et les arbitrages économiques liés à intelligence artificielle et productivité au travail"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : Intelligence Artificielle et Productivité au Travail</strong><br>L'intégration des modèles de langage dans les processus tertiaires redéfinit la productivité administrative. Si les gains d'efficacité sont indéniables pour la rédaction et l'analyse de données, des biais algorithmiques et des risques de confidentialité persistent. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°27 : Quelle opportunité majeure est associée à intelligence artificielle et productivité au travail ?</div>",
     "options": [
-      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
-      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
-      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
-      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+      "La gratuité universelle de l'ensemble des services",
+      "La fin de la concurrence internationale",
+      "L'absence totale de besoins en investissements",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : Intelligence Artificielle et Productivité au Travail</strong><br>L'intégration des modèles de langage dans les processus tertiaires redéfinit la productivité administrative. Si les gains d'efficacité sont indéniables pour la rédaction et l'analyse de données, des biais algorithmiques et des risques de confidentialité persistent. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°28 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
-      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
-      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
-      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+      "L'interdiction par l'Union européenne de toute innovation",
+      "Le manque total d'intérêt des acteurs économiques",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : Intelligence Artificielle et Productivité au Travail</strong><br>L'intégration des modèles de langage dans les processus tertiaires redéfinit la productivité administrative. Si les gains d'efficacité sont indéniables pour la rédaction et l'analyse de données, des biais algorithmiques et des risques de confidentialité persistent. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°29 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
-      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
-      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
-      "Indifférente aux mutations technologiques apportées par la collecte de données"
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : Intelligence Artificielle et Productivité au Travail</strong><br>L'intégration des modèles de langage dans les processus tertiaires redéfinit la productivité administrative. Si les gains d'efficacité sont indéniables pour la rédaction et l'analyse de données, des biais algorithmiques et des risques de confidentialité persistent. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°30 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
-      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
-      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
-      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "La gestion de intelligence artificielle et productivité au travail requiert une approche équilibrée et adaptée aux nouveaux enjeux"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : Économie Circulaire et Recyclage des Métaux Critiques</strong><br>La transition écologique intensifie la demande en métaux rares (lithium, cobalt, nickel). L'économie circulaire et le recyclage industriel deviennent des piliers stratégiques pour réduire la dépendance envers les pays extracteurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°31 : Quel est le thème principal abordé dans l'analyse de 'Économie Circulaire et Recyclage des Métaux Critiques' ?</div>",
     "options": [
-      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
-      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
-      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
-      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+      "L'impact stratégique et les arbitrages économiques liés à économie circulaire et recyclage des métaux critiques",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La fermeture immédiate des frontières",
+      "La suppression des taxes commerciales"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : Économie Circulaire et Recyclage des Métaux Critiques</strong><br>La transition écologique intensifie la demande en métaux rares (lithium, cobalt, nickel). L'économie circulaire et le recyclage industriel deviennent des piliers stratégiques pour réduire la dépendance envers les pays extracteurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°32 : Quelle opportunité majeure est associée à économie circulaire et recyclage des métaux critiques ?</div>",
     "options": [
-      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
-      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
-      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
-      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+      "La fin de la concurrence internationale",
+      "L'absence totale de besoins en investissements",
+      "La gratuité universelle de l'ensemble des services",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : Économie Circulaire et Recyclage des Métaux Critiques</strong><br>La transition écologique intensifie la demande en métaux rares (lithium, cobalt, nickel). L'économie circulaire et le recyclage industriel deviennent des piliers stratégiques pour réduire la dépendance envers les pays extracteurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°33 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
-      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
-      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
-      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+      "Le manque total d'intérêt des acteurs économiques",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La baisse brutale du nombre d'habitants en Europe"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : Économie Circulaire et Recyclage des Métaux Critiques</strong><br>La transition écologique intensifie la demande en métaux rares (lithium, cobalt, nickel). L'économie circulaire et le recyclage industriel deviennent des piliers stratégiques pour réduire la dépendance envers les pays extracteurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°34 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
-      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
-      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
-      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En interdisant l'usage des nouvelles technologies",
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En déléguant l'intégralité des décisions à des algorithmes"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : Économie Circulaire et Recyclage des Métaux Critiques</strong><br>La transition écologique intensifie la demande en métaux rares (lithium, cobalt, nickel). L'économie circulaire et le recyclage industriel deviennent des piliers stratégiques pour réduire la dépendance envers les pays extracteurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°35 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
-      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
-      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
-      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+      "La gestion de économie circulaire et recyclage des métaux critiques requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Les consommateurs refusent catégoriquement ces innovations"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : Financement des Startups et Évolution du Venture Capital</strong><br>Après une décennie de taux zéro et d'évaluations record, le capital-risque exige désormais une rentabilité rapide et des modèles économiques éprouvés plutôt qu'une simple croissance du nombre d'utilisateurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°36 : Quel est le thème principal abordé dans l'analyse de 'Financement des Startups et Évolution du Venture Capital' ?</div>",
     "options": [
-      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
-      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
-      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
-      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+      "La fermeture immédiate des frontières",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "L'impact stratégique et les arbitrages économiques liés à financement des startups et évolution du venture capital",
+      "La suppression des taxes commerciales"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : Financement des Startups et Évolution du Venture Capital</strong><br>Après une décennie de taux zéro et d'évaluations record, le capital-risque exige désormais une rentabilité rapide et des modèles économiques éprouvés plutôt qu'une simple croissance du nombre d'utilisateurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°37 : Quelle opportunité majeure est associée à financement des startups et évolution du venture capital ?</div>",
     "options": [
-      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
-      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
-      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
-      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La fin de la concurrence internationale",
+      "L'absence totale de besoins en investissements",
+      "La gratuité universelle de l'ensemble des services"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : Financement des Startups et Évolution du Venture Capital</strong><br>Après une décennie de taux zéro et d'évaluations record, le capital-risque exige désormais une rentabilité rapide et des modèles économiques éprouvés plutôt qu'une simple croissance du nombre d'utilisateurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°38 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
-      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
-      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
-      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "Le manque total d'intérêt des acteurs économiques",
+      "L'interdiction par l'Union européenne de toute innovation"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : Financement des Startups et Évolution du Venture Capital</strong><br>Après une décennie de taux zéro et d'évaluations record, le capital-risque exige désormais une rentabilité rapide et des modèles économiques éprouvés plutôt qu'une simple croissance du nombre d'utilisateurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°39 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
-      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
-      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
-      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+      "En interdisant l'usage des nouvelles technologies",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En conciliant efficacité économique, responsabilité et vision de long terme"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : Financement des Startups et Évolution du Venture Capital</strong><br>Après une décennie de taux zéro et d'évaluations record, le capital-risque exige désormais une rentabilité rapide et des modèles économiques éprouvés plutôt qu'une simple croissance du nombre d'utilisateurs. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°40 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
-      "La recherche systématique de l'impact environnemental le plus neutre possible",
-      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
-      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+      "La gestion de financement des startups et évolution du venture capital requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Les consommateurs refusent catégoriquement ces innovations"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Régulation des Plateformes et DSA Européen</strong><br>Le Digital Services Act impose aux très grandes plateformes une transparence accrue sur leurs algorithmes de recommandation et une modération stricte des contenus illicites sous peine de sanctions financières majeures. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°41 : Quel est le thème principal abordé dans l'analyse de 'Régulation des Plateformes et DSA Européen' ?</div>",
     "options": [
-      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
-      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
-      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
-      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+      "L'impact stratégique et les arbitrages économiques liés à régulation des plateformes et dsa européen",
+      "La suppression des taxes commerciales",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La fermeture immédiate des frontières"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Régulation des Plateformes et DSA Européen</strong><br>Le Digital Services Act impose aux très grandes plateformes une transparence accrue sur leurs algorithmes de recommandation et une modération stricte des contenus illicites sous peine de sanctions financières majeures. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°42 : Quelle opportunité majeure est associée à régulation des plateformes et dsa européen ?</div>",
     "options": [
-      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
-      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
-      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
-      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+      "La fin de la concurrence internationale",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La gratuité universelle de l'ensemble des services",
+      "L'absence totale de besoins en investissements"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Régulation des Plateformes et DSA Européen</strong><br>Le Digital Services Act impose aux très grandes plateformes une transparence accrue sur leurs algorithmes de recommandation et une modération stricte des contenus illicites sous peine de sanctions financières majeures. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°43 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
-      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
-      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
-      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+      "La baisse brutale du nombre d'habitants en Europe",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "Le manque total d'intérêt des acteurs économiques",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Régulation des Plateformes et DSA Européen</strong><br>Le Digital Services Act impose aux très grandes plateformes une transparence accrue sur leurs algorithmes de recommandation et une modération stricte des contenus illicites sous peine de sanctions financières majeures. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°44 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
-      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
-      "Entraîner la fermeture automatique des filiales situées à l'étranger",
-      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies",
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En ignorant les risques pour privilégier le profit immédiat"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Régulation des Plateformes et DSA Européen</strong><br>Le Digital Services Act impose aux très grandes plateformes une transparence accrue sur leurs algorithmes de recommandation et une modération stricte des contenus illicites sous peine de sanctions financières majeures. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°45 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
-      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
-      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
-      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "La gestion de régulation des plateformes et dsa européen requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : Monnaies Numériques de Banque Centrale (MNBC)</strong><br>Face au déclin de l'argent physique et à la montée des crypto-actifs, les banques centrales développent l'Euro numérique afin de préserver la souveraineté monétaire et l'efficacité des paiements transfrontaliers. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°46 : Quel est le thème principal abordé dans l'analyse de 'Monnaies Numériques de Banque Centrale (MNBC)' ?</div>",
     "options": [
-      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
-      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
-      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
-      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+      "La suppression des taxes commerciales",
+      "La fermeture immédiate des frontières",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "L'impact stratégique et les arbitrages économiques liés à monnaies numériques de banque centrale (mnbc)"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : Monnaies Numériques de Banque Centrale (MNBC)</strong><br>Face au déclin de l'argent physique et à la montée des crypto-actifs, les banques centrales développent l'Euro numérique afin de préserver la souveraineté monétaire et l'efficacité des paiements transfrontaliers. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°47 : Quelle opportunité majeure est associée à monnaies numériques de banque centrale (mnbc) ?</div>",
     "options": [
-      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
-      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
-      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
-      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La fin de la concurrence internationale",
+      "L'absence totale de besoins en investissements",
+      "La gratuité universelle de l'ensemble des services"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : Monnaies Numériques de Banque Centrale (MNBC)</strong><br>Face au déclin de l'argent physique et à la montée des crypto-actifs, les banques centrales développent l'Euro numérique afin de préserver la souveraineté monétaire et l'efficacité des paiements transfrontaliers. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°48 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
-      "La destruction physique immédiate des transformateurs de quartier",
-      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
-      "La baisse automatique de la température moyenne des villes côtières"
+      "Le manque total d'intérêt des acteurs économiques",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : Monnaies Numériques de Banque Centrale (MNBC)</strong><br>Face au déclin de l'argent physique et à la montée des crypto-actifs, les banques centrales développent l'Euro numérique afin de préserver la souveraineté monétaire et l'efficacité des paiements transfrontaliers. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°49 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
-      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
-      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
-      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies",
+      "En ignorant les risques pour privilégier le profit immédiat"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : Monnaies Numériques de Banque Centrale (MNBC)</strong><br>Face au déclin de l'argent physique et à la montée des crypto-actifs, les banques centrales développent l'Euro numérique afin de préserver la souveraineté monétaire et l'efficacité des paiements transfrontaliers. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°50 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
-      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
-      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
-      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "La gestion de monnaies numériques de banque centrale (mnbc) requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : Marketing d'Influence et Transparence Commerciale</strong><br>La professionnalisation du marketing d'influence s'accompagne d'un cadre législatif renforcé visant à punir les pratiques commerciales trompeuses et à protéger les consommateurs vulnérables sur les réseaux sociaux. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°51 : Quel est le thème principal abordé dans l'analyse de 'Marketing d'Influence et Transparence Commerciale' ?</div>",
     "options": [
-      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
-      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
-      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
-      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La fermeture immédiate des frontières",
+      "L'impact stratégique et les arbitrages économiques liés à marketing d'influence et transparence commerciale",
+      "La suppression des taxes commerciales"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : Marketing d'Influence et Transparence Commerciale</strong><br>La professionnalisation du marketing d'influence s'accompagne d'un cadre législatif renforcé visant à punir les pratiques commerciales trompeuses et à protéger les consommateurs vulnérables sur les réseaux sociaux. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°52 : Quelle opportunité majeure est associée à marketing d'influence et transparence commerciale ?</div>",
     "options": [
-      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
-      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
-      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
-      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+      "La fin de la concurrence internationale",
+      "La gratuité universelle de l'ensemble des services",
+      "L'absence totale de besoins en investissements",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : Marketing d'Influence et Transparence Commerciale</strong><br>La professionnalisation du marketing d'influence s'accompagne d'un cadre législatif renforcé visant à punir les pratiques commerciales trompeuses et à protéger les consommateurs vulnérables sur les réseaux sociaux. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°53 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
-      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
-      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
-      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+      "Le manque total d'intérêt des acteurs économiques",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : Marketing d'Influence et Transparence Commerciale</strong><br>La professionnalisation du marketing d'influence s'accompagne d'un cadre législatif renforcé visant à punir les pratiques commerciales trompeuses et à protéger les consommateurs vulnérables sur les réseaux sociaux. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°54 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
-      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
-      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
-      "Indifférente aux mutations technologiques apportées par la collecte de données"
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En interdisant l'usage des nouvelles technologies"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : Marketing d'Influence et Transparence Commerciale</strong><br>La professionnalisation du marketing d'influence s'accompagne d'un cadre législatif renforcé visant à punir les pratiques commerciales trompeuses et à protéger les consommateurs vulnérables sur les réseaux sociaux. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°55 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
-      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
-      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
-      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "La gestion de marketing d'influence et transparence commerciale requiert une approche équilibrée et adaptée aux nouveaux enjeux"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : Télé-médecine et Réorganisation des Soins</strong><br>La téléconsultation offre une réponse concrète au problème des déserts médicaux, mais pose la question du maintien du lien humain et de la qualité du diagnostic pour les pathologies complexes. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°56 : Quel est le thème principal abordé dans l'analyse de 'Télé-médecine et Réorganisation des Soins' ?</div>",
     "options": [
-      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
-      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
-      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
-      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+      "L'impact stratégique et les arbitrages économiques liés à télé-médecine et réorganisation des soins",
+      "La suppression des taxes commerciales",
+      "La fermeture immédiate des frontières",
+      "Le retour aux méthodes industrielles du XIXe siècle"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : Télé-médecine et Réorganisation des Soins</strong><br>La téléconsultation offre une réponse concrète au problème des déserts médicaux, mais pose la question du maintien du lien humain et de la qualité du diagnostic pour les pathologies complexes. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°57 : Quelle opportunité majeure est associée à télé-médecine et réorganisation des soins ?</div>",
     "options": [
-      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
-      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
-      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
-      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+      "L'absence totale de besoins en investissements",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La fin de la concurrence internationale",
+      "La gratuité universelle de l'ensemble des services"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : Télé-médecine et Réorganisation des Soins</strong><br>La téléconsultation offre une réponse concrète au problème des déserts médicaux, mais pose la question du maintien du lien humain et de la qualité du diagnostic pour les pathologies complexes. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°58 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
-      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
-      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
-      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+      "Le manque total d'intérêt des acteurs économiques",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "L'interdiction par l'Union européenne de toute innovation"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : Télé-médecine et Réorganisation des Soins</strong><br>La téléconsultation offre une réponse concrète au problème des déserts médicaux, mais pose la question du maintien du lien humain et de la qualité du diagnostic pour les pathologies complexes. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°59 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
-      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
-      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
-      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies",
+      "En conciliant efficacité économique, responsabilité et vision de long terme"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : Télé-médecine et Réorganisation des Soins</strong><br>La téléconsultation offre une réponse concrète au problème des déserts médicaux, mais pose la question du maintien du lien humain et de la qualité du diagnostic pour les pathologies complexes. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°60 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
-      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
-      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
-      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+      "La gestion de télé-médecine et réorganisation des soins requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : Luxe Européen et Marchés Émergents</strong><br>Le secteur du luxe repose sur l'exportation d'un savoir-faire traditionnel vers des clientèles asiatiques et américaines. La volatilité de la demande chinoise contraint les maisons de haute couture à diversifier leurs cibles. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°61 : Quel est le thème principal abordé dans l'analyse de 'Luxe Européen et Marchés Émergents' ?</div>",
     "options": [
-      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
-      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
-      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
-      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La suppression des taxes commerciales",
+      "La fermeture immédiate des frontières",
+      "L'impact stratégique et les arbitrages économiques liés à luxe européen et marchés émergents"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : Luxe Européen et Marchés Émergents</strong><br>Le secteur du luxe repose sur l'exportation d'un savoir-faire traditionnel vers des clientèles asiatiques et américaines. La volatilité de la demande chinoise contraint les maisons de haute couture à diversifier leurs cibles. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°62 : Quelle opportunité majeure est associée à luxe européen et marchés émergents ?</div>",
     "options": [
-      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
-      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
-      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
-      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+      "La gratuité universelle de l'ensemble des services",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "L'absence totale de besoins en investissements",
+      "La fin de la concurrence internationale"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : Luxe Européen et Marchés Émergents</strong><br>Le secteur du luxe repose sur l'exportation d'un savoir-faire traditionnel vers des clientèles asiatiques et américaines. La volatilité de la demande chinoise contraint les maisons de haute couture à diversifier leurs cibles. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°63 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
-      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
-      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
-      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+      "La baisse brutale du nombre d'habitants en Europe",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "Le manque total d'intérêt des acteurs économiques"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : Luxe Européen et Marchés Émergents</strong><br>Le secteur du luxe repose sur l'exportation d'un savoir-faire traditionnel vers des clientèles asiatiques et américaines. La volatilité de la demande chinoise contraint les maisons de haute couture à diversifier leurs cibles. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°64 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
-      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
-      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
-      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En interdisant l'usage des nouvelles technologies",
+      "En conciliant efficacité économique, responsabilité et vision de long terme"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : Luxe Européen et Marchés Émergents</strong><br>Le secteur du luxe repose sur l'exportation d'un savoir-faire traditionnel vers des clientèles asiatiques et américaines. La volatilité de la demande chinoise contraint les maisons de haute couture à diversifier leurs cibles. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°65 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
-      "La recherche systématique de l'impact environnemental le plus neutre possible",
-      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
-      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+      "La gestion de luxe européen et marchés émergents requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Souveraineté Alimentaire et Réforme de la PAC</strong><br>La Politique Agricole Commune doit concilier des exigences environnementales de réduction des pesticides avec l'impératif de maintenir des rendements suffisants pour garantir la souveraineté alimentaire européenne. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°66 : Quel est le thème principal abordé dans l'analyse de 'Souveraineté Alimentaire et Réforme de la PAC' ?</div>",
     "options": [
-      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
-      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
-      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
-      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+      "L'impact stratégique et les arbitrages économiques liés à souveraineté alimentaire et réforme de la pac",
+      "La fermeture immédiate des frontières",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La suppression des taxes commerciales"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Souveraineté Alimentaire et Réforme de la PAC</strong><br>La Politique Agricole Commune doit concilier des exigences environnementales de réduction des pesticides avec l'impératif de maintenir des rendements suffisants pour garantir la souveraineté alimentaire européenne. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°67 : Quelle opportunité majeure est associée à souveraineté alimentaire et réforme de la pac ?</div>",
     "options": [
-      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
-      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
-      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
-      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+      "La fin de la concurrence internationale",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "L'absence totale de besoins en investissements",
+      "La gratuité universelle de l'ensemble des services"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Souveraineté Alimentaire et Réforme de la PAC</strong><br>La Politique Agricole Commune doit concilier des exigences environnementales de réduction des pesticides avec l'impératif de maintenir des rendements suffisants pour garantir la souveraineté alimentaire européenne. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°68 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
-      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
-      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
-      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+      "La baisse brutale du nombre d'habitants en Europe",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "Le manque total d'intérêt des acteurs économiques"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Souveraineté Alimentaire et Réforme de la PAC</strong><br>La Politique Agricole Commune doit concilier des exigences environnementales de réduction des pesticides avec l'impératif de maintenir des rendements suffisants pour garantir la souveraineté alimentaire européenne. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°69 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
-      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
-      "Entraîner la fermeture automatique des filiales situées à l'étranger",
-      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En interdisant l'usage des nouvelles technologies",
+      "En déléguant l'intégralité des décisions à des algorithmes"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Souveraineté Alimentaire et Réforme de la PAC</strong><br>La Politique Agricole Commune doit concilier des exigences environnementales de réduction des pesticides avec l'impératif de maintenir des rendements suffisants pour garantir la souveraineté alimentaire européenne. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°70 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
-      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
-      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
-      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "La gestion de souveraineté alimentaire et réforme de la pac requiert une approche équilibrée et adaptée aux nouveaux enjeux"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : Travail Hybride et Cohésion d'Équipe</strong><br>Le modèle hybride alternant présentiel et distanciel exige de nouvelles pratiques managériales pour éviter le sentiment d'isolement des salariés et préserver la culture d'entreprise. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°71 : Quel est le thème principal abordé dans l'analyse de 'Travail Hybride et Cohésion d'Équipe' ?</div>",
     "options": [
-      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
-      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
-      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
-      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+      "L'impact stratégique et les arbitrages économiques liés à travail hybride et cohésion d'équipe",
+      "La fermeture immédiate des frontières",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La suppression des taxes commerciales"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : Travail Hybride et Cohésion d'Équipe</strong><br>Le modèle hybride alternant présentiel et distanciel exige de nouvelles pratiques managériales pour éviter le sentiment d'isolement des salariés et préserver la culture d'entreprise. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°72 : Quelle opportunité majeure est associée à travail hybride et cohésion d'équipe ?</div>",
     "options": [
-      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
-      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
-      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
-      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+      "L'absence totale de besoins en investissements",
+      "La fin de la concurrence internationale",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La gratuité universelle de l'ensemble des services"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : Travail Hybride et Cohésion d'Équipe</strong><br>Le modèle hybride alternant présentiel et distanciel exige de nouvelles pratiques managériales pour éviter le sentiment d'isolement des salariés et préserver la culture d'entreprise. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°73 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
-      "La destruction physique immédiate des transformateurs de quartier",
-      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
-      "La baisse automatique de la température moyenne des villes côtières"
+      "Le manque total d'intérêt des acteurs économiques",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "L'interdiction par l'Union européenne de toute innovation"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : Travail Hybride et Cohésion d'Équipe</strong><br>Le modèle hybride alternant présentiel et distanciel exige de nouvelles pratiques managériales pour éviter le sentiment d'isolement des salariés et préserver la culture d'entreprise. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°74 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
-      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
-      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
-      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En interdisant l'usage des nouvelles technologies",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En déléguant l'intégralité des décisions à des algorithmes"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : Travail Hybride et Cohésion d'Équipe</strong><br>Le modèle hybride alternant présentiel et distanciel exige de nouvelles pratiques managériales pour éviter le sentiment d'isolement des salariés et préserver la culture d'entreprise. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°75 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
-      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
-      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
-      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+      "La gestion de travail hybride et cohésion d'équipe requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Les consommateurs refusent catégoriquement ces innovations"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : Biotechnologies et Médecine Personnalisée</strong><br>Les avancées du séquençage génétique permettent de concevoir des traitements sur mesure contre le cancer. Cependant, le coût exorbitant de ces thérapies soulève d'importants dilemmes de financement public. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°76 : Quel est le thème principal abordé dans l'analyse de 'Biotechnologies et Médecine Personnalisée' ?</div>",
     "options": [
-      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
-      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
-      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
-      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+      "L'impact stratégique et les arbitrages économiques liés à biotechnologies et médecine personnalisée",
+      "La fermeture immédiate des frontières",
+      "La suppression des taxes commerciales",
+      "Le retour aux méthodes industrielles du XIXe siècle"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : Biotechnologies et Médecine Personnalisée</strong><br>Les avancées du séquençage génétique permettent de concevoir des traitements sur mesure contre le cancer. Cependant, le coût exorbitant de ces thérapies soulève d'importants dilemmes de financement public. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°77 : Quelle opportunité majeure est associée à biotechnologies et médecine personnalisée ?</div>",
     "options": [
-      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
-      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
-      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
-      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+      "La gratuité universelle de l'ensemble des services",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La fin de la concurrence internationale",
+      "L'absence totale de besoins en investissements"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : Biotechnologies et Médecine Personnalisée</strong><br>Les avancées du séquençage génétique permettent de concevoir des traitements sur mesure contre le cancer. Cependant, le coût exorbitant de ces thérapies soulève d'importants dilemmes de financement public. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°78 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
-      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
-      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
-      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "Le manque total d'intérêt des acteurs économiques"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : Biotechnologies et Médecine Personnalisée</strong><br>Les avancées du séquençage génétique permettent de concevoir des traitements sur mesure contre le cancer. Cependant, le coût exorbitant de ces thérapies soulève d'importants dilemmes de financement public. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°79 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
-      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
-      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
-      "Indifférente aux mutations technologiques apportées par la collecte de données"
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En conciliant efficacité économique, responsabilité et vision de long terme"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : Biotechnologies et Médecine Personnalisée</strong><br>Les avancées du séquençage génétique permettent de concevoir des traitements sur mesure contre le cancer. Cependant, le coût exorbitant de ces thérapies soulève d'importants dilemmes de financement public. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°80 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
-      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
-      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
-      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "La gestion de biotechnologies et médecine personnalisée requiert une approche équilibrée et adaptée aux nouveaux enjeux"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : Transports Urbains et Mobilité Douce</strong><br>La réduction de la place de l'automobile en centre-ville favorise le vélo et les transports collectifs, mais nécessite des aménagements d'infrastructures coûteux et suscite des tensions avec les résidents périurbains. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°81 : Quel est le thème principal abordé dans l'analyse de 'Transports Urbains et Mobilité Douce' ?</div>",
     "options": [
-      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
-      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
-      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
-      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+      "L'impact stratégique et les arbitrages économiques liés à transports urbains et mobilité douce",
+      "La suppression des taxes commerciales",
+      "La fermeture immédiate des frontières",
+      "Le retour aux méthodes industrielles du XIXe siècle"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : Transports Urbains et Mobilité Douce</strong><br>La réduction de la place de l'automobile en centre-ville favorise le vélo et les transports collectifs, mais nécessite des aménagements d'infrastructures coûteux et suscite des tensions avec les résidents périurbains. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°82 : Quelle opportunité majeure est associée à transports urbains et mobilité douce ?</div>",
     "options": [
-      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
-      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
-      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
-      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+      "La gratuité universelle de l'ensemble des services",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "L'absence totale de besoins en investissements",
+      "La fin de la concurrence internationale"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : Transports Urbains et Mobilité Douce</strong><br>La réduction de la place de l'automobile en centre-ville favorise le vélo et les transports collectifs, mais nécessite des aménagements d'infrastructures coûteux et suscite des tensions avec les résidents périurbains. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°83 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
-      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
-      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
-      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+      "Le manque total d'intérêt des acteurs économiques",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "L'interdiction par l'Union européenne de toute innovation"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : Transports Urbains et Mobilité Douce</strong><br>La réduction de la place de l'automobile en centre-ville favorise le vélo et les transports collectifs, mais nécessite des aménagements d'infrastructures coûteux et suscite des tensions avec les résidents périurbains. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°84 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
-      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
-      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
-      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : Transports Urbains et Mobilité Douce</strong><br>La réduction de la place de l'automobile en centre-ville favorise le vélo et les transports collectifs, mais nécessite des aménagements d'infrastructures coûteux et suscite des tensions avec les résidents périurbains. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°85 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
-      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
-      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
-      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "La gestion de transports urbains et mobilité douce requiert une approche équilibrée et adaptée aux nouveaux enjeux"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : Industrie Spatiale et Économie du NewSpace</strong><br>L'arrivée d'acteurs privés dans le secteur spatial a réduit drastiquement le coût d'accès à l'orbite basse. Cette démocratisation entraîne toutefois la prolifération de débris spatiaux problématiques. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°86 : Quel est le thème principal abordé dans l'analyse de 'Industrie Spatiale et Économie du NewSpace' ?</div>",
     "options": [
-      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
-      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
-      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
-      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+      "L'impact stratégique et les arbitrages économiques liés à industrie spatiale et économie du newspace",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La suppression des taxes commerciales",
+      "La fermeture immédiate des frontières"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : Industrie Spatiale et Économie du NewSpace</strong><br>L'arrivée d'acteurs privés dans le secteur spatial a réduit drastiquement le coût d'accès à l'orbite basse. Cette démocratisation entraîne toutefois la prolifération de débris spatiaux problématiques. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°87 : Quelle opportunité majeure est associée à industrie spatiale et économie du newspace ?</div>",
     "options": [
-      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
-      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
-      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
-      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+      "La gratuité universelle de l'ensemble des services",
+      "L'absence totale de besoins en investissements",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La fin de la concurrence internationale"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : Industrie Spatiale et Économie du NewSpace</strong><br>L'arrivée d'acteurs privés dans le secteur spatial a réduit drastiquement le coût d'accès à l'orbite basse. Cette démocratisation entraîne toutefois la prolifération de débris spatiaux problématiques. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°88 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
-      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
-      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
-      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "Le manque total d'intérêt des acteurs économiques",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : Industrie Spatiale et Économie du NewSpace</strong><br>L'arrivée d'acteurs privés dans le secteur spatial a réduit drastiquement le coût d'accès à l'orbite basse. Cette démocratisation entraîne toutefois la prolifération de débris spatiaux problématiques. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°89 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
-      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
-      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
-      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En interdisant l'usage des nouvelles technologies",
+      "En conciliant efficacité économique, responsabilité et vision de long terme"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : Industrie Spatiale et Économie du NewSpace</strong><br>L'arrivée d'acteurs privés dans le secteur spatial a réduit drastiquement le coût d'accès à l'orbite basse. Cette démocratisation entraîne toutefois la prolifération de débris spatiaux problématiques. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°90 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
-      "La recherche systématique de l'impact environnemental le plus neutre possible",
-      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
-      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "La gestion de industrie spatiale et économie du newspace requiert une approche équilibrée et adaptée aux nouveaux enjeux"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Propriété Intellectuelle et Brevets Médicamenteux</strong><br>Le débat sur la suspension temporaire des brevets lors des crises sanitaires oppose la nécessité d'un accès universel aux soins à l'impératif de rémunérer la recherche pharmaceutique. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°91 : Quel est le thème principal abordé dans l'analyse de 'Propriété Intellectuelle et Brevets Médicamenteux' ?</div>",
     "options": [
-      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
-      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
-      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
-      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+      "La suppression des taxes commerciales",
+      "La fermeture immédiate des frontières",
+      "L'impact stratégique et les arbitrages économiques liés à propriété intellectuelle et brevets médicamenteux",
+      "Le retour aux méthodes industrielles du XIXe siècle"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Propriété Intellectuelle et Brevets Médicamenteux</strong><br>Le débat sur la suspension temporaire des brevets lors des crises sanitaires oppose la nécessité d'un accès universel aux soins à l'impératif de rémunérer la recherche pharmaceutique. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°92 : Quelle opportunité majeure est associée à propriété intellectuelle et brevets médicamenteux ?</div>",
     "options": [
-      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
-      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
-      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
-      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+      "La gratuité universelle de l'ensemble des services",
+      "L'absence totale de besoins en investissements",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "La fin de la concurrence internationale"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Propriété Intellectuelle et Brevets Médicamenteux</strong><br>Le débat sur la suspension temporaire des brevets lors des crises sanitaires oppose la nécessité d'un accès universel aux soins à l'impératif de rémunérer la recherche pharmaceutique. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°93 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
     "options": [
-      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
-      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
-      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
-      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "Le manque total d'intérêt des acteurs économiques"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Propriété Intellectuelle et Brevets Médicamenteux</strong><br>Le débat sur la suspension temporaire des brevets lors des crises sanitaires oppose la nécessité d'un accès universel aux soins à l'impératif de rémunérer la recherche pharmaceutique. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°94 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
-      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
-      "Entraîner la fermeture automatique des filiales situées à l'étranger",
-      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En interdisant l'usage des nouvelles technologies"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Propriété Intellectuelle et Brevets Médicamenteux</strong><br>Le débat sur la suspension temporaire des brevets lors des crises sanitaires oppose la nécessité d'un accès universel aux soins à l'impératif de rémunérer la recherche pharmaceutique. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°95 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
     "options": [
-      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
-      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
-      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
-      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "La gestion de propriété intellectuelle et brevets médicamenteux requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Les consommateurs refusent catégoriquement ces innovations"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : Sobriété Numérique et Empreinte Carbone des Data Centers</strong><br>La consommation énergétique des centres de données augmente fortement avec le boom du stockage cloud et de l'IA. La sobriété numérique devient une composante incontournable de la RSE des entreprises. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°96 : Quel est le thème principal abordé dans l'analyse de 'Sobriété Numérique et Empreinte Carbone des Data Centers' ?</div>",
     "options": [
-      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
-      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
-      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
-      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+      "L'impact stratégique et les arbitrages économiques liés à sobriété numérique et empreinte carbone des data centers",
+      "La suppression des taxes commerciales",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La fermeture immédiate des frontières"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : Sobriété Numérique et Empreinte Carbone des Data Centers</strong><br>La consommation énergétique des centres de données augmente fortement avec le boom du stockage cloud et de l'IA. La sobriété numérique devient une composante incontournable de la RSE des entreprises. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°97 : Quelle opportunité majeure est associée à sobriété numérique et empreinte carbone des data centers ?</div>",
     "options": [
-      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
-      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
-      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
-      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+      "La gratuité universelle de l'ensemble des services",
+      "L'absence totale de besoins en investissements",
+      "La fin de la concurrence internationale",
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : Sobriété Numérique et Empreinte Carbone des Data Centers</strong><br>La consommation énergétique des centres de données augmente fortement avec le boom du stockage cloud et de l'IA. La sobriété numérique devient une composante incontournable de la RSE des entreprises. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°98 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
+    "options": [
+      "La baisse brutale du nombre d'habitants en Europe",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation",
+      "L'interdiction par l'Union européenne de toute innovation",
+      "Le manque total d'intérêt des acteurs économiques"
+    ],
+    "answerIndex": 1
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : Sobriété Numérique et Empreinte Carbone des Data Centers</strong><br>La consommation énergétique des centres de données augmente fortement avec le boom du stockage cloud et de l'IA. La sobriété numérique devient une composante incontournable de la RSE des entreprises. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°99 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
     "options": [
-      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
-      "La destruction physique immédiate des transformateurs de quartier",
-      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
-      "La baisse automatique de la température moyenne des villes côtières"
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En déléguant l'intégralité des décisions à des algorithmes",
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En interdisant l'usage des nouvelles technologies"
     ],
     "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : Sobriété Numérique et Empreinte Carbone des Data Centers</strong><br>La consommation énergétique des centres de données augmente fortement avec le boom du stockage cloud et de l'IA. La sobriété numérique devient une composante incontournable de la RSE des entreprises. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°100 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
+    "options": [
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur",
+      "La gestion de sobriété numérique et empreinte carbone des data centers requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Les consommateurs refusent catégoriquement ces innovations"
+    ],
+    "answerIndex": 2
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : Cybersécurité et Protection des Infrastructures Critiques</strong><br>Les attaques par rançongiciel ciblant les hôpitaux et les collectivités territoriales démontrent que la cybersécurité n'est plus une simple option technique mais un enjeu majeur de sécurité nationale. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°101 : Quel est le thème principal abordé dans l'analyse de 'Cybersécurité et Protection des Infrastructures Critiques' ?</div>",
     "options": [
-      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
-      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
-      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
-      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+      "L'impact stratégique et les arbitrages économiques liés à cybersécurité et protection des infrastructures critiques",
+      "La suppression des taxes commerciales",
+      "Le retour aux méthodes industrielles du XIXe siècle",
+      "La fermeture immédiate des frontières"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : Cybersécurité et Protection des Infrastructures Critiques</strong><br>Les attaques par rançongiciel ciblant les hôpitaux et les collectivités territoriales démontrent que la cybersécurité n'est plus une simple option technique mais un enjeu majeur de sécurité nationale. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°102 : Quelle opportunité majeure est associée à cybersécurité et protection des infrastructures critiques ?</div>",
     "options": [
-      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
-      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
-      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
-      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+      "L'amélioration de l'efficacité et l'émergence de nouvelles solutions innovantes",
+      "L'absence totale de besoins en investissements",
+      "La gratuité universelle de l'ensemble des services",
+      "La fin de la concurrence internationale"
     ],
     "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : Cybersécurité et Protection des Infrastructures Critiques</strong><br>Les attaques par rançongiciel ciblant les hôpitaux et les collectivités territoriales démontrent que la cybersécurité n'est plus une simple option technique mais un enjeu majeur de sécurité nationale. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°103 : Quel défi ou risque est explicitement souligné par le texte ?</div>",
+    "options": [
+      "L'interdiction par l'Union européenne de toute innovation",
+      "La baisse brutale du nombre d'habitants en Europe",
+      "Le manque total d'intérêt des acteurs économiques",
+      "La présence de contraintes techniques, réglementaires ou éthiques nécessitant une régulation"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : Cybersécurité et Protection des Infrastructures Critiques</strong><br>Les attaques par rançongiciel ciblant les hôpitaux et les collectivités territoriales démontrent que la cybersécurité n'est plus une simple option technique mais un enjeu majeur de sécurité nationale. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°104 : Comment la réflexion stratégique doit-elle aborder cette mutation ?</div>",
+    "options": [
+      "En ignorant les risques pour privilégier le profit immédiat",
+      "En interdisant l'usage des nouvelles technologies",
+      "En conciliant efficacité économique, responsabilité et vision de long terme",
+      "En déléguant l'intégralité des décisions à des algorithmes"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : Cybersécurité et Protection des Infrastructures Critiques</strong><br>Les attaques par rançongiciel ciblant les hôpitaux et les collectivités territoriales démontrent que la cybersécurité n'est plus une simple option technique mais un enjeu majeur de sécurité nationale. La réflexion stratégique impose une analyse approfondie des arbitrages économiques, environnementaux et sociaux pour construire des modèles pérennes à long terme.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question n°105 : Quelle est la conclusion générale qui ressort de cet extrait ?</div>",
+    "options": [
+      "Les consommateurs refusent catégoriquement ces innovations",
+      "Il convient d'abandonner immédiatement tous les projets dans ce domaine",
+      "La gestion de cybersécurité et protection des infrastructures critiques requiert une approche équilibrée et adaptée aux nouveaux enjeux",
+      "Seules les entreprises d'État peuvent réussir dans ce secteur"
+    ],
+    "answerIndex": 2
   }
 ];
 
 export const TM_CALCUL_QUESTIONS = [
   {
-    "prompt": "Un sac coûte initialement 100 €. Son prix subit une hausse de 10 %, puis une remise de 10 % sur le prix augmenté. Quel est son prix final ?",
+    "prompt": "Problème Calcul n°1 : Un livre coûte initialement 100 €. Son prix subit d'abord une hausse de 10%, puis une baisse de 10% sur le nouveau prix. Quel est son prix final ?",
     "options": [
+      "80 €",
       "100 €",
       "99 €",
-      "100 €",
-      "80 €"
+      "100 €"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°2 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 108 km. Le premier roule à 50 km/h et le second à 60 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "1.8 h",
+      "0.98 h",
+      "10.8 h",
+      "2.16 h"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 115 km. La première roule à 50 km/h et la seconde à 60 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Calcul n°3 : Un bassin de 480 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 18 min, et le tuyau B seul en 20 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "2.3 h",
-      "0.88 h",
-      "1.92 h",
-      "1.05 h"
+      "19 min",
+      "9.5 min",
+      "2 min",
+      "38 min"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
-    "prompt": "Une cuve de 480 L est alimentée par deux robinets. Le premier la remplit en 20 min, le second en 25 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Géométrie n°4 : Combien de diagonales possède un polygon convexe fermé à 8 sommets ?",
     "options": [
-      "22.5 min",
-      "45 min",
-      "5 min",
-      "11.1 min"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 8 côtés ?",
-    "options": [
-      "28",
-      "16",
+      "56",
       "20",
-      "56"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Une urne contient 3 boules rouges et 8 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span>"
+      "28",
+      "16"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -14x + 15 pour x réel ?",
+    "prompt": "Problème Probabilité n°5 : Un sac contient 6 jetons noirs et 8 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "-34",
-      "7",
-      "-28",
-      "15"
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">14</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">8</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">14</span></span>"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = ?",
+    "prompt": "Problème Équation n°6 : Quelle est la valeur minimale du polynôme f(x) = x² -14x + 20 ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>"
+      "20",
+      "7",
+      "-21",
+      "-29"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Un appareil photo coûte initialement 170 €. Son prix subit une hausse de 40 %, puis une remise de 15 % sur le prix augmenté. Quel est son prix final ?",
+    "prompt": "Problème Fraction n°7 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = ?",
     "options": [
-      "202.3 €",
-      "76.5 €",
-      "212.5 €",
-      "195 €"
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">12</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°8 : Un montre coûte initialement 184 €. Son prix subit d'abord une hausse de 40%, puis une baisse de 15% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "218.96 €",
+      "209 €",
+      "230 €",
+      "82.8 €"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 220 km. La première roule à 70 km/h et la seconde à 50 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Calcul n°9 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 164 km. Le premier roule à 60 km/h et le second à 80 km/h. Après combien d'heures se croisent-ils ?",
     "options": [
-      "3.14 h",
-      "1.83 h",
-      "4.4 h",
-      "1.57 h"
+      "2.05 h",
+      "1.17 h",
+      "8.2 h",
+      "2.73 h"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Une cuve de 760 L est alimentée par deux robinets. Le premier la remplit en 30 min, le second en 20 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Calcul n°10 : Un bassin de 760 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 26 min, et le tuyau B seul en 16 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "50 min",
+      "42 min",
       "10 min",
-      "12 min",
-      "25 min"
+      "21 min",
+      "9.9 min"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 15 côtés ?",
+    "prompt": "Problème Géométrie n°11 : Combien de diagonales possède un polygon convexe fermé à 15 sommets ?",
     "options": [
-      "30",
       "210",
+      "30",
       "90",
       "105"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Une urne contient 6 boules rouges et 5 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Probabilité n°12 : Un sac contient 3 jetons noirs et 9 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">11</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">9</span><span class=\"den\">12</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">12</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">9</span></span>"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Équation n°13 : Quelle est la valeur minimale du polynôme f(x) = x² -12x + 34 ?",
+    "options": [
+      "6",
+      "34",
+      "6",
+      "-2"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -4x + 29 pour x réel ?",
+    "prompt": "Problème Fraction n°14 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> = ?",
     "options": [
-      "2",
-      "29",
-      "25",
-      "31"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">12</span></span>",
       "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">12</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>",
       "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">6</span></span>"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Un costume coûte initialement 240 €. Son prix subit une hausse de 30 %, puis une remise de 20 % sur le prix augmenté. Quel est son prix final ?",
+    "prompt": "Problème Calcul n°15 : Un costume coûte initialement 268 €. Son prix subit d'abord une hausse de 30%, puis une baisse de 20% sur le nouveau prix. Quel est son prix final ?",
     "options": [
-      "120 €",
-      "250 €",
-      "249.6 €",
-      "264 €"
+      "278 €",
+      "294.8 €",
+      "278.72 €",
+      "134 €"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 325 km. La première roule à 40 km/h et la seconde à 80 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Calcul n°16 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 220 km. Le premier roule à 70 km/h et le second à 50 km/h. Après combien d'heures se croisent-ils ?",
     "options": [
-      "2.32 h",
-      "2.71 h",
-      "8.12 h",
-      "4.06 h"
+      "3.14 h",
+      "1.83 h",
+      "11 h",
+      "4.4 h"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Une cuve de 1040 L est alimentée par deux robinets. Le premier la remplit en 15 min, le second en 15 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Calcul n°17 : Un bassin de 1040 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 14 min, et le tuyau B seul en 12 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "0 min",
-      "7.5 min",
-      "30 min",
-      "15 min"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 10 côtés ?",
-    "options": [
-      "45",
-      "20",
-      "35",
-      "90"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Une urne contient 5 boules rouges et 7 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>"
+      "6.5 min",
+      "26 min",
+      "2 min",
+      "13 min"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -6x + 43 pour x réel ?",
+    "prompt": "Problème Géométrie n°18 : Combien de diagonales possède un polygon convexe fermé à 10 sommets ?",
     "options": [
-      "3",
-      "43",
-      "40",
-      "34"
+      "45",
+      "20",
+      "90",
+      "35"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = ?",
+    "prompt": "Problème Probabilité n°19 : Un sac contient 5 jetons noirs et 4 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">19</span><span class=\"den\">20</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span>",
       "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">20</span><span class=\"den\">20</span></span>"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Un vélo coûte initialement 310 €. Son prix subit une hausse de 20 %, puis une remise de 10 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "334.8 €",
-      "217 €",
-      "341 €",
-      "320 €"
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span>"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 430 km. La première roule à 60 km/h et la seconde à 70 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Équation n°20 : Quelle est la valeur minimale du polynôme f(x) = x² -10x + 48 ?",
     "options": [
-      "2.87 h",
-      "3.31 h",
-      "6.14 h",
-      "7.17 h"
+      "48",
+      "5",
+      "31",
+      "23"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Fraction n°21 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> + <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">18</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">17</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">10</span></span>"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°22 : Un ordinateur coûte initialement 352 €. Son prix subit d'abord une hausse de 20%, puis une baisse de 10% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "387.2 €",
+      "362 €",
+      "246.4 €",
+      "380.16 €"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°23 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 276 km. Le premier roule à 80 km/h et le second à 70 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "27.6 h",
+      "3.45 h",
+      "3.94 h",
+      "1.84 h"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°24 : Un bassin de 1320 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 22 min, et le tuyau B seul en 24 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "2 min",
+      "11.5 min",
+      "23 min",
+      "46 min"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Une cuve de 1320 L est alimentée par deux robinets. Le premier la remplit en 25 min, le second en 30 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "55 min",
-      "13.6 min",
-      "5 min",
-      "27.5 min"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 5 côtés ?",
+    "prompt": "Problème Géométrie n°25 : Combien de diagonales possède un polygon convexe fermé à 5 sommets ?",
     "options": [
       "10",
       "5",
@@ -1266,137 +1316,137 @@ export const TM_CALCUL_QUESTIONS = [
     "answerIndex": 1
   },
   {
-    "prompt": "Une urne contient 4 boules rouges et 4 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Probabilité n°26 : Un sac contient 2 jetons noirs et 5 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">4</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">8</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">8</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -8x + 57 pour x réel ?",
+    "prompt": "Problème Équation n°27 : Quelle est la valeur minimale du polynôme f(x) = x² -8x + 62 ?",
     "options": [
-      "41",
-      "57",
-      "47",
-      "4"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Un tablette coûte initialement 380 €. Son prix subit une hausse de 10 %, puis une remise de 15 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "361 €",
-      "285 €",
-      "375 €",
-      "355.3 €"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 535 km. La première roule à 80 km/h et la seconde à 60 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "6.69 h",
-      "8.92 h",
-      "3.34 h",
-      "3.82 h"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Une cuve de 1600 L est alimentée par deux robinets. Le premier la remplit en 10 min, le second en 25 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "17.5 min",
-      "15 min",
-      "35 min",
-      "7.1 min"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 12 côtés ?",
-    "options": [
-      "132",
-      "24",
-      "66",
-      "54"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Une urne contient 3 boules rouges et 6 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">9</span></span>"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -10x + 71 pour x réel ?",
-    "options": [
-      "71",
-      "5",
-      "52",
+      "54",
+      "62",
+      "4",
       "46"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = ?",
+    "prompt": "Problème Fraction n°28 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">12</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">11</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">12</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">15</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">23</span><span class=\"den\">15</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">24</span><span class=\"den\">15</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span>"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Un ordinateur coûte initialement 450 €. Son prix subit une hausse de 40 %, puis une remise de 20 % sur le prix augmenté. Quel est son prix final ?",
+    "prompt": "Problème Calcul n°29 : Un tablette coûte initialement 436 €. Son prix subit d'abord une hausse de 10%, puis une baisse de 15% sur le nouveau prix. Quel est son prix final ?",
     "options": [
-      "470 €",
+      "414.2 €",
+      "327 €",
+      "431 €",
+      "407.66 €"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°30 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 332 km. Le premier roule à 90 km/h et le second à 90 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "3.69 h",
+      "1.84 h",
+      "22.13 h",
+      "3.69 h"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Calcul n°31 : Un bassin de 1600 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 10 min, et le tuyau B seul en 20 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "15 min",
+      "6.7 min",
+      "10 min",
+      "30 min"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Géométrie n°32 : Combien de diagonales possède un polygon convexe fermé à 12 sommets ?",
+    "options": [
+      "54",
+      "66",
+      "24",
+      "132"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Probabilité n°33 : Un sac contient 4 jetons noirs et 6 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">10</span></span>"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Équation n°34 : Quelle est la valeur minimale du polynôme f(x) = x² -6x + 76 ?",
+    "options": [
+      "75",
+      "76",
+      "3",
+      "67"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Fraction n°35 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">16</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">4</span></span>"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°36 : Un appareil photo coûte initialement 520 €. Son prix subit d'abord une hausse de 40%, puis une baisse de 20% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "624 €",
+      "208 €",
       "540 €",
-      "180 €",
-      "504 €"
+      "582.4 €"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 640 km. La première roule à 50 km/h et la seconde à 50 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Calcul n°37 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 388 km. Le premier roule à 40 km/h et le second à 60 km/h. Après combien d'heures se croisent-ils ?",
     "options": [
-      "12.8 h",
-      "6.4 h",
-      "5.33 h",
-      "12.8 h"
+      "6.47 h",
+      "19.4 h",
+      "3.88 h",
+      "9.7 h"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
-    "prompt": "Une cuve de 1880 L est alimentée par deux robinets. Le premier la remplit en 20 min, le second en 20 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Calcul n°38 : Un bassin de 1880 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 18 min, et le tuyau B seul en 16 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "40 min",
-      "0 min",
-      "20 min",
-      "10 min"
+      "34 min",
+      "17 min",
+      "2 min",
+      "8.5 min"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 7 côtés ?",
+    "prompt": "Problème Géométrie n°39 : Combien de diagonales possède un polygon convexe fermé à 7 sommets ?",
     "options": [
       "14",
       "42",
@@ -1406,67 +1456,67 @@ export const TM_CALCUL_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "Une urne contient 6 boules rouges et 8 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Probabilité n°40 : Un sac contient 6 jetons noirs et 7 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">8</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">14</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">13</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">13</span></span>",
       "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">14</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">7</span></span>"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -12x + 85 pour x réel ?",
+    "prompt": "Problème Équation n°41 : Quelle est la valeur minimale du polynôme f(x) = x² -4x + 90 ?",
     "options": [
-      "55",
-      "6",
-      "85",
-      "49"
+      "90",
+      "86",
+      "94",
+      "2"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> = ?",
+    "prompt": "Problème Fraction n°42 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> + <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">3</span></span> = ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">23</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">24</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">20</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">15</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">5</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">5</span></span>"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "Un montre coûte initialement 520 €. Son prix subit une hausse de 30 %, puis une remise de 10 % sur le prix augmenté. Quel est son prix final ?",
+    "prompt": "Problème Calcul n°43 : Un vélo coûte initialement 604 €. Son prix subit d'abord une hausse de 30%, puis une baisse de 10% sur le nouveau prix. Quel est son prix final ?",
     "options": [
+      "724.8 €",
       "624 €",
-      "608.4 €",
-      "540 €",
-      "312 €"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 745 km. La première roule à 70 km/h et la seconde à 80 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "10.64 h",
-      "9.31 h",
-      "4.38 h",
-      "4.97 h"
+      "362.4 €",
+      "706.68 €"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Une cuve de 2160 L est alimentée par deux robinets. Le premier la remplit en 30 min, le second en 15 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Calcul n°44 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 444 km. Le premier roule à 50 km/h et le second à 80 km/h. Après combien d'heures se croisent-ils ?",
     "options": [
-      "15 min",
-      "10 min",
-      "22.5 min",
-      "45 min"
+      "14.8 h",
+      "8.88 h",
+      "3.42 h",
+      "5.55 h"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 14 côtés ?",
+    "prompt": "Problème Calcul n°45 : Un bassin de 2160 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 26 min, et le tuyau B seul en 12 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "14 min",
+      "19 min",
+      "8.2 min",
+      "38 min"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Géométrie n°46 : Combien de diagonales possède un polygon convexe fermé à 14 sommets ?",
     "options": [
       "28",
       "77",
@@ -1476,287 +1526,427 @@ export const TM_CALCUL_QUESTIONS = [
     "answerIndex": 1
   },
   {
-    "prompt": "Une urne contient 5 boules rouges et 5 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Probabilité n°47 : Un sac contient 3 jetons noirs et 8 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">10</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">10</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">11</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">11</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span>"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -14x + 99 pour x réel ?",
-    "options": [
-      "99",
-      "50",
-      "56",
-      "7"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Un télévision coûte initialement 590 €. Son prix subit une hausse de 20 %, puis une remise de 15 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "601.8 €",
-      "595 €",
-      "619.5 €",
-      "383.5 €"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 850 km. La première roule à 40 km/h et la seconde à 70 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "12.14 h",
-      "7.73 h",
-      "6.54 h",
-      "21.25 h"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Une cuve de 2440 L est alimentée par deux robinets. Le premier la remplit en 15 min, le second en 30 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "22.5 min",
-      "45 min",
-      "15 min",
-      "10 min"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 9 côtés ?",
-    "options": [
-      "27",
-      "18",
-      "36",
-      "72"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Une urne contient 4 boules rouges et 7 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -4x + 113 pour x réel ?",
-    "options": [
-      "115",
-      "113",
-      "2",
-      "109"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Un casque coûte initialement 660 €. Son prix subit une hausse de 10 %, puis une remise de 20 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "462 €",
-      "580.8 €",
-      "650 €",
-      "594 €"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 955 km. La première roule à 60 km/h et la seconde à 60 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "15.92 h",
-      "15.92 h",
-      "6.82 h",
-      "7.96 h"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Une cuve de 2720 L est alimentée par deux robinets. Le premier la remplit en 25 min, le second en 25 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "25 min",
-      "0 min",
-      "12.5 min",
-      "50 min"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 16 côtés ?",
+    "prompt": "Problème Équation n°48 : Quelle est la valeur minimale du polynôme f(x) = x² -18x + 104 ?",
     "options": [
       "104",
-      "32",
-      "120",
-      "240"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Une urne contient 3 boules rouges et 4 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -6x + 127 pour x réel ?",
-    "options": [
-      "118",
-      "3",
-      "127",
-      "124"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">20</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">19</span><span class=\"den\">20</span></span>"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Un téléphone coûte initialement 730 €. Son prix subit une hausse de 40 %, puis une remise de 10 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "760 €",
-      "365 €",
-      "919.8 €",
-      "949 €"
+      "9",
+      "23",
+      "31"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 1060 km. La première roule à 80 km/h et la seconde à 50 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Fraction n°49 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = ?",
     "options": [
-      "7.07 h",
-      "8.15 h",
-      "13.25 h",
-      "21.2 h"
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Calcul n°50 : Un casque audio coûte initialement 688 €. Son prix subit d'abord une hausse de 20%, puis une baisse de 15% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "722.4 €",
+      "693 €",
+      "701.76 €",
+      "447.2 €"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°51 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 500 km. Le premier roule à 60 km/h et le second à 50 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "10 h",
+      "4.55 h",
+      "8.33 h",
+      "50 h"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Une cuve de 3000 L est alimentée par deux robinets. Le premier la remplit en 10 min, le second en 20 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Calcul n°52 : Un bassin de 2440 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 14 min, et le tuyau B seul en 24 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "6.7 min",
+      "38 min",
+      "8.8 min",
+      "19 min",
+      "10 min"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Géométrie n°53 : Combien de diagonales possède un polygon convexe fermé à 9 sommets ?",
+    "options": [
+      "18",
+      "72",
+      "36",
+      "27"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Probabilité n°54 : Un sac contient 5 jetons noirs et 9 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">14</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">9</span><span class=\"den\">14</span></span>"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Équation n°55 : Quelle est la valeur minimale du polynôme f(x) = x² -16x + 118 ?",
+    "options": [
+      "8",
+      "54",
+      "62",
+      "118"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Fraction n°56 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">5</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">20</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">9</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">5</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°57 : Un sac à dos coûte initialement 772 €. Son prix subit d'abord une hausse de 10%, puis une baisse de 20% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "694.8 €",
+      "540.4 €",
+      "679.36 €",
+      "762 €"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°58 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 556 km. Le premier roule à 70 km/h et le second à 70 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "3.97 h",
+      "37.07 h",
+      "7.94 h",
+      "7.94 h"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Calcul n°59 : Un bassin de 2720 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 22 min, et le tuyau B seul en 20 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "42 min",
+      "2 min",
+      "10.5 min",
+      "21 min"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Géométrie n°60 : Combien de diagonales possède un polygon convexe fermé à 16 sommets ?",
+    "options": [
+      "120",
+      "240",
+      "32",
+      "104"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Probabilité n°61 : Un sac contient 2 jetons noirs et 4 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Équation n°62 : Quelle est la valeur minimale du polynôme f(x) = x² -14x + 132 ?",
+    "options": [
+      "132",
+      "91",
+      "7",
+      "83"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Fraction n°63 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> + <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">9</span><span class=\"den\">20</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">9</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">28</span><span class=\"den\">20</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">27</span><span class=\"den\">20</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°64 : Un téléphone coûte initialement 856 €. Son prix subit d'abord une hausse de 40%, puis une baisse de 10% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "886 €",
+      "428 €",
+      "1078.56 €",
+      "1112.8 €"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°65 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 612 km. Le premier roule à 80 km/h et le second à 90 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "6.8 h",
+      "7.65 h",
+      "61.2 h",
+      "3.6 h"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°66 : Un bassin de 3000 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 10 min, et le tuyau B seul en 16 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "6 min",
+      "26 min",
+      "6.2 min",
+      "13 min"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Géométrie n°67 : Combien de diagonales possède un polygon convexe fermé à 11 sommets ?",
+    "options": [
+      "44",
+      "22",
+      "55",
+      "110"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Probabilité n°68 : Un sac contient 4 jetons noirs et 5 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Équation n°69 : Quelle est la valeur minimale du polynôme f(x) = x² -12x + 146 ?",
+    "options": [
+      "6",
+      "110",
+      "146",
+      "118"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Fraction n°70 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">1</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">1</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">9</span></span>"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Calcul n°71 : Un livre coûte initialement 940 €. Son prix subit d'abord une hausse de 30%, puis une baisse de 15% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "1081 €",
+      "517 €",
+      "955 €",
+      "1038.7 €"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°72 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 668 km. Le premier roule à 90 km/h et le second à 60 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "22.27 h",
+      "7.42 h",
+      "11.13 h",
+      "4.45 h"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°73 : Un bassin de 3280 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 18 min, et le tuyau B seul en 12 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
       "30 min",
-      "10 min",
+      "7.2 min",
+      "6 min",
       "15 min"
     ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Géométrie n°74 : Combien de diagonales possède un polygon convexe fermé à 6 sommets ?",
+    "options": [
+      "9",
+      "12",
+      "30",
+      "15"
+    ],
     "answerIndex": 0
   },
   {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 11 côtés ?",
+    "prompt": "Problème Probabilité n°75 : Un sac contient 6 jetons noirs et 6 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "110",
-      "55",
-      "22",
-      "44"
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">12</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">12</span></span>"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Équation n°76 : Quelle est la valeur minimale du polynôme f(x) = x² -10x + 160 ?",
+    "options": [
+      "143",
+      "160",
+      "135",
+      "5"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Fraction n°77 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">2</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">8</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">6</span></span>"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Calcul n°78 : Un montre coûte initialement 1024 €. Son prix subit d'abord une hausse de 20%, puis une baisse de 20% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "983.04 €",
+      "1024 €",
+      "1024 €",
+      "614.4 €"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Calcul n°79 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 724 km. Le premier roule à 40 km/h et le second à 80 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "18.1 h",
+      "9.05 h",
+      "18.1 h",
+      "6.03 h"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Une urne contient 6 boules rouges et 6 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Calcul n°80 : Un bassin de 3560 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 26 min, et le tuyau B seul en 24 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">6</span></span>"
+      "25 min",
+      "12.5 min",
+      "50 min",
+      "2 min"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -8x + 141 pour x réel ?",
+    "prompt": "Problème Géométrie n°81 : Combien de diagonales possède un polygon convexe fermé à 13 sommets ?",
     "options": [
-      "4",
-      "125",
-      "131",
-      "141"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span>"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Un sac coûte initialement 800 €. Son prix subit une hausse de 30 %, puis une remise de 15 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "920 €",
-      "440 €",
-      "884 €",
-      "815 €"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 1165 km. La première roule à 50 km/h et la seconde à 80 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "23.3 h",
-      "7.77 h",
-      "8.96 h",
-      "14.56 h"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Une cuve de 3280 L est alimentée par deux robinets. Le premier la remplit en 20 min, le second en 15 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "5 min",
-      "17.5 min",
-      "8.6 min",
-      "35 min"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 6 côtés ?",
-    "options": [
-      "9",
-      "15",
-      "30",
-      "12"
+      "65",
+      "156",
+      "78",
+      "26"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Une urne contient 5 boules rouges et 8 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Probabilité n°82 : Un sac contient 3 jetons noirs et 7 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">7</span></span>"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Équation n°83 : Quelle est la valeur minimale du polynôme f(x) = x² -8x + 174 ?",
+    "options": [
+      "174",
+      "166",
+      "4",
+      "158"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Fraction n°84 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span> + <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">5</span></span> = ?",
+    "options": [
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">5</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">12</span><span class=\"den\">25</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">5</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°85 : Un costume coûte initialement 1108 €. Son prix subit d'abord une hausse de 10%, puis une baisse de 10% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "1108 €",
+      "886.4 €",
+      "1096.92 €",
+      "1108 €"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Calcul n°86 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 780 km. Le premier roule à 50 km/h et le second à 50 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "52 h",
+      "7.8 h",
+      "15.6 h",
+      "15.6 h"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Calcul n°87 : Un bassin de 3840 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 14 min, et le tuyau B seul en 20 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "17 min",
+      "6 min",
+      "34 min",
+      "8.2 min"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Géométrie n°88 : Combien de diagonales possède un polygon convexe fermé à 8 sommets ?",
+    "options": [
+      "28",
+      "16",
+      "20",
+      "56"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Probabilité n°89 : Un sac contient 5 jetons noirs et 8 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
       "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>",
       "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span>",
@@ -1766,690 +1956,650 @@ export const TM_CALCUL_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -10x + 155 pour x réel ?",
+    "prompt": "Problème Équation n°90 : Quelle est la valeur minimale du polynôme f(x) = x² -6x + 188 ?",
     "options": [
-      "130",
-      "136",
-      "155",
-      "5"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">11</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">12</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">12</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">7</span></span>"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Un appareil photo coûte initialement 870 €. Son prix subit une hausse de 20 %, puis une remise de 20 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "522 €",
-      "835.2 €",
-      "870 €",
-      "870 €"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 1270 km. La première roule à 70 km/h et la seconde à 70 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "9.07 h",
-      "18.14 h",
-      "18.14 h",
-      "7.94 h"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Une cuve de 3560 L est alimentée par deux robinets. Le premier la remplit en 30 min, le second en 30 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "60 min",
-      "30 min",
-      "0 min",
-      "15 min"
+      "188",
+      "187",
+      "3",
+      "179"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 13 côtés ?",
+    "prompt": "Problème Fraction n°91 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = ?",
     "options": [
-      "65",
-      "78",
-      "26",
-      "156"
+      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">12</span></span>"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Une urne contient 4 boules rouges et 5 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Calcul n°92 : Un ordinateur coûte initialement 1192 €. Son prix subit d'abord une hausse de 40%, puis une baisse de 15% sur le nouveau prix. Quel est son prix final ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span>"
+      "1418.48 €",
+      "1217 €",
+      "536.4 €",
+      "1490 €"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -12x + 169 pour x réel ?",
+    "prompt": "Problème Calcul n°93 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 836 km. Le premier roule à 60 km/h et le second à 70 km/h. Après combien d'heures se croisent-ils ?",
     "options": [
-      "169",
-      "6",
-      "133",
-      "139"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">24</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">23</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">20</span></span>"
+      "11.94 h",
+      "6.43 h",
+      "13.93 h",
+      "83.6 h"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Un costume coûte initialement 940 €. Son prix subit une hausse de 10 %, puis une remise de 10 % sur le prix augmenté. Quel est son prix final ?",
+    "prompt": "Problème Calcul n°94 : Un bassin de 4120 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 22 min, et le tuyau B seul en 16 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
     "options": [
-      "930.6 €",
-      "940 €",
-      "940 €",
-      "752 €"
+      "9.3 min",
+      "19 min",
+      "38 min",
+      "6 min"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 1375 km. La première roule à 40 km/h et la seconde à 60 km/h. Au bout de combien d'heures se croisent-elles ?",
+    "prompt": "Problème Géométrie n°95 : Combien de diagonales possède un polygon convexe fermé à 15 sommets ?",
     "options": [
-      "22.92 h",
-      "13.75 h",
-      "11.46 h",
-      "34.38 h"
+      "105",
+      "210",
+      "30",
+      "90"
     ],
-    "answerIndex": 1
+    "answerIndex": 3
   },
   {
-    "prompt": "Une cuve de 3840 L est alimentée par deux robinets. Le premier la remplit en 15 min, le second en 25 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
+    "prompt": "Problème Probabilité n°96 : Un sac contient 2 jetons noirs et 9 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "10 min",
-      "40 min",
-      "9.4 min",
-      "20 min"
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">9</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">9</span><span class=\"den\">11</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">11</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Équation n°97 : Quelle est la valeur minimale du polynôme f(x) = x² -4x + 202 ?",
+    "options": [
+      "206",
+      "202",
+      "198",
+      "2"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 8 côtés ?",
+    "prompt": "Problème Fraction n°98 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> = ?",
     "options": [
-      "56",
-      "16",
-      "28",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">12</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">6</span></span>"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°99 : Un tablette coûte initialement 1276 €. Son prix subit d'abord une hausse de 30%, puis une baisse de 20% sur le nouveau prix. Quel est son prix final ?",
+    "options": [
+      "1403.6 €",
+      "1286 €",
+      "638 €",
+      "1327.04 €"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Problème Calcul n°100 : Deux véhicules partent l'un vers l'autre de deux villes distantes de 892 km. Le premier roule à 70 km/h et le second à 90 km/h. Après combien d'heures se croisent-ils ?",
+    "options": [
+      "9.91 h",
+      "5.58 h",
+      "12.74 h",
+      "44.6 h"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Calcul n°101 : Un bassin de 4400 L est rempli par 2 tuyaux. Seul, le tuyau A le remplit en 10 min, et le tuyau B seul en 12 min. Combien de temps faut-il pour le remplir avec les deux tuyaux ouverts ?",
+    "options": [
+      "5.5 min",
+      "11 min",
+      "22 min",
+      "2 min"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Géométrie n°102 : Combien de diagonales possède un polygon convexe fermé à 10 sommets ?",
+    "options": [
+      "45",
+      "35",
+      "90",
       "20"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
-    "prompt": "Une urne contient 3 boules rouges et 7 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
+    "prompt": "Problème Probabilité n°103 : Un sac contient 4 jetons noirs et 4 jetons blancs. Quelle est la probabilité de tirer un jeton noir ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">10</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">10</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">8</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">8</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">4</span></span>"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -14x + 183 pour x réel ?",
+    "prompt": "Problème Équation n°104 : Quelle est la valeur minimale du polynôme f(x) = x² -18x + 216 ?",
     "options": [
-      "183",
-      "134",
-      "7",
-      "140"
+      "143",
+      "135",
+      "216",
+      "9"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> = ?",
+    "prompt": "Problème Fraction n°105 : Calculez la valeur exacte de l'expression : <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> + <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">2</span></span> = ?",
     "options": [
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Un vélo coûte initialement 1010 €. Son prix subit une hausse de 40 %, puis une remise de 15 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "454.5 €",
-      "1035 €",
-      "1262.5 €",
-      "1201.9 €"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 1480 km. La première roule à 60 km/h et la seconde à 50 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "11.38 h",
-      "24.67 h",
-      "13.45 h",
-      "29.6 h"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Une cuve de 4120 L est alimentée par deux robinets. Le premier la remplit en 25 min, le second en 20 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "5 min",
-      "45 min",
-      "11.1 min",
-      "22.5 min"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 15 côtés ?",
-    "options": [
-      "90",
-      "210",
-      "105",
-      "30"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Une urne contient 6 boules rouges et 4 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">10</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">4</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">10</span></span>"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -4x + 197 pour x réel ?",
-    "options": [
-      "199",
-      "2",
-      "193",
-      "197"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> + <span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">4</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">8</span><span class=\"den\">6</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">17</span><span class=\"den\">10</span></span>",
+      "<span class=\"math-frac\"><span class=\"num\">18</span><span class=\"den\">10</span></span>",
       "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">7</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">6</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">12</span></span>"
+      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">10</span></span>"
     ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Un tablette coûte initialement 1080 €. Son prix subit une hausse de 30 %, puis une remise de 20 % sur le prix augmenté. Quel est son prix final ?",
-    "options": [
-      "1188 €",
-      "1123.2 €",
-      "1090 €",
-      "540 €"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Deux voitures partent au même instant l'une vers l'autre de deux villes distantes de 1585 km. La première roule à 80 km/h et la seconde à 80 km/h. Au bout de combien d'heures se croisent-elles ?",
-    "options": [
-      "19.81 h",
-      "8.81 h",
-      "9.91 h",
-      "19.81 h"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Une cuve de 4400 L est alimentée par deux robinets. Le premier la remplit en 10 min, le second en 15 min. Combien de minutes faut-il avec les deux robinets ouverts ?",
-    "options": [
-      "12.5 min",
-      "6 min",
-      "5 min",
-      "25 min"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Combien de diagonales possède un polygon régulier fermé à 10 côtés ?",
-    "options": [
-      "90",
-      "45",
-      "20",
-      "35"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Une urne contient 5 boules rouges et 6 boules bleues. Quelle est la probabilité de tirer une boule rouge au hasard ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">6</span><span class=\"den\">11</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">6</span></span>"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Quelle est la valeur minimale atteinte par la fonction f(x) = x² -6x + 211 pour x réel ?",
-    "options": [
-      "3",
-      "211",
-      "202",
-      "208"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Calculer la valeur exacte de l'addition fractionnaire : <span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> + <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = ?",
-    "options": [
-      "<span class=\"math-frac\"><span class=\"num\">20</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">20</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">9</span></span>",
-      "<span class=\"math-frac\"><span class=\"num\">19</span><span class=\"den\">20</span></span>"
-    ],
-    "answerIndex": 3
+    "answerIndex": 0
   }
 ];
 
 export const TM_RAISONNEMENT_QUESTIONS = [
   {
-    "prompt": "Dans un groupe de 50 personnes, 20 jouent au tennis, 18 jouent au football et 6 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
+    "prompt": "Problème Logique n°1 : Dans un groupe de 40 personnes, 18 pratiquent le tennis, 15 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "7",
-      "18",
       "12",
-      "22"
+      "8",
+      "7",
+      "16"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Disposition n°2 : Cinq personnes (Marc, Pierre, Sophie, Julie, Antoine) sont assises en ligne. Marc est à côté de Pierre. Sophie est immédiatement à droite de Julie. Antoine est à l'extrême gauche. Si Pierre est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Michel",
-      "Pierre",
-      "Jacques",
-      "Henri"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
+      "Sophie",
+      "Julie",
+      "Antoine",
+      "Marc"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Sachant que la proposition 'Proposition n°3 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
     "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°4 : Camille affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Lundi",
       "Mercredi",
+      "Mardi",
+      "Dimanche"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Ordre d'arrivée n°5 : Lors d'une course, Alice termine avant Bob mais après Charlie. David termine juste après Bob. Qui a gagné la course ?",
+    "options": [
+      "Bob",
+      "Charlie",
+      "David",
+      "Alice"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Logique n°6 : Dans un groupe de 45 personnes, 23 pratiquent le tennis, 20 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "2",
+      "11",
+      "8",
+      "7"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Disposition n°7 : Cinq personnes (Thomas, Émilie, Lucas, Léa, Hugo) sont assises en ligne. Thomas est à côté de Émilie. Lucas est immédiatement à droite de Léa. Hugo est à l'extrême gauche. Si Émilie est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Léa",
+      "Thomas",
+      "Lucas",
+      "Hugo"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°8 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Énigme de Vérité n°9 : Alice affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
       "Dimanche",
+      "Lundi",
+      "Mercredi",
+      "Mardi"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Ordre d'arrivée n°10 : Lors d'une course, Marc termine avant Pierre mais après Sophie. Julie termine juste après Pierre. Qui a gagné la course ?",
+    "options": [
+      "Pierre",
+      "Sophie",
+      "Marc",
+      "Julie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Logique n°11 : Dans un groupe de 50 personnes, 18 pratiquent le tennis, 17 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "15",
+      "20",
+      "8",
+      "24"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Disposition n°12 : Cinq personnes (Camille, Nicolas, Sarah, Alexandre, Manon) sont assises en ligne. Camille est à côté de Nicolas. Sarah est immédiatement à droite de Alexandre. Manon est à l'extrême gauche. Si Nicolas est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Sarah",
+      "Manon",
+      "Alexandre",
+      "Camille"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°13 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Aucun diplômé ne fait partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°14 : Marc affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Dimanche",
+      "Mercredi",
       "Lundi",
       "Mardi"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°15 : Lors d'une course, Thomas termine avant Émilie mais après Lucas. Léa termine juste après Émilie. Qui a gagné la course ?",
     "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 55 personnes, 25 jouent au tennis, 23 jouent au football et 7 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "18",
-      "7",
-      "8",
-      "14"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Pierre",
-      "Jacques",
-      "Henri",
-      "Michel"
+      "Lucas",
+      "Léa",
+      "Émilie",
+      "Thomas"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
+    "prompt": "Problème Logique n°16 : Dans un groupe de 55 personnes, 23 pratiquent le tennis, 22 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
+      "10",
+      "8",
+      "19",
+      "15"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Disposition n°17 : Cinq personnes (Alice, Bob, Charlie, David, Ève) sont assises en ligne. Alice est à côté de Bob. Charlie est immédiatement à droite de David. Ève est à l'extrême gauche. Si Bob est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Mercredi",
-      "Mardi",
+      "David",
+      "Ève",
+      "Alice",
+      "Charlie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°18 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Aucun diplômé ne fait partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°19 : Thomas affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
       "Dimanche",
+      "Mardi",
+      "Mercredi",
       "Lundi"
     ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "C",
-      "B",
-      "D",
-      "A"
-    ],
     "answerIndex": 0
   },
   {
-    "prompt": "Dans un groupe de 60 personnes, 20 jouent au tennis, 20 jouent au football et 8 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
+    "prompt": "Ordre d'arrivée n°20 : Lors d'une course, Camille termine avant Nicolas mais après Sarah. Alexandre termine juste après Nicolas. Qui a gagné la course ?",
+    "options": [
+      "Camille",
+      "Nicolas",
+      "Sarah",
+      "Alexandre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Logique n°21 : Dans un groupe de 60 personnes, 18 pratiquent le tennis, 19 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
       "32",
-      "9",
       "28",
-      "20"
+      "8",
+      "23"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Disposition n°22 : Cinq personnes (Marc, Pierre, Sophie, Julie, Antoine) sont assises en ligne. Marc est à côté de Pierre. Sophie est immédiatement à droite de Julie. Antoine est à l'extrême gauche. Si Pierre est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Sophie",
+      "Antoine",
+      "Marc",
+      "Julie"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Sachant que la proposition 'Proposition n°23 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
     "options": [
-      "Pierre",
-      "Michel",
-      "Jacques",
-      "Henri"
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Énigme de Vérité n°24 : Camille affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
       "Mardi",
       "Dimanche",
-      "Lundi",
-      "Mercredi"
+      "Mercredi",
+      "Lundi"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°25 : Lors d'une course, Alice termine avant Bob mais après Charlie. David termine juste après Bob. Qui a gagné la course ?",
     "options": [
-      "A",
-      "B",
-      "D",
-      "C"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Dans un groupe de 65 personnes, 25 jouent au tennis, 25 jouent au football et 9 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "28",
-      "15",
-      "24",
-      "10"
+      "Bob",
+      "Alice",
+      "Charlie",
+      "David"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Problème Logique n°26 : Dans un groupe de 65 personnes, 23 pratiquent le tennis, 16 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "Pierre",
-      "Jacques",
-      "Henri",
-      "Michel"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Mardi",
-      "Dimanche",
-      "Lundi",
-      "Mercredi"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "B",
-      "C",
-      "A",
-      "D"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Dans un groupe de 70 personnes, 20 jouent au tennis, 22 jouent au football et 6 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "38",
-      "34",
-      "28",
-      "7"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Henri",
-      "Pierre",
-      "Michel",
-      "Jacques"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Lundi",
-      "Mardi",
-      "Dimanche",
-      "Mercredi"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "C",
-      "D",
-      "B",
-      "A"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Dans un groupe de 75 personnes, 25 jouent au tennis, 19 jouent au football et 7 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "38",
       "31",
       "8",
+      "35",
+      "26"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Disposition n°27 : Cinq personnes (Thomas, Émilie, Lucas, Léa, Hugo) sont assises en ligne. Thomas est à côté de Émilie. Lucas est immédiatement à droite de Léa. Hugo est à l'extrême gauche. Si Émilie est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Léa",
+      "Hugo",
+      "Thomas",
+      "Lucas"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°28 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°29 : Alice affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Mardi",
+      "Lundi",
+      "Mercredi",
+      "Dimanche"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Ordre d'arrivée n°30 : Lors d'une course, Marc termine avant Pierre mais après Sophie. Julie termine juste après Pierre. Qui a gagné la course ?",
+    "options": [
+      "Sophie",
+      "Marc",
+      "Julie",
+      "Pierre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Logique n°31 : Dans un groupe de 70 personnes, 18 pratiquent le tennis, 21 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "8",
+      "36",
+      "31",
+      "40"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Disposition n°32 : Cinq personnes (Camille, Nicolas, Sarah, Alexandre, Manon) sont assises en ligne. Camille est à côté de Nicolas. Sarah est immédiatement à droite de Alexandre. Manon est à l'extrême gauche. Si Nicolas est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Alexandre",
+      "Manon",
+      "Sarah",
+      "Camille"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°33 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°34 : Marc affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Lundi",
+      "Dimanche",
+      "Mercredi",
+      "Mardi"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Ordre d'arrivée n°35 : Lors d'une course, Thomas termine avant Émilie mais après Lucas. Léa termine juste après Émilie. Qui a gagné la course ?",
+    "options": [
+      "Lucas",
+      "Émilie",
+      "Léa",
+      "Thomas"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Logique n°36 : Dans un groupe de 75 personnes, 23 pratiquent le tennis, 18 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "34",
+      "39",
+      "43",
+      "8"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Disposition n°37 : Cinq personnes (Alice, Bob, Charlie, David, Ève) sont assises en ligne. Alice est à côté de Bob. Charlie est immédiatement à droite de David. Ève est à l'extrême gauche. Si Bob est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Charlie",
+      "Ève",
+      "Alice",
+      "David"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°38 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Énigme de Vérité n°39 : Thomas affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Lundi",
+      "Mardi",
+      "Dimanche",
+      "Mercredi"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Ordre d'arrivée n°40 : Lors d'une course, Camille termine avant Nicolas mais après Sarah. Alexandre termine juste après Nicolas. Qui a gagné la course ?",
+    "options": [
+      "Sarah",
+      "Camille",
+      "Alexandre",
+      "Nicolas"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Logique n°41 : Dans un groupe de 80 personnes, 18 pratiquent le tennis, 15 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "56",
+      "47",
+      "8",
+      "52"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Disposition n°42 : Cinq personnes (Marc, Pierre, Sophie, Julie, Antoine) sont assises en ligne. Marc est à côté de Pierre. Sophie est immédiatement à droite de Julie. Antoine est à l'extrême gauche. Si Pierre est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Sophie",
+      "Antoine",
+      "Marc",
+      "Julie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°43 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°44 : Camille affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Mardi",
+      "Mercredi",
+      "Dimanche",
+      "Lundi"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Ordre d'arrivée n°45 : Lors d'une course, Alice termine avant Bob mais après Charlie. David termine juste après Bob. Qui a gagné la course ?",
+    "options": [
+      "Charlie",
+      "Alice",
+      "David",
+      "Bob"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Logique n°46 : Dans un groupe de 85 personnes, 23 pratiquent le tennis, 20 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "8",
+      "51",
+      "47",
       "42"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Disposition n°47 : Cinq personnes (Thomas, Émilie, Lucas, Léa, Hugo) sont assises en ligne. Thomas est à côté de Émilie. Lucas est immédiatement à droite de Léa. Hugo est à l'extrême gauche. Si Émilie est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Jacques",
-      "Pierre",
-      "Michel",
-      "Henri"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Dimanche",
-      "Mardi",
-      "Mercredi",
-      "Lundi"
+      "Thomas",
+      "Léa",
+      "Hugo",
+      "Lucas"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Sachant que la proposition 'Proposition n°48 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
     "options": [
-      "B",
-      "D",
-      "A",
-      "C"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Dans un groupe de 80 personnes, 20 jouent au tennis, 24 jouent au football et 8 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "9",
-      "36",
-      "48",
-      "44"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Jacques",
-      "Michel",
-      "Pierre",
-      "Henri"
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Mardi",
-      "Lundi",
-      "Dimanche",
-      "Mercredi"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 85 personnes, 25 jouent au tennis, 21 jouent au football et 9 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "10",
-      "39",
-      "48",
-      "52"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Michel",
-      "Pierre",
-      "Henri",
-      "Jacques"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Tous les diplômés de l'entreprise sont comptables"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Énigme de Vérité n°49 : Alice affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
       "Mercredi",
       "Mardi",
@@ -2459,497 +2609,297 @@ export const TM_RAISONNEMENT_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°50 : Lors d'une course, Marc termine avant Pierre mais après Sophie. Julie termine juste après Pierre. Qui a gagné la course ?",
     "options": [
-      "D",
-      "A",
-      "C",
-      "B"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 90 personnes, 20 jouent au tennis, 18 jouent au football et 6 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "7",
-      "62",
-      "58",
-      "52"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Michel",
-      "Henri",
-      "Pierre",
-      "Jacques"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Mardi",
-      "Dimanche",
-      "Lundi",
-      "Mercredi"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "B",
-      "C",
-      "D",
-      "A"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Dans un groupe de 95 personnes, 25 jouent au tennis, 23 jouent au football et 7 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "54",
-      "47",
-      "58",
-      "8"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Jacques",
-      "Michel",
-      "Henri",
+      "Sophie",
+      "Marc",
+      "Julie",
       "Pierre"
     ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Tous les diplômés de l'entreprise sont comptables"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Dimanche",
-      "Mercredi",
-      "Lundi",
-      "Mardi"
-    ],
     "answerIndex": 0
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Problème Logique n°51 : Dans un groupe de 90 personnes, 18 pratiquent le tennis, 17 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "D",
-      "B",
-      "C",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 100 personnes, 20 jouent au tennis, 20 jouent au football et 8 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "9",
-      "68",
+      "8",
       "60",
-      "72"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Henri",
-      "Pierre",
-      "Jacques",
-      "Michel"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Mercredi",
-      "Mardi",
-      "Lundi",
-      "Dimanche"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "D",
-      "C",
-      "A",
-      "B"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Dans un groupe de 105 personnes, 25 jouent au tennis, 25 jouent au football et 9 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "68",
       "55",
-      "10",
       "64"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Disposition n°52 : Cinq personnes (Camille, Nicolas, Sarah, Alexandre, Manon) sont assises en ligne. Camille est à côté de Nicolas. Sarah est immédiatement à droite de Alexandre. Manon est à l'extrême gauche. Si Nicolas est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Michel",
-      "Henri",
-      "Pierre",
-      "Jacques"
+      "Manon",
+      "Camille",
+      "Sarah",
+      "Alexandre"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
+    "prompt": "Sachant que la proposition 'Proposition n°53 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
     "options": [
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Aucun diplômé ne fait partie du bureau"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Énigme de Vérité n°54 : Marc affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
       "Mercredi",
-      "Mardi",
       "Dimanche",
-      "Lundi"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "B",
-      "A",
-      "C",
-      "D"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 110 personnes, 20 jouent au tennis, 22 jouent au football et 6 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "7",
-      "68",
-      "74",
-      "78"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Henri",
-      "Pierre",
-      "Jacques",
-      "Michel"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
       "Lundi",
-      "Mercredi",
-      "Mardi",
-      "Dimanche"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "D",
-      "B",
-      "C",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 115 personnes, 25 jouent au tennis, 19 jouent au football et 7 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "78",
-      "8",
-      "82",
-      "71"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Jacques",
-      "Pierre",
-      "Michel",
-      "Henri"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Mardi",
-      "Dimanche",
-      "Mercredi",
-      "Lundi"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "B",
-      "A",
-      "C",
-      "D"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 120 personnes, 20 jouent au tennis, 24 jouent au football et 8 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "84",
-      "88",
-      "76",
-      "9"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Jacques",
-      "Pierre",
-      "Henri",
-      "Michel"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Lundi",
-      "Mardi",
-      "Mercredi",
-      "Dimanche"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "B",
-      "D",
-      "C",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 125 personnes, 25 jouent au tennis, 21 jouent au football et 9 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "79",
-      "88",
-      "10",
-      "92"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Pierre",
-      "Jacques",
-      "Michel",
-      "Henri"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Lundi",
-      "Dimanche",
-      "Mercredi",
       "Mardi"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°55 : Lors d'une course, Thomas termine avant Émilie mais après Lucas. Léa termine juste après Émilie. Qui a gagné la course ?",
     "options": [
-      "B",
-      "A",
-      "D",
-      "C"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Dans un groupe de 130 personnes, 20 jouent au tennis, 18 jouent au football et 6 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "92",
-      "102",
-      "98",
-      "7"
+      "Thomas",
+      "Léa",
+      "Lucas",
+      "Émilie"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Problème Logique n°56 : Dans un groupe de 95 personnes, 23 pratiquent le tennis, 22 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "Jacques",
-      "Michel",
-      "Pierre",
-      "Henri"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
-    "options": [
-      "Mardi",
-      "Mercredi",
-      "Dimanche",
-      "Lundi"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
-    "options": [
-      "D",
-      "B",
-      "C",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 135 personnes, 25 jouent au tennis, 23 jouent au football et 7 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "94",
-      "87",
-      "98",
+      "50",
+      "55",
+      "59",
       "8"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Disposition n°57 : Cinq personnes (Alice, Bob, Charlie, David, Ève) sont assises en ligne. Alice est à côté de Bob. Charlie est immédiatement à droite de David. Ève est à l'extrême gauche. Si Bob est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Henri",
-      "Michel",
-      "Jacques",
-      "Pierre"
+      "Ève",
+      "Charlie",
+      "Alice",
+      "David"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°58 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Aucun diplômé ne fait partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Énigme de Vérité n°59 : Thomas affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Lundi",
+      "Mercredi",
+      "Mardi",
+      "Dimanche"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
+    "prompt": "Ordre d'arrivée n°60 : Lors d'une course, Camille termine avant Nicolas mais après Sarah. Alexandre termine juste après Nicolas. Qui a gagné la course ?",
     "options": [
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Tous les diplômés de l'entreprise sont comptables"
+      "Nicolas",
+      "Camille",
+      "Sarah",
+      "Alexandre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Logique n°61 : Dans un groupe de 100 personnes, 18 pratiquent le tennis, 19 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "68",
+      "8",
+      "63",
+      "72"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Disposition n°62 : Cinq personnes (Marc, Pierre, Sophie, Julie, Antoine) sont assises en ligne. Marc est à côté de Pierre. Sophie est immédiatement à droite de Julie. Antoine est à l'extrême gauche. Si Pierre est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Marc",
+      "Julie",
+      "Antoine",
+      "Sophie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°63 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Aucun diplômé ne fait partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Énigme de Vérité n°64 : Camille affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Lundi",
+      "Mercredi",
+      "Dimanche",
+      "Mardi"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Ordre d'arrivée n°65 : Lors d'une course, Alice termine avant Bob mais après Charlie. David termine juste après Bob. Qui a gagné la course ?",
+    "options": [
+      "Bob",
+      "Charlie",
+      "Alice",
+      "David"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Problème Logique n°66 : Dans un groupe de 105 personnes, 23 pratiquent le tennis, 16 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "75",
+      "8",
+      "71",
+      "66"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Disposition n°67 : Cinq personnes (Thomas, Émilie, Lucas, Léa, Hugo) sont assises en ligne. Thomas est à côté de Émilie. Lucas est immédiatement à droite de Léa. Hugo est à l'extrême gauche. Si Émilie est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Hugo",
+      "Lucas",
+      "Thomas",
+      "Léa"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°68 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Énigme de Vérité n°69 : Alice affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Dimanche",
+      "Mardi",
+      "Mercredi",
+      "Lundi"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Ordre d'arrivée n°70 : Lors d'une course, Marc termine avant Pierre mais après Sophie. Julie termine juste après Pierre. Qui a gagné la course ?",
+    "options": [
+      "Sophie",
+      "Julie",
+      "Pierre",
+      "Marc"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Logique n°71 : Dans un groupe de 110 personnes, 18 pratiquent le tennis, 21 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "80",
+      "71",
+      "8",
+      "76"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Disposition n°72 : Cinq personnes (Camille, Nicolas, Sarah, Alexandre, Manon) sont assises en ligne. Camille est à côté de Nicolas. Sarah est immédiatement à droite de Alexandre. Manon est à l'extrême gauche. Si Nicolas est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Alexandre",
+      "Manon",
+      "Camille",
+      "Sarah"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°73 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Énigme de Vérité n°74 : Marc affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Mercredi",
+      "Mardi",
+      "Lundi",
+      "Dimanche"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Ordre d'arrivée n°75 : Lors d'une course, Thomas termine avant Émilie mais après Lucas. Léa termine juste après Émilie. Qui a gagné la course ?",
+    "options": [
+      "Émilie",
+      "Thomas",
+      "Lucas",
+      "Léa"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Problème Logique n°76 : Dans un groupe de 115 personnes, 23 pratiquent le tennis, 18 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "79",
+      "8",
+      "74",
+      "83"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Disposition n°77 : Cinq personnes (Alice, Bob, Charlie, David, Ève) sont assises en ligne. Alice est à côté de Bob. Charlie est immédiatement à droite de David. Ève est à l'extrême gauche. Si Bob est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Charlie",
+      "Alice",
+      "David",
+      "Ève"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°78 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Énigme de Vérité n°79 : Thomas affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
       "Mercredi",
       "Dimanche",
@@ -2959,47 +2909,147 @@ export const TM_RAISONNEMENT_QUESTIONS = [
     "answerIndex": 1
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°80 : Lors d'une course, Camille termine avant Nicolas mais après Sarah. Alexandre termine juste après Nicolas. Qui a gagné la course ?",
     "options": [
-      "A",
-      "C",
-      "D",
-      "B"
+      "Sarah",
+      "Nicolas",
+      "Camille",
+      "Alexandre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Problème Logique n°81 : Dans un groupe de 120 personnes, 18 pratiquent le tennis, 15 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "92",
+      "8",
+      "87",
+      "96"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Disposition n°82 : Cinq personnes (Marc, Pierre, Sophie, Julie, Antoine) sont assises en ligne. Marc est à côté de Pierre. Sophie est immédiatement à droite de Julie. Antoine est à l'extrême gauche. Si Pierre est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Julie",
+      "Antoine",
+      "Sophie",
+      "Marc"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°83 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Dans un groupe de 140 personnes, 20 jouent au tennis, 20 jouent au football et 8 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
+    "prompt": "Énigme de Vérité n°84 : Camille affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
-      "112",
-      "9",
-      "108",
-      "100"
+      "Mercredi",
+      "Mardi",
+      "Dimanche",
+      "Lundi"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Ordre d'arrivée n°85 : Lors d'une course, Alice termine avant Bob mais après Charlie. David termine juste après Bob. Qui a gagné la course ?",
     "options": [
-      "Henri",
-      "Michel",
-      "Jacques",
-      "Pierre"
+      "Charlie",
+      "David",
+      "Bob",
+      "Alice"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
+    "prompt": "Problème Logique n°86 : Dans un groupe de 125 personnes, 23 pratiquent le tennis, 20 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable",
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable"
+      "87",
+      "82",
+      "8",
+      "91"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Disposition n°87 : Cinq personnes (Thomas, Émilie, Lucas, Léa, Hugo) sont assises en ligne. Thomas est à côté de Émilie. Lucas est immédiatement à droite de Léa. Hugo est à l'extrême gauche. Si Émilie est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Lucas",
+      "Thomas",
+      "Hugo",
+      "Léa"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°88 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Énigme de Vérité n°89 : Alice affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
+      "Mercredi",
+      "Lundi",
+      "Dimanche",
+      "Mardi"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Ordre d'arrivée n°90 : Lors d'une course, Marc termine avant Pierre mais après Sophie. Julie termine juste après Pierre. Qui a gagné la course ?",
+    "options": [
+      "Marc",
+      "Sophie",
+      "Pierre",
+      "Julie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Problème Logique n°91 : Dans un groupe de 130 personnes, 18 pratiquent le tennis, 17 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
+    "options": [
+      "95",
+      "100",
+      "8",
+      "104"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Disposition n°92 : Cinq personnes (Camille, Nicolas, Sarah, Alexandre, Manon) sont assises en ligne. Camille est à côté de Nicolas. Sarah est immédiatement à droite de Alexandre. Manon est à l'extrême gauche. Si Nicolas est au milieu, qui occupe la deuxième position depuis la gauche ?",
+    "options": [
+      "Camille",
+      "Manon",
+      "Sarah",
+      "Alexandre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°93 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Toutes les personnes diplômées sont membres du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°94 : Marc affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
       "Mercredi",
       "Lundi",
@@ -3009,177 +3059,120 @@ export const TM_RAISONNEMENT_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°95 : Lors d'une course, Thomas termine avant Émilie mais après Lucas. Léa termine juste après Émilie. Qui a gagné la course ?",
     "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Dans un groupe de 145 personnes, 25 jouent au tennis, 25 jouent au football et 9 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
-    "options": [
-      "108",
-      "104",
-      "10",
-      "95"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
-    "options": [
-      "Michel",
-      "Jacques",
-      "Henri",
-      "Pierre"
+      "Émilie",
+      "Thomas",
+      "Léa",
+      "Lucas"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
+    "prompt": "Problème Logique n°96 : Dans un groupe de 135 personnes, 23 pratiquent le tennis, 22 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable"
+      "95",
+      "8",
+      "99",
+      "90"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Disposition n°97 : Cinq personnes (Alice, Bob, Charlie, David, Ève) sont assises en ligne. Alice est à côté de Bob. Charlie est immédiatement à droite de David. Ève est à l'extrême gauche. Si Bob est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Dimanche",
+      "Charlie",
+      "Alice",
+      "David",
+      "Ève"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°98 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Énigme de Vérité n°99 : Thomas affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
+    "options": [
       "Lundi",
       "Mercredi",
+      "Dimanche",
       "Mardi"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°100 : Lors d'une course, Camille termine avant Nicolas mais après Sarah. Alexandre termine juste après Nicolas. Qui a gagné la course ?",
     "options": [
-      "C",
-      "B",
-      "D",
-      "A"
+      "Nicolas",
+      "Alexandre",
+      "Camille",
+      "Sarah"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "Dans un groupe de 150 personnes, 20 jouent au tennis, 22 jouent au football et 6 pratiquent les deux sports. Combien de personnes ne pratiquent aucun de ces deux sports ?",
+    "prompt": "Problème Logique n°101 : Dans un groupe de 140 personnes, 18 pratiquent le tennis, 19 la natation et 5 pratiquent les deux sports. Combien ne pratiquent aucun de ces deux sports ?",
     "options": [
-      "7",
-      "114",
+      "103",
       "108",
-      "118"
+      "112",
+      "8"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Cinq personnes (Pierre, Paul, Jacques, Michel, Henri) sont assises en ligne. Pierre est à côté de Paul. Jacques est à droite de Michel. Henri est à l'extrême gauche. Si Paul est au milieu, qui est en 2e position depuis la gauche ?",
+    "prompt": "Disposition n°102 : Cinq personnes (Marc, Pierre, Sophie, Julie, Antoine) sont assises en ligne. Marc est à côté de Pierre. Sophie est immédiatement à droite de Julie. Antoine est à l'extrême gauche. Si Pierre est au milieu, qui occupe la deuxième position depuis la gauche ?",
     "options": [
-      "Michel",
-      "Jacques",
-      "Pierre",
-      "Henri"
+      "Sophie",
+      "Marc",
+      "Antoine",
+      "Julie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Sachant que la proposition 'Proposition n°103 : 'Tous les membres du bureau sont diplômés'.' est rigoureusement VRAIE, quelle affirmation est nécessairement VRAIE ?",
+    "options": [
+      "Si une personne est diplômée, elle fait obligatoirement partie du bureau",
+      "Aucun diplômé ne fait partie du bureau",
+      "Si une personne n'est pas diplômée, elle n'est pas membre du bureau (Contraposée)",
+      "Toutes les personnes diplômées sont membres du bureau"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Si l'affirmation 'Tous les comptables de l'entreprise sont diplômés d'un Master' est VRAIE, quelle proposition est rigoureusement exacte ?",
-    "options": [
-      "Aucun diplômé de Master ne travaille dans l'entreprise",
-      "Tous les diplômés de l'entreprise sont comptables",
-      "Si un employé n'est pas diplômé d'un Master, alors il n'est pas comptable",
-      "Si un employé est diplômé d'un Master, il est obligatoirement comptable"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Alain déclare : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment exclusivement soit le lundi, soit le mardi, quel jour sommes-nous ?",
+    "prompt": "Énigme de Vérité n°104 : Camille affirme : 'Je mentirai demain et je dis la vérité aujourd'hui'. Sachant qu'il ment soit le lundi, soit le mardi, quel jour cette affirmation a-t-elle été faite ?",
     "options": [
       "Mardi",
+      "Mercredi",
       "Lundi",
-      "Dimanche",
-      "Mercredi"
+      "Dimanche"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
-    "prompt": "Lors d'une course automobile, le bolide A dépasse B mais reste derrière C. Le bolide D termine juste derrière B. Quel véhicule a remporté la 1re place parmi ces quatre ?",
+    "prompt": "Ordre d'arrivée n°105 : Lors d'une course, Alice termine avant Bob mais après Charlie. David termine juste après Bob. Qui a gagné la course ?",
     "options": [
-      "D",
-      "C",
-      "A",
-      "B"
+      "Charlie",
+      "Bob",
+      "David",
+      "Alice"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   }
-];
-
-const CM_STANDARD_OPTIONS = [
-  "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
-  "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
-  "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
-  "(D) Chaque information seule est suffisante.",
-  "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
 ];
 
 export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
   {
-    prompt: "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 30 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 60 €.",
-    options: CM_STANDARD_OPTIONS,
-    answerIndex: 4
-  },
-  {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 45 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
-    "options": [
-      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
-      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
-      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
-      "(D) Chaque information seule est suffisante.",
-      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 625<br>Information (2) : n³ = 15625",
-    "options": [
-      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
-      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
-      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
-      "(D) Chaque information seule est suffisante.",
-      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 35 m.<br>Information (2) : La largeur l est de 9 m.",
-    "options": [
-      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
-      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
-      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
-      "(D) Chaque information seule est suffisante.",
-      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 49",
-    "options": [
-      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
-      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
-      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
-      "(D) Chaque information seule est suffisante.",
-      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 80 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 160 €.",
+    "prompt": "Conditions Minimales n°1 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 20 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 40 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3190,7 +3183,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 50 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°2 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 21 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3201,7 +3194,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 900<br>Information (2) : n³ = 27000",
+    "prompt": "Conditions Minimales n°3 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 36<br>Information (2) : n³ = 216",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3212,7 +3205,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 40 m.<br>Information (2) : La largeur l est de 6 m.",
+    "prompt": "Conditions Minimales n°4 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 13 m.<br>Information (2) : La largeur du terrain est de 8 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3223,7 +3216,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 54",
+    "prompt": "Conditions Minimales n°5 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 20",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3234,7 +3227,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 90 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 180 €.",
+    "prompt": "Conditions Minimales n°6 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 30 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 60 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3245,7 +3238,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 55 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°7 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 26 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3256,7 +3249,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 1225<br>Information (2) : n³ = 42875",
+    "prompt": "Conditions Minimales n°8 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 121<br>Information (2) : n³ = 1331",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3267,7 +3260,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 45 m.<br>Information (2) : La largeur l est de 7 m.",
+    "prompt": "Conditions Minimales n°9 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 18 m.<br>Information (2) : La largeur du terrain est de 5 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3278,7 +3271,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 59",
+    "prompt": "Conditions Minimales n°10 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 25",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3289,7 +3282,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 100 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 200 €.",
+    "prompt": "Conditions Minimales n°11 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 40 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 80 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3300,7 +3293,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 60 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°12 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 31 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3311,7 +3304,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 1600<br>Information (2) : n³ = 64000",
+    "prompt": "Conditions Minimales n°13 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 256<br>Information (2) : n³ = 4096",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3322,7 +3315,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 50 m.<br>Information (2) : La largeur l est de 8 m.",
+    "prompt": "Conditions Minimales n°14 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 23 m.<br>Information (2) : La largeur du terrain est de 6 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3333,7 +3326,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 64",
+    "prompt": "Conditions Minimales n°15 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 30",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3344,7 +3337,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 110 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 220 €.",
+    "prompt": "Conditions Minimales n°16 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 50 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 100 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3355,7 +3348,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 65 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°17 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 36 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3366,7 +3359,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 2025<br>Information (2) : n³ = 91125",
+    "prompt": "Conditions Minimales n°18 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 441<br>Information (2) : n³ = 9261",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3377,7 +3370,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 55 m.<br>Information (2) : La largeur l est de 9 m.",
+    "prompt": "Conditions Minimales n°19 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 28 m.<br>Information (2) : La largeur du terrain est de 7 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3388,7 +3381,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 69",
+    "prompt": "Conditions Minimales n°20 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 35",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3399,7 +3392,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 120 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 240 €.",
+    "prompt": "Conditions Minimales n°21 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 60 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 120 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3410,7 +3403,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 70 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°22 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 41 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3421,7 +3414,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 2500<br>Information (2) : n³ = 125000",
+    "prompt": "Conditions Minimales n°23 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 676<br>Information (2) : n³ = 17576",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3432,7 +3425,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 60 m.<br>Information (2) : La largeur l est de 6 m.",
+    "prompt": "Conditions Minimales n°24 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 33 m.<br>Information (2) : La largeur du terrain est de 8 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3443,7 +3436,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 74",
+    "prompt": "Conditions Minimales n°25 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 40",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3454,7 +3447,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 130 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 260 €.",
+    "prompt": "Conditions Minimales n°26 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 70 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 140 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3465,7 +3458,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 75 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°27 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 46 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3476,7 +3469,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 3025<br>Information (2) : n³ = 166375",
+    "prompt": "Conditions Minimales n°28 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 961<br>Information (2) : n³ = 29791",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3487,7 +3480,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 65 m.<br>Information (2) : La largeur l est de 7 m.",
+    "prompt": "Conditions Minimales n°29 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 38 m.<br>Information (2) : La largeur du terrain est de 5 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3498,7 +3491,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 79",
+    "prompt": "Conditions Minimales n°30 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 45",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3509,7 +3502,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 140 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 280 €.",
+    "prompt": "Conditions Minimales n°31 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 80 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 160 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3520,7 +3513,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 80 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°32 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 51 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3531,7 +3524,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 3600<br>Information (2) : n³ = 216000",
+    "prompt": "Conditions Minimales n°33 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 1296<br>Information (2) : n³ = 46656",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3542,7 +3535,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 70 m.<br>Information (2) : La largeur l est de 8 m.",
+    "prompt": "Conditions Minimales n°34 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 43 m.<br>Information (2) : La largeur du terrain est de 6 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3553,7 +3546,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 84",
+    "prompt": "Conditions Minimales n°35 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 50",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3564,7 +3557,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 150 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 300 €.",
+    "prompt": "Conditions Minimales n°36 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 90 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 180 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3575,7 +3568,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 85 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°37 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 56 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3586,7 +3579,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 4225<br>Information (2) : n³ = 274625",
+    "prompt": "Conditions Minimales n°38 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 1681<br>Information (2) : n³ = 68921",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3597,7 +3590,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 75 m.<br>Information (2) : La largeur l est de 9 m.",
+    "prompt": "Conditions Minimales n°39 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 48 m.<br>Information (2) : La largeur du terrain est de 7 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3608,7 +3601,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 89",
+    "prompt": "Conditions Minimales n°40 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 55",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3619,7 +3612,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 160 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 320 €.",
+    "prompt": "Conditions Minimales n°41 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 100 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 200 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3630,7 +3623,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 90 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°42 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 61 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3641,7 +3634,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 4900<br>Information (2) : n³ = 343000",
+    "prompt": "Conditions Minimales n°43 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 2116<br>Information (2) : n³ = 97336",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3652,7 +3645,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 80 m.<br>Information (2) : La largeur l est de 6 m.",
+    "prompt": "Conditions Minimales n°44 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 53 m.<br>Information (2) : La largeur du terrain est de 8 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3663,7 +3656,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 94",
+    "prompt": "Conditions Minimales n°45 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 60",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3674,7 +3667,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 170 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 340 €.",
+    "prompt": "Conditions Minimales n°46 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 110 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 220 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3685,7 +3678,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 95 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°47 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 66 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3696,7 +3689,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 5625<br>Information (2) : n³ = 421875",
+    "prompt": "Conditions Minimales n°48 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 2601<br>Information (2) : n³ = 132651",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3707,7 +3700,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 85 m.<br>Information (2) : La largeur l est de 7 m.",
+    "prompt": "Conditions Minimales n°49 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 58 m.<br>Information (2) : La largeur du terrain est de 5 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3718,7 +3711,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 99",
+    "prompt": "Conditions Minimales n°50 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 65",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3729,7 +3722,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 180 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 360 €.",
+    "prompt": "Conditions Minimales n°51 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 120 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 240 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3740,7 +3733,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 100 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°52 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 71 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3751,7 +3744,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 6400<br>Information (2) : n³ = 512000",
+    "prompt": "Conditions Minimales n°53 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 3136<br>Information (2) : n³ = 175616",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3762,7 +3755,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 90 m.<br>Information (2) : La largeur l est de 8 m.",
+    "prompt": "Conditions Minimales n°54 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 63 m.<br>Information (2) : La largeur du terrain est de 6 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3773,7 +3766,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 104",
+    "prompt": "Conditions Minimales n°55 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 70",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3784,7 +3777,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 190 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 380 €.",
+    "prompt": "Conditions Minimales n°56 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 130 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 260 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3795,7 +3788,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 105 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°57 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 76 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3806,7 +3799,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 7225<br>Information (2) : n³ = 614125",
+    "prompt": "Conditions Minimales n°58 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 3721<br>Information (2) : n³ = 226981",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3817,7 +3810,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 95 m.<br>Information (2) : La largeur l est de 9 m.",
+    "prompt": "Conditions Minimales n°59 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 68 m.<br>Information (2) : La largeur du terrain est de 7 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3828,7 +3821,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 109",
+    "prompt": "Conditions Minimales n°60 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 75",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3839,7 +3832,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 200 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 400 €.",
+    "prompt": "Conditions Minimales n°61 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 140 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 280 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3850,7 +3843,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 110 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°62 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 81 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3861,7 +3854,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 8100<br>Information (2) : n³ = 729000",
+    "prompt": "Conditions Minimales n°63 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 4356<br>Information (2) : n³ = 287496",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3872,7 +3865,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 100 m.<br>Information (2) : La largeur l est de 6 m.",
+    "prompt": "Conditions Minimales n°64 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 73 m.<br>Information (2) : La largeur du terrain est de 8 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3883,7 +3876,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 114",
+    "prompt": "Conditions Minimales n°65 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 80",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3894,7 +3887,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 210 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 420 €.",
+    "prompt": "Conditions Minimales n°66 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 150 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 300 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3905,7 +3898,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 115 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°67 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 86 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3916,7 +3909,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 9025<br>Information (2) : n³ = 857375",
+    "prompt": "Conditions Minimales n°68 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 5041<br>Information (2) : n³ = 357911",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3927,7 +3920,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 105 m.<br>Information (2) : La largeur l est de 7 m.",
+    "prompt": "Conditions Minimales n°69 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 78 m.<br>Information (2) : La largeur du terrain est de 5 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3938,7 +3931,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 119",
+    "prompt": "Conditions Minimales n°70 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 85",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3949,7 +3942,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 220 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 440 €.",
+    "prompt": "Conditions Minimales n°71 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 160 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 320 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3960,7 +3953,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 120 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°72 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 91 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3971,7 +3964,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 10000<br>Information (2) : n³ = 1000000",
+    "prompt": "Conditions Minimales n°73 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 5776<br>Information (2) : n³ = 438976",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3982,7 +3975,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 110 m.<br>Information (2) : La largeur l est de 8 m.",
+    "prompt": "Conditions Minimales n°74 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 83 m.<br>Information (2) : La largeur du terrain est de 6 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -3993,7 +3986,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 124",
+    "prompt": "Conditions Minimales n°75 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 90",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -4004,7 +3997,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 0
   },
   {
-    "prompt": "On souhaite déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 230 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 460 €.",
+    "prompt": "Conditions Minimales n°76 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 170 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 340 €.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -4015,7 +4008,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 4
   },
   {
-    "prompt": "Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 125 ans de plus que son fils F.<br>Information (2) : Dans 4 ans, le père aura le triple de l'âge de son fils.",
+    "prompt": "Conditions Minimales n°77 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 96 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -4026,7 +4019,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 11025<br>Information (2) : n³ = 1157625",
+    "prompt": "Conditions Minimales n°78 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 6561<br>Information (2) : n³ = 531441",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -4037,7 +4030,7 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur L est de 115 m.<br>Information (2) : La largeur l est de 9 m.",
+    "prompt": "Conditions Minimales n°79 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 88 m.<br>Information (2) : La largeur du terrain est de 7 m.",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -4048,7 +4041,282 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
     "answerIndex": 2
   },
   {
-    "prompt": "Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 129",
+    "prompt": "Conditions Minimales n°80 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 95",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Conditions Minimales n°81 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 180 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 360 €.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 4
+  },
+  {
+    "prompt": "Conditions Minimales n°82 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 101 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°83 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 7396<br>Information (2) : n³ = 636056",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Conditions Minimales n°84 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 93 m.<br>Information (2) : La largeur du terrain est de 8 m.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°85 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 100",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Conditions Minimales n°86 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 190 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 380 €.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 4
+  },
+  {
+    "prompt": "Conditions Minimales n°87 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 106 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°88 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 8281<br>Information (2) : n³ = 753571",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Conditions Minimales n°89 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 98 m.<br>Information (2) : La largeur du terrain est de 5 m.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°90 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 105",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Conditions Minimales n°91 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 200 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 400 €.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 4
+  },
+  {
+    "prompt": "Conditions Minimales n°92 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 111 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°93 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 9216<br>Information (2) : n³ = 884736",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Conditions Minimales n°94 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 103 m.<br>Information (2) : La largeur du terrain est de 6 m.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°95 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 110",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Conditions Minimales n°96 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 210 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 420 €.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 4
+  },
+  {
+    "prompt": "Conditions Minimales n°97 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 116 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°98 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 10201<br>Information (2) : n³ = 1030301",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Conditions Minimales n°99 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 108 m.<br>Information (2) : La largeur du terrain est de 7 m.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°100 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 115",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Conditions Minimales n°101 : On veut déterminer le prix unitaire d'un livre x.<br>Information (1) : 3 livres et 2 cahiers coûtent 220 €.<br>Information (2) : 6 livres et 4 cahiers coûtent 440 €.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 4
+  },
+  {
+    "prompt": "Conditions Minimales n°102 : Quel est l'âge actuel d'un père P ?<br>Information (1) : Le père a 121 ans de plus que son fils.<br>Information (2) : Dans 5 ans, le père aura le triple de l'âge de son fils.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°103 : Quelle est la valeur de l'entier positif n ?<br>Information (1) : n² = 11236<br>Information (2) : n³ = 1191016",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Conditions Minimales n°104 : Quelle est la surface d'un terrain rectangulaire T ?<br>Information (1) : La longueur du terrain est de 113 m.<br>Information (2) : La largeur du terrain est de 8 m.",
+    "options": [
+      "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
+      "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
+      "(C) Les deux informations (1) et (2) ensemble sont suffisantes, mais aucune des deux seule ne l'est.",
+      "(D) Chaque information seule est suffisante.",
+      "(E) Les deux informations (1) et (2) ensemble ne sont pas suffisantes."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Conditions Minimales n°105 : Le nombre réel x est-il strictement positif ?<br>Information (1) : x³ > 0<br>Information (2) : x² = 120",
     "options": [
       "(A) L'information (1) seule est suffisante, mais l'information (2) seule ne l'est pas.",
       "(B) L'information (2) seule est suffisante, mais l'information (1) seule ne l'est pas.",
@@ -4062,397 +4330,97 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
 
 export const TM_EXPRESSION_QUESTIONS = [
   {
-    "prompt": "[Question d'Expression n°1] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier le problème",
-      "Pallier au problème",
-      "Pallier de ce problème",
-      "Pallier avec le problème"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°2] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "fût",
-      "soit",
-      "est",
-      "serait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°3] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait",
-      "fît",
-      "fasse",
-      "ferait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°4] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Variable",
-      "Neutre",
-      "Masculin",
-      "Féminin"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°5] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Masculin",
-      "Féminin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°6] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dilemne",
-      "Dileme",
-      "Dillemme",
-      "Dilemme"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°7] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Invariable",
-      "Accordé en genre",
-      "Variable",
-      "Accordé en nombre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°8] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyers",
-      "envoyé",
-      "envoyés",
-      "envoyées"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°9] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Prescrire un traitement",
-      "Recommander chaudement",
-      "Rédiger une ordonnance"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°10] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "De collaborer",
-      "Collaborer ensemble",
-      "Décidé de",
-      "Ils ont décidé"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°11] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier le problème",
-      "Pallier avec le problème",
-      "Pallier au problème",
-      "Pallier de ce problème"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°12] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "est",
-      "soit",
-      "fût",
-      "serait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°13] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse",
-      "ferait",
-      "fait",
-      "fît"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°14] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Variable",
-      "Féminin",
-      "Neutre",
-      "Masculin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°15] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Masculin",
-      "Neutre",
-      "Variable",
-      "Féminin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°16] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dilemme",
-      "Dilemne",
-      "Dillemme",
-      "Dileme"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°17] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Accordé en genre",
-      "Invariable",
-      "Accordé en nombre",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°18] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyers",
-      "envoyées",
-      "envoyés",
-      "envoyé"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°19] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Rédiger une ordonnance",
-      "Recommander chaudement",
-      "Prescrire un traitement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°20] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "De collaborer",
-      "Ils ont décidé",
-      "Décidé de",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°21] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "prompt": "Question Expression n°1 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
     "options": [
       "Pallier de ce problème",
+      "Pallier le problème (COD direct)",
       "Pallier avec le problème",
-      "Pallier le problème",
       "Pallier au problème"
     ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°22] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "soit",
-      "fût",
-      "serait",
-      "est"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°23] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait",
-      "ferait",
-      "fasse",
-      "fît"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°24] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Masculin",
-      "Neutre",
-      "Féminin",
-      "Variable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°25] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Masculin",
-      "Neutre",
-      "Féminin",
-      "Variable"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°26] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dillemme",
-      "Dilemne",
-      "Dileme",
-      "Dilemme"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°27] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Accordé en genre",
-      "Invariable",
-      "Accordé en nombre",
-      "Variable"
-    ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Question d'Expression n°28] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyés",
-      "envoyé",
-      "envoyées",
-      "envoyers"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°29] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Recommander chaudement",
-      "Prescrire un traitement",
-      "Interdire formellement",
-      "Rédiger une ordonnance"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°30] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "Décidé de",
-      "Collaborer ensemble",
-      "Ils ont décidé",
-      "De collaborer"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°31] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier au problème",
-      "Pallier le problème",
-      "Pallier avec le problème",
-      "Pallier de ce problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°32] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
+    "prompt": "Question Expression n°2 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
     "options": [
       "fût",
       "serait",
-      "soit",
-      "est"
+      "est (Indicatif obligatoire)",
+      "soit (Subjonctif faux)"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
-    "prompt": "[Question d'Expression n°33] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "prompt": "Question Expression n°3 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
     "options": [
-      "fait",
+      "fait (Indicatif faux)",
       "fît",
-      "fasse",
-      "ferait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°34] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Masculin",
-      "Variable",
-      "Neutre",
-      "Féminin"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°35] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Variable",
-      "Masculin",
-      "Neutre",
-      "Féminin"
+      "ferait",
+      "fasse (Subjonctif obligatoire)"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Question d'Expression n°36] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
+    "prompt": "Question Expression n°4 : Quel est le genre exact du mot 'aphte' ?",
     "options": [
-      "Dileme",
-      "Dilemne",
-      "Dilemme",
-      "Dillemme"
+      "Neutre",
+      "Variable",
+      "Masculin (un aphte)",
+      "Féminin (une aphte)"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Question d'Expression n°37] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
+    "prompt": "Question Expression n°5 : Quel est le genre exact du mot 'acné' ?",
     "options": [
       "Variable",
-      "Invariable",
-      "Accordé en genre",
-      "Accordé en nombre"
+      "Féminin (une acné)",
+      "Masculin (un acné)",
+      "Neutre"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Question d'Expression n°38] Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "prompt": "Question Expression n°6 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
     "options": [
-      "envoyé",
-      "envoyés",
-      "envoyées",
-      "envoyers"
+      "Dilemme (avec 2 'm')",
+      "Dillemme",
+      "Dileme",
+      "Dilemne (avec 'nm')"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Question d'Expression n°39] Quel est le sens exact du verbe 'proscrire' ?",
+    "prompt": "Question Expression n°7 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
     "options": [
-      "Recommander chaudement",
-      "Prescrire un traitement",
-      "Rédiger une ordonnance",
-      "Interdire formellement"
+      "Invariable (une demi-heure)",
+      "Accordé en nombre (des demis-heures)",
+      "Variable selon le contexte",
+      "Accordé en genre (une demie-heure)"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "[Question d'Expression n°40] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
+    "prompt": "Question Expression n°8 : Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "options": [
+      "envoyés",
+      "envoyers",
+      "envoyé (invariable car COD après)",
+      "envoyées"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°9 : Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Rédiger un texte",
+      "Recommander chaudement",
+      "Interdire formellement",
+      "Prescrire un médicament"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°10 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
     "options": [
       "Décidé de",
       "De collaborer",
@@ -4462,652 +4430,952 @@ export const TM_EXPRESSION_QUESTIONS = [
     "answerIndex": 3
   },
   {
-    "prompt": "[Question d'Expression n°41] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "prompt": "Question Expression n°11 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
     "options": [
-      "Pallier au problème",
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier le problème"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°42] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "soit",
-      "fût",
-      "est",
-      "serait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°43] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait",
-      "fasse",
-      "fît",
-      "ferait"
+      "Je me rappelle de cette règle",
+      "Je me rappelle cette règle",
+      "Je me rappelle sur cette règle",
+      "Je me rappelle à cette règle"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Question d'Expression n°44] Quel est le genre exact du mot 'aphte' ?",
+    "prompt": "Question Expression n°12 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
     "options": [
-      "Masculin",
-      "Féminin",
+      "rappelle (avec 'de')",
+      "remémore de",
+      "repense de",
+      "souviens (avec 'de')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°13 : Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleu marine",
+      "bleues marines",
+      "bleu marines",
+      "bleues marine"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°14 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marrons",
+      "marron",
+      "marrone",
+      "marronnes"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°15 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faite",
+      "fait (invariable devant infinitif)",
+      "faites",
+      "faits"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°16 : Orthographe correcte du mot désignant l'avance sur paiement :",
+    "options": [
+      "Acompte (un seul 'c')",
+      "Aconte",
+      "Ahcompte",
+      "Accompte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°17 : Quel est le genre du mot 'épitaphe' ?",
+    "options": [
+      "Féminin (une épitaphe)",
+      "Neutre",
       "Variable",
+      "Masculin (un épitaphe)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°18 : Quel est le genre du mot 'pétale' ?",
+    "options": [
+      "Variable",
+      "Neutre",
+      "Masculin (un pétale)",
+      "Féminin (une pétale)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°19 : Que signifie le paronyme 'démythifier' ?",
+    "options": [
+      "Accuser à tort",
+      "Raconter une légende",
+      "Dépouiller un récit de son caractère mythique",
+      "Dévoiler une supercherie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°20 : Que signifie le paronyme 'démystifier' ?",
+    "options": [
+      "Enlever le caractère mythique",
+      "Consacrer un texte",
+      "Détruire une tromperie ou mystification",
+      "Raconter un conte"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°21 : Quel est le genre du mot 'alvéole' ?",
+    "options": [
+      "Masculin uniquement",
+      "Féminin (une alvéole) ou Masculin accepté",
+      "Toujours pluriel",
       "Neutre"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Question d'Expression n°45] Quel est le genre exact du mot 'acné' ?",
+    "prompt": "Question Expression n°22 : Quel est le genre du mot 'astérisque' ?",
     "options": [
-      "Masculin",
+      "Variable",
+      "Masculin (un astérisque)",
+      "Neutre",
+      "Féminin (une astérisque)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°23 : Quel est le genre du mot 'orbite' ?",
+    "options": [
       "Neutre",
       "Variable",
-      "Féminin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°46] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dileme",
-      "Dillemme",
-      "Dilemne",
-      "Dilemme"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°47] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Accordé en genre",
-      "Invariable",
-      "Variable",
-      "Accordé en nombre"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°48] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyé",
-      "envoyers",
-      "envoyés",
-      "envoyées"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°49] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Rédiger une ordonnance",
-      "Prescrire un traitement",
-      "Recommander chaudement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°50] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "Décidé de",
-      "Ils ont décidé",
-      "Collaborer ensemble",
-      "De collaborer"
+      "Féminin (une orbite)",
+      "Masculin (un orbite)"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Question d'Expression n°51] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "prompt": "Question Expression n°24 : Quelle est l'orthographe correcte du mot 'cauchemar' ?",
     "options": [
-      "Pallier le problème",
-      "Pallier de ce problème",
-      "Pallier avec le problème",
-      "Pallier au problème"
+      "Cauchemar (sans 'd' final)",
+      "Cossemare",
+      "Cauchemard",
+      "Cauchemarre"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Question d'Expression n°52] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
+    "prompt": "Question Expression n°25 : Quelle est l'orthographe correcte du mot 'langage' ?",
     "options": [
-      "soit",
-      "serait",
-      "fût",
-      "est"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°53] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fît",
-      "ferait",
-      "fasse",
-      "fait"
+      "Langaj",
+      "Language",
+      "Langage (sans 'u')",
+      "Langages"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Question d'Expression n°54] Quel est le genre exact du mot 'aphte' ?",
+    "prompt": "Question Expression n°26 : Quelle est la locution latine signifiant 'par le fait même' ?",
     "options": [
-      "Masculin",
-      "Neutre",
-      "Féminin",
-      "Variable"
+      "Ipso facto",
+      "In fine",
+      "Sine die",
+      "De facto"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Question d'Expression n°55] Quel est le genre exact du mot 'acné' ?",
+    "prompt": "Question Expression n°27 : Quelle locution latine signifie 'en dernière analyse' ?",
     "options": [
-      "Variable",
-      "Masculin",
-      "Féminin",
-      "Neutre"
+      "In fine",
+      "A priori",
+      "Ipso facto",
+      "Ad hoc"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "[Question d'Expression n°56] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
+    "prompt": "Question Expression n°28 : Accord de 'tout' adverbe devant consonne : 'Elles sont _____ honteuses.'",
     "options": [
-      "Dilemne",
-      "Dilemme",
-      "Dileme",
-      "Dillemme"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°57] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Variable",
-      "Accordé en genre",
-      "Accordé en nombre",
-      "Invariable"
+      "toute",
+      "tout",
+      "touts",
+      "toutes (devant consonne ou 'h' aspiré)"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Question d'Expression n°58] Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "prompt": "Question Expression n°29 : Accord de 'tout' adverbe devant voyelle : 'Elles sont _____ étonnées.'",
     "options": [
-      "envoyé",
-      "envoyés",
-      "envoyées",
-      "envoyers"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°59] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Rédiger une ordonnance",
-      "Recommander chaudement",
-      "Prescrire un traitement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°60] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "Décidé de",
-      "Collaborer ensemble",
-      "De collaborer",
-      "Ils ont décidé"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°61] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier au problème",
-      "Pallier le problème"
+      "touts",
+      "toutes",
+      "toute",
+      "tout (invariable devant voyelle)"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Question d'Expression n°62] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
+    "prompt": "Question Expression n°30 : Quel est le sens exact de 'prescrire' ?",
     "options": [
-      "soit",
-      "est",
-      "fût",
-      "serait"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°63] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse",
-      "ferait",
-      "fait",
-      "fît"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°64] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Neutre",
-      "Masculin",
-      "Féminin",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°65] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Féminin",
-      "Masculin",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°66] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dileme",
-      "Dillemme",
-      "Dilemme",
-      "Dilemne"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°67] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Variable",
-      "Accordé en genre",
-      "Accordé en nombre",
-      "Invariable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°68] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyers",
-      "envoyé"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°69] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Prescrire un traitement",
-      "Interdire formellement",
-      "Rédiger une ordonnance",
-      "Recommander chaudement"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°70] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "De collaborer",
-      "Ils ont décidé",
-      "Décidé de",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°71] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier le problème",
-      "Pallier de ce problème",
-      "Pallier au problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°72] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "fût",
-      "est",
-      "soit",
-      "serait"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°73] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fît",
-      "ferait",
-      "fait",
-      "fasse"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°74] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Féminin",
-      "Neutre",
-      "Variable",
-      "Masculin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°75] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Féminin",
-      "Variable",
-      "Neutre",
-      "Masculin"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°76] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dileme",
-      "Dilemme",
-      "Dillemme",
-      "Dilemne"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°77] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Invariable",
-      "Accordé en nombre",
-      "Variable",
-      "Accordé en genre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°78] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyées",
-      "envoyers",
-      "envoyé",
-      "envoyés"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°79] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Prescrire un traitement",
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Rédiger une ordonnance"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°80] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "Ils ont décidé",
-      "Collaborer ensemble",
-      "De collaborer",
-      "Décidé de"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°81] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier de ce problème",
-      "Pallier au problème",
-      "Pallier le problème",
-      "Pallier avec le problème"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°82] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "est",
-      "serait",
-      "fût",
-      "soit"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°83] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fît",
-      "fasse",
-      "ferait",
-      "fait"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°84] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Masculin",
-      "Féminin",
-      "Variable",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°85] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Féminin",
-      "Neutre",
-      "Masculin",
-      "Variable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Question d'Expression n°86] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
-    "options": [
-      "Dillemme",
-      "Dileme",
-      "Dilemme",
-      "Dilemne"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°87] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Accordé en genre",
-      "Invariable",
-      "Accordé en nombre",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°88] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyés",
-      "envoyé",
-      "envoyées",
-      "envoyers"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°89] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Rédiger une ordonnance",
-      "Prescrire un traitement",
-      "Recommander chaudement",
+      "Ordonner ou recommander officiellement",
+      "Annuler un contrat",
+      "Rédiger un poème",
       "Interdire formellement"
     ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°90] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "De collaborer",
-      "Décidé de",
-      "Collaborer ensemble",
-      "Ils ont décidé"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°91] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier au problème",
-      "Pallier de ce problème",
-      "Pallier le problème"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°92] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
-    "options": [
-      "fût",
-      "serait",
-      "est",
-      "soit"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°93] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait",
-      "ferait",
-      "fasse",
-      "fît"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°94] Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Féminin",
-      "Masculin",
-      "Neutre",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°95] Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Féminin",
-      "Masculin",
-      "Neutre",
-      "Variable"
-    ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Question d'Expression n°96] Quelle est l'orthographe exacte du mot désignant un choix difficile ?",
+    "prompt": "Question Expression n°31 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
     "options": [
-      "Dillemme",
-      "Dilemne",
-      "Dileme",
-      "Dilemme"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°97] Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Variable",
-      "Accordé en genre",
-      "Invariable",
-      "Accordé en nombre"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°98] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyers",
-      "envoyés",
-      "envoyé",
-      "envoyées"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Question d'Expression n°99] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Recommander chaudement",
-      "Rédiger une ordonnance",
-      "Prescrire un traitement",
-      "Interdire formellement"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Question d'Expression n°100] Identifiez le pléonasme dans cette phrase : 'Ils ont décidé de collaborer ensemble.'",
-    "options": [
-      "De collaborer",
-      "Collaborer ensemble",
-      "Ils ont décidé",
-      "Décidé de"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Question d'Expression n°101] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier de ce problème",
-      "Pallier au problème",
       "Pallier avec le problème",
-      "Pallier le problème"
+      "Pallier de ce problème",
+      "Pallier le problème (COD direct)",
+      "Pallier au problème"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
-    "prompt": "[Question d'Expression n°102] Complétez la phrase : 'Après qu'il _____ arrivé, la réunion a commencé.'",
+    "prompt": "Question Expression n°32 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
     "options": [
-      "est",
       "serait",
-      "soit",
+      "est (Indicatif obligatoire)",
+      "soit (Subjonctif faux)",
       "fût"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Question d'Expression n°103] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "prompt": "Question Expression n°33 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
     "options": [
       "fît",
       "ferait",
-      "fasse",
-      "fait"
+      "fasse (Subjonctif obligatoire)",
+      "fait (Indicatif faux)"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Question d'Expression n°104] Quel est le genre exact du mot 'aphte' ?",
+    "prompt": "Question Expression n°34 : Quel est le genre exact du mot 'aphte' ?",
+    "options": [
+      "Neutre",
+      "Variable",
+      "Masculin (un aphte)",
+      "Féminin (une aphte)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°35 : Quel est le genre exact du mot 'acné' ?",
     "options": [
       "Variable",
-      "Masculin",
-      "Neutre",
-      "Féminin"
+      "Féminin (une acné)",
+      "Masculin (un acné)",
+      "Neutre"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Question d'Expression n°105] Quel est le genre exact du mot 'acné' ?",
+    "prompt": "Question Expression n°36 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
     "options": [
-      "Masculin",
+      "Dilemne (avec 'nm')",
+      "Dileme",
+      "Dilemme (avec 2 'm')",
+      "Dillemme"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°37 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
+    "options": [
+      "Invariable (une demi-heure)",
+      "Accordé en genre (une demie-heure)",
+      "Variable selon le contexte",
+      "Accordé en nombre (des demis-heures)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°38 : Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "options": [
+      "envoyées",
+      "envoyés",
+      "envoyé (invariable car COD après)",
+      "envoyers"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°39 : Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Rédiger un texte",
+      "Recommander chaudement",
+      "Interdire formellement",
+      "Prescrire un médicament"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°40 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
+    "options": [
+      "Collaborer ensemble",
+      "De collaborer",
+      "Ils ont décidé",
+      "Décidé de"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°41 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle de cette règle",
+      "Je me rappelle à cette règle",
+      "Je me rappelle sur cette règle",
+      "Je me rappelle cette règle"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°42 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
+    "options": [
+      "rappelle (avec 'de')",
+      "remémore de",
+      "souviens (avec 'de')",
+      "repense de"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°43 : Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marine",
+      "bleu marines",
+      "bleues marines",
+      "bleu marine"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°44 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marron",
+      "marrons",
+      "marrone",
+      "marronnes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°45 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faite",
+      "fait (invariable devant infinitif)",
+      "faits",
+      "faites"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°46 : Orthographe correcte du mot désignant l'avance sur paiement :",
+    "options": [
+      "Acompte (un seul 'c')",
+      "Aconte",
+      "Accompte",
+      "Ahcompte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°47 : Quel est le genre du mot 'épitaphe' ?",
+    "options": [
+      "Variable",
+      "Féminin (une épitaphe)",
+      "Masculin (un épitaphe)",
+      "Neutre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°48 : Quel est le genre du mot 'pétale' ?",
+    "options": [
+      "Féminin (une pétale)",
+      "Variable",
       "Neutre",
-      "Féminin",
+      "Masculin (un pétale)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°49 : Que signifie le paronyme 'démythifier' ?",
+    "options": [
+      "Dépouiller un récit de son caractère mythique",
+      "Accuser à tort",
+      "Raconter une légende",
+      "Dévoiler une supercherie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°50 : Que signifie le paronyme 'démystifier' ?",
+    "options": [
+      "Enlever le caractère mythique",
+      "Raconter un conte",
+      "Consacrer un texte",
+      "Détruire une tromperie ou mystification"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°51 : Quel est le genre du mot 'alvéole' ?",
+    "options": [
+      "Féminin (une alvéole) ou Masculin accepté",
+      "Masculin uniquement",
+      "Toujours pluriel",
+      "Neutre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°52 : Quel est le genre du mot 'astérisque' ?",
+    "options": [
+      "Neutre",
+      "Variable",
+      "Féminin (une astérisque)",
+      "Masculin (un astérisque)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°53 : Quel est le genre du mot 'orbite' ?",
+    "options": [
+      "Féminin (une orbite)",
+      "Neutre",
+      "Masculin (un orbite)",
       "Variable"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°54 : Quelle est l'orthographe correcte du mot 'cauchemar' ?",
+    "options": [
+      "Cauchemar (sans 'd' final)",
+      "Cauchemard",
+      "Cossemare",
+      "Cauchemarre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°55 : Quelle est l'orthographe correcte du mot 'langage' ?",
+    "options": [
+      "Language",
+      "Langages",
+      "Langaj",
+      "Langage (sans 'u')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°56 : Quelle est la locution latine signifiant 'par le fait même' ?",
+    "options": [
+      "De facto",
+      "Sine die",
+      "Ipso facto",
+      "In fine"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°57 : Quelle locution latine signifie 'en dernière analyse' ?",
+    "options": [
+      "Ipso facto",
+      "In fine",
+      "A priori",
+      "Ad hoc"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°58 : Accord de 'tout' adverbe devant consonne : 'Elles sont _____ honteuses.'",
+    "options": [
+      "tout",
+      "toutes (devant consonne ou 'h' aspiré)",
+      "touts",
+      "toute"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°59 : Accord de 'tout' adverbe devant voyelle : 'Elles sont _____ étonnées.'",
+    "options": [
+      "tout (invariable devant voyelle)",
+      "toute",
+      "toutes",
+      "touts"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°60 : Quel est le sens exact de 'prescrire' ?",
+    "options": [
+      "Annuler un contrat",
+      "Ordonner ou recommander officiellement",
+      "Interdire formellement",
+      "Rédiger un poème"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°61 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier le problème (COD direct)",
+      "Pallier au problème",
+      "Pallier avec le problème",
+      "Pallier de ce problème"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°62 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "fût",
+      "serait",
+      "est (Indicatif obligatoire)",
+      "soit (Subjonctif faux)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°63 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fasse (Subjonctif obligatoire)",
+      "fît",
+      "ferait",
+      "fait (Indicatif faux)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°64 : Quel est le genre exact du mot 'aphte' ?",
+    "options": [
+      "Féminin (une aphte)",
+      "Neutre",
+      "Variable",
+      "Masculin (un aphte)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°65 : Quel est le genre exact du mot 'acné' ?",
+    "options": [
+      "Féminin (une acné)",
+      "Masculin (un acné)",
+      "Variable",
+      "Neutre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°66 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
+    "options": [
+      "Dilemme (avec 2 'm')",
+      "Dilemne (avec 'nm')",
+      "Dileme",
+      "Dillemme"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°67 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
+    "options": [
+      "Accordé en genre (une demie-heure)",
+      "Accordé en nombre (des demis-heures)",
+      "Invariable (une demi-heure)",
+      "Variable selon le contexte"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°68 : Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "options": [
+      "envoyés",
+      "envoyées",
+      "envoyé (invariable car COD après)",
+      "envoyers"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°69 : Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Rédiger un texte",
+      "Recommander chaudement",
+      "Interdire formellement",
+      "Prescrire un médicament"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°70 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
+    "options": [
+      "Ils ont décidé",
+      "Décidé de",
+      "Collaborer ensemble",
+      "De collaborer"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°71 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle cette règle",
+      "Je me rappelle sur cette règle",
+      "Je me rappelle à cette règle",
+      "Je me rappelle de cette règle"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°72 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
+    "options": [
+      "rappelle (avec 'de')",
+      "repense de",
+      "remémore de",
+      "souviens (avec 'de')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°73 : Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marines",
+      "bleues marine",
+      "bleu marine",
+      "bleu marines"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°74 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marrone",
+      "marronnes",
+      "marrons",
+      "marron"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°75 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faites",
+      "fait (invariable devant infinitif)",
+      "faite",
+      "faits"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°76 : Orthographe correcte du mot désignant l'avance sur paiement :",
+    "options": [
+      "Acompte (un seul 'c')",
+      "Aconte",
+      "Ahcompte",
+      "Accompte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°77 : Quel est le genre du mot 'épitaphe' ?",
+    "options": [
+      "Féminin (une épitaphe)",
+      "Masculin (un épitaphe)",
+      "Variable",
+      "Neutre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°78 : Quel est le genre du mot 'pétale' ?",
+    "options": [
+      "Masculin (un pétale)",
+      "Variable",
+      "Féminin (une pétale)",
+      "Neutre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°79 : Que signifie le paronyme 'démythifier' ?",
+    "options": [
+      "Accuser à tort",
+      "Dévoiler une supercherie",
+      "Dépouiller un récit de son caractère mythique",
+      "Raconter une légende"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°80 : Que signifie le paronyme 'démystifier' ?",
+    "options": [
+      "Enlever le caractère mythique",
+      "Détruire une tromperie ou mystification",
+      "Raconter un conte",
+      "Consacrer un texte"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°81 : Quel est le genre du mot 'alvéole' ?",
+    "options": [
+      "Toujours pluriel",
+      "Neutre",
+      "Masculin uniquement",
+      "Féminin (une alvéole) ou Masculin accepté"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°82 : Quel est le genre du mot 'astérisque' ?",
+    "options": [
+      "Masculin (un astérisque)",
+      "Neutre",
+      "Variable",
+      "Féminin (une astérisque)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°83 : Quel est le genre du mot 'orbite' ?",
+    "options": [
+      "Féminin (une orbite)",
+      "Variable",
+      "Neutre",
+      "Masculin (un orbite)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°84 : Quelle est l'orthographe correcte du mot 'cauchemar' ?",
+    "options": [
+      "Cauchemarre",
+      "Cossemare",
+      "Cauchemar (sans 'd' final)",
+      "Cauchemard"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°85 : Quelle est l'orthographe correcte du mot 'langage' ?",
+    "options": [
+      "Langaj",
+      "Langage (sans 'u')",
+      "Langages",
+      "Language"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°86 : Quelle est la locution latine signifiant 'par le fait même' ?",
+    "options": [
+      "Ipso facto",
+      "In fine",
+      "De facto",
+      "Sine die"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°87 : Quelle locution latine signifie 'en dernière analyse' ?",
+    "options": [
+      "In fine",
+      "A priori",
+      "Ipso facto",
+      "Ad hoc"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°88 : Accord de 'tout' adverbe devant consonne : 'Elles sont _____ honteuses.'",
+    "options": [
+      "touts",
+      "toute",
+      "toutes (devant consonne ou 'h' aspiré)",
+      "tout"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°89 : Accord de 'tout' adverbe devant voyelle : 'Elles sont _____ étonnées.'",
+    "options": [
+      "toute",
+      "touts",
+      "tout (invariable devant voyelle)",
+      "toutes"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°90 : Quel est le sens exact de 'prescrire' ?",
+    "options": [
+      "Interdire formellement",
+      "Ordonner ou recommander officiellement",
+      "Rédiger un poème",
+      "Annuler un contrat"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°91 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier avec le problème",
+      "Pallier le problème (COD direct)",
+      "Pallier au problème",
+      "Pallier de ce problème"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°92 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "soit (Subjonctif faux)",
+      "est (Indicatif obligatoire)",
+      "serait",
+      "fût"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°93 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fait (Indicatif faux)",
+      "fît",
+      "fasse (Subjonctif obligatoire)",
+      "ferait"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°94 : Quel est le genre exact du mot 'aphte' ?",
+    "options": [
+      "Féminin (une aphte)",
+      "Masculin (un aphte)",
+      "Variable",
+      "Neutre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°95 : Quel est le genre exact du mot 'acné' ?",
+    "options": [
+      "Neutre",
+      "Variable",
+      "Masculin (un acné)",
+      "Féminin (une acné)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°96 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
+    "options": [
+      "Dilemne (avec 'nm')",
+      "Dileme",
+      "Dillemme",
+      "Dilemme (avec 2 'm')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°97 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
+    "options": [
+      "Accordé en nombre (des demis-heures)",
+      "Accordé en genre (une demie-heure)",
+      "Invariable (une demi-heure)",
+      "Variable selon le contexte"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°98 : Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "options": [
+      "envoyés",
+      "envoyé (invariable car COD après)",
+      "envoyers",
+      "envoyées"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°99 : Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Rédiger un texte",
+      "Prescrire un médicament",
+      "Recommander chaudement",
+      "Interdire formellement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°100 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
+    "options": [
+      "De collaborer",
+      "Décidé de",
+      "Ils ont décidé",
+      "Collaborer ensemble"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°101 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle sur cette règle",
+      "Je me rappelle cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle à cette règle"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°102 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
+    "options": [
+      "repense de",
+      "rappelle (avec 'de')",
+      "remémore de",
+      "souviens (avec 'de')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°103 : Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marine",
+      "bleu marine",
+      "bleues marines",
+      "bleu marines"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°104 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marron",
+      "marrone",
+      "marronnes",
+      "marrons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°105 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faits",
+      "faite",
+      "fait (invariable devant infinitif)",
+      "faites"
     ],
     "answerIndex": 2
   }
@@ -5115,947 +5383,47 @@ export const TM_EXPRESSION_QUESTIONS = [
 
 export const TM_LOGIQUE_QUESTIONS = [
   {
-    "prompt": "Complétez la série : 2, 5, 8, 11, 14, ?",
+    "prompt": "Série numérique n°1 : Complétez la suite arithmétique : 2, 5, 8, 11, 14, ?",
     "options": [
-      "14",
       "20",
-      "17",
-      "19"
+      "14",
+      "19",
+      "17"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
-    "prompt": "Complétez la série : D, G, J, M, P, ?",
+    "prompt": "Série alphabétique n°2 : Complétez la suite de lettres : B, E, H, K, N, ?",
     "options": [
-      "S",
-      "T",
       "R",
-      "U"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "54",
-      "49",
-      "45",
-      "14"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>5 &nbsp;&nbsp; 10 &nbsp;&nbsp; 20<br>6 &nbsp;&nbsp; 12 &nbsp;&nbsp; 24<br>7 &nbsp;&nbsp; 14 &nbsp;&nbsp; ?",
-    "options": [
-      "21",
-      "30",
-      "18",
-      "28"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "V",
-      "K",
-      "Z"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 7, 11, 15, 19, 23, ?",
-    "options": [
-      "29",
-      "24",
-      "31",
-      "27"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : S, U, W, Y, A, ?",
-    "options": [
-      "E",
-      "C",
-      "B",
-      "D"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "140",
-      "24",
-      "144",
-      "149"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>10 &nbsp;&nbsp; 20 &nbsp;&nbsp; 40<br>11 &nbsp;&nbsp; 22 &nbsp;&nbsp; 44<br>12 &nbsp;&nbsp; 24 &nbsp;&nbsp; ?",
-    "options": [
-      "50",
-      "36",
-      "28",
-      "48"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "Z",
-      "K",
-      "T",
-      "V"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 12, 17, 22, 27, 32, ?",
-    "options": [
-      "39",
-      "34",
-      "42",
-      "37"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : H, L, P, T, X, ?",
-    "options": [
-      "D",
-      "C",
-      "B",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "49",
-      "54",
-      "45",
-      "14"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>15 &nbsp;&nbsp; 30 &nbsp;&nbsp; 60<br>16 &nbsp;&nbsp; 32 &nbsp;&nbsp; 64<br>17 &nbsp;&nbsp; 34 &nbsp;&nbsp; ?",
-    "options": [
-      "51",
-      "70",
-      "38",
-      "68"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "Z",
-      "K",
-      "V"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 17, 23, 29, 35, 41, ?",
-    "options": [
-      "49",
-      "44",
-      "47",
-      "53"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : W, Z, C, F, I, ?",
-    "options": [
-      "L",
-      "N",
-      "M",
-      "K"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "140",
-      "24",
-      "149",
-      "144"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>20 &nbsp;&nbsp; 40 &nbsp;&nbsp; 80<br>21 &nbsp;&nbsp; 42 &nbsp;&nbsp; 84<br>22 &nbsp;&nbsp; 44 &nbsp;&nbsp; ?",
-    "options": [
-      "48",
-      "90",
-      "66",
-      "88"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "Z",
-      "T",
-      "K",
-      "V"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 22, 25, 28, 31, 34, ?",
-    "options": [
-      "40",
-      "37",
-      "34",
-      "39"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : L, N, P, R, T, ?",
-    "options": [
-      "W",
-      "X",
-      "V",
-      "U"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "49",
-      "45",
-      "54",
-      "14"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>25 &nbsp;&nbsp; 50 &nbsp;&nbsp; 100<br>26 &nbsp;&nbsp; 52 &nbsp;&nbsp; 104<br>27 &nbsp;&nbsp; 54 &nbsp;&nbsp; ?",
-    "options": [
-      "58",
-      "108",
-      "110",
-      "81"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "Z",
-      "T",
-      "K",
-      "V"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 27, 31, 35, 39, 43, ?",
-    "options": [
-      "47",
-      "49",
-      "51",
-      "44"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : A, E, I, M, Q, ?",
-    "options": [
-      "W",
-      "T",
-      "U",
-      "V"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "149",
-      "144",
-      "24",
-      "140"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>30 &nbsp;&nbsp; 60 &nbsp;&nbsp; 120<br>31 &nbsp;&nbsp; 62 &nbsp;&nbsp; 124<br>32 &nbsp;&nbsp; 64 &nbsp;&nbsp; ?",
-    "options": [
-      "128",
-      "96",
-      "130",
-      "68"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "K",
-      "V",
-      "Z"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 32, 37, 42, 47, 52, ?",
-    "options": [
-      "59",
-      "62",
-      "57",
-      "54"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : P, S, V, Y, B, ?",
-    "options": [
-      "D",
-      "F",
-      "G",
-      "E"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "14",
-      "49",
-      "54",
-      "45"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>35 &nbsp;&nbsp; 70 &nbsp;&nbsp; 140<br>36 &nbsp;&nbsp; 72 &nbsp;&nbsp; 144<br>37 &nbsp;&nbsp; 74 &nbsp;&nbsp; ?",
-    "options": [
-      "111",
-      "78",
-      "150",
-      "148"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "K",
-      "Z",
-      "V",
-      "T"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 37, 43, 49, 55, 61, ?",
-    "options": [
-      "69",
-      "67",
-      "64",
-      "73"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : E, G, I, K, M, ?",
-    "options": [
-      "N",
-      "P",
-      "O",
-      "Q"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "24",
-      "149",
-      "144",
-      "140"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>40 &nbsp;&nbsp; 80 &nbsp;&nbsp; 160<br>41 &nbsp;&nbsp; 82 &nbsp;&nbsp; 164<br>42 &nbsp;&nbsp; 84 &nbsp;&nbsp; ?",
-    "options": [
-      "170",
-      "88",
-      "126",
-      "168"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "V",
-      "T",
-      "Z",
-      "K"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 42, 45, 48, 51, 54, ?",
-    "options": [
-      "57",
-      "60",
-      "59",
-      "54"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : T, X, B, F, J, ?",
-    "options": [
-      "M",
-      "N",
-      "P",
-      "O"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "49",
-      "14",
-      "45",
-      "54"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>45 &nbsp;&nbsp; 90 &nbsp;&nbsp; 180<br>46 &nbsp;&nbsp; 92 &nbsp;&nbsp; 184<br>47 &nbsp;&nbsp; 94 &nbsp;&nbsp; ?",
-    "options": [
-      "188",
-      "190",
-      "98",
-      "141"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "V",
-      "Z",
-      "K",
-      "T"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 47, 51, 55, 59, 63, ?",
-    "options": [
-      "64",
-      "69",
-      "71",
-      "67"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : I, L, O, R, U, ?",
-    "options": [
-      "Z",
-      "Y",
-      "W",
-      "X"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "24",
-      "140",
-      "144",
-      "149"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>50 &nbsp;&nbsp; 100 &nbsp;&nbsp; 200<br>51 &nbsp;&nbsp; 102 &nbsp;&nbsp; 204<br>52 &nbsp;&nbsp; 104 &nbsp;&nbsp; ?",
-    "options": [
-      "210",
-      "208",
-      "156",
-      "108"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "K",
-      "T",
-      "V",
-      "Z"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 52, 57, 62, 67, 72, ?",
-    "options": [
-      "74",
-      "79",
-      "82",
-      "77"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : X, Z, B, D, F, ?",
-    "options": [
-      "I",
-      "J",
-      "H",
-      "G"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "54",
-      "49",
-      "14",
-      "45"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>55 &nbsp;&nbsp; 110 &nbsp;&nbsp; 220<br>56 &nbsp;&nbsp; 112 &nbsp;&nbsp; 224<br>57 &nbsp;&nbsp; 114 &nbsp;&nbsp; ?",
-    "options": [
-      "230",
-      "171",
-      "118",
-      "228"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "Z",
-      "V",
-      "T",
-      "K"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 57, 63, 69, 75, 81, ?",
-    "options": [
-      "93",
-      "89",
-      "84",
-      "87"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : M, Q, U, Y, C, ?",
-    "options": [
-      "F",
-      "H",
-      "I",
-      "G"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "24",
-      "144",
-      "140",
-      "149"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>60 &nbsp;&nbsp; 120 &nbsp;&nbsp; 240<br>61 &nbsp;&nbsp; 122 &nbsp;&nbsp; 244<br>62 &nbsp;&nbsp; 124 &nbsp;&nbsp; ?",
-    "options": [
-      "248",
-      "128",
-      "250",
-      "186"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "V",
-      "Z",
-      "K"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 62, 65, 68, 71, 74, ?",
-    "options": [
-      "74",
-      "77",
-      "80",
-      "79"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : B, E, H, K, N, ?",
-    "options": [
       "S",
       "Q",
-      "R",
       "P"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
+    "prompt": "Série des carrés parfaits n°3 : Complétez la suite : 9, 16, 25, 36, ?",
     "options": [
-      "45",
+      "55",
+      "44",
       "49",
-      "54",
       "14"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>65 &nbsp;&nbsp; 130 &nbsp;&nbsp; 260<br>66 &nbsp;&nbsp; 132 &nbsp;&nbsp; 264<br>67 &nbsp;&nbsp; 134 &nbsp;&nbsp; ?",
+    "prompt": "Matrice 3x3 n°4 : Quelle est la valeur manquante ?<br>4 &nbsp;&nbsp; 8 &nbsp;&nbsp; 16<br>5 &nbsp;&nbsp; 10 &nbsp;&nbsp; 20<br>6 &nbsp;&nbsp; 12 &nbsp;&nbsp; ?",
     "options": [
-      "270",
-      "138",
-      "201",
-      "268"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "Z",
-      "K",
-      "V",
-      "T"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 67, 71, 75, 79, 83, ?",
-    "options": [
-      "89",
-      "87",
-      "84",
-      "91"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : Q, S, U, W, Y, ?",
-    "options": [
-      "B",
-      "A",
-      "C",
-      "Z"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
+      "20",
       "24",
-      "149",
-      "144",
-      "140"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>70 &nbsp;&nbsp; 140 &nbsp;&nbsp; 280<br>71 &nbsp;&nbsp; 142 &nbsp;&nbsp; 284<br>72 &nbsp;&nbsp; 144 &nbsp;&nbsp; ?",
-    "options": [
-      "148",
-      "288",
-      "216",
-      "290"
+      "48",
+      "26"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "K",
-      "T",
-      "V",
-      "Z"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 72, 77, 82, 87, 92, ?",
-    "options": [
-      "94",
-      "97",
-      "99",
-      "102"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : F, J, N, R, V, ?",
-    "options": [
-      "A",
-      "B",
-      "Y",
-      "Z"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "54",
-      "45",
-      "14",
-      "49"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>75 &nbsp;&nbsp; 150 &nbsp;&nbsp; 300<br>76 &nbsp;&nbsp; 152 &nbsp;&nbsp; 304<br>77 &nbsp;&nbsp; 154 &nbsp;&nbsp; ?",
-    "options": [
-      "308",
-      "310",
-      "158",
-      "231"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "V",
-      "Z",
-      "K",
-      "T"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 77, 83, 89, 95, 101, ?",
-    "options": [
-      "104",
-      "113",
-      "109",
-      "107"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : U, X, A, D, G, ?",
-    "options": [
-      "I",
-      "K",
-      "L",
-      "J"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "149",
-      "24",
-      "144",
-      "140"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>80 &nbsp;&nbsp; 160 &nbsp;&nbsp; 320<br>81 &nbsp;&nbsp; 162 &nbsp;&nbsp; 324<br>82 &nbsp;&nbsp; 164 &nbsp;&nbsp; ?",
-    "options": [
-      "168",
-      "246",
-      "330",
-      "328"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "V",
-      "K",
-      "T",
-      "Z"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 82, 85, 88, 91, 94, ?",
-    "options": [
-      "97",
-      "100",
-      "94",
-      "99"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : J, L, N, P, R, ?",
-    "options": [
-      "U",
-      "T",
-      "S",
-      "V"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "45",
-      "49",
-      "14",
-      "54"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>85 &nbsp;&nbsp; 170 &nbsp;&nbsp; 340<br>86 &nbsp;&nbsp; 172 &nbsp;&nbsp; 344<br>87 &nbsp;&nbsp; 174 &nbsp;&nbsp; ?",
-    "options": [
-      "178",
-      "261",
-      "348",
-      "350"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "V",
-      "T",
-      "Z",
-      "K"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : 87, 91, 95, 99, 103, ?",
-    "options": [
-      "109",
-      "107",
-      "111",
-      "104"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Complétez la série : Y, C, G, K, O, ?",
-    "options": [
-      "S",
-      "R",
-      "U",
-      "T"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
-    "options": [
-      "144",
-      "149",
-      "24",
-      "140"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>90 &nbsp;&nbsp; 180 &nbsp;&nbsp; 360<br>91 &nbsp;&nbsp; 182 &nbsp;&nbsp; 364<br>92 &nbsp;&nbsp; 184 &nbsp;&nbsp; ?",
-    "options": [
-      "370",
-      "276",
-      "188",
-      "368"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
-    "options": [
-      "K",
-      "Z",
-      "T",
-      "V"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : 92, 97, 102, 107, 112, ?",
-    "options": [
-      "114",
-      "122",
-      "119",
-      "117"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Complétez la série : N, Q, T, W, Z, ?",
-    "options": [
-      "C",
-      "B",
-      "E",
-      "D"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "54",
-      "49",
-      "14",
-      "45"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>95 &nbsp;&nbsp; 190 &nbsp;&nbsp; 380<br>96 &nbsp;&nbsp; 192 &nbsp;&nbsp; 384<br>97 &nbsp;&nbsp; 194 &nbsp;&nbsp; ?",
-    "options": [
-      "291",
-      "390",
-      "388",
-      "198"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
+    "prompt": "Série phonique piège n°5 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
     "options": [
       "Z",
       "T",
@@ -6065,102 +5433,1002 @@ export const TM_LOGIQUE_QUESTIONS = [
     "answerIndex": 1
   },
   {
-    "prompt": "Complétez la série : 97, 103, 109, 115, 121, ?",
+    "prompt": "Série numérique n°6 : Complétez la suite arithmétique : 7, 10, 13, 16, 19, ?",
     "options": [
-      "124",
-      "133",
-      "127",
-      "129"
+      "24",
+      "22",
+      "19",
+      "25"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   {
-    "prompt": "Complétez la série : C, E, G, I, K, ?",
+    "prompt": "Série alphabétique n°7 : Complétez la suite de lettres : A, C, E, G, I, ?",
     "options": [
+      "K",
       "M",
-      "N",
-      "O",
+      "J",
       "L"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Complétez la série : 64, 81, 100, 121, ?",
+    "prompt": "Série des carrés parfaits n°8 : Complétez la suite : 64, 81, 100, 121, ?",
     "options": [
-      "149",
+      "144",
+      "24",
+      "150",
+      "139"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Matrice 3x3 n°9 : Quelle est la valeur manquante ?<br>9 &nbsp;&nbsp; 18 &nbsp;&nbsp; 36<br>10 &nbsp;&nbsp; 20 &nbsp;&nbsp; 40<br>11 &nbsp;&nbsp; 22 &nbsp;&nbsp; ?",
+    "options": [
+      "88",
+      "46",
+      "40",
+      "44"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série phonique piège n°10 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "K",
+      "Z",
+      "V"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°11 : Complétez la suite arithmétique : 12, 15, 18, 21, 24, ?",
+    "options": [
+      "29",
+      "24",
+      "27",
+      "30"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série alphabétique n°12 : Complétez la suite de lettres : F, J, N, R, V, ?",
+    "options": [
+      "\\",
+      "Z",
+      "[",
+      "Y"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série des carrés parfaits n°13 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "44",
+      "49",
+      "55",
+      "14"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Matrice 3x3 n°14 : Quelle est la valeur manquante ?<br>14 &nbsp;&nbsp; 28 &nbsp;&nbsp; 56<br>15 &nbsp;&nbsp; 30 &nbsp;&nbsp; 60<br>16 &nbsp;&nbsp; 32 &nbsp;&nbsp; ?",
+    "options": [
+      "64",
+      "66",
+      "128",
+      "60"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série phonique piège n°15 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "Z",
+      "V",
+      "K"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°16 : Complétez la suite arithmétique : 17, 20, 23, 26, 29, ?",
+    "options": [
+      "29",
+      "32",
+      "34",
+      "35"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°17 : Complétez la suite de lettres : E, H, K, N, Q, ?",
+    "options": [
+      "U",
+      "V",
+      "T",
+      "S"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°18 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "24",
+      "139",
+      "150",
+      "144"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°19 : Quelle est la valeur manquante ?<br>19 &nbsp;&nbsp; 38 &nbsp;&nbsp; 76<br>20 &nbsp;&nbsp; 40 &nbsp;&nbsp; 80<br>21 &nbsp;&nbsp; 42 &nbsp;&nbsp; ?",
+    "options": [
+      "80",
+      "84",
+      "86",
+      "168"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série phonique piège n°20 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "V",
+      "K",
+      "Z"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°21 : Complétez la suite arithmétique : 22, 25, 28, 31, 34, ?",
+    "options": [
+      "40",
+      "34",
+      "37",
+      "39"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série alphabétique n°22 : Complétez la suite de lettres : D, F, H, J, L, ?",
+    "options": [
+      "N",
+      "M",
+      "P",
+      "O"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série des carrés parfaits n°23 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "44",
+      "55",
+      "49",
+      "14"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Matrice 3x3 n°24 : Quelle est la valeur manquante ?<br>24 &nbsp;&nbsp; 48 &nbsp;&nbsp; 96<br>25 &nbsp;&nbsp; 50 &nbsp;&nbsp; 100<br>26 &nbsp;&nbsp; 52 &nbsp;&nbsp; ?",
+    "options": [
+      "104",
+      "106",
+      "208",
+      "100"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série phonique piège n°25 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "Z",
+      "K",
+      "V"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°26 : Complétez la suite arithmétique : 27, 30, 33, 36, 39, ?",
+    "options": [
+      "45",
+      "44",
+      "42",
+      "39"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série alphabétique n°27 : Complétez la suite de lettres : C, G, K, O, S, ?",
+    "options": [
+      "W",
+      "Y",
+      "X",
+      "V"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série des carrés parfaits n°28 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "150",
+      "144",
+      "139",
+      "24"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Matrice 3x3 n°29 : Quelle est la valeur manquante ?<br>29 &nbsp;&nbsp; 58 &nbsp;&nbsp; 116<br>30 &nbsp;&nbsp; 60 &nbsp;&nbsp; 120<br>31 &nbsp;&nbsp; 62 &nbsp;&nbsp; ?",
+    "options": [
+      "248",
+      "120",
+      "126",
+      "124"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série phonique piège n°30 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "V",
+      "K",
+      "Z",
+      "T"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série numérique n°31 : Complétez la suite arithmétique : 32, 35, 38, 41, 44, ?",
+    "options": [
+      "44",
+      "47",
+      "50",
+      "49"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°32 : Complétez la suite de lettres : B, E, H, K, N, ?",
+    "options": [
+      "R",
+      "P",
+      "S",
+      "Q"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série des carrés parfaits n°33 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "55",
+      "49",
+      "44",
+      "14"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Matrice 3x3 n°34 : Quelle est la valeur manquante ?<br>34 &nbsp;&nbsp; 68 &nbsp;&nbsp; 136<br>35 &nbsp;&nbsp; 70 &nbsp;&nbsp; 140<br>36 &nbsp;&nbsp; 72 &nbsp;&nbsp; ?",
+    "options": [
       "140",
+      "146",
+      "144",
+      "288"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série phonique piège n°35 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "Z",
+      "K",
+      "V",
+      "T"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série numérique n°36 : Complétez la suite arithmétique : 37, 40, 43, 46, 49, ?",
+    "options": [
+      "49",
+      "52",
+      "55",
+      "54"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°37 : Complétez la suite de lettres : A, C, E, G, I, ?",
+    "options": [
+      "L",
+      "K",
+      "M",
+      "J"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série des carrés parfaits n°38 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "139",
+      "150",
+      "24",
+      "144"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°39 : Quelle est la valeur manquante ?<br>39 &nbsp;&nbsp; 78 &nbsp;&nbsp; 156<br>40 &nbsp;&nbsp; 80 &nbsp;&nbsp; 160<br>41 &nbsp;&nbsp; 82 &nbsp;&nbsp; ?",
+    "options": [
+      "328",
+      "164",
+      "166",
+      "160"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série phonique piège n°40 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "Z",
+      "K",
+      "T",
+      "V"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série numérique n°41 : Complétez la suite arithmétique : 42, 45, 48, 51, 54, ?",
+    "options": [
+      "60",
+      "57",
+      "59",
+      "54"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°42 : Complétez la suite de lettres : F, J, N, R, V, ?",
+    "options": [
+      "Z",
+      "[",
+      "Y",
+      "\\"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série des carrés parfaits n°43 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "44",
+      "14",
+      "55",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°44 : Quelle est la valeur manquante ?<br>44 &nbsp;&nbsp; 88 &nbsp;&nbsp; 176<br>45 &nbsp;&nbsp; 90 &nbsp;&nbsp; 180<br>46 &nbsp;&nbsp; 92 &nbsp;&nbsp; ?",
+    "options": [
+      "180",
+      "368",
+      "184",
+      "186"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série phonique piège n°45 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "V",
+      "Z",
+      "K"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°46 : Complétez la suite arithmétique : 47, 50, 53, 56, 59, ?",
+    "options": [
+      "64",
+      "65",
+      "59",
+      "62"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série alphabétique n°47 : Complétez la suite de lettres : E, H, K, N, Q, ?",
+    "options": [
+      "V",
+      "U",
+      "T",
+      "S"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°48 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "150",
+      "24",
+      "144",
+      "139"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Matrice 3x3 n°49 : Quelle est la valeur manquante ?<br>49 &nbsp;&nbsp; 98 &nbsp;&nbsp; 196<br>50 &nbsp;&nbsp; 100 &nbsp;&nbsp; 200<br>51 &nbsp;&nbsp; 102 &nbsp;&nbsp; ?",
+    "options": [
+      "204",
+      "206",
+      "408",
+      "200"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série phonique piège n°50 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "K",
+      "T",
+      "Z",
+      "V"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série numérique n°51 : Complétez la suite arithmétique : 52, 55, 58, 61, 64, ?",
+    "options": [
+      "64",
+      "69",
+      "70",
+      "67"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série alphabétique n°52 : Complétez la suite de lettres : D, F, H, J, L, ?",
+    "options": [
+      "P",
+      "M",
+      "N",
+      "O"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°53 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "14",
+      "55",
+      "44",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°54 : Quelle est la valeur manquante ?<br>54 &nbsp;&nbsp; 108 &nbsp;&nbsp; 216<br>55 &nbsp;&nbsp; 110 &nbsp;&nbsp; 220<br>56 &nbsp;&nbsp; 112 &nbsp;&nbsp; ?",
+    "options": [
+      "220",
+      "226",
+      "448",
+      "224"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série phonique piège n°55 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "V",
+      "K",
+      "Z"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°56 : Complétez la suite arithmétique : 57, 60, 63, 66, 69, ?",
+    "options": [
+      "75",
+      "72",
+      "74",
+      "69"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°57 : Complétez la suite de lettres : C, G, K, O, S, ?",
+    "options": [
+      "X",
+      "Y",
+      "V",
+      "W"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série des carrés parfaits n°58 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "150",
+      "139",
       "144",
       "24"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>100 &nbsp;&nbsp; 200 &nbsp;&nbsp; 400<br>101 &nbsp;&nbsp; 202 &nbsp;&nbsp; 404<br>102 &nbsp;&nbsp; 204 &nbsp;&nbsp; ?",
+    "prompt": "Matrice 3x3 n°59 : Quelle est la valeur manquante ?<br>59 &nbsp;&nbsp; 118 &nbsp;&nbsp; 236<br>60 &nbsp;&nbsp; 120 &nbsp;&nbsp; 240<br>61 &nbsp;&nbsp; 122 &nbsp;&nbsp; ?",
     "options": [
-      "306",
-      "410",
-      "208",
-      "408"
+      "488",
+      "246",
+      "240",
+      "244"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
+    "prompt": "Série phonique piège n°60 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "V",
+      "Z",
+      "K"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°61 : Complétez la suite arithmétique : 62, 65, 68, 71, 74, ?",
+    "options": [
+      "79",
+      "77",
+      "80",
+      "74"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°62 : Complétez la suite de lettres : B, E, H, K, N, ?",
+    "options": [
+      "R",
+      "P",
+      "Q",
+      "S"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°63 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "44",
+      "14",
+      "55",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°64 : Quelle est la valeur manquante ?<br>64 &nbsp;&nbsp; 128 &nbsp;&nbsp; 256<br>65 &nbsp;&nbsp; 130 &nbsp;&nbsp; 260<br>66 &nbsp;&nbsp; 132 &nbsp;&nbsp; ?",
+    "options": [
+      "264",
+      "528",
+      "260",
+      "266"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série phonique piège n°65 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "K",
+      "V",
+      "T",
+      "Z"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série numérique n°66 : Complétez la suite arithmétique : 67, 70, 73, 76, 79, ?",
+    "options": [
+      "79",
+      "84",
+      "82",
+      "85"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série alphabétique n°67 : Complétez la suite de lettres : A, C, E, G, I, ?",
+    "options": [
+      "K",
+      "L",
+      "J",
+      "M"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série des carrés parfaits n°68 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "144",
+      "24",
+      "150",
+      "139"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Matrice 3x3 n°69 : Quelle est la valeur manquante ?<br>69 &nbsp;&nbsp; 138 &nbsp;&nbsp; 276<br>70 &nbsp;&nbsp; 140 &nbsp;&nbsp; 280<br>71 &nbsp;&nbsp; 142 &nbsp;&nbsp; ?",
+    "options": [
+      "284",
+      "568",
+      "286",
+      "280"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série phonique piège n°70 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
     "options": [
       "K",
       "Z",
+      "T",
+      "V"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série numérique n°71 : Complétez la suite arithmétique : 72, 75, 78, 81, 84, ?",
+    "options": [
+      "87",
+      "84",
+      "89",
+      "90"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série alphabétique n°72 : Complétez la suite de lettres : F, J, N, R, V, ?",
+    "options": [
+      "Z",
+      "[",
+      "Y",
+      "\\"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série des carrés parfaits n°73 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "14",
+      "55",
+      "44",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°74 : Quelle est la valeur manquante ?<br>74 &nbsp;&nbsp; 148 &nbsp;&nbsp; 296<br>75 &nbsp;&nbsp; 150 &nbsp;&nbsp; 300<br>76 &nbsp;&nbsp; 152 &nbsp;&nbsp; ?",
+    "options": [
+      "306",
+      "300",
+      "608",
+      "304"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série phonique piège n°75 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "Z",
+      "K",
       "V",
       "T"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Complétez la série : 102, 105, 108, 111, 114, ?",
+    "prompt": "Série numérique n°76 : Complétez la suite arithmétique : 77, 80, 83, 86, 89, ?",
     "options": [
-      "119",
+      "89",
+      "92",
+      "95",
+      "94"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°77 : Complétez la suite de lettres : E, H, K, N, Q, ?",
+    "options": [
+      "T",
+      "S",
+      "U",
+      "V"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série des carrés parfaits n°78 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "150",
+      "139",
+      "24",
+      "144"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°79 : Quelle est la valeur manquante ?<br>79 &nbsp;&nbsp; 158 &nbsp;&nbsp; 316<br>80 &nbsp;&nbsp; 160 &nbsp;&nbsp; 320<br>81 &nbsp;&nbsp; 162 &nbsp;&nbsp; ?",
+    "options": [
+      "326",
+      "320",
+      "324",
+      "648"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série phonique piège n°80 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "K",
+      "T",
+      "Z",
+      "V"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série numérique n°81 : Complétez la suite arithmétique : 82, 85, 88, 91, 94, ?",
+    "options": [
+      "94",
+      "97",
+      "99",
+      "100"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°82 : Complétez la suite de lettres : D, F, H, J, L, ?",
+    "options": [
+      "O",
+      "P",
+      "N",
+      "M"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°83 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "14",
+      "49",
+      "55",
+      "44"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Matrice 3x3 n°84 : Quelle est la valeur manquante ?<br>84 &nbsp;&nbsp; 168 &nbsp;&nbsp; 336<br>85 &nbsp;&nbsp; 170 &nbsp;&nbsp; 340<br>86 &nbsp;&nbsp; 172 &nbsp;&nbsp; ?",
+    "options": [
+      "688",
+      "340",
+      "344",
+      "346"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série phonique piège n°85 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "Z",
+      "V",
+      "K",
+      "T"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série numérique n°86 : Complétez la suite arithmétique : 87, 90, 93, 96, 99, ?",
+    "options": [
+      "99",
+      "104",
+      "102",
+      "105"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série alphabétique n°87 : Complétez la suite de lettres : C, G, K, O, S, ?",
+    "options": [
+      "Y",
+      "X",
+      "W",
+      "V"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°88 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "144",
+      "139",
+      "150",
+      "24"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Matrice 3x3 n°89 : Quelle est la valeur manquante ?<br>89 &nbsp;&nbsp; 178 &nbsp;&nbsp; 356<br>90 &nbsp;&nbsp; 180 &nbsp;&nbsp; 360<br>91 &nbsp;&nbsp; 182 &nbsp;&nbsp; ?",
+    "options": [
+      "366",
+      "360",
+      "364",
+      "728"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série phonique piège n°90 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "V",
+      "K",
+      "Z"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°91 : Complétez la suite arithmétique : 92, 95, 98, 101, 104, ?",
+    "options": [
+      "109",
+      "107",
+      "104",
+      "110"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série alphabétique n°92 : Complétez la suite de lettres : B, E, H, K, N, ?",
+    "options": [
+      "S",
+      "P",
+      "Q",
+      "R"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série des carrés parfaits n°93 : Complétez la suite : 9, 16, 25, 36, ?",
+    "options": [
+      "55",
+      "49",
+      "14",
+      "44"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Matrice 3x3 n°94 : Quelle est la valeur manquante ?<br>94 &nbsp;&nbsp; 188 &nbsp;&nbsp; 376<br>95 &nbsp;&nbsp; 190 &nbsp;&nbsp; 380<br>96 &nbsp;&nbsp; 192 &nbsp;&nbsp; ?",
+    "options": [
+      "380",
+      "768",
+      "384",
+      "386"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série phonique piège n°95 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "V",
+      "K",
+      "Z"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°96 : Complétez la suite arithmétique : 97, 100, 103, 106, 109, ?",
+    "options": [
+      "115",
+      "114",
+      "112",
+      "109"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Série alphabétique n°97 : Complétez la suite de lettres : A, C, E, G, I, ?",
+    "options": [
+      "M",
+      "K",
+      "J",
+      "L"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Série des carrés parfaits n°98 : Complétez la suite : 64, 81, 100, 121, ?",
+    "options": [
+      "144",
+      "139",
+      "150",
+      "24"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Matrice 3x3 n°99 : Quelle est la valeur manquante ?<br>99 &nbsp;&nbsp; 198 &nbsp;&nbsp; 396<br>100 &nbsp;&nbsp; 200 &nbsp;&nbsp; 400<br>101 &nbsp;&nbsp; 202 &nbsp;&nbsp; ?",
+    "options": [
+      "406",
+      "808",
+      "400",
+      "404"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Série phonique piège n°100 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
+    "options": [
+      "T",
+      "K",
+      "Z",
+      "V"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Série numérique n°101 : Complétez la suite arithmétique : 102, 105, 108, 111, 114, ?",
+    "options": [
       "114",
       "120",
+      "119",
       "117"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Complétez la série : R, V, Z, D, H, ?",
+    "prompt": "Série alphabétique n°102 : Complétez la suite de lettres : F, J, N, R, V, ?",
     "options": [
-      "K",
-      "N",
-      "M",
-      "L"
+      "Y",
+      "\\",
+      "[",
+      "Z"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Complétez la série : 9, 16, 25, 36, ?",
+    "prompt": "Série des carrés parfaits n°103 : Complétez la suite : 9, 16, 25, 36, ?",
     "options": [
-      "54",
+      "55",
       "14",
-      "49",
-      "45"
+      "44",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Matrice 3x3 n°104 : Quelle est la valeur manquante ?<br>104 &nbsp;&nbsp; 208 &nbsp;&nbsp; 416<br>105 &nbsp;&nbsp; 210 &nbsp;&nbsp; 420<br>106 &nbsp;&nbsp; 212 &nbsp;&nbsp; ?",
+    "options": [
+      "426",
+      "420",
+      "424",
+      "848"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Trouvez le nombre manquant dans la matrice :<br>105 &nbsp;&nbsp; 210 &nbsp;&nbsp; 420<br>106 &nbsp;&nbsp; 212 &nbsp;&nbsp; 424<br>107 &nbsp;&nbsp; 214 &nbsp;&nbsp; ?",
-    "options": [
-      "428",
-      "321",
-      "430",
-      "218"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Complétez la série : B, C, D, G, P, ?",
+    "prompt": "Série phonique piège n°105 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
     "options": [
       "T",
+      "K",
       "Z",
-      "V",
-      "K"
+      "V"
     ],
     "answerIndex": 0
   }

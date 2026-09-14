@@ -17,93 +17,2506 @@ export function shuffleArray(array) {
 // ---------------------------------------------------------
 
 const BASE_CULTURE_G_QUESTIONS = [
-  // Actualités récentes & Économie (2023-2026 - Annales Officielles Gualino)
-  { prompt: 'Le film « Oppenheimer » a remporté 7 Oscars en 2024. Qui en est le réalisateur ?', options: ['Christopher Nolan', 'Steven Spielberg', 'Quentin Tarantino', 'Martin Scorsese'], answerIndex: 0 },
-  { prompt: 'Quel pays n’a pas d’accès direct à la mer ?', options: ['Le Laos', 'Le Cambodge', 'La Birmanie (Myanmar)', 'Le Viêt Nam'], answerIndex: 0 },
-  { prompt: 'En métrologie, que mesure le tesla (symbole T) ?', options: ['L’induction magnétique', 'L’intensité lumineuse', 'La pression acoustique', 'La résistance électrique'], answerIndex: 0 },
-  { prompt: 'Dans quel pays se situe la ville de Timbouctou ?', options: ['Au Mali', 'Au Niger', 'Au Tchad', 'En Mauritanie'], answerIndex: 0 },
-  { prompt: 'Quelle entreprise automobile commercialise le modèle 100% électrique « Taycan » ?', options: ['Porsche', 'Audi', 'BMW', 'Mercedes-Benz'], answerIndex: 0 },
-  { prompt: 'En 1999, qui a succédé à Boris Eltsine à la présidence de la Fédération de Russie ?', options: ['Vladimir Poutine', 'Mikhaïl Gorbatchev', 'Dmitri Medvedev', 'Viktor Tchernomyrdine'], answerIndex: 0 },
-  { prompt: 'Quel fleuve traverse la ville de Rome ?', options: ['Le Tibre', 'Le Pô', 'L’Arno', 'La Garonne'], answerIndex: 0 },
-  { prompt: 'En 2024, quel pays a rejoint l’OTAN en tant que 32e membre officiel ?', options: ['La Suède', 'La Finlande', 'La Croatie', 'L’Ukraine'], answerIndex: 0 },
-  { prompt: 'Qui a peint le célèbre tableau « Le Déjeuner sur l’herbe » ?', options: ['Édouard Manet', 'Claude Monet', 'Edgar Degas', 'Pierre-Auguste Renoir'], answerIndex: 0 },
-  { prompt: 'Quel club de football a remporté la Ligue des champions masculine en 2023 ?', options: ['Manchester City', 'Real Madrid', 'Inter Milan', 'FC Barcelone'], answerIndex: 0 },
-  { prompt: 'En économie, que désigne la « stagflation » ?', options: ['Une stagnation économique accompagnée d’une forte inflation', 'Une forte croissance avec inflation', 'Une déflation avec un chômage très bas', 'Une croissance nulle sans inflation'], answerIndex: 0 },
-  { prompt: 'Qui est l’auteur de la célèbre pièce de théâtre « Rhinocéros » ?', options: ['Eugène Ionesco', 'Samuel Beckett', 'Jean-Paul Sartre', 'Albert Camus'], answerIndex: 0 },
-  { prompt: 'Quelle entreprise aéronautique européenne a son siège principal à Toulouse ?', options: ['Airbus', 'Dassault Aviation', 'Safran', 'Thales'], answerIndex: 0 },
-  { prompt: 'Quel dirigeant a prononcé le discours emblématique « I have a dream » en 1963 à Washington ?', options: ['Martin Luther King', 'Malcolm X', 'Nelson Mandela', 'Barack Obama'], answerIndex: 0 },
-  { prompt: 'Qui est le peintre du chef-d’œuvre « La Nuit étoilée » ?', options: ['Vincent van Gogh', 'Paul Cézanne', 'Auguste Renoir', 'Henri Matisse'], answerIndex: 0 },
-  { prompt: 'Qui est l’actuel Secrétaire général de l’ONU (depuis 2017) ?', options: ['António Guterres', 'Ban Ki-moon', 'Kofi Annan', 'Boutros Boutros-Ghali'], answerIndex: 0 },
-  { prompt: 'Quelle est la monnaie officielle du Japon ?', options: ['Le Yen', 'Le Yuan', 'Le Won', 'Le Ringgit'], answerIndex: 0 },
-  { prompt: 'Quel philosophe a écrit « Du contrat social » en 1762 ?', options: ['Jean-Jacques Rousseau', 'Montesquieu', 'Voltaire', 'Denis Diderot'], answerIndex: 0 },
-  { prompt: 'Dans quel domaine scientifique le prestige du « Prix Turing » est-il l’équivalent du Prix Nobel ?', options: ['En informatique', 'En chimie', 'En économie', 'En mathématiques'], answerIndex: 0 },
-  { prompt: 'Qui a peint le chef-d’œuvre « La Jeune Fille à la perle » ?', options: ['Johannes Vermeer', 'Rembrandt', 'Peter Paul Rubens', 'Frans Hals'], answerIndex: 0 },
-
-  // Actualités récentes & Économie (2023-2026)
-  { prompt: 'Quel économiste français est l’auteur de « Le Capital au XXIe siècle » ?', options: ['Thomas Piketty', 'Jean Tirole', 'Esther Duflo', 'Gabriel Zucman'], answerIndex: 0 },
-  { prompt: 'Quel prix Nobel d’économie français a reçu la distinction en 2014 pour ses travaux sur la régulation des marchés ?', options: ['Jean Tirole', 'Esther Duflo', 'Maurice Allais', 'Gérard Debreu'], answerIndex: 0 },
-  { prompt: 'Quelle économiste franco-américaine a obtenu le prix Nobel d’économie en 2019 pour ses travaux sur la pauvreté ?', options: ['Esther Duflo', 'Christine Lagarde', 'Valérie Pécresse', 'Célestin Freinet'], answerIndex: 0 },
-  { prompt: 'Quel pays a rejoint la zone euro en tant que 20e membre le 1er janvier 2023 ?', options: ['La Croatie', 'La Bulgarie', 'La Roumanie', 'La Pologne'], answerIndex: 0 },
-  { prompt: 'Où se sont déroulés les Jeux Olympiques et Paralympiques d’été de 2024 ?', options: ['Paris', 'Los Angeles', 'Brisbane', 'Tokyo'], answerIndex: 0 },
-  { prompt: 'Quelle ville accueillera les Jeux Olympiques d’été de 2028 ?', options: ['Los Angeles', 'Brisbane', 'Madrid', 'Rome'], answerIndex: 0 },
-  { prompt: 'Quel dirigeant préside la Banque Centrale Européenne (BCE) depuis 2019 ?', options: ['Christine Lagarde', 'Mario Draghi', 'Jean-Claude Trichet', 'Ursula von der Leyen'], answerIndex: 0 },
-  { prompt: 'Qui préside la Commission Européenne depuis 2019 ?', options: ['Ursula von der Leyen', 'Roberta Metsola', 'Charles Michel', 'Josep Borrell'], answerIndex: 0 },
-  { prompt: 'Quel est le siège de la Cour de Justice de l’Union Européenne (CJUE) ?', options: ['Luxembourg', 'Strasbourg', 'Bruxelles', 'La Haye'], answerIndex: 0 },
-  { prompt: 'Où siège la Cour Internationale de Justice (CIJ) de l’ONU ?', options: ['La Haye', 'Genève', 'New York', 'Vienne'], answerIndex: 0 },
-  { prompt: 'Quel traité signé en 1992 a fondé l’Union Européenne et instauré l’Euro ?', options: ['Traité de Maastricht', 'Traité de Rome', 'Traité de Lisbonne', 'Traité d’Amsterdam'], answerIndex: 0 },
-  { prompt: 'En quelle année le Traité de Rome instituant la CEE a-t-il été signé ?', options: ['1957', '1951', '1963', '1992'], answerIndex: 0 },
-  { prompt: 'Quel traité modificateur entré en vigueur en 2009 a réformé les institutions européennes ?', options: ['Traité de Lisbonne', 'Traité de Maastricht', 'Traité de Nice', 'Traité d’Amsterdam'], answerIndex: 0 },
-  { prompt: 'Quel réseau social a été racheté par Elon Musk en 2022 et renommé « X » ?', options: ['Twitter', 'LinkedIn', 'Reddit', 'Snapchat'], answerIndex: 0 },
-  { prompt: 'Quelle entreprise a développé le chatbot d’intelligence artificielle ChatGPT ?', options: ['OpenAI', 'Google', 'Meta', 'Anthropic'], answerIndex: 0 },
-  { prompt: 'Quel modèle d’IA générative a été lancé par Google pour rivaliser avec ChatGPT ?', options: ['Gemini', 'Claude', 'Llama', 'Mistral'], answerIndex: 0 },
-  { prompt: 'Quelle est la pépite française (start-up) de l’IA fondée par Arthur Mensch en 2023 ?', options: ['Mistral AI', 'Hugging Face', 'Alan', 'Dataiku'], answerIndex: 0 },
-  { prompt: 'Quel est le premier groupe mondial du secteur du luxe présidé par Bernard Arnault ?', options: ['LVMH', 'Kering', 'Hermès', 'Richemont'], answerIndex: 0 },
-  { prompt: 'Quel groupe français détient les marques Gucci, Saint Laurent et Balenciaga ?', options: ['Kering', 'LVMH', 'Hermès', 'L’Oréal'], answerIndex: 0 },
-  { prompt: 'Quel groupe automobile est né de la fusion entre PSA et Fiat Chrysler en 2021 ?', options: ['Stellantis', 'Renault Group', 'Volkswagen Group', 'Forvia'], answerIndex: 0 },
-
-  // Théories du Management, Économie & Entreprises
-  { prompt: 'Quel auteur est le père de l’Organisation Scientifique du Travail (OST) ?', options: ['Frederick Taylor', 'Henri Fayol', 'Max Weber', 'Elton Mayo'], answerIndex: 0 },
-  { prompt: 'Quel théoricien a énoncé les 5 fonctions de la direction (POCCC) ?', options: ['Henri Fayol', 'Frederick Taylor', 'Peter Drucker', 'Henry Mintzberg'], answerIndex: 0 },
-  { prompt: 'Quelle école du management Elton Mayo a-t-il fondée avec les expériences de Hawthorne ?', options: ['L’École des Relations Humaines', 'L’École Classique', 'L’École Contingente', 'L’École Systémique'], answerIndex: 0 },
-  { prompt: 'Quel sociologue a conceptualisé la bureaucratie rationnelle-légale ?', options: ['Max Weber', 'Émile Durkheim', 'Pierre Bourdieu', 'Michel Crozier'], answerIndex: 0 },
-  { prompt: 'Quel auteur a formalisé les Théories X (pessimiste) et Y (optimiste) de l’homme au travail ?', options: ['Douglas McGregor', 'Frederick Herzberg', 'Abraham Maslow', 'Kurt Lewin'], answerIndex: 0 },
-  { prompt: 'Qui est l’auteur de la célèbre théorie des deux facteurs (facteurs moteurs / d’hygiène) ?', options: ['Frederick Herzberg', 'Abraham Maslow', 'Douglas McGregor', 'Victor Vroom'], answerIndex: 0 },
-  { prompt: 'Quel universitaire a théorisé les 5 forces concurrentielles et la chaîne de valeur ?', options: ['Michael Porter', 'Igor Ansoff', 'Henry Mintzberg', 'Philip Kotler'], answerIndex: 0 },
-  { prompt: 'Quel économiste autrichien est le théoricien de la « destruction créatrice » et de l’innovation ?', options: ['Joseph Schumpeter', 'Friedrich Hayek', 'Ludwig von Mises', 'Karl Polanyi'], answerIndex: 0 },
-  { prompt: 'Qui a théorisé la loi des débouchés (« toute offre crée sa propre demande ») ?', options: ['Jean-Baptiste Say', 'Adam Smith', 'David Ricardo', 'Thomas Malthus'], answerIndex: 0 },
-  { prompt: 'Quel économiste libéral britannique a formulé la théorie des avantages comparatifs ?', options: ['David Ricardo', 'Adam Smith', 'John Stuart Mill', 'Alfred Marshall'], answerIndex: 0 },
-  { prompt: 'Quel auteur est le père du Management Par Objectifs (DPO) ?', options: ['Peter Drucker', 'Henry Mintzberg', 'Philip Kotler', 'Michael Porter'], answerIndex: 0 },
-  { prompt: 'Qui a défini la grille comportementale des styles de commandement (1,1 à 9,9) ?', options: ['Blake et Mouton', 'Hersey et Blanchard', 'Lewin et Lippitt', 'Likert et Taylor'], answerIndex: 0 },
-  { prompt: 'Quel auteur est célèbre pour les 4 styles de management (Exploiteur, Paternaliste, Consultatif, Participatif) ?', options: ['Rensis Likert', 'Kurt Lewin', 'Fred Fiedler', 'Henri Fayol'], answerIndex: 0 },
-  { prompt: 'Quel cabinet de conseil en stratégie a créé la matrice BCG (Vedettes, Vaches à lait, Dilemmes, Poids morts) ?', options: ['Boston Consulting Group', 'McKinsey & Company', 'Bain & Company', 'Oliver Wyman'], answerIndex: 0 },
-  { prompt: 'Que signifie l’acronyme SWOT en analyse stratégique ?', options: ['Strengths, Weaknesses, Opportunities, Threats', 'Strategy, Workforce, Operations, Targets', 'Sales, Wealth, Organization, Technology', 'Scope, Weight, Order, Timing'], answerIndex: 0 },
-  { prompt: 'Que mesure la matrice PESTEL ?', options: ['Les facteurs macro-environnementaux (Politique, Éco, Social, Techno, Écolo, Légal)', 'Les performances financières d’une filiale', 'Le taux de satisfaction des clients', 'Le niveau de motivation des salariés'], answerIndex: 0 },
-
-  // Histoire, Politique, Droit & Institutions
-  { prompt: 'En quelle année la Vème République française a-t-elle été promulguée ?', options: ['1958', '1945', '1946', '1962'], answerIndex: 0 },
-  { prompt: 'Qui a été le premier Président de la Vème République française ?', options: ['Charles de Gaulle', 'Georges Pompidou', 'Valéry Giscard d’Estaing', 'François Mitterrand'], answerIndex: 0 },
-  { prompt: 'En quelle année le suffrage universel direct pour l’élection présidentielle française a-t-il été adopté par référendum ?', options: ['1962', '1958', '1965', '1974'], answerIndex: 0 },
-  { prompt: 'Qui a été le premier Premier ministre de la Vème République sous Charles de Gaulle ?', options: ['Michel Debré', 'Georges Pompidou', 'Maurice Couve de Murville', 'Jacques Chaban-Delmas'], answerIndex: 0 },
-  { prompt: 'En quelle année la peine de mort a-t-elle été abolie en France sous l’impulsion de Robert Badinter ?', options: ['1981', '1974', '1988', '1995'], answerIndex: 0 },
-  { prompt: 'En quelle année le quinquennat présidentiel a-t-il remplacé le septennat en France ?', options: ['2000', '1995', '2002', '2007'], answerIndex: 0 },
-  { prompt: 'Quel président américain a prononcé le discours du « New Deal » pendant la Grande Dépression ?', options: ['Franklin D. Roosevelt', 'Herbert Hoover', 'Harry Truman', 'Woodrow Wilson'], answerIndex: 0 },
-  { prompt: 'En quelle année le mur de Berlin est-il tombé ?', options: ['1989', '1991', '1985', '1979'], answerIndex: 0 },
-  { prompt: 'En quelle année l’URSS a-t-elle été officiellement dissoute ?', options: ['1991', '1989', '1993', '1985'], answerIndex: 0 },
-  { prompt: 'Quel accord international de 1944 a instauré le système monétaire d’après-guerre et le FMI ?', options: ['Accords de Bretton Woods', 'Accords de Yalta', 'Accords de Potsdam', 'Accords de Genève'], answerIndex: 0 },
-  { prompt: 'En quelle année le président américain Richard Nixon a-t-il mis fin à la convertibilité du dollar en or ?', options: ['1971', '1973', '1968', '1975'], answerIndex: 0 },
-  { prompt: 'Quel choc pétrolier a eu lieu en 1973 suite à la guerre du Kippour ?', options: ['Le premier choc pétrolier', 'Le deuxième choc pétrolier', 'La crise des subprimes', 'Le krach de 1929'], answerIndex: 0 },
-
-  // Culture, Arts, Géographie & Sciences
-  { prompt: 'Quelle est la capitale de l’Australie ?', options: ['Canberra', 'Sydney', 'Melbourne', 'Brisbane'], answerIndex: 0 },
-  { prompt: 'Quelle est la capitale du Canada ?', options: ['Ottawa', 'Toronto', 'Montréal', 'Vancouver'], answerIndex: 0 },
-  { prompt: 'Quelle est la capitale du Brésil ?', options: ['Brasília', 'Rio de Janeiro', 'São Paulo', 'Salvador'], answerIndex: 0 },
-  { prompt: 'Quel est le plus long fleuve du monde ?', options: ['Le Nil (ou l’Amazone selon les mesures)', 'Le Mississippi', 'Le Yangtsé', 'Le Danube'], answerIndex: 0 },
-  { prompt: 'Quel détroit sépare l’Espagne du Maroc ?', options: ['Détroit de Gibraltar', 'Détroit du Bosphore', 'Détroit d’Ormuz', 'Détroit de Malacca'], answerIndex: 0 },
-  { prompt: 'Qui a peint le célèbre tableau « Guernica » en 1937 ?', options: ['Pablo Picasso', 'Salvador Dalí', 'Henri Matisse', 'Claude Monet'], answerIndex: 0 },
-  { prompt: 'Qui a écrit « À la recherche du temps perdu » ?', options: ['Marcel Proust', 'Victor Hugo', 'Émile Zola', 'Gustave Flaubert'], answerIndex: 0 },
-  { prompt: 'Quel écrivain français a reçu le prix Nobel de littérature en 2022 ?', options: ['Annie Ernaux', 'Patrick Modiano', 'Jean-Marie Gustave Le Clézio', 'Albert Camus'], answerIndex: 0 },
-  { prompt: 'Quel scientifique a découvert la pénicilline en 1928 ?', options: ['Alexander Fleming', 'Louis Pasteur', 'Robert Koch', 'Marie Curie'], answerIndex: 0 },
-  { prompt: 'Qui a découvert la radioactivité naturelle et a reçu deux prix Nobel ?', options: ['Marie Curie', 'Pierre Curie', 'Rosalind Franklin', 'Irène Joliot-Curie'], answerIndex: 0 }
+  {
+    "prompt": "[Culture G SIM n°1] Qui est l'auteur du livre 'La Richesse des Nations' (1776), considéré comme le fondateur de l'économie politique classique ?",
+    "options": [
+      "Karl Marx",
+      "John Maynard Keynes",
+      "David Ricardo",
+      "Adam Smith"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°2] Qui est l'économiste britannique ayant théorisé la loi des avantages comparatifs en matière de commerce international ?",
+    "options": [
+      "Adam Smith",
+      "David Ricardo",
+      "Jean-Baptiste Say",
+      "Thomas Malthus"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°3] Quel économiste du XXe siècle a théorisé l'interventionnisme public et la relance par la demande dans sa 'Théorie générale' (1936) ?",
+    "options": [
+      "Milton Friedman",
+      "Friedrich Hayek",
+      "John Maynard Keynes",
+      "Joseph Schumpeter"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°4] Quel concept central Joseph Schumpeter a-t-il associé à l'innovation et au rôle clé de l'entrepreneur ?",
+    "options": [
+      "La main invisible",
+      "La destruction créatrice",
+      "La loi des débouchés",
+      "La valeur-travail"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°5] Quel chef de file de l'École de Chicago s'est opposé au kéynesianisme en prônant le monétarisme ?",
+    "options": [
+      "Paul Samuelson",
+      "Paul Krugman",
+      "Milton Friedman",
+      "Joseph Stiglitz"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°6] Quel économiste français a reçu le Prix Nobel d'économie en 2014 pour son analyse du pouvoir de marché et de la régulation ?",
+    "options": [
+      "Philippe Aghion",
+      "Esther Duflo",
+      "Jean Tirole",
+      "Thomas Piketty"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°7] Quelle économiste franco-américaine a obtenu le Prix Nobel d'économie en 2019 pour sa méthode expérimentale de lutte contre la pauvreté ?",
+    "options": [
+      "Elinor Ostrom",
+      "Esther Duflo",
+      "Abhijit Banerjee",
+      "Claudia Goldin"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°8] Où se situe le siège officiel de la Banque Centrale Européenne (BCE) ?",
+    "options": [
+      "Francfort (Allemagne)",
+      "Luxembourg",
+      "Bruxelles (Belgique)",
+      "Strasbourg (France)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°9] Qui préside la Réserve Fédérale des États-Unis (FED) en 2026 ?",
+    "options": [
+      "Alan Greenspan",
+      "Ben Bernanke",
+      "Janet Yellen",
+      "Jerome Powell"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°10] Qui préside la Banque Centrale Européenne (BCE) en 2026 ?",
+    "options": [
+      "Christine Lagarde",
+      "Ursula von der Leyen",
+      "Jean-Claude Trichet",
+      "Mario Draghi"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°11] Dans quelle ville se sont tenus les accords de 1944 ayant créé le FMI et la Banque Mondiale ?",
+    "options": [
+      "Genève (Suisse)",
+      "Bretton Woods (USA)",
+      "Yalta (URSS)",
+      "San Francisco (USA)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°12] Où se trouve le siège de l'Organisation Mondiale du Commerce (OMC) ?",
+    "options": [
+      "Vienne (Autriche)",
+      "Paris (France)",
+      "Genève (Suisse)",
+      "New York (USA)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°13] Que désigne le terme 'Stagflation' en macroéconomie ?",
+    "options": [
+      "La baisse générale et durable des prix",
+      "La coexistence d'une faible croissance (ou récession) et d'une forte inflation",
+      "Une période de forte croissance sans aucune hausse des prix",
+      "Une hausse spectaculaire des cours boursiers"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°14] Quel indice boursier regroupe les 40 plus grandes capitalisations cotées à Euronext Paris ?",
+    "options": [
+      "Dow Jones",
+      "FTSE 100",
+      "DAX 40",
+      "CAC 40"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°15] Quel est le principal indice boursier de la Bourse de Francfort en Allemagne ?",
+    "options": [
+      "Nikkei 225",
+      "DAX 40",
+      "Hang Seng",
+      "CAC 40"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°16] Quel est l'indice boursier représentatif des valeurs technologiques aux États-Unis ?",
+    "options": [
+      "Dow Jones",
+      "S&P 500",
+      "Russell 2000",
+      "NASDAQ"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°17] Qui est le fondateur du groupe LVMH et l'une des plus grandes fortunes mondiales ?",
+    "options": [
+      "Vincent Bolloré",
+      "François-Henri Pinault",
+      "Bernard Arnault",
+      "Alain Wertheimer"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°18] Qui est le cofondateur et PDG emblématique de Tesla et de SpaceX ?",
+    "options": [
+      "Elon Musk",
+      "Larry Page",
+      "Jeff Bezos",
+      "Mark Zuckerberg"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°19] Où se trouve le siège mondial de l'entreprise Apple ?",
+    "options": [
+      "Redmond (Washington)",
+      "Cupertino (Californie)",
+      "Seattle (Washington)",
+      "Austin (Texas)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°20] Où se situe le siège mondial de Microsoft ?",
+    "options": [
+      "Cupertino (Californie)",
+      "Redmond (Washington)",
+      "Menlo Park (Californie)",
+      "Mountain View (Californie)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°21] Qui a formulé la théorie des '5 forces de la concurrence' et de la chaîne de valeur en stratégie d'entreprise ?",
+    "options": [
+      "Peter Drucker",
+      "Philip Kotler",
+      "Michael Porter",
+      "Henry Mintzberg"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°22] Quelle matrice d'analyse stratégique classe les produits en 'Vaches à lait', 'Vedettes', 'Dilemmes' et 'Poids morts' ?",
+    "options": [
+      "Matrice McKinsey",
+      "Matrice ADL",
+      "Matrice Ansoff",
+      "Matrice BCG (Boston Consulting Group)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°23] Que signifie l'acronyme PESTEL en analyse de l'environnement de l'entreprise ?",
+    "options": [
+      "Production, Emploi, Stratégie, Taxe, Éthique, Logistique",
+      "Prix, Export, Service, Tarif, Énergie, Licence",
+      "Politique, Économique, Sociologique, Technologique, Écologique, Légal",
+      "Projet, Équipe, Suivi, Test, Évaluation, Lancement"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°24] Qui est le père de l'Organisation Scientifique du Travail (OST) fondé sur le travail à la chaîne ?",
+    "options": [
+      "Elton Mayo",
+      "Henri Fayol",
+      "Frederick Winslow Taylor",
+      "Max Weber"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°25] Qui est l'auteur du management administratif résumé par la règle POCCC (Prévoir, Organiser, Commander, Coordonner, Contrôler) ?",
+    "options": [
+      "Elton Mayo",
+      "Frederick Taylor",
+      "Max Weber",
+      "Henri Fayol"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°26] Quel sociologue a mis en évidence l'effet Hawthorne (impact des relations humaines sur la productivité) ?",
+    "options": [
+      "Émile Durkheim",
+      "Pierre Bourdieu",
+      "Max Weber",
+      "Elton Mayo"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°27] Quel penseur a théorisé l'autorité charismatique, traditionnelle et rationnelle-légale (bureaucratie) ?",
+    "options": [
+      "Max Weber",
+      "Karl Marx",
+      "Alexis de Tocqueville",
+      "Auguste Comte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°28] En quelle année les Jeux Olympiques d'été se sont-ils déroulés à Paris ?",
+    "options": [
+      "2012",
+      "2020",
+      "2024",
+      "2016"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°29] Quel pays a rejoint le groupe des BRICS en tant que nouveau membre en 2024 ?",
+    "options": [
+      "Canada",
+      "Australie",
+      "Égypte / Émirats Arabes Unis / Éthiopie / Iran",
+      "Japon"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°30] Qui est le président de la République française depuis mai 2017 ?",
+    "options": [
+      "Nicolas Sarkozy",
+      "Jacques Chirac",
+      "François Hollande",
+      "Emmanuel Macron"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°31] Quelles sont les dates exactes du mandat de François Mitterrand à la présidence de la République ?",
+    "options": [
+      "1981 - 1995",
+      "1974 - 1981",
+      "1995 - 2007",
+      "2007 - 2012"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°32] Qui fut le premier président de la Vème République française de 1959 à 1969 ?",
+    "options": [
+      "François Mitterrand",
+      "Georges Pompidou",
+      "Valéry Giscard d'Estaing",
+      "Charles de Gaulle"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°33] Quelle institution française est chargée de vérifier la conformité des lois à la Constitution ?",
+    "options": [
+      "Cour de cassation",
+      "Cour des comptes",
+      "Conseil d'État",
+      "Conseil constitutionnel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°34] Quelle est la capitale officielle du Maroc ?",
+    "options": [
+      "Rabat",
+      "Tanger",
+      "Casablanca",
+      "Marrakech"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°35] Quelle est la capitale administrative de la Suisse ?",
+    "options": [
+      "Berne",
+      "Zurich",
+      "Bâle",
+      "Genève"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°36] Quelle est la capitale officielle de la Turquie ?",
+    "options": [
+      "Izmir",
+      "Istanbul",
+      "Ankara",
+      "Brousse"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°37] Quelle est la capitale officielle de l'Australie ?",
+    "options": [
+      "Brisbane",
+      "Canberra",
+      "Melbourne",
+      "Sydney"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°38] Qui a peint le tableau 'Guernica' conservé au Musée Reina Sofía de Madrid ?",
+    "options": [
+      "Joan Miró",
+      "Francisco de Goya",
+      "Salvador Dalí",
+      "Pablo Picasso"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°39] Qui a écrit l'œuvre littéraire 'À la recherche du temps perdu' ?",
+    "options": [
+      "Victor Hugo",
+      "Émile Zola",
+      "Gustave Flaubert",
+      "Marcel Proust"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°40] Qui a reçu le Prix Nobel de littérature en 2022 ?",
+    "options": [
+      "Annie Ernaux",
+      "Albert Camus",
+      "Patrick Modiano",
+      "Jean-Marie Gustave Le Clézio"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°41] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Facebook",
+      "Apple",
+      "Microsoft",
+      "Google"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°42] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "Think Different",
+      "The Power to Be Your Best",
+      "Connecting People"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°43] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Indonésie",
+      "La Chine",
+      "Les États-Unis",
+      "L'Inde"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°44] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "La Tour Eiffel",
+      "Le Sacré-Cœur"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°45] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Allemagne",
+      "L'Espagne",
+      "La Suède",
+      "La France"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°46] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Linus Torvalds",
+      "Richard Stallman",
+      "Steve Wozniak",
+      "Ken Thompson"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°47] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "SMTP",
+      "FTP",
+      "HTTPS"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°48] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "7 ans",
+      "4 ans",
+      "6 ans",
+      "5 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°49] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "6 ans",
+      "5 ans",
+      "7 ans",
+      "4 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°50] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Luxembourg",
+      "Strasbourg",
+      "Genève",
+      "La Haye"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°51] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Microsoft",
+      "Facebook",
+      "Google",
+      "Apple"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°52] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Think Different",
+      "The Power to Be Your Best",
+      "Just Do It",
+      "Connecting People"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°53] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "La Chine",
+      "L'Indonésie",
+      "L'Inde"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°54] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Grand Palais",
+      "L'Arc de Triomphe",
+      "Le Sacré-Cœur",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°55] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "L'Allemagne",
+      "La Suède",
+      "La France"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°56] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Linus Torvalds",
+      "Steve Wozniak",
+      "Richard Stallman",
+      "Ken Thompson"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°57] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "SMTP",
+      "HTTPS",
+      "UDP",
+      "FTP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°58] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "6 ans",
+      "4 ans",
+      "5 ans",
+      "7 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°59] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "6 ans",
+      "5 ans",
+      "4 ans",
+      "7 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°60] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Luxembourg",
+      "Genève",
+      "Strasbourg"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°61] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Apple",
+      "Microsoft",
+      "Google",
+      "Facebook"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°62] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Connecting People",
+      "Just Do It",
+      "The Power to Be Your Best",
+      "Think Different"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°63] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "L'Indonésie",
+      "La Chine",
+      "Les États-Unis"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°64] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "Le Grand Palais",
+      "La Tour Eiffel",
+      "L'Arc de Triomphe"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°65] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Allemagne",
+      "La France",
+      "L'Espagne",
+      "La Suède"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°66] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Steve Wozniak",
+      "Richard Stallman",
+      "Linus Torvalds",
+      "Ken Thompson"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°67] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "HTTPS",
+      "SMTP",
+      "FTP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°68] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "5 ans",
+      "7 ans",
+      "4 ans",
+      "6 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°69] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "4 ans",
+      "5 ans",
+      "7 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°70] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Strasbourg",
+      "Luxembourg",
+      "Genève",
+      "La Haye"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°71] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Apple",
+      "Microsoft",
+      "Facebook"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°72] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Think Different",
+      "The Power to Be Your Best",
+      "Connecting People",
+      "Just Do It"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°73] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "L'Inde",
+      "La Chine",
+      "L'Indonésie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°74] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "Le Sacré-Cœur",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°75] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La France",
+      "L'Allemagne",
+      "L'Espagne",
+      "La Suède"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°76] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Linus Torvalds",
+      "Richard Stallman"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°77] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "HTTPS",
+      "UDP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°78] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "6 ans",
+      "4 ans",
+      "7 ans",
+      "5 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°79] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "6 ans",
+      "4 ans",
+      "5 ans",
+      "7 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°80] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Strasbourg",
+      "Luxembourg",
+      "Genève"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°81] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Facebook",
+      "Apple"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°82] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "Think Different",
+      "Connecting People",
+      "The Power to Be Your Best"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°83] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "La Chine",
+      "Les États-Unis",
+      "L'Indonésie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°84] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "Le Grand Palais",
+      "L'Arc de Triomphe",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°85] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "L'Espagne",
+      "L'Allemagne",
+      "La France"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°86] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Linus Torvalds",
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Richard Stallman"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°87] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°88] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "5 ans",
+      "4 ans",
+      "6 ans",
+      "7 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°89] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "5 ans",
+      "4 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°90] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Genève",
+      "Strasbourg",
+      "Luxembourg",
+      "La Haye"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°91] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Facebook",
+      "Apple",
+      "Google",
+      "Microsoft"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°92] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Connecting People",
+      "Think Different",
+      "The Power to Be Your Best",
+      "Just Do It"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°93] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "Les États-Unis",
+      "L'Indonésie",
+      "La Chine"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°94] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°95] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "La France",
+      "L'Allemagne",
+      "L'Espagne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°96] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Linus Torvalds",
+      "Steve Wozniak",
+      "Richard Stallman",
+      "Ken Thompson"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°97] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°98] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "4 ans",
+      "6 ans",
+      "5 ans",
+      "7 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°99] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "4 ans",
+      "6 ans",
+      "5 ans",
+      "7 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°100] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Luxembourg",
+      "Strasbourg",
+      "La Haye",
+      "Genève"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°101] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Apple",
+      "Facebook"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°102] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "The Power to Be Your Best",
+      "Connecting People",
+      "Think Different",
+      "Just Do It"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°103] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "La Chine",
+      "L'Indonésie",
+      "Les États-Unis"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°104] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "La Tour Eiffel",
+      "Le Grand Palais",
+      "L'Arc de Triomphe",
+      "Le Sacré-Cœur"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°105] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "La France",
+      "La Suède",
+      "L'Allemagne"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°106] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Steve Wozniak",
+      "Ken Thompson",
+      "Linus Torvalds",
+      "Richard Stallman"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°107] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "SMTP",
+      "FTP",
+      "HTTPS",
+      "UDP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°108] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "6 ans",
+      "7 ans",
+      "4 ans",
+      "5 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°109] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "4 ans",
+      "5 ans",
+      "6 ans",
+      "7 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°110] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Luxembourg",
+      "Genève",
+      "Strasbourg"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°111] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Apple",
+      "Facebook",
+      "Microsoft",
+      "Google"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°112] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "The Power to Be Your Best",
+      "Think Different",
+      "Connecting People"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°113] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "L'Indonésie",
+      "L'Inde",
+      "La Chine"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°114] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "L'Arc de Triomphe",
+      "La Tour Eiffel",
+      "Le Sacré-Cœur",
+      "Le Grand Palais"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°115] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "La France",
+      "La Suède",
+      "L'Allemagne"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°116] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Linus Torvalds",
+      "Richard Stallman"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°117] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "UDP",
+      "SMTP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°118] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "7 ans",
+      "6 ans",
+      "5 ans",
+      "4 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°119] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "5 ans",
+      "4 ans",
+      "7 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°120] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Genève",
+      "Luxembourg",
+      "Strasbourg"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°121] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Facebook",
+      "Apple",
+      "Microsoft",
+      "Google"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°122] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Think Different",
+      "Just Do It",
+      "The Power to Be Your Best",
+      "Connecting People"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°123] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Indonésie",
+      "La Chine",
+      "L'Inde",
+      "Les États-Unis"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°124] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "La Tour Eiffel",
+      "Le Sacré-Cœur"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°125] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "L'Allemagne",
+      "La France",
+      "La Suède"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°126] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Richard Stallman",
+      "Linus Torvalds",
+      "Ken Thompson",
+      "Steve Wozniak"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°127] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "SMTP",
+      "HTTPS",
+      "FTP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°128] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "4 ans",
+      "5 ans",
+      "6 ans",
+      "7 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°129] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "6 ans",
+      "7 ans",
+      "5 ans",
+      "4 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°130] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Genève",
+      "Strasbourg",
+      "Luxembourg"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°131] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Facebook"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°132] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "The Power to Be Your Best",
+      "Connecting People",
+      "Think Different",
+      "Just Do It"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°133] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "L'Indonésie",
+      "Les États-Unis",
+      "La Chine"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°134] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Grand Palais",
+      "Le Sacré-Cœur",
+      "La Tour Eiffel",
+      "L'Arc de Triomphe"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°135] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "La France",
+      "L'Allemagne",
+      "L'Espagne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°136] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Linus Torvalds",
+      "Richard Stallman"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°137] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "UDP",
+      "SMTP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°138] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "5 ans",
+      "7 ans",
+      "4 ans",
+      "6 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°139] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "6 ans",
+      "5 ans",
+      "4 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°140] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Strasbourg",
+      "Luxembourg",
+      "Genève"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°141] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Apple",
+      "Facebook"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°142] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "The Power to Be Your Best",
+      "Think Different",
+      "Connecting People",
+      "Just Do It"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°143] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Indonésie",
+      "L'Inde",
+      "La Chine",
+      "Les États-Unis"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°144] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "La Tour Eiffel",
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "Le Sacré-Cœur"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°145] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La France",
+      "L'Espagne",
+      "La Suède",
+      "L'Allemagne"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°146] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Richard Stallman",
+      "Linus Torvalds"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°147] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "FTP",
+      "HTTPS",
+      "SMTP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°148] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "4 ans",
+      "7 ans",
+      "6 ans",
+      "5 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°149] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "4 ans",
+      "5 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°150] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Luxembourg",
+      "Genève",
+      "Strasbourg",
+      "La Haye"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°151] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Microsoft",
+      "Facebook",
+      "Apple",
+      "Google"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°152] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "Connecting People",
+      "Think Different",
+      "The Power to Be Your Best"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°153] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "L'Inde",
+      "L'Indonésie",
+      "La Chine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°154] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "L'Arc de Triomphe",
+      "Le Sacré-Cœur",
+      "Le Grand Palais",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°155] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "La France",
+      "L'Allemagne",
+      "L'Espagne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°156] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Richard Stallman",
+      "Ken Thompson",
+      "Linus Torvalds",
+      "Steve Wozniak"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°157] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "HTTPS",
+      "UDP",
+      "SMTP",
+      "FTP"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°158] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "5 ans",
+      "6 ans",
+      "4 ans",
+      "7 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°159] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "6 ans",
+      "5 ans",
+      "4 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°160] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Luxembourg",
+      "Strasbourg",
+      "Genève"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°161] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Facebook",
+      "Microsoft",
+      "Apple"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°162] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "Think Different",
+      "The Power to Be Your Best",
+      "Connecting People"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°163] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "L'Indonésie",
+      "La Chine",
+      "Les États-Unis"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°164] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "La Tour Eiffel",
+      "Le Grand Palais",
+      "L'Arc de Triomphe"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°165] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "La France",
+      "L'Allemagne",
+      "L'Espagne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°166] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Richard Stallman",
+      "Linus Torvalds",
+      "Steve Wozniak"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°167] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "UDP",
+      "HTTPS"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°168] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "6 ans",
+      "5 ans",
+      "7 ans",
+      "4 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°169] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "6 ans",
+      "7 ans",
+      "5 ans",
+      "4 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°170] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Strasbourg",
+      "Genève",
+      "Luxembourg"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°171] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Facebook",
+      "Microsoft",
+      "Apple"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°172] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Think Different",
+      "Connecting People",
+      "Just Do It",
+      "The Power to Be Your Best"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°173] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Indonésie",
+      "L'Inde",
+      "Les États-Unis",
+      "La Chine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°174] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "La Tour Eiffel",
+      "L'Arc de Triomphe",
+      "Le Grand Palais"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°175] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "La France",
+      "L'Allemagne",
+      "La Suède"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°176] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Steve Wozniak",
+      "Linus Torvalds",
+      "Richard Stallman",
+      "Ken Thompson"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°177] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "SMTP",
+      "UDP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°178] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "6 ans",
+      "4 ans",
+      "5 ans",
+      "7 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°179] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "4 ans",
+      "7 ans",
+      "5 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°180] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Strasbourg",
+      "Luxembourg",
+      "Genève"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°181] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Facebook",
+      "Apple",
+      "Google",
+      "Microsoft"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°182] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Connecting People",
+      "Just Do It",
+      "Think Different",
+      "The Power to Be Your Best"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°183] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "La Chine",
+      "L'Inde",
+      "L'Indonésie",
+      "Les États-Unis"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°184] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Grand Palais",
+      "Le Sacré-Cœur",
+      "La Tour Eiffel",
+      "L'Arc de Triomphe"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°185] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Allemagne",
+      "La Suède",
+      "L'Espagne",
+      "La France"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°186] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Richard Stallman",
+      "Steve Wozniak",
+      "Linus Torvalds",
+      "Ken Thompson"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°187] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "FTP",
+      "SMTP",
+      "HTTPS"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°188] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "6 ans",
+      "7 ans",
+      "4 ans",
+      "5 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°189] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "5 ans",
+      "4 ans",
+      "7 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°190] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Genève",
+      "La Haye",
+      "Strasbourg",
+      "Luxembourg"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°191] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Facebook"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°192] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "The Power to Be Your Best",
+      "Connecting People",
+      "Just Do It",
+      "Think Different"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°193] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "L'Indonésie",
+      "La Chine",
+      "L'Inde"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°194] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "La Tour Eiffel",
+      "Le Grand Palais",
+      "L'Arc de Triomphe",
+      "Le Sacré-Cœur"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°195] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "L'Allemagne",
+      "L'Espagne",
+      "La France"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°196] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Richard Stallman",
+      "Steve Wozniak",
+      "Ken Thompson",
+      "Linus Torvalds"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°197] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "SMTP",
+      "FTP",
+      "HTTPS",
+      "UDP"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°198] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "4 ans",
+      "5 ans",
+      "7 ans",
+      "6 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°199] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "5 ans",
+      "4 ans",
+      "6 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°200] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Genève",
+      "Strasbourg",
+      "La Haye",
+      "Luxembourg"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°201] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Apple",
+      "Facebook"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°202] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Think Different",
+      "The Power to Be Your Best",
+      "Connecting People",
+      "Just Do It"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°203] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "La Chine",
+      "L'Inde",
+      "L'Indonésie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°204] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "Le Grand Palais",
+      "L'Arc de Triomphe",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°205] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "La Suède",
+      "La France",
+      "L'Allemagne"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°206] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Richard Stallman",
+      "Ken Thompson",
+      "Linus Torvalds",
+      "Steve Wozniak"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°207] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "UDP",
+      "SMTP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°208] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "5 ans",
+      "6 ans",
+      "7 ans",
+      "4 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°209] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "5 ans",
+      "6 ans",
+      "4 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°210] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Genève",
+      "Luxembourg",
+      "Strasbourg",
+      "La Haye"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°211] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Facebook",
+      "Apple",
+      "Microsoft"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°212] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "The Power to Be Your Best",
+      "Connecting People",
+      "Think Different"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°213] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "Les États-Unis",
+      "L'Indonésie",
+      "La Chine"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°214] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°215] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "La France",
+      "L'Allemagne",
+      "La Suède"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°216] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Richard Stallman",
+      "Linus Torvalds"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°217] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "SMTP",
+      "UDP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°218] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "5 ans",
+      "6 ans",
+      "4 ans",
+      "7 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°219] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "6 ans",
+      "7 ans",
+      "5 ans",
+      "4 ans"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°220] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "La Haye",
+      "Genève",
+      "Strasbourg",
+      "Luxembourg"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°221] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Facebook",
+      "Apple"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°222] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Just Do It",
+      "The Power to Be Your Best",
+      "Think Different",
+      "Connecting People"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°223] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "Les États-Unis",
+      "L'Inde",
+      "L'Indonésie",
+      "La Chine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°224] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "Le Sacré-Cœur",
+      "L'Arc de Triomphe",
+      "Le Grand Palais",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°225] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "L'Espagne",
+      "L'Allemagne",
+      "La Suède",
+      "La France"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°226] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Steve Wozniak",
+      "Linus Torvalds",
+      "Ken Thompson",
+      "Richard Stallman"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°227] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "HTTPS",
+      "FTP",
+      "UDP",
+      "SMTP"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°228] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "7 ans",
+      "5 ans",
+      "4 ans",
+      "6 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°229] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "4 ans",
+      "6 ans",
+      "5 ans",
+      "7 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°230] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Genève",
+      "Luxembourg",
+      "La Haye",
+      "Strasbourg"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°231] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Google",
+      "Facebook",
+      "Microsoft",
+      "Apple"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°232] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Connecting People",
+      "Think Different",
+      "Just Do It",
+      "The Power to Be Your Best"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°233] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Indonésie",
+      "La Chine",
+      "Les États-Unis",
+      "L'Inde"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°234] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "L'Arc de Triomphe",
+      "Le Sacré-Cœur",
+      "Le Grand Palais",
+      "La Tour Eiffel"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°235] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "La France",
+      "L'Espagne",
+      "L'Allemagne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°236] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Linus Torvalds",
+      "Richard Stallman",
+      "Steve Wozniak"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°237] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "SMTP",
+      "UDP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°238] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "7 ans",
+      "6 ans",
+      "4 ans",
+      "5 ans"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°239] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "7 ans",
+      "4 ans",
+      "6 ans",
+      "5 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°240] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Genève",
+      "Luxembourg",
+      "La Haye",
+      "Strasbourg"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°241] Quelle entreprise a racheté LinkedIn en 2016 ?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Apple",
+      "Facebook"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°242] Quel est le slogan historique d'Apple créé en 1997 ?",
+    "options": [
+      "Connecting People",
+      "Just Do It",
+      "The Power to Be Your Best",
+      "Think Different"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°243] Quel pays possède la plus grande population mondiale depuis 2023 ?",
+    "options": [
+      "L'Inde",
+      "L'Indonésie",
+      "Les États-Unis",
+      "La Chine"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°244] Quel monument parisien a été inauguré pour l'Exposition universelle de 1889 ?",
+    "options": [
+      "La Tour Eiffel",
+      "Le Sacré-Cœur",
+      "Le Grand Palais",
+      "L'Arc de Triomphe"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°245] Quel pays ne fait PAS partie de la zone euro ?",
+    "options": [
+      "La Suède",
+      "L'Allemagne",
+      "La France",
+      "L'Espagne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Culture G SIM n°246] Qui est le créateur de la plateforme Linux ?",
+    "options": [
+      "Ken Thompson",
+      "Steve Wozniak",
+      "Richard Stallman",
+      "Linus Torvalds"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°247] Quel protocole informatique sécurise les transactions sur le Web (cadenas vert) ?",
+    "options": [
+      "UDP",
+      "SMTP",
+      "FTP",
+      "HTTPS"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Culture G SIM n°248] Quelle est la durée du mandat d'un député à l'Assemblée nationale en France ?",
+    "options": [
+      "4 ans",
+      "5 ans",
+      "7 ans",
+      "6 ans"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Culture G SIM n°249] Quelle est la durée du mandat d'un sénateur en France ?",
+    "options": [
+      "4 ans",
+      "7 ans",
+      "6 ans",
+      "5 ans"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Culture G SIM n°250] Quelle ville abrite le siège du Parlement européen conjointement avec Bruxelles ?",
+    "options": [
+      "Luxembourg",
+      "Genève",
+      "La Haye",
+      "Strasbourg"
+    ],
+    "answerIndex": 3
+  }
 ];
 
 // GENERATOR TEMPLATES TO SURPASS 1000+ DYNAMIC HIGH-YIELD QUESTIONS
@@ -675,42 +3088,42 @@ export function renderMemoIAECourse(section, ficheIdx) {
 
 export const IAE_FRENCH_QUIZ_DATA = [
   {
-    "prompt": "[Français SIM n°1] Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
+    "prompt": "[Français SIM n°1] Quelle est la tournure correcte avec le verbe 'pallier' ?",
     "options": [
-      "Pallier le problème",
-      "Pallier au problème",
+      "Pallier avec le problème",
+      "Pallier le problème (COD direct)",
       "Pallier de ce problème",
-      "Pallier avec le problème"
+      "Pallier au problème"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
     "prompt": "[Français SIM n°2] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
     "options": [
-      "est",
-      "soit",
+      "serait",
       "fût",
-      "serait"
+      "est (Indicatif)",
+      "soit (Subjonctif)"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Français SIM n°3] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
     "options": [
-      "fasse",
-      "fait",
+      "fait (Indicatif)",
       "ferait",
+      "fasse (Subjonctif)",
       "fît"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Français SIM n°4] Quel est le genre du mot 'aphte' ?",
     "options": [
       "Masculin (un aphte)",
-      "Féminin (une aphte)",
-      "Variable selon la région",
-      "Neutre"
+      "Neutre",
+      "Variable",
+      "Féminin (une aphte)"
     ],
     "answerIndex": 0
   },
@@ -719,1306 +3132,1156 @@ export const IAE_FRENCH_QUIZ_DATA = [
     "options": [
       "Féminin (une acné)",
       "Masculin (un acné)",
-      "Variable selon le contexte",
-      "Toujours au pluriel"
+      "Variable",
+      "Neutre"
     ],
     "answerIndex": 0
   },
   {
     "prompt": "[Français SIM n°6] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
     "options": [
-      "Dilemme",
-      "Dilemne",
+      "Dileme",
       "Dillemme",
-      "Dileme"
+      "Dilemne (avec 'nm')",
+      "Dilemme (avec 2 'm')"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "[Français SIM n°7] Comment s'accorde le mot 'demi' dans la formule 'trois heures et demi(e)' ?",
+    "prompt": "[Français SIM n°7] Comment s'accorde le mot 'demi' avant le nom ?",
     "options": [
-      "Demi-féminin (demie)",
-      "Invariable (demi)",
-      "Pluriel (demis)",
-      "Féminin pluriel (demies)"
+      "Variable",
+      "Accordé en nombre (des demis-heures)",
+      "Accordé en genre (une demie-heure)",
+      "Invariable (une demi-heure)"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
     "prompt": "[Français SIM n°8] Accord du participe passé : 'Elles se sont _____ des lettres.'",
     "options": [
-      "envoyé",
+      "envoyé (invariable car COD après)",
       "envoyées",
-      "envoyés",
-      "envoyers"
+      "envoyers",
+      "envoyés"
     ],
     "answerIndex": 0
   },
   {
     "prompt": "[Français SIM n°9] Quel est le sens exact du verbe 'proscrire' ?",
     "options": [
-      "Interdire formellement",
-      "Recommander un traitement",
-      "Rédiger un acte officiel",
-      "Pardonner une faute"
+      "Recommander chaudement",
+      "Rédiger un texte",
+      "Prescrire un traitement",
+      "Interdire formellement"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
     "prompt": "[Français SIM n°10] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
     "options": [
-      "Comparer entre eux",
-      "Comparer minutieusement",
-      "Comparer deux méthodes",
-      "Comparer objectivement"
+      "Sortir rapidement",
+      "Collaborer ensemble",
+      "Parler fort",
+      "Décider de"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°11] Complétez la phrase : 'Je me _____ de cet événement tragique.'",
+    "prompt": "[Français SIM n°11] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
     "options": [
-      "souviens",
-      "rappelle",
-      "remémore de",
-      "repense"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°12] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
+      "Je me rappelle à cette règle",
       "Je me rappelle cette règle",
       "Je me rappelle de cette règle",
+      "Je me rappelle sur cette règle"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°12] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "options": [
+      "souviens (avec 'de')",
+      "repense de",
+      "remémore de",
+      "rappelle (avec 'de')"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°13] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marine",
+      "bleu marine",
+      "bleues marines",
+      "bleu marines"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°14] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marrone",
+      "marron",
+      "marrons",
+      "marronnes"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°15] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faite",
+      "faites",
+      "fait (invariable devant infinitif)",
+      "faits"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°16] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier avec le problème",
+      "Pallier au problème",
+      "Pallier le problème (COD direct)",
+      "Pallier de ce problème"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°17] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "est (Indicatif)",
+      "soit (Subjonctif)",
+      "fût",
+      "serait"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°18] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fasse (Subjonctif)",
+      "fît",
+      "ferait",
+      "fait (Indicatif)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°19] Quel est le genre du mot 'aphte' ?",
+    "options": [
+      "Masculin (un aphte)",
+      "Féminin (une aphte)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°20] Quel est le genre du mot 'acné' ?",
+    "options": [
+      "Masculin (un acné)",
+      "Neutre",
+      "Variable",
+      "Féminin (une acné)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°21] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "options": [
+      "Dilemme (avec 2 'm')",
+      "Dilemne (avec 'nm')",
+      "Dillemme",
+      "Dileme"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°22] Comment s'accorde le mot 'demi' avant le nom ?",
+    "options": [
+      "Accordé en genre (une demie-heure)",
+      "Invariable (une demi-heure)",
+      "Accordé en nombre (des demis-heures)",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°23] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "options": [
+      "envoyé (invariable car COD après)",
+      "envoyés",
+      "envoyers",
+      "envoyées"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°24] Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Prescrire un traitement",
+      "Rédiger un texte",
+      "Recommander chaudement",
+      "Interdire formellement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°25] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "options": [
+      "Collaborer ensemble",
+      "Sortir rapidement",
+      "Parler fort",
+      "Décider de"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°26] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle sur cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle cette règle",
+      "Je me rappelle à cette règle"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°27] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "options": [
+      "souviens (avec 'de')",
+      "rappelle (avec 'de')",
+      "repense de",
+      "remémore de"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°28] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleu marines",
+      "bleues marine",
+      "bleu marine",
+      "bleues marines"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°29] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marrone",
+      "marron",
+      "marronnes",
+      "marrons"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°30] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faits",
+      "faites",
+      "faite",
+      "fait (invariable devant infinitif)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°31] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier de ce problème",
+      "Pallier le problème (COD direct)",
+      "Pallier au problème",
+      "Pallier avec le problème"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°32] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "est (Indicatif)",
+      "soit (Subjonctif)",
+      "fût",
+      "serait"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°33] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fasse (Subjonctif)",
+      "fait (Indicatif)",
+      "ferait",
+      "fît"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°34] Quel est le genre du mot 'aphte' ?",
+    "options": [
+      "Variable",
+      "Féminin (une aphte)",
+      "Masculin (un aphte)",
+      "Neutre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°35] Quel est le genre du mot 'acné' ?",
+    "options": [
+      "Masculin (un acné)",
+      "Féminin (une acné)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°36] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "options": [
+      "Dileme",
+      "Dillemme",
+      "Dilemne (avec 'nm')",
+      "Dilemme (avec 2 'm')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°37] Comment s'accorde le mot 'demi' avant le nom ?",
+    "options": [
+      "Invariable (une demi-heure)",
+      "Variable",
+      "Accordé en nombre (des demis-heures)",
+      "Accordé en genre (une demie-heure)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°38] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "options": [
+      "envoyées",
+      "envoyers",
+      "envoyé (invariable car COD après)",
+      "envoyés"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°39] Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Interdire formellement",
+      "Prescrire un traitement",
+      "Recommander chaudement",
+      "Rédiger un texte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°40] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "options": [
+      "Décider de",
+      "Sortir rapidement",
+      "Collaborer ensemble",
+      "Parler fort"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°41] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle sur cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle cette règle",
+      "Je me rappelle à cette règle"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°42] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "options": [
+      "repense de",
+      "remémore de",
+      "souviens (avec 'de')",
+      "rappelle (avec 'de')"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°43] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleu marine",
+      "bleu marines",
+      "bleues marine",
+      "bleues marines"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°44] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marron",
+      "marrons",
+      "marrone",
+      "marronnes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°45] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faites",
+      "faits",
+      "fait (invariable devant infinitif)",
+      "faite"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°46] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier de ce problème",
+      "Pallier avec le problème",
+      "Pallier le problème (COD direct)",
+      "Pallier au problème"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°47] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "fût",
+      "soit (Subjonctif)",
+      "serait",
+      "est (Indicatif)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°48] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fît",
+      "fait (Indicatif)",
+      "fasse (Subjonctif)",
+      "ferait"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°49] Quel est le genre du mot 'aphte' ?",
+    "options": [
+      "Variable",
+      "Féminin (une aphte)",
+      "Neutre",
+      "Masculin (un aphte)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°50] Quel est le genre du mot 'acné' ?",
+    "options": [
+      "Féminin (une acné)",
+      "Variable",
+      "Neutre",
+      "Masculin (un acné)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°51] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "options": [
+      "Dileme",
+      "Dilemme (avec 2 'm')",
+      "Dilemne (avec 'nm')",
+      "Dillemme"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°52] Comment s'accorde le mot 'demi' avant le nom ?",
+    "options": [
+      "Accordé en nombre (des demis-heures)",
+      "Variable",
+      "Invariable (une demi-heure)",
+      "Accordé en genre (une demie-heure)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°53] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "options": [
+      "envoyées",
+      "envoyés",
+      "envoyers",
+      "envoyé (invariable car COD après)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°54] Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Interdire formellement",
+      "Recommander chaudement",
+      "Rédiger un texte",
+      "Prescrire un traitement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°55] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "options": [
+      "Décider de",
+      "Collaborer ensemble",
+      "Sortir rapidement",
+      "Parler fort"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°56] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle cette règle",
       "Je me rappelle à cette règle",
+      "Je me rappelle de cette règle",
       "Je me rappelle sur cette règle"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°13] Accord de l'adjectif de couleur : 'Des vestes _____'",
+    "prompt": "[Français SIM n°57] Complétez la phrase : 'Je me _____ de cet événement.'",
     "options": [
+      "repense de",
+      "remémore de",
+      "souviens (avec 'de')",
+      "rappelle (avec 'de')"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°58] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marines",
+      "bleu marine",
+      "bleu marines",
+      "bleues marine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°59] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marrons",
+      "marron",
+      "marrone",
+      "marronnes"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°60] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faite",
+      "fait (invariable devant infinitif)",
+      "faits",
+      "faites"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°61] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier de ce problème",
+      "Pallier le problème (COD direct)",
+      "Pallier au problème",
+      "Pallier avec le problème"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°62] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "fût",
+      "est (Indicatif)",
+      "serait",
+      "soit (Subjonctif)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°63] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fasse (Subjonctif)",
+      "fît",
+      "fait (Indicatif)",
+      "ferait"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°64] Quel est le genre du mot 'aphte' ?",
+    "options": [
+      "Masculin (un aphte)",
+      "Féminin (une aphte)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°65] Quel est le genre du mot 'acné' ?",
+    "options": [
+      "Neutre",
+      "Féminin (une acné)",
+      "Masculin (un acné)",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°66] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "options": [
+      "Dillemme",
+      "Dilemne (avec 'nm')",
+      "Dileme",
+      "Dilemme (avec 2 'm')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°67] Comment s'accorde le mot 'demi' avant le nom ?",
+    "options": [
+      "Accordé en genre (une demie-heure)",
+      "Variable",
+      "Accordé en nombre (des demis-heures)",
+      "Invariable (une demi-heure)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°68] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "options": [
+      "envoyers",
+      "envoyés",
+      "envoyées",
+      "envoyé (invariable car COD après)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°69] Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Recommander chaudement",
+      "Interdire formellement",
+      "Rédiger un texte",
+      "Prescrire un traitement"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°70] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "options": [
+      "Sortir rapidement",
+      "Décider de",
+      "Parler fort",
+      "Collaborer ensemble"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°71] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle sur cette règle",
+      "Je me rappelle cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle à cette règle"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°72] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "options": [
+      "souviens (avec 'de')",
+      "remémore de",
+      "rappelle (avec 'de')",
+      "repense de"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°73] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marine",
       "bleu marine",
       "bleues marines",
-      "bleues marine",
       "bleu marines"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°14] Accord de l'adjectif de couleur : 'Des chaussures _____'",
+    "prompt": "[Français SIM n°74] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
     "options": [
-      "marron",
       "marrons",
       "marronnes",
+      "marron",
       "marrone"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°75] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faites",
+      "faite",
+      "fait (invariable devant infinitif)",
+      "faits"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°76] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier de ce problème",
+      "Pallier au problème",
+      "Pallier avec le problème",
+      "Pallier le problème (COD direct)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°77] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "fût",
+      "serait",
+      "est (Indicatif)",
+      "soit (Subjonctif)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°78] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fît",
+      "fait (Indicatif)",
+      "ferait",
+      "fasse (Subjonctif)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°79] Quel est le genre du mot 'aphte' ?",
+    "options": [
+      "Neutre",
+      "Variable",
+      "Féminin (une aphte)",
+      "Masculin (un aphte)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°80] Quel est le genre du mot 'acné' ?",
+    "options": [
+      "Masculin (un acné)",
+      "Féminin (une acné)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°81] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "options": [
+      "Dilemne (avec 'nm')",
+      "Dilemme (avec 2 'm')",
+      "Dileme",
+      "Dillemme"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°82] Comment s'accorde le mot 'demi' avant le nom ?",
+    "options": [
+      "Variable",
+      "Invariable (une demi-heure)",
+      "Accordé en genre (une demie-heure)",
+      "Accordé en nombre (des demis-heures)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°83] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "options": [
+      "envoyées",
+      "envoyés",
+      "envoyers",
+      "envoyé (invariable car COD après)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°84] Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Interdire formellement",
+      "Recommander chaudement",
+      "Prescrire un traitement",
+      "Rédiger un texte"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°15] Accord du participe passé : 'La lettre que j'ai _____ rédiger.'",
+    "prompt": "[Français SIM n°85] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
     "options": [
-      "fait",
+      "Collaborer ensemble",
+      "Sortir rapidement",
+      "Parler fort",
+      "Décider de"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°86] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle à cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle sur cette règle",
+      "Je me rappelle cette règle"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°87] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "options": [
+      "souviens (avec 'de')",
+      "repense de",
+      "rappelle (avec 'de')",
+      "remémore de"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°88] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleues marine",
+      "bleues marines",
+      "bleu marine",
+      "bleu marines"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°89] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marrons",
+      "marron",
+      "marrone",
+      "marronnes"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°90] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "fait (invariable devant infinitif)",
+      "faits",
       "faite",
+      "faites"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°91] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "options": [
+      "Pallier avec le problème",
+      "Pallier le problème (COD direct)",
+      "Pallier de ce problème",
+      "Pallier au problème"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°92] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "options": [
+      "soit (Subjonctif)",
+      "fût",
+      "est (Indicatif)",
+      "serait"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°93] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "options": [
+      "fait (Indicatif)",
+      "fît",
+      "ferait",
+      "fasse (Subjonctif)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°94] Quel est le genre du mot 'aphte' ?",
+    "options": [
+      "Masculin (un aphte)",
+      "Variable",
+      "Féminin (une aphte)",
+      "Neutre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°95] Quel est le genre du mot 'acné' ?",
+    "options": [
+      "Variable",
+      "Neutre",
+      "Féminin (une acné)",
+      "Masculin (un acné)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°96] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "options": [
+      "Dileme",
+      "Dilemne (avec 'nm')",
+      "Dilemme (avec 2 'm')",
+      "Dillemme"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°97] Comment s'accorde le mot 'demi' avant le nom ?",
+    "options": [
+      "Variable",
+      "Accordé en genre (une demie-heure)",
+      "Accordé en nombre (des demis-heures)",
+      "Invariable (une demi-heure)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°98] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "options": [
+      "envoyées",
+      "envoyés",
+      "envoyé (invariable car COD après)",
+      "envoyers"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°99] Quel est le sens exact du verbe 'proscrire' ?",
+    "options": [
+      "Rédiger un texte",
+      "Prescrire un traitement",
+      "Recommander chaudement",
+      "Interdire formellement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°100] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "options": [
+      "Collaborer ensemble",
+      "Sortir rapidement",
+      "Décider de",
+      "Parler fort"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°101] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle sur cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle à cette règle",
+      "Je me rappelle cette règle"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°102] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "options": [
+      "remémore de",
+      "rappelle (avec 'de')",
+      "repense de",
+      "souviens (avec 'de')"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°103] Accord de l'adjectif composé : 'Des vestes _____'",
+    "options": [
+      "bleu marines",
+      "bleu marine",
+      "bleues marines",
+      "bleues marine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°104] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "options": [
+      "marronnes",
+      "marrone",
+      "marron",
+      "marrons"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°105] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "options": [
+      "faite",
+      "fait (invariable devant infinitif)",
       "faites",
       "faits"
     ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°16] Orthographe correcte de la somme versée en avance :",
-    "options": [
-      "Acompte",
-      "Accompte",
-      "Aconte",
-      "Ahcompte"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°17] Quel est le genre du mot 'épitaphe' ?",
-    "options": [
-      "Féminin (une épitaphe)",
-      "Masculin (un épitaphe)",
-      "Variable",
-      "Toujours pluriel"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°18] Quel est le genre du mot 'pétale' ?",
-    "options": [
-      "Masculin (un pétale)",
-      "Féminin (une pétale)",
-      "Variable",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°19] Nuance paronymique : Que signifie 'démythifier' ?",
-    "options": [
-      "Dépouiller un récit de son caractère mythique",
-      "Dévoiler une supercherie ou une tromperie",
-      "Transformer une histoire en légende",
-      "Accuser à tort une personne innocentée"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°20] Nuance paronymique : Que signifie 'démystifier' ?",
-    "options": [
-      "Détruire une mystification ou une tromperie",
-      "Enlever la dimension mythique d'un héros",
-      "Raconter une histoire fantastique",
-      "Consacrer un texte religieux"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°21] Quel mot s'écrit avec un double 'm' ?",
-    "options": [
-      "Consommer",
-      "Acompte",
-      "Inqualifiable",
-      "Accueil"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°22] Quelle forme du subjonctif est correcte : 'Avant qu'il ne _____'",
-    "options": [
-      "partît",
-      "partira",
-      "partirait",
-      "est parti"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°23] Concordance des temps : 'Je doutais qu'il _____ son examen.'",
-    "options": [
-      "obtint",
-      "obtiendra",
-      "a obtenu",
-      "aura obtenu"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°24] Quelle locution latine signifie 'par le fait même' ?",
-    "options": [
-      "Ipso facto",
-      "In fine",
-      "De facto",
-      "Sine die"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°25] Quelle locution latine signifie 'jusqu'à la fin' ou 'en dernière analyse' ?",
-    "options": [
-      "In fine",
-      "Ipso facto",
-      "A priori",
-      "Ad hoc"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°26] Accord de 'tout' : 'Elles sont _____ étonnées.'",
-    "options": [
-      "tout",
-      "toutes",
-      "toute",
-      "touts"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°27] Accord de 'tout' devant consonne : 'Elles sont _____ honteuses.'",
-    "options": [
-      "toutes",
-      "tout",
-      "toute",
-      "touts"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°28] Sens du verbe 'prescrire' :",
-    "options": [
-      "Ordonner ou recommander officiellement",
-      "Bannir une pratique illégale",
-      "Rédiger une lettre de rupture",
-      "Demander un avis d'expert"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°29] Quel est le genre du mot 'échappatoire' ?",
-    "options": [
-      "Féminin (une échappatoire)",
-      "Masculin (un échappatoire)",
-      "Variable",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°30] Quel est le genre du mot 'entracte' ?",
-    "options": [
-      "Masculin (un entracte)",
-      "Féminin (une entracte)",
-      "Variable",
-      "Pluriel"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°31] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
     "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°32] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°33] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°34] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°35] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°36] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°37] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°38] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°39] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°40] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°41] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°42] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°43] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°44] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°45] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°46] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°47] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°48] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°49] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°50] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°51] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°52] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°53] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°54] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°55] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°56] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°57] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°58] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°59] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°60] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°61] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°62] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°63] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°64] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°65] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°66] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°67] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°68] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°69] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°70] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°71] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°72] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°73] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°74] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°75] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°76] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°77] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°78] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°79] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°80] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°81] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°82] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°83] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°84] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°85] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°86] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°87] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°88] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°89] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°90] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°91] Question portant sur : accord du participe passé suivi d'un infinitif",
-    "options": [
-      "Les chansons que j'ai entendues chanter",
-      "Les chansons que j'ai entendu chanter",
-      "Les chansons que j'ai entendus chanter",
-      "Les chansons que j'ai chanté"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°92] Question portant sur : paronyme 'accident' vs 'incident'",
-    "options": [
-      "Un événement imprévu et mineur est un incident",
-      "Un événement tragique est un incident",
-      "Un accident est toujours sans gravité",
-      "Les deux mots sont strictement synonymes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°93] Question portant sur : accord de 'leur' pronom",
-    "options": [
-      "Ils leur ont téléphoné (invariable)",
-      "Ils leurs ont téléphoné",
-      "Ils leur ont téléphonés",
-      "Ils leurs ont téléphonés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°94] Question portant sur : accord de 'leur' adjectif possessif",
-    "options": [
-      "Leurs affaires sont prêtes",
-      "Leur affaires sont prêtes",
-      "Leurs affaire est prête",
-      "Leur affaires sont prêt"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°95] Question portant sur : pléonasme 'voire même'",
-    "options": [
-      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
-      "'Voire même' est obligatoire en grammaire",
-      "'Voire' s'écrit toujours avec un s",
-      "'Voire' signifie seulement 'ou bien'"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°96] Question portant sur : genre du mot 'orbite'",
-    "options": [
-      "Féminin (une orbite)",
-      "Masculin (un orbite)",
-      "Neutre",
-      "Pluriel uniquement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°97] Question portant sur : orthographe du mot 'accueil'",
-    "options": [
-      "Accueil (c-c-u-e-i-l)",
-      "Acceuil (c-c-e-u-i-l)",
-      "Akeuil",
-      "Accueille (nom)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°98] Question portant sur : conjugaison du verbe 'résoudre' au présent",
-    "options": [
-      "Nous résolvons",
-      "Nous résoudons",
-      "Nous résolvions",
-      "Nous résolvons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°99] Question portant sur : subjonctif du verbe 'savoir'",
-    "options": [
-      "Que nous sachions",
-      "Que nous savions",
-      "Que nous sachons",
-      "Que nous savons"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°100] Question portant sur : accord de 'tel' devant un nom",
-    "options": [
-      "Tel père, tel fils",
-      "Tels père, tels fils",
-      "Telle père, telle fils",
-      "Tel pères, tel fils"
-    ],
-    "answerIndex": 0
   }
 ];
 
 export const IAE_LOGICAL_QUIZ_DATA = [
   {
-    "prompt": "[Logique SIM n°1] Complétez la série : 3, 7, 11, 15, 19, ?",
+    "prompt": "[Logique SIM n°1] Complétez la série numérique : 3, 7, 11, 15, 19, ?",
     "options": [
-      "25",
-      "20",
       "23",
-      "27"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°2] Complétez la série : B, E, H, K, N, ?",
-    "options": [
-      "Q",
-      "S",
-      "P",
-      "R"
+      "27",
+      "25",
+      "20"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°3] Complétez la série : 9, 16, 25, 36, ?",
+    "prompt": "[Logique SIM n°2] Complétez la série alphabétique : B, E, H, K, N, ?",
     "options": [
-      "55",
-      "44",
-      "14",
-      "49"
+      "S",
+      "Q",
+      "P",
+      "R"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°3] Complétez la série des carrés : 9, 16, 25, 36, ?",
+    "options": [
+      "44",
+      "55",
+      "49",
+      "14"
+    ],
+    "answerIndex": 2
   },
   {
     "prompt": "[Calcul SIM n°4] Dans un groupe de 53 personnes, 28 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "2",
       "13",
+      "2",
       "18",
       "13"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Logique SIM n°5] Complétez la série : 7, 11, 15, 19, 23, ?",
-    "options": [
-      "31",
-      "29",
-      "24",
-      "27"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°6] Complétez la série : F, J, N, R, V, ?",
-    "options": [
-      "Y",
-      "B",
-      "Z",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°7] Complétez la série : 49, 64, 81, 100, ?",
-    "options": [
-      "121",
-      "116",
-      "22",
-      "127"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Calcul SIM n°8] Dans un groupe de 57 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "prompt": "[Logique SIM n°5] Complétez la série numérique : 7, 11, 15, 19, 23, ?",
     "options": [
-      "4",
-      "15",
-      "13",
-      "20"
+      "31",
+      "27",
+      "29",
+      "24"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°9] Complétez la série : 11, 15, 19, 23, 27, ?",
+    "prompt": "[Logique SIM n°6] Complétez la série alphabétique : F, J, N, R, V, ?",
     "options": [
-      "33",
-      "28",
-      "31",
-      "35"
+      "A",
+      "B",
+      "Z",
+      "Y"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°10] Complétez la série : D, F, H, J, L, ?",
+    "prompt": "[Logique SIM n°7] Complétez la série des carrés : 49, 64, 81, 100, ?",
     "options": [
-      "P",
+      "22",
+      "127",
+      "121",
+      "116"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Calcul SIM n°8] Dans un groupe de 57 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "15",
+      "13",
+      "4",
+      "20"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°9] Complétez la série numérique : 11, 15, 19, 23, 27, ?",
+    "options": [
+      "35",
+      "31",
+      "28",
+      "33"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°10] Complétez la série alphabétique : D, F, H, J, L, ?",
+    "options": [
       "M",
+      "P",
       "N",
       "O"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°11] Complétez la série : 1, 4, 9, 16, ?",
+    "prompt": "[Logique SIM n°11] Complétez la série des carrés : 1, 4, 9, 16, ?",
     "options": [
-      "25",
-      "20",
+      "31",
       "10",
-      "31"
+      "25",
+      "20"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Calcul SIM n°12] Dans un groupe de 61 personnes, 28 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "19",
       "24",
+      "19",
       "8",
       "13"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°13] Complétez la série : 15, 19, 23, 27, 31, ?",
-    "options": [
-      "37",
-      "35",
-      "32",
-      "39"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°14] Complétez la série : B, E, H, K, N, ?",
+    "prompt": "[Logique SIM n°13] Complétez la série numérique : 15, 19, 23, 27, 31, ?",
+    "options": [
+      "35",
+      "39",
+      "37",
+      "32"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°14] Complétez la série alphabétique : B, E, H, K, N, ?",
     "options": [
       "S",
-      "R",
       "P",
+      "R",
       "Q"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°15] Complétez la série : 25, 36, 49, 64, ?",
-    "options": [
-      "18",
-      "87",
-      "76",
-      "81"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Calcul SIM n°16] Dans un groupe de 65 personnes, 32 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "13",
-      "10",
-      "21",
-      "26"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°17] Complétez la série : 19, 23, 27, 31, 35, ?",
-    "options": [
-      "43",
-      "39",
-      "36",
-      "41"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Logique SIM n°18] Complétez la série : F, J, N, R, V, ?",
-    "options": [
-      "A",
-      "B",
-      "Y",
-      "Z"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°19] Complétez la série : 81, 100, 121, 144, ?",
-    "options": [
-      "164",
-      "26",
-      "169",
-      "175"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Calcul SIM n°20] Dans un groupe de 69 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "20",
-      "36",
-      "13",
-      "31"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°21] Complétez la série : 23, 27, 31, 35, 39, ?",
-    "options": [
-      "40",
-      "43",
-      "47",
-      "45"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Logique SIM n°22] Complétez la série : D, F, H, J, L, ?",
-    "options": [
-      "O",
-      "N",
-      "P",
-      "M"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Logique SIM n°23] Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "44",
-      "49",
-      "14",
-      "55"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Calcul SIM n°24] Dans un groupe de 73 personnes, 32 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "16",
-      "32",
-      "27",
-      "13"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°25] Complétez la série : 27, 31, 35, 39, 43, ?",
-    "options": [
-      "44",
-      "49",
-      "51",
-      "47"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°26] Complétez la série : B, E, H, K, N, ?",
-    "options": [
-      "Q",
-      "P",
-      "R",
-      "S"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°27] Complétez la série : 49, 64, 81, 100, ?",
-    "options": [
-      "127",
-      "121",
-      "116",
-      "22"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Calcul SIM n°28] Dans un groupe de 77 personnes, 28 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "13",
-      "42",
-      "37",
-      "26"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°29] Complétez la série : 31, 35, 39, 43, 47, ?",
-    "options": [
-      "48",
-      "53",
-      "51",
-      "55"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°30] Complétez la série : F, J, N, R, V, ?",
-    "options": [
-      "B",
-      "Y",
-      "A",
-      "Z"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°31] Complétez la série : 1, 4, 9, 16, ?",
-    "options": [
-      "10",
-      "25",
-      "20",
-      "31"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Calcul SIM n°32] Dans un groupe de 81 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "39",
-      "44",
-      "13",
-      "28"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°33] Complétez la série : 35, 39, 43, 47, 51, ?",
-    "options": [
-      "57",
-      "59",
-      "55",
-      "52"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°34] Complétez la série : D, F, H, J, L, ?",
-    "options": [
-      "M",
-      "P",
-      "O",
-      "N"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°35] Complétez la série : 25, 36, 49, 64, ?",
+    "prompt": "[Logique SIM n°15] Complétez la série des carrés : 25, 36, 49, 64, ?",
     "options": [
       "87",
       "18",
@@ -2028,17 +4291,217 @@ export const IAE_LOGICAL_QUIZ_DATA = [
     "answerIndex": 2
   },
   {
-    "prompt": "[Calcul SIM n°36] Dans un groupe de 85 personnes, 28 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "prompt": "[Calcul SIM n°16] Dans un groupe de 65 personnes, 32 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
+      "21",
+      "26",
       "13",
-      "48",
+      "10"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°17] Complétez la série numérique : 19, 23, 27, 31, 35, ?",
+    "options": [
+      "39",
+      "36",
       "43",
-      "32"
+      "41"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°18] Complétez la série alphabétique : F, J, N, R, V, ?",
+    "options": [
+      "Y",
+      "B",
+      "Z",
+      "A"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°37] Complétez la série : 39, 43, 47, 51, 55, ?",
+    "prompt": "[Logique SIM n°19] Complétez la série des carrés : 81, 100, 121, 144, ?",
+    "options": [
+      "164",
+      "26",
+      "175",
+      "169"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Calcul SIM n°20] Dans un groupe de 69 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "20",
+      "13",
+      "31",
+      "36"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Logique SIM n°21] Complétez la série numérique : 23, 27, 31, 35, 39, ?",
+    "options": [
+      "45",
+      "40",
+      "47",
+      "43"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°22] Complétez la série alphabétique : D, F, H, J, L, ?",
+    "options": [
+      "N",
+      "M",
+      "P",
+      "O"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°23] Complétez la série des carrés : 9, 16, 25, 36, ?",
+    "options": [
+      "14",
+      "55",
+      "44",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Calcul SIM n°24] Dans un groupe de 73 personnes, 32 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "27",
+      "16",
+      "32",
+      "13"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°25] Complétez la série numérique : 27, 31, 35, 39, 43, ?",
+    "options": [
+      "47",
+      "51",
+      "49",
+      "44"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°26] Complétez la série alphabétique : B, E, H, K, N, ?",
+    "options": [
+      "Q",
+      "R",
+      "S",
+      "P"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°27] Complétez la série des carrés : 49, 64, 81, 100, ?",
+    "options": [
+      "127",
+      "116",
+      "22",
+      "121"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Calcul SIM n°28] Dans un groupe de 77 personnes, 28 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "37",
+      "26",
+      "13",
+      "42"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°29] Complétez la série numérique : 31, 35, 39, 43, 47, ?",
+    "options": [
+      "55",
+      "48",
+      "53",
+      "51"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°30] Complétez la série alphabétique : F, J, N, R, V, ?",
+    "options": [
+      "B",
+      "Z",
+      "Y",
+      "A"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°31] Complétez la série des carrés : 1, 4, 9, 16, ?",
+    "options": [
+      "25",
+      "10",
+      "20",
+      "31"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Calcul SIM n°32] Dans un groupe de 81 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "39",
+      "28",
+      "13",
+      "44"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°33] Complétez la série numérique : 35, 39, 43, 47, 51, ?",
+    "options": [
+      "59",
+      "55",
+      "57",
+      "52"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°34] Complétez la série alphabétique : D, F, H, J, L, ?",
+    "options": [
+      "O",
+      "P",
+      "N",
+      "M"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Logique SIM n°35] Complétez la série des carrés : 25, 36, 49, 64, ?",
+    "options": [
+      "81",
+      "87",
+      "76",
+      "18"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Calcul SIM n°36] Dans un groupe de 85 personnes, 28 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "43",
+      "32",
+      "13",
+      "48"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°37] Complétez la série numérique : 39, 43, 47, 51, 55, ?",
     "options": [
       "56",
       "59",
@@ -2048,24 +4511,24 @@ export const IAE_LOGICAL_QUIZ_DATA = [
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°38] Complétez la série : B, E, H, K, N, ?",
+    "prompt": "[Logique SIM n°38] Complétez la série alphabétique : B, E, H, K, N, ?",
     "options": [
+      "R",
       "S",
-      "P",
       "Q",
-      "R"
+      "P"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°39] Complétez la série : 81, 100, 121, 144, ?",
+    "prompt": "[Logique SIM n°39] Complétez la série des carrés : 81, 100, 121, 144, ?",
     "options": [
       "26",
-      "164",
       "169",
-      "175"
+      "175",
+      "164"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   {
     "prompt": "[Calcul SIM n°40] Dans un groupe de 89 personnes, 32 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
@@ -2078,97 +4541,97 @@ export const IAE_LOGICAL_QUIZ_DATA = [
     "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°41] Complétez la série : 43, 47, 51, 55, 59, ?",
+    "prompt": "[Logique SIM n°41] Complétez la série numérique : 43, 47, 51, 55, 59, ?",
     "options": [
       "63",
-      "65",
       "67",
+      "60",
+      "65"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°42] Complétez la série alphabétique : F, J, N, R, V, ?",
+    "options": [
+      "Z",
+      "A",
+      "Y",
+      "B"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°43] Complétez la série des carrés : 9, 16, 25, 36, ?",
+    "options": [
+      "55",
+      "49",
+      "44",
+      "14"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Calcul SIM n°44] Dans un groupe de 93 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "55",
+      "44",
+      "13",
       "60"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°42] Complétez la série : F, J, N, R, V, ?",
-    "options": [
-      "Z",
-      "Y",
-      "B",
-      "A"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°43] Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "49",
-      "14",
-      "44",
-      "55"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Calcul SIM n°44] Dans un groupe de 93 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "13",
-      "55",
-      "60",
-      "44"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Logique SIM n°45] Complétez la série : 47, 51, 55, 59, 63, ?",
+    "prompt": "[Logique SIM n°45] Complétez la série numérique : 47, 51, 55, 59, 63, ?",
     "options": [
       "64",
       "69",
-      "71",
-      "67"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°46] Complétez la série : D, F, H, J, L, ?",
-    "options": [
-      "M",
-      "P",
-      "O",
-      "N"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°47] Complétez la série : 49, 64, 81, 100, ?",
-    "options": [
-      "116",
-      "22",
-      "121",
-      "127"
+      "67",
+      "71"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Calcul SIM n°48] Dans un groupe de 97 personnes, 32 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "prompt": "[Logique SIM n°46] Complétez la série alphabétique : D, F, H, J, L, ?",
     "options": [
-      "13",
-      "51",
-      "56",
-      "40"
+      "M",
+      "N",
+      "O",
+      "P"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°49] Complétez la série : 51, 55, 59, 63, 67, ?",
+    "prompt": "[Logique SIM n°47] Complétez la série des carrés : 49, 64, 81, 100, ?",
     "options": [
-      "68",
-      "73",
-      "75",
-      "71"
+      "127",
+      "121",
+      "22",
+      "116"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°50] Complétez la série : B, E, H, K, N, ?",
+    "prompt": "[Calcul SIM n°48] Dans un groupe de 97 personnes, 32 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "40",
+      "51",
+      "13",
+      "56"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°49] Complétez la série numérique : 51, 55, 59, 63, 67, ?",
+    "options": [
+      "75",
+      "68",
+      "71",
+      "73"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Logique SIM n°50] Complétez la série alphabétique : B, E, H, K, N, ?",
     "options": [
       "S",
       "R",
@@ -2178,214 +4641,214 @@ export const IAE_LOGICAL_QUIZ_DATA = [
     "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°51] Complétez la série : 1, 4, 9, 16, ?",
+    "prompt": "[Logique SIM n°51] Complétez la série des carrés : 1, 4, 9, 16, ?",
     "options": [
-      "31",
-      "10",
       "20",
-      "25"
+      "10",
+      "25",
+      "31"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
     "prompt": "[Calcul SIM n°52] Dans un groupe de 101 personnes, 28 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
+      "50",
       "13",
       "66",
-      "61",
-      "50"
+      "61"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°53] Complétez la série : 55, 59, 63, 67, 71, ?",
+    "prompt": "[Logique SIM n°53] Complétez la série numérique : 55, 59, 63, 67, 71, ?",
     "options": [
+      "79",
       "75",
       "77",
-      "79",
       "72"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°54] Complétez la série : F, J, N, R, V, ?",
+    "prompt": "[Logique SIM n°54] Complétez la série alphabétique : F, J, N, R, V, ?",
     "options": [
+      "B",
       "A",
-      "Z",
       "Y",
-      "B"
+      "Z"
     ],
-    "answerIndex": 1
+    "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°55] Complétez la série : 25, 36, 49, 64, ?",
+    "prompt": "[Logique SIM n°55] Complétez la série des carrés : 25, 36, 49, 64, ?",
     "options": [
-      "76",
-      "81",
+      "18",
       "87",
-      "18"
+      "76",
+      "81"
     ],
-    "answerIndex": 1
+    "answerIndex": 3
   },
   {
     "prompt": "[Calcul SIM n°56] Dans un groupe de 105 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "68",
-      "63",
       "13",
-      "52"
+      "68",
+      "52",
+      "63"
     ],
-    "answerIndex": 1
+    "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°57] Complétez la série : 59, 63, 67, 71, 75, ?",
+    "prompt": "[Logique SIM n°57] Complétez la série numérique : 59, 63, 67, 71, 75, ?",
     "options": [
       "81",
-      "76",
+      "83",
       "79",
-      "83"
+      "76"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°58] Complétez la série : D, F, H, J, L, ?",
+    "prompt": "[Logique SIM n°58] Complétez la série alphabétique : D, F, H, J, L, ?",
     "options": [
-      "N",
-      "P",
       "M",
-      "O"
+      "P",
+      "O",
+      "N"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°59] Complétez la série : 81, 100, 121, 144, ?",
+    "prompt": "[Logique SIM n°59] Complétez la série des carrés : 81, 100, 121, 144, ?",
     "options": [
-      "164",
-      "169",
       "175",
-      "26"
+      "26",
+      "169",
+      "164"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
     "prompt": "[Calcul SIM n°60] Dans un groupe de 109 personnes, 28 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "13",
+      "56",
       "67",
       "72",
-      "56"
+      "13"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°61] Complétez la série : 63, 67, 71, 75, 79, ?",
+    "prompt": "[Logique SIM n°61] Complétez la série numérique : 63, 67, 71, 75, 79, ?",
     "options": [
-      "85",
       "80",
+      "87",
       "83",
-      "87"
+      "85"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°62] Complétez la série : B, E, H, K, N, ?",
+    "prompt": "[Logique SIM n°62] Complétez la série alphabétique : B, E, H, K, N, ?",
     "options": [
-      "Q",
-      "P",
+      "R",
       "S",
-      "R"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°63] Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "14",
-      "44",
-      "55",
-      "49"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Calcul SIM n°64] Dans un groupe de 113 personnes, 32 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "69",
-      "58",
-      "13",
-      "74"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°65] Complétez la série : 67, 71, 75, 79, 83, ?",
-    "options": [
-      "84",
-      "91",
-      "89",
-      "87"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°66] Complétez la série : F, J, N, R, V, ?",
-    "options": [
-      "Y",
-      "B",
-      "Z",
-      "A"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°67] Complétez la série : 49, 64, 81, 100, ?",
-    "options": [
-      "116",
-      "22",
-      "127",
-      "121"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Calcul SIM n°68] Dans un groupe de 117 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
-    "options": [
-      "13",
-      "68",
-      "84",
-      "79"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°69] Complétez la série : 71, 75, 79, 83, 87, ?",
-    "options": [
-      "91",
-      "93",
-      "95",
-      "88"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°70] Complétez la série : D, F, H, J, L, ?",
-    "options": [
-      "M",
-      "O",
-      "N",
+      "Q",
       "P"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°71] Complétez la série : 1, 4, 9, 16, ?",
+    "prompt": "[Logique SIM n°63] Complétez la série des carrés : 9, 16, 25, 36, ?",
     "options": [
-      "25",
-      "10",
-      "31",
-      "20"
+      "49",
+      "55",
+      "14",
+      "44"
     ],
     "answerIndex": 0
+  },
+  {
+    "prompt": "[Calcul SIM n°64] Dans un groupe de 113 personnes, 32 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "69",
+      "74",
+      "13",
+      "58"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°65] Complétez la série numérique : 67, 71, 75, 79, 83, ?",
+    "options": [
+      "87",
+      "84",
+      "91",
+      "89"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°66] Complétez la série alphabétique : F, J, N, R, V, ?",
+    "options": [
+      "Y",
+      "A",
+      "B",
+      "Z"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°67] Complétez la série des carrés : 49, 64, 81, 100, ?",
+    "options": [
+      "121",
+      "116",
+      "127",
+      "22"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Calcul SIM n°68] Dans un groupe de 117 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "79",
+      "13",
+      "84",
+      "68"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°69] Complétez la série numérique : 71, 75, 79, 83, 87, ?",
+    "options": [
+      "93",
+      "88",
+      "95",
+      "91"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°70] Complétez la série alphabétique : D, F, H, J, L, ?",
+    "options": [
+      "M",
+      "P",
+      "N",
+      "O"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Logique SIM n°71] Complétez la série des carrés : 1, 4, 9, 16, ?",
+    "options": [
+      "10",
+      "31",
+      "20",
+      "25"
+    ],
+    "answerIndex": 3
   },
   {
     "prompt": "[Calcul SIM n°72] Dans un groupe de 121 personnes, 32 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
@@ -2398,284 +4861,334 @@ export const IAE_LOGICAL_QUIZ_DATA = [
     "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°73] Complétez la série : 75, 79, 83, 87, 91, ?",
+    "prompt": "[Logique SIM n°73] Complétez la série numérique : 75, 79, 83, 87, 91, ?",
     "options": [
-      "95",
       "92",
-      "99",
-      "97"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Logique SIM n°74] Complétez la série : B, E, H, K, N, ?",
-    "options": [
-      "P",
-      "R",
-      "S",
-      "Q"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°75] Complétez la série : 25, 36, 49, 64, ?",
-    "options": [
-      "18",
-      "81",
-      "87",
-      "76"
+      "95",
+      "97",
+      "99"
     ],
     "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°74] Complétez la série alphabétique : B, E, H, K, N, ?",
+    "options": [
+      "R",
+      "S",
+      "Q",
+      "P"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Logique SIM n°75] Complétez la série des carrés : 25, 36, 49, 64, ?",
+    "options": [
+      "76",
+      "18",
+      "87",
+      "81"
+    ],
+    "answerIndex": 3
   },
   {
     "prompt": "[Calcul SIM n°76] Dans un groupe de 125 personnes, 28 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
       "90",
       "74",
-      "85",
-      "13"
+      "13",
+      "85"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°77] Complétez la série numérique : 79, 83, 87, 91, 95, ?",
+    "options": [
+      "103",
+      "96",
+      "99",
+      "101"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°77] Complétez la série : 79, 83, 87, 91, 95, ?",
+    "prompt": "[Logique SIM n°78] Complétez la série alphabétique : F, J, N, R, V, ?",
     "options": [
-      "103",
-      "99",
-      "101",
-      "96"
+      "A",
+      "Z",
+      "Y",
+      "B"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°78] Complétez la série : F, J, N, R, V, ?",
+    "prompt": "[Logique SIM n°79] Complétez la série des carrés : 81, 100, 121, 144, ?",
     "options": [
-      "Y",
-      "A",
-      "Z",
-      "B"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°79] Complétez la série : 81, 100, 121, 144, ?",
-    "options": [
-      "169",
+      "26",
       "164",
       "175",
-      "26"
+      "169"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
     "prompt": "[Calcul SIM n°80] Dans un groupe de 129 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "87",
-      "13",
       "76",
+      "13",
+      "87",
       "92"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°81] Complétez la série : 83, 87, 91, 95, 99, ?",
+    "prompt": "[Logique SIM n°81] Complétez la série numérique : 83, 87, 91, 95, 99, ?",
     "options": [
-      "105",
+      "100",
       "103",
-      "107",
-      "100"
+      "105",
+      "107"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°82] Complétez la série : D, F, H, J, L, ?",
+    "prompt": "[Logique SIM n°82] Complétez la série alphabétique : D, F, H, J, L, ?",
     "options": [
-      "P",
-      "N",
       "O",
-      "M"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Logique SIM n°83] Complétez la série : 9, 16, 25, 36, ?",
-    "options": [
-      "55",
-      "44",
-      "14",
-      "49"
+      "P",
+      "M",
+      "N"
     ],
     "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°83] Complétez la série des carrés : 9, 16, 25, 36, ?",
+    "options": [
+      "49",
+      "44",
+      "14",
+      "55"
+    ],
+    "answerIndex": 0
   },
   {
     "prompt": "[Calcul SIM n°84] Dans un groupe de 133 personnes, 28 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "96",
+      "91",
       "80",
-      "13",
-      "91"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Logique SIM n°85] Complétez la série : 87, 91, 95, 99, 103, ?",
-    "options": [
-      "107",
-      "111",
-      "109",
-      "104"
+      "96",
+      "13"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°86] Complétez la série : B, E, H, K, N, ?",
+    "prompt": "[Logique SIM n°85] Complétez la série numérique : 87, 91, 95, 99, 103, ?",
     "options": [
-      "P",
-      "S",
+      "107",
+      "104",
+      "111",
+      "109"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°86] Complétez la série alphabétique : B, E, H, K, N, ?",
+    "options": [
+      "Q",
       "R",
-      "Q"
+      "S",
+      "P"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°87] Complétez la série des carrés : 49, 64, 81, 100, ?",
+    "options": [
+      "22",
+      "116",
+      "127",
+      "121"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°87] Complétez la série : 49, 64, 81, 100, ?",
-    "options": [
-      "116",
-      "22",
-      "121",
-      "127"
-    ],
-    "answerIndex": 2
-  },
-  {
     "prompt": "[Calcul SIM n°88] Dans un groupe de 137 personnes, 32 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "13",
       "93",
-      "98",
-      "82"
+      "82",
+      "13",
+      "98"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°89] Complétez la série : 91, 95, 99, 103, 107, ?",
+    "prompt": "[Logique SIM n°89] Complétez la série numérique : 91, 95, 99, 103, 107, ?",
     "options": [
-      "115",
       "108",
+      "113",
       "111",
-      "113"
+      "115"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°90] Complétez la série : F, J, N, R, V, ?",
+    "prompt": "[Logique SIM n°90] Complétez la série alphabétique : F, J, N, R, V, ?",
     "options": [
-      "A",
       "Z",
       "B",
+      "A",
       "Y"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°91] Complétez la série : 1, 4, 9, 16, ?",
+    "prompt": "[Logique SIM n°91] Complétez la série des carrés : 1, 4, 9, 16, ?",
     "options": [
       "25",
+      "31",
       "20",
-      "10",
-      "31"
+      "10"
     ],
     "answerIndex": 0
   },
   {
     "prompt": "[Calcul SIM n°92] Dans un groupe de 141 personnes, 28 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "103",
       "13",
+      "108",
       "92",
-      "108"
+      "103"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "[Logique SIM n°93] Complétez la série : 95, 99, 103, 107, 111, ?",
+    "prompt": "[Logique SIM n°93] Complétez la série numérique : 95, 99, 103, 107, 111, ?",
     "options": [
-      "115",
-      "119",
+      "112",
       "117",
-      "112"
+      "119",
+      "115"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°94] Complétez la série alphabétique : D, F, H, J, L, ?",
+    "options": [
+      "N",
+      "P",
+      "M",
+      "O"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Logique SIM n°94] Complétez la série : D, F, H, J, L, ?",
+    "prompt": "[Logique SIM n°95] Complétez la série des carrés : 25, 36, 49, 64, ?",
     "options": [
-      "O",
-      "M",
-      "N",
-      "P"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Logique SIM n°95] Complétez la série : 25, 36, 49, 64, ?",
-    "options": [
-      "76",
       "81",
-      "87",
-      "18"
+      "18",
+      "76",
+      "87"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
     "prompt": "[Calcul SIM n°96] Dans un groupe de 145 personnes, 32 parlent anglais, 25 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
-      "13",
       "104",
       "99",
+      "13",
       "88"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°97] Complétez la série : 99, 103, 107, 111, 115, ?",
+    "prompt": "[Logique SIM n°97] Complétez la série numérique : 99, 103, 107, 111, 115, ?",
     "options": [
-      "123",
       "121",
+      "123",
       "119",
       "116"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Logique SIM n°98] Complétez la série : B, E, H, K, N, ?",
+    "prompt": "[Logique SIM n°98] Complétez la série alphabétique : B, E, H, K, N, ?",
     "options": [
-      "R",
+      "S",
       "Q",
       "P",
-      "S"
+      "R"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Logique SIM n°99] Complétez la série : 81, 100, 121, 144, ?",
+    "prompt": "[Logique SIM n°99] Complétez la série des carrés : 81, 100, 121, 144, ?",
     "options": [
-      "164",
+      "175",
       "26",
-      "169",
-      "175"
+      "164",
+      "169"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
     "prompt": "[Calcul SIM n°100] Dans un groupe de 149 personnes, 28 parlent anglais, 23 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
     "options": [
       "98",
-      "109",
+      "13",
       "114",
-      "13"
+      "109"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Logique SIM n°101] Complétez la série numérique : 103, 107, 111, 115, 119, ?",
+    "options": [
+      "123",
+      "127",
+      "125",
+      "120"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Logique SIM n°102] Complétez la série alphabétique : F, J, N, R, V, ?",
+    "options": [
+      "A",
+      "Y",
+      "Z",
+      "B"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Logique SIM n°103] Complétez la série des carrés : 9, 16, 25, 36, ?",
+    "options": [
+      "14",
+      "55",
+      "44",
+      "49"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Calcul SIM n°104] Dans un groupe de 153 personnes, 32 parlent anglais, 21 parlent espagnol et 11 parlent les deux. Combien ne parlent aucune de ces deux langues ?",
+    "options": [
+      "13",
+      "111",
+      "116",
+      "100"
     ],
     "answerIndex": 1
+  },
+  {
+    "prompt": "[Logique SIM n°105] Complétez la série numérique : 107, 111, 115, 119, 123, ?",
+    "options": [
+      "124",
+      "129",
+      "131",
+      "127"
+    ],
+    "answerIndex": 3
   }
 ];
 
@@ -2683,225 +5196,25 @@ export const IAE_ENGLISH_QUIZ_DATA = [
   {
     "prompt": "[Business English n°1] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
+      "have met",
       "met",
       "meet",
-      "meeting",
-      "meets"
+      "meeting"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°2] Choose the correct word: 'The company decided to _____ 500 workers.'",
     "options": [
-      "lay off",
       "lay out",
+      "lay down",
       "lay on",
-      "lay down"
+      "lay off"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°3] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "was",
-      "am",
-      "be",
-      "were"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°4] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "during",
-      "from",
-      "since",
-      "for"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°5] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "from",
-      "during",
-      "since",
-      "for"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°6] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "should to",
-      "had rather",
-      "would better",
-      "had better"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°7] What is the meaning of 'shareholder'?",
-    "options": [
-      "Client principal",
-      "Partenaire social",
-      "Fournisseur",
-      "Actionnaire"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°8] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "had he",
-      "he had",
-      "he did",
-      "did he"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°9] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A turnover",
-      "A layoff",
-      "A bankruptcy"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°10] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Actuellement",
-      "Récemment",
-      "Probablement",
-      "Vraiment"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°11] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meeting",
-      "meet",
-      "meets",
-      "met"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°12] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay down",
-      "lay off",
-      "lay out",
-      "lay on"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°13] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "am",
-      "were",
-      "was",
-      "be"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°14] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "during",
-      "from",
-      "for",
-      "since"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°15] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "for",
-      "since",
-      "from",
-      "during"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°16] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "should to",
-      "had better",
-      "would better",
-      "had rather"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°17] What is the meaning of 'shareholder'?",
-    "options": [
-      "Partenaire social",
-      "Fournisseur",
-      "Client principal",
-      "Actionnaire"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°18] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he had",
-      "had he",
-      "did he",
-      "he did"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°19] Select the correct term for a company merger:",
-    "options": [
-      "A bankruptcy",
-      "A turnover",
-      "A layoff",
-      "A merger"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°20] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Actuellement",
-      "Vraiment",
-      "Probablement",
-      "Récemment"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°21] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meet",
-      "meeting",
-      "meets",
-      "met"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°22] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay off",
-      "lay on",
-      "lay out",
-      "lay down"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°23] Complete the sentence: 'If I _____ you, I would accept the offer.'",
     "options": [
       "be",
       "am",
@@ -2911,11 +5224,211 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°24] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "prompt": "[Business English n°4] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "options": [
+      "for",
+      "since",
+      "from",
+      "during"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°5] Select the correct preposition: 'She has lived in London _____ five years.'",
+    "options": [
+      "since",
+      "during",
+      "for",
+      "from"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°6] Choose the correct phrase: 'You _____ consult a specialist.'",
+    "options": [
+      "had better",
+      "should to",
+      "had rather",
+      "would better"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°7] What is the meaning of 'shareholder'?",
+    "options": [
+      "Fournisseur",
+      "Partenaire social",
+      "Client principal",
+      "Actionnaire"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°8] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
+    "options": [
+      "he did",
+      "had he",
+      "did he",
+      "he had"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°9] Select the correct term for a company merger:",
+    "options": [
+      "A merger",
+      "A bankruptcy",
+      "A turnover",
+      "A layoff"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°10] Choose the false friend: 'Actually' in English means:",
+    "options": [
+      "Probablement",
+      "Actuellement",
+      "Récemment",
+      "En fait / En réalité"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°11] Complete the sentence: 'I look forward to _____ you next week.'",
+    "options": [
+      "meet",
+      "have met",
+      "meeting",
+      "met"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°12] Choose the correct word: 'The company decided to _____ 500 workers.'",
+    "options": [
+      "lay down",
+      "lay on",
+      "lay out",
+      "lay off"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°13] Complete the sentence: 'If I _____ you, I would accept the offer.'",
+    "options": [
+      "be",
+      "were",
+      "was",
+      "am"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°14] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "options": [
+      "during",
+      "since",
+      "from",
+      "for"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°15] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
       "during",
       "from",
+      "since",
+      "for"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°16] Choose the correct phrase: 'You _____ consult a specialist.'",
+    "options": [
+      "would better",
+      "had better",
+      "should to",
+      "had rather"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°17] What is the meaning of 'shareholder'?",
+    "options": [
+      "Actionnaire",
+      "Partenaire social",
+      "Client principal",
+      "Fournisseur"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°18] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
+    "options": [
+      "he did",
+      "had he",
+      "he had",
+      "did he"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°19] Select the correct term for a company merger:",
+    "options": [
+      "A turnover",
+      "A layoff",
+      "A bankruptcy",
+      "A merger"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°20] Choose the false friend: 'Actually' in English means:",
+    "options": [
+      "En fait / En réalité",
+      "Actuellement",
+      "Probablement",
+      "Récemment"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°21] Complete the sentence: 'I look forward to _____ you next week.'",
+    "options": [
+      "have met",
+      "meeting",
+      "met",
+      "meet"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°22] Choose the correct word: 'The company decided to _____ 500 workers.'",
+    "options": [
+      "lay down",
+      "lay off",
+      "lay out",
+      "lay on"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°23] Complete the sentence: 'If I _____ you, I would accept the offer.'",
+    "options": [
+      "be",
+      "were",
+      "was",
+      "am"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°24] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "options": [
+      "during",
       "for",
+      "from",
       "since"
     ],
     "answerIndex": 3
@@ -2923,32 +5436,32 @@ export const IAE_ENGLISH_QUIZ_DATA = [
   {
     "prompt": "[Business English n°25] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
-      "for",
-      "from",
       "during",
-      "since"
+      "since",
+      "for",
+      "from"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°26] Choose the correct phrase: 'You _____ consult a specialist.'",
     "options": [
-      "should to",
-      "had rather",
       "had better",
+      "had rather",
+      "should to",
       "would better"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°27] What is the meaning of 'shareholder'?",
     "options": [
-      "Partenaire social",
       "Client principal",
       "Actionnaire",
+      "Partenaire social",
       "Fournisseur"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   {
     "prompt": "[Business English n°28] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
@@ -2964,31 +5477,31 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "prompt": "[Business English n°29] Select the correct term for a company merger:",
     "options": [
       "A merger",
-      "A turnover",
       "A bankruptcy",
-      "A layoff"
+      "A layoff",
+      "A turnover"
     ],
     "answerIndex": 0
   },
   {
     "prompt": "[Business English n°30] Choose the false friend: 'Actually' in English means:",
     "options": [
-      "Vraiment",
-      "Probablement",
       "Récemment",
-      "Actuellement"
+      "Probablement",
+      "Actuellement",
+      "En fait / En réalité"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°31] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
       "meet",
-      "meets",
-      "met",
-      "meeting"
+      "have met",
+      "meeting",
+      "met"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°32] Choose the correct word: 'The company decided to _____ 500 workers.'",
@@ -3004,99 +5517,99 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "prompt": "[Business English n°33] Complete the sentence: 'If I _____ you, I would accept the offer.'",
     "options": [
       "be",
-      "was",
       "am",
-      "were"
+      "were",
+      "was"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°34] Select the correct preposition: 'He has been working here _____ 2018.'",
     "options": [
-      "during",
+      "for",
       "from",
       "since",
-      "for"
+      "during"
     ],
     "answerIndex": 2
   },
   {
     "prompt": "[Business English n°35] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
-      "from",
       "for",
       "during",
-      "since"
+      "since",
+      "from"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°36] Choose the correct phrase: 'You _____ consult a specialist.'",
     "options": [
-      "had rather",
+      "should to",
       "would better",
       "had better",
-      "should to"
+      "had rather"
     ],
     "answerIndex": 2
   },
   {
     "prompt": "[Business English n°37] What is the meaning of 'shareholder'?",
     "options": [
+      "Actionnaire",
       "Client principal",
       "Partenaire social",
-      "Fournisseur",
-      "Actionnaire"
+      "Fournisseur"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°38] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
     "options": [
-      "he had",
       "had he",
       "he did",
+      "he had",
       "did he"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°39] Select the correct term for a company merger:",
     "options": [
-      "A merger",
-      "A turnover",
       "A bankruptcy",
+      "A turnover",
+      "A merger",
       "A layoff"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°40] Choose the false friend: 'Actually' in English means:",
     "options": [
-      "Vraiment",
       "Probablement",
       "Actuellement",
+      "En fait / En réalité",
       "Récemment"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°41] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
-      "meet",
-      "meets",
+      "have met",
       "meeting",
+      "meet",
       "met"
     ],
-    "answerIndex": 2
+    "answerIndex": 1
   },
   {
     "prompt": "[Business English n°42] Choose the correct word: 'The company decided to _____ 500 workers.'",
     "options": [
       "lay out",
-      "lay down",
+      "lay on",
       "lay off",
-      "lay on"
+      "lay down"
     ],
     "answerIndex": 2
   },
@@ -3105,110 +5618,110 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "options": [
       "am",
       "be",
-      "were",
-      "was"
+      "was",
+      "were"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°44] Select the correct preposition: 'He has been working here _____ 2018.'",
     "options": [
-      "for",
-      "since",
       "during",
-      "from"
+      "for",
+      "from",
+      "since"
     ],
-    "answerIndex": 1
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°45] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
-      "from",
-      "during",
+      "since",
       "for",
-      "since"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°46] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "should to",
-      "had better",
-      "would better",
-      "had rather"
+      "from",
+      "during"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Business English n°47] What is the meaning of 'shareholder'?",
+    "prompt": "[Business English n°46] Choose the correct phrase: 'You _____ consult a specialist.'",
     "options": [
-      "Actionnaire",
-      "Partenaire social",
-      "Client principal",
-      "Fournisseur"
+      "had better",
+      "had rather",
+      "should to",
+      "would better"
     ],
     "answerIndex": 0
   },
   {
+    "prompt": "[Business English n°47] What is the meaning of 'shareholder'?",
+    "options": [
+      "Partenaire social",
+      "Client principal",
+      "Fournisseur",
+      "Actionnaire"
+    ],
+    "answerIndex": 3
+  },
+  {
     "prompt": "[Business English n°48] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
     "options": [
-      "he had",
-      "had he",
       "did he",
-      "he did"
+      "had he",
+      "he did",
+      "he had"
     ],
     "answerIndex": 1
   },
   {
     "prompt": "[Business English n°49] Select the correct term for a company merger:",
     "options": [
-      "A merger",
-      "A bankruptcy",
       "A turnover",
-      "A layoff"
+      "A layoff",
+      "A merger",
+      "A bankruptcy"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°50] Choose the false friend: 'Actually' in English means:",
     "options": [
       "Actuellement",
-      "Vraiment",
       "Probablement",
+      "En fait / En réalité",
       "Récemment"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°51] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
-      "meets",
-      "meet",
+      "meeting",
       "met",
-      "meeting"
+      "have met",
+      "meet"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°52] Choose the correct word: 'The company decided to _____ 500 workers.'",
     "options": [
-      "lay down",
-      "lay off",
       "lay out",
-      "lay on"
+      "lay on",
+      "lay off",
+      "lay down"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°53] Complete the sentence: 'If I _____ you, I would accept the offer.'",
     "options": [
-      "were",
       "am",
-      "be",
-      "was"
+      "was",
+      "were",
+      "be"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°54] Select the correct preposition: 'He has been working here _____ 2018.'",
@@ -3223,59 +5736,59 @@ export const IAE_ENGLISH_QUIZ_DATA = [
   {
     "prompt": "[Business English n°55] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
-      "for",
       "during",
+      "for",
       "from",
       "since"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
     "prompt": "[Business English n°56] Choose the correct phrase: 'You _____ consult a specialist.'",
     "options": [
-      "should to",
-      "had rather",
       "had better",
-      "would better"
+      "would better",
+      "should to",
+      "had rather"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°57] What is the meaning of 'shareholder'?",
     "options": [
       "Fournisseur",
-      "Actionnaire",
       "Partenaire social",
+      "Actionnaire",
       "Client principal"
     ],
-    "answerIndex": 1
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°58] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
     "options": [
+      "had he",
       "he did",
       "he had",
-      "did he",
-      "had he"
+      "did he"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°59] Select the correct term for a company merger:",
     "options": [
-      "A turnover",
       "A merger",
+      "A turnover",
       "A bankruptcy",
       "A layoff"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°60] Choose the false friend: 'Actually' in English means:",
     "options": [
-      "Récemment",
       "Actuellement",
-      "Vraiment",
+      "Récemment",
+      "En fait / En réalité",
       "Probablement"
     ],
     "answerIndex": 2
@@ -3283,20 +5796,20 @@ export const IAE_ENGLISH_QUIZ_DATA = [
   {
     "prompt": "[Business English n°61] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
-      "meets",
-      "meet",
+      "meeting",
       "met",
-      "meeting"
+      "meet",
+      "have met"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°62] Choose the correct word: 'The company decided to _____ 500 workers.'",
     "options": [
       "lay off",
+      "lay down",
       "lay out",
-      "lay on",
-      "lay down"
+      "lay on"
     ],
     "answerIndex": 0
   },
@@ -3304,8 +5817,8 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "prompt": "[Business English n°63] Complete the sentence: 'If I _____ you, I would accept the offer.'",
     "options": [
       "am",
-      "be",
       "was",
+      "be",
       "were"
     ],
     "answerIndex": 3
@@ -3314,44 +5827,144 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "prompt": "[Business English n°64] Select the correct preposition: 'He has been working here _____ 2018.'",
     "options": [
       "for",
-      "since",
+      "from",
       "during",
-      "from"
+      "since"
     ],
-    "answerIndex": 1
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°65] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
       "during",
+      "for",
       "since",
-      "from",
-      "for"
+      "from"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
     "prompt": "[Business English n°66] Choose the correct phrase: 'You _____ consult a specialist.'",
     "options": [
-      "would better",
       "had better",
-      "should to",
-      "had rather"
+      "would better",
+      "had rather",
+      "should to"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°67] What is the meaning of 'shareholder'?",
     "options": [
-      "Fournisseur",
       "Actionnaire",
       "Partenaire social",
-      "Client principal"
+      "Client principal",
+      "Fournisseur"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°68] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
+    "options": [
+      "did he",
+      "had he",
+      "he had",
+      "he did"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Business English n°68] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
+    "prompt": "[Business English n°69] Select the correct term for a company merger:",
+    "options": [
+      "A turnover",
+      "A merger",
+      "A layoff",
+      "A bankruptcy"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°70] Choose the false friend: 'Actually' in English means:",
+    "options": [
+      "Récemment",
+      "En fait / En réalité",
+      "Actuellement",
+      "Probablement"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°71] Complete the sentence: 'I look forward to _____ you next week.'",
+    "options": [
+      "met",
+      "meeting",
+      "meet",
+      "have met"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°72] Choose the correct word: 'The company decided to _____ 500 workers.'",
+    "options": [
+      "lay out",
+      "lay on",
+      "lay down",
+      "lay off"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°73] Complete the sentence: 'If I _____ you, I would accept the offer.'",
+    "options": [
+      "was",
+      "were",
+      "am",
+      "be"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°74] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "options": [
+      "for",
+      "since",
+      "from",
+      "during"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°75] Select the correct preposition: 'She has lived in London _____ five years.'",
+    "options": [
+      "for",
+      "during",
+      "from",
+      "since"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°76] Choose the correct phrase: 'You _____ consult a specialist.'",
+    "options": [
+      "would better",
+      "should to",
+      "had rather",
+      "had better"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°77] What is the meaning of 'shareholder'?",
+    "options": [
+      "Fournisseur",
+      "Partenaire social",
+      "Client principal",
+      "Actionnaire"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°78] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
     "options": [
       "had he",
       "did he",
@@ -3361,111 +5974,11 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "answerIndex": 0
   },
   {
-    "prompt": "[Business English n°69] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A turnover",
-      "A bankruptcy",
-      "A layoff"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°70] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Récemment",
-      "Actuellement",
-      "Probablement",
-      "Vraiment"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°71] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meet",
-      "meets",
-      "met",
-      "meeting"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°72] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay out",
-      "lay off",
-      "lay on",
-      "lay down"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°73] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "was",
-      "be",
-      "were",
-      "am"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°74] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "since",
-      "during",
-      "for",
-      "from"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°75] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "during",
-      "since",
-      "for",
-      "from"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°76] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "would better",
-      "should to",
-      "had better",
-      "had rather"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°77] What is the meaning of 'shareholder'?",
-    "options": [
-      "Client principal",
-      "Partenaire social",
-      "Actionnaire",
-      "Fournisseur"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°78] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "did he",
-      "he had",
-      "had he",
-      "he did"
-    ],
-    "answerIndex": 2
-  },
-  {
     "prompt": "[Business English n°79] Select the correct term for a company merger:",
     "options": [
       "A merger",
-      "A layoff",
       "A turnover",
+      "A layoff",
       "A bankruptcy"
     ],
     "answerIndex": 0
@@ -3473,48 +5986,48 @@ export const IAE_ENGLISH_QUIZ_DATA = [
   {
     "prompt": "[Business English n°80] Choose the false friend: 'Actually' in English means:",
     "options": [
-      "Probablement",
-      "Actuellement",
       "Récemment",
-      "Vraiment"
+      "Probablement",
+      "En fait / En réalité",
+      "Actuellement"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°81] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
-      "meets",
+      "have met",
       "met",
-      "meet",
-      "meeting"
+      "meeting",
+      "meet"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°82] Choose the correct word: 'The company decided to _____ 500 workers.'",
     "options": [
-      "lay on",
       "lay out",
-      "lay off",
-      "lay down"
+      "lay on",
+      "lay down",
+      "lay off"
     ],
-    "answerIndex": 2
+    "answerIndex": 3
   },
   {
     "prompt": "[Business English n°83] Complete the sentence: 'If I _____ you, I would accept the offer.'",
     "options": [
       "be",
       "was",
-      "am",
-      "were"
+      "were",
+      "am"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
     "prompt": "[Business English n°84] Select the correct preposition: 'He has been working here _____ 2018.'",
     "options": [
-      "during",
       "for",
+      "during",
       "from",
       "since"
     ],
@@ -3533,25 +6046,125 @@ export const IAE_ENGLISH_QUIZ_DATA = [
   {
     "prompt": "[Business English n°86] Choose the correct phrase: 'You _____ consult a specialist.'",
     "options": [
+      "had better",
       "would better",
-      "should to",
       "had rather",
-      "had better"
+      "should to"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
     "prompt": "[Business English n°87] What is the meaning of 'shareholder'?",
     "options": [
       "Actionnaire",
-      "Partenaire social",
       "Client principal",
+      "Partenaire social",
       "Fournisseur"
     ],
     "answerIndex": 0
   },
   {
     "prompt": "[Business English n°88] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
+    "options": [
+      "he did",
+      "had he",
+      "he had",
+      "did he"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°89] Select the correct term for a company merger:",
+    "options": [
+      "A bankruptcy",
+      "A merger",
+      "A turnover",
+      "A layoff"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°90] Choose the false friend: 'Actually' in English means:",
+    "options": [
+      "En fait / En réalité",
+      "Probablement",
+      "Actuellement",
+      "Récemment"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°91] Complete the sentence: 'I look forward to _____ you next week.'",
+    "options": [
+      "meet",
+      "met",
+      "meeting",
+      "have met"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°92] Choose the correct word: 'The company decided to _____ 500 workers.'",
+    "options": [
+      "lay off",
+      "lay down",
+      "lay on",
+      "lay out"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°93] Complete the sentence: 'If I _____ you, I would accept the offer.'",
+    "options": [
+      "was",
+      "be",
+      "were",
+      "am"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°94] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "during"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°95] Select the correct preposition: 'She has lived in London _____ five years.'",
+    "options": [
+      "for",
+      "from",
+      "during",
+      "since"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°96] Choose the correct phrase: 'You _____ consult a specialist.'",
+    "options": [
+      "would better",
+      "had rather",
+      "should to",
+      "had better"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°97] What is the meaning of 'shareholder'?",
+    "options": [
+      "Actionnaire",
+      "Partenaire social",
+      "Fournisseur",
+      "Client principal"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°98] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
     "options": [
       "he did",
       "he had",
@@ -3561,124 +6174,74 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°89] Select the correct term for a company merger:",
+    "prompt": "[Business English n°99] Select the correct term for a company merger:",
     "options": [
-      "A merger",
-      "A layoff",
+      "A turnover",
       "A bankruptcy",
-      "A turnover"
+      "A merger",
+      "A layoff"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°90] Choose the false friend: 'Actually' in English means:",
+    "prompt": "[Business English n°100] Choose the false friend: 'Actually' in English means:",
     "options": [
       "Récemment",
       "Actuellement",
       "Probablement",
-      "Vraiment"
+      "En fait / En réalité"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Business English n°91] Complete the sentence: 'I look forward to _____ you next week.'",
+    "prompt": "[Business English n°101] Complete the sentence: 'I look forward to _____ you next week.'",
     "options": [
-      "meeting",
+      "have met",
+      "met",
       "meet",
-      "meets",
-      "met"
+      "meeting"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "[Business English n°92] Choose the correct word: 'The company decided to _____ 500 workers.'",
+    "prompt": "[Business English n°102] Choose the correct word: 'The company decided to _____ 500 workers.'",
     "options": [
+      "lay down",
       "lay out",
       "lay on",
-      "lay down",
       "lay off"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Business English n°93] Complete the sentence: 'If I _____ you, I would accept the offer.'",
+    "prompt": "[Business English n°103] Complete the sentence: 'If I _____ you, I would accept the offer.'",
     "options": [
-      "am",
-      "was",
       "be",
-      "were"
+      "am",
+      "were",
+      "was"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°94] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "prompt": "[Business English n°104] Select the correct preposition: 'He has been working here _____ 2018.'",
     "options": [
+      "for",
       "from",
-      "during",
-      "for",
-      "since"
+      "since",
+      "during"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°95] Select the correct preposition: 'She has lived in London _____ five years.'",
+    "prompt": "[Business English n°105] Select the correct preposition: 'She has lived in London _____ five years.'",
     "options": [
-      "for",
       "since",
       "during",
-      "from"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°96] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had rather",
-      "should to",
-      "had better",
-      "would better"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°97] What is the meaning of 'shareholder'?",
-    "options": [
-      "Client principal",
-      "Partenaire social",
-      "Actionnaire",
-      "Fournisseur"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°98] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he did",
-      "did he",
-      "he had",
-      "had he"
+      "from",
+      "for"
     ],
     "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°99] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A turnover",
-      "A layoff",
-      "A bankruptcy"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°100] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Actuellement",
-      "Récemment",
-      "Vraiment",
-      "Probablement"
-    ],
-    "answerIndex": 2
   }
 ];
 

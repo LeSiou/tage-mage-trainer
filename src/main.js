@@ -2004,9 +2004,79 @@ function renderMemoTabs() {
   }
 }
 
+// Deduplicate a deck by normalized prompt string to ensure zero duplicate questions in a single quiz session
+function deduplicateDeck(deck) {
+  if (!Array.isArray(deck)) return [];
+  const seenPrompts = new Set();
+  const uniqueDeck = [];
+  for (const item of deck) {
+    if (!item || !item.prompt) continue;
+    const norm = item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+    if (!seenPrompts.has(norm)) {
+      seenPrompts.add(norm);
+      uniqueDeck.push(item);
+    }
+  }
+  return uniqueDeck;
+}
+
+// Track recently seen question prompts in localStorage to prevent repeat questions across quiz sessions
+function getNonRepeatingDeck(optionId, rawDeck, count) {
+  const cleanRaw = deduplicateDeck(rawDeck);
+  if (cleanRaw.length <= count) return cleanRaw;
+
+  const storageKey = `seen_q_prompts_${optionId}`;
+  let seenPrompts = [];
+  try {
+    const stored = localStorage.getItem(storageKey);
+    if (stored) seenPrompts = JSON.parse(stored);
+  } catch (e) {
+    seenPrompts = [];
+  }
+
+  const seenSet = new Set(seenPrompts);
+  
+  // Filter items whose normalized prompt hasn't been seen recently
+  const unseenItems = cleanRaw.filter(item => {
+    const norm = item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+    return !seenSet.has(norm);
+  });
+
+  let selectedItems = [];
+
+  if (unseenItems.length >= count) {
+    // We have enough unseen items! Take the requested count from unseen items.
+    selectedItems = unseenItems.slice(0, count);
+  } else {
+    // We don't have enough unseen items to fill the deck (or bank exhausted).
+    // Take all remaining unseen items first, then reset seen history and take the rest.
+    selectedItems = [...unseenItems];
+    seenPrompts = []; // Reset history
+    const remainingNeeded = count - selectedItems.length;
+    
+    const unseenNorms = new Set(selectedItems.map(item => item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase()));
+    const recycledPool = cleanRaw.filter(item => {
+      const norm = item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+      return !unseenNorms.has(norm);
+    });
+
+    const reshuffledRecycled = shuffleArray(recycledPool);
+    selectedItems.push(...reshuffledRecycled.slice(0, remainingNeeded));
+  }
+
+  // Save the newly selected prompts to history
+  const newlySelectedNorms = selectedItems.map(item => item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase());
+  const updatedSeen = [...seenPrompts, ...newlySelectedNorms];
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(updatedSeen.slice(-400))); // Keep last 400
+  } catch (e) {}
+
+  return selectedItems;
+}
+
 function startPractice() {
   const rawDeck = currentOption.generateDeck();
-  currentDeck = rawDeck.slice(0, Math.min(selectedQuestionCount, rawDeck.length));
+  currentDeck = getNonRepeatingDeck(currentOption.id, rawDeck, selectedQuestionCount);
   deckIndex = 0;
   totalCorrect = 0;
   userAnswer = '';
