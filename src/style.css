@@ -82,10 +82,17 @@ body {
   display: flex;
 }
 
-#practice-view, #start-view {
+#start-view {
   overflow: hidden;
   touch-action: none;
   user-select: none;
+}
+
+#practice-view {
+  overflow-y: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  user-select: text;
 }
 
 @keyframes appleFade {
@@ -661,7 +668,31 @@ sub {
   flex-direction: column;
   gap: 16px;
   flex-grow: 1;
-  justify-content: center;
+  overflow-y: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 30px;
+}
+
+.passage-box {
+  max-height: 250px;
+  overflow-y: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.passage-box::-webkit-scrollbar {
+  width: 5px;
+}
+.passage-box::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+.passage-box::-webkit-scrollbar-thumb {
+  background: #0071E3;
+  border-radius: 4px;
 }
 
 .question-card-apple {

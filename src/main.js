@@ -2106,6 +2106,11 @@ function nextQuestion() {
 
   userAnswer = '';
   updateAnswerDisplay();
+
+  const practiceArea = document.querySelector('.practice-area');
+  if (practiceArea) practiceArea.scrollTop = 0;
+  const practiceView = document.getElementById('practice-view');
+  if (practiceView) practiceView.scrollTop = 0;
 }
 
 function updateAnswerDisplay() {
