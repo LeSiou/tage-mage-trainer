@@ -1860,6 +1860,8 @@ let totalCorrect = 0;
 let isProcessingFeedback = false;
 let activeFicheIndex = 0;
 let currentExam = 'tage';
+let selectedQuestionCount = 20;
+let activeStatsSubKey = 'all';
 
 const views = {
   portal: document.getElementById('portal-view'),
@@ -1869,6 +1871,7 @@ const views = {
   memo: document.getElementById('memo-view'),
   start: document.getElementById('start-view'),
   practice: document.getElementById('practice-view'),
+  stats: document.getElementById('stats-view'),
   resultsModal: document.getElementById('results-modal')
 };
 
@@ -2001,13 +2004,14 @@ function renderMemoTabs() {
 }
 
 function startPractice() {
-  currentDeck = currentOption.generateDeck();
+  const rawDeck = currentOption.generateDeck();
+  currentDeck = rawDeck.slice(0, Math.min(selectedQuestionCount, rawDeck.length));
   deckIndex = 0;
   totalCorrect = 0;
   userAnswer = '';
   isProcessingFeedback = false;
 
-  elPracticeModeTitle.textContent = currentOption.title;
+  elPracticeModeTitle.textContent = `${currentOption.title} (${currentDeck.length} Q)`;
   renderKeypadUI();
   showView('practice');
   nextQuestion();
@@ -2075,8 +2079,8 @@ function attachKeypadListeners() {
 
 function nextQuestion() {
   if (deckIndex >= currentDeck.length) {
-    currentDeck = currentOption.generateDeck();
-    deckIndex = 0;
+    stopPractice();
+    return;
   }
 
   currentQuestion = currentDeck[deckIndex];
@@ -2194,10 +2198,188 @@ function submitAnswer() {
   }, 220);
 }
 
+function getResultsHistory() {
+  try {
+    const raw = localStorage.getItem('tage_iae_results_history');
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveQuizResult(score, total) {
+  if (!total || total <= 0) return;
+  const history = getResultsHistory();
+  const entry = {
+    id: Date.now().toString(),
+    exam: currentExam || 'tage',
+    subKey: currentOption ? currentOption.id : 'quizz',
+    subTitle: currentOption ? currentOption.title : 'Quizz',
+    score: score,
+    total: total,
+    percentage: Math.round((score / total) * 100),
+    date: new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }),
+    timestamp: Date.now()
+  };
+  history.push(entry);
+  try {
+    localStorage.setItem('tage_iae_results_history', JSON.stringify(history));
+  } catch (e) {
+    console.error("Storage error", e);
+  }
+}
+
+function clearResultsHistory() {
+  localStorage.removeItem('tage_iae_results_history');
+}
+
 function stopPractice() {
-  elResultsModeName.textContent = currentOption.title;
-  elStatTotalCount.textContent = totalCorrect;
+  const totalQuestions = deckIndex > 0 ? deckIndex : (currentDeck ? currentDeck.length : 1);
+  saveQuizResult(totalCorrect, totalQuestions);
+  elResultsModeName.textContent = currentOption ? currentOption.title : 'Quizz Terminé';
+  elStatTotalCount.textContent = `${totalCorrect} / ${totalQuestions}`;
   views.resultsModal.classList.add('active');
+}
+
+function openStatsDashboard() {
+  renderStatsDashboard();
+  showView('stats');
+}
+
+function renderStatsDashboard() {
+  const history = getResultsHistory();
+  
+  const elSubSelector = document.getElementById('dash-sub-selector');
+  if (elSubSelector) {
+    const uniqueSubs = new Map();
+    uniqueSubs.set('all', 'Tous les Sous-Tests');
+    history.forEach(item => {
+      if (!uniqueSubs.has(item.subKey)) {
+        uniqueSubs.set(item.subKey, item.subTitle || item.subKey);
+      }
+    });
+
+    let pillsHtml = '';
+    uniqueSubs.forEach((label, subKey) => {
+      const isActive = subKey === activeStatsSubKey ? 'active' : '';
+      pillsHtml += `<button class="sub-pill-btn ${isActive}" data-subkey="${subKey}">${label}</button>`;
+    });
+    elSubSelector.innerHTML = pillsHtml;
+
+    elSubSelector.querySelectorAll('.sub-pill-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeStatsSubKey = btn.getAttribute('data-subkey');
+        renderStatsDashboard();
+      });
+    });
+  }
+
+  const filteredHistory = activeStatsSubKey === 'all' 
+    ? history 
+    : history.filter(item => item.subKey === activeStatsSubKey);
+
+  const elAvgScore = document.getElementById('dash-avg-score');
+  const elTotalQuizzes = document.getElementById('dash-total-quizzes');
+  const elBestScore = document.getElementById('dash-best-score');
+
+  if (filteredHistory.length === 0) {
+    if (elAvgScore) elAvgScore.textContent = '0%';
+    if (elTotalQuizzes) elTotalQuizzes.textContent = '0';
+    if (elBestScore) elBestScore.textContent = '0%';
+  } else {
+    const sumPct = filteredHistory.reduce((acc, curr) => acc + curr.percentage, 0);
+    const avgPct = Math.round(sumPct / filteredHistory.length);
+    const maxPct = Math.max(...filteredHistory.map(item => item.percentage));
+
+    if (elAvgScore) elAvgScore.textContent = `${avgPct}%`;
+    if (elTotalQuizzes) elTotalQuizzes.textContent = filteredHistory.length;
+    if (elBestScore) elBestScore.textContent = `${maxPct}%`;
+  }
+
+  renderSVGProgressChart(filteredHistory);
+
+  const elHistoryList = document.getElementById('dash-history-list');
+  if (elHistoryList) {
+    if (filteredHistory.length === 0) {
+      elHistoryList.innerHTML = `<p style="color:var(--text-apple-sub); font-size:13px; text-align:center; padding:20px 0;">Aucun historique enregistré pour le moment. Réalisez un quizz pour suivre vos scores !</p>`;
+    } else {
+      const reversed = [...filteredHistory].reverse().slice(0, 15);
+      let listHtml = '';
+      reversed.forEach(item => {
+        const passClass = item.percentage >= 60 ? 'pass' : 'fail';
+        listHtml += `
+          <div class="history-item-row">
+            <div class="history-item-left">
+              <span class="history-item-title">${item.subTitle}</span>
+              <span class="history-item-date">${item.date}</span>
+            </div>
+            <span class="history-badge ${passClass}">${item.score}/${item.total} (${item.percentage}%)</span>
+          </div>`;
+      });
+      elHistoryList.innerHTML = listHtml;
+    }
+  }
+}
+
+function renderSVGProgressChart(historyData) {
+  const wrapper = document.getElementById('dash-chart-wrapper');
+  if (!wrapper) return;
+
+  if (!historyData || historyData.length === 0) {
+    wrapper.innerHTML = `
+      <div style="display:flex; align-items:center; justify-content:center; height:180px; color:var(--text-apple-sub); font-size:13px;">
+        Pas encore de données graphiques. Complétez vos premiers quizz !
+      </div>`;
+    return;
+  }
+
+  const svgWidth = 600;
+  const svgHeight = 200;
+  const paddingX = 40;
+  const paddingY = 30;
+
+  const width = svgWidth - paddingX * 2;
+  const height = svgHeight - paddingY * 2;
+
+  const points = historyData.map((item, idx) => {
+    const x = historyData.length === 1 
+      ? svgWidth / 2 
+      : paddingX + (idx / (historyData.length - 1)) * width;
+    const y = svgHeight - paddingY - (item.percentage / 100) * height;
+    return { x, y, percentage: item.percentage, title: item.subTitle, score: `${item.score}/${item.total}` };
+  });
+
+  let polylinePoints = points.map(p => `${p.x},${p.y}`).join(' ');
+
+  let circlesHtml = points.map(p => {
+    const color = p.percentage >= 60 ? '#34C759' : '#FF3B30';
+    return `
+      <circle cx="${p.x}" cy="${p.y}" r="5" fill="${color}" stroke="#FFFFFF" stroke-width="2">
+        <title>${p.title}: ${p.score} (${p.percentage}%)</title>
+      </circle>`;
+  }).join('');
+
+  const y0 = svgHeight - paddingY;
+  const y50 = svgHeight - paddingY - 0.5 * height;
+  const y100 = svgHeight - paddingY - 1.0 * height;
+
+  const svgContent = `
+    <svg viewBox="0 0 ${svgWidth} ${svgHeight}" class="chart-svg" preserveAspectRatio="none" style="width:100%; height:180px;">
+      <line x1="${paddingX}" y1="${y100}" x2="${svgWidth - paddingX}" y2="${y100}" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3,3" />
+      <text x="${paddingX - 10}" y="${y100 + 4}" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">100%</text>
+
+      <line x1="${paddingX}" y1="${y50}" x2="${svgWidth - paddingX}" y2="${y50}" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3,3" />
+      <text x="${paddingX - 10}" y="${y50 + 4}" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">50%</text>
+
+      <line x1="${paddingX}" y1="${y0}" x2="${svgWidth - paddingX}" y2="${y0}" stroke="rgba(255,255,255,0.15)" />
+      <text x="${paddingX - 10}" y="${y0 + 4}" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0%</text>
+
+      ${historyData.length > 1 ? `<polyline fill="none" stroke="var(--accent-apple-blue)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${polylinePoints}" />` : ''}
+
+      ${circlesHtml}
+    </svg>`;
+
+  wrapper.innerHTML = svgContent;
 }
 
 function init() {
@@ -2242,6 +2424,34 @@ function init() {
   });
   document.getElementById('btn-back-subcat').addEventListener('click', () => showView('subcategory'));
   document.getElementById('btn-back-start').addEventListener('click', () => showView('subcategory'));
+
+  const btnOpenStatsPortal = document.getElementById('btn-open-stats-portal');
+  if (btnOpenStatsPortal) btnOpenStatsPortal.addEventListener('click', openStatsDashboard);
+  const btnOpenStatsMenu = document.getElementById('btn-open-stats-menu');
+  if (btnOpenStatsMenu) btnOpenStatsMenu.addEventListener('click', openStatsDashboard);
+  const btnOpenStatsIae = document.getElementById('btn-open-stats-iae');
+  if (btnOpenStatsIae) btnOpenStatsIae.addEventListener('click', openStatsDashboard);
+
+  const btnBackStats = document.getElementById('btn-back-stats');
+  if (btnBackStats) btnBackStats.addEventListener('click', () => showView('portal'));
+
+  const btnResetStats = document.getElementById('btn-reset-stats');
+  if (btnResetStats) {
+    btnResetStats.addEventListener('click', () => {
+      if (confirm("Voulez-vous vraiment réinitialiser tout votre historique de scores ?")) {
+        clearResultsHistory();
+        renderStatsDashboard();
+      }
+    });
+  }
+
+  document.querySelectorAll('.pill-count-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.pill-count-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedQuestionCount = parseInt(btn.getAttribute('data-count'), 10) || 20;
+    });
+  });
 
   document.getElementById('btn-commencer').addEventListener('click', startPractice);
   document.getElementById('btn-stop').addEventListener('click', stopPractice);

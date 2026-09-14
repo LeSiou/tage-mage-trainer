@@ -1149,6 +1149,232 @@ sub {
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
+/* ==========================================================================
+   Question Count Selector (Start View)
+   ========================================================================== */
+.question-count-section {
+  margin: 18px 0;
+  width: 100%;
+}
+
+.count-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-apple-sub);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.count-selector-pills {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill-count-btn {
+  background: #F0F0F2;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  font-family: var(--font-apple);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-apple-main);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pill-count-btn:hover {
+  background: #E5E5EA;
+}
+
+.pill-count-btn.active {
+  background: #0071E3;
+  color: #FFFFFF;
+  border-color: #0071E3;
+  box-shadow: 0 3px 10px rgba(0, 113, 227, 0.25);
+}
+
+/* ==========================================================================
+   Portal & Nav Stats Buttons
+   ========================================================================== */
+.btn-stats-apple {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(0, 113, 227, 0.2);
+  color: #0071E3;
+  border-radius: var(--radius-pill);
+  padding: 12px 22px;
+  font-family: var(--font-apple);
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.08);
+  transition: all 0.15s ease;
+}
+
+.btn-stats-apple:hover {
+  background: #0071E3;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 113, 227, 0.2);
+}
+
+.btn-nav-stats {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #0071E3 !important;
+  background: rgba(0, 113, 227, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 6px 12px !important;
+}
+
+/* ==========================================================================
+   Stats & Progress Dashboard (#stats-view)
+   ========================================================================== */
+.stats-dashboard-card {
+  background: #FFFFFF;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+  padding: 24px 20px;
+}
+
+.stats-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-summary-box {
+  background: #F5F5F7;
+  border-radius: 16px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.stat-big-num {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0071E3;
+  letter-spacing: -0.5px;
+}
+
+.stat-sub-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-apple-sub);
+  margin-top: 4px;
+}
+
+.chart-filter-section {
+  margin-bottom: 16px;
+}
+
+.chart-filter-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-apple-sub);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.dash-sub-pills {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dash-sub-pills::-webkit-scrollbar {
+  height: 3px;
+}
+.dash-sub-pills::-webkit-scrollbar-thumb {
+  background: #D1D1D6;
+  border-radius: 4px;
+}
+
+.dash-sub-pill-btn {
+  flex-shrink: 0;
+  background: #F0F0F2;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-family: var(--font-apple);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-apple-main);
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.dash-sub-pill-btn.active {
+  background: #0071E3;
+  color: #FFFFFF;
+}
+
+.chart-container-box {
+  background: #F0F4F8;
+  border: 1px solid rgba(0, 113, 227, 0.15);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.chart-svg-wrapper {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+
+.history-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.history-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F5F5F7;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.history-item-title {
+  font-weight: 700;
+  color: var(--text-apple-main);
+}
+
+.history-item-date {
+  font-size: 11px;
+  color: var(--text-apple-sub);
+}
+
+.history-item-score {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.score-pass {
+  color: #2E7D32;
+}
+
+.score-fail {
+  color: #D32F2F;
+}
+
+
 .math-card-visual:hover {
   border-color: rgba(0, 113, 227, 0.2);
   box-shadow: 0 8px 24px rgba(0, 113, 227, 0.06);
