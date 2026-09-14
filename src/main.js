@@ -2208,13 +2208,36 @@ function getResultsHistory() {
   }
 }
 
+function getNormalizedSubKey(item) {
+  if (!item) return '';
+  const key = (item.subKey || '').toLowerCase();
+  const title = (item.subTitle || '').toLowerCase();
+
+  if (key === 'tm_calcul' || key.includes('calcul') || title.includes('calcul')) return 'tm_calcul';
+  if (key === 'tm_conditions' || key.includes('condition') || title.includes('condition')) return 'tm_conditions';
+  if (key === 'tm_logique' || (key.includes('logique') && !key.includes('iae')) || title.includes('chiffres & lettres')) return 'tm_logique';
+  if (key === 'tm_comprehension' || key.includes('comprehension') || title.includes('compréhension de texte')) return 'tm_comprehension';
+  if (key === 'tm_raisonnement' || (key.includes('raisonnement') && !key.includes('iae')) || title.includes('argumentation')) return 'tm_raisonnement';
+  if (key === 'tm_expression' || key.includes('expression') || title.includes('expression')) return 'tm_expression';
+  if (key === 'tm_mock_exam' || key.includes('tm_mock') || title.includes('test blanc')) return 'tm_mock_exam';
+
+  if (key === 'iae_culture_g' || key.includes('culture_g') || title.includes('culture générale') || title.includes('management')) return 'iae_culture_g';
+  if (key === 'iae_francais' || (key.includes('francais') && key.includes('iae')) || title.includes('français')) return 'iae_francais';
+  if (key === 'iae_raisonnement' || (key.includes('raisonnement') && key.includes('iae')) || (title.includes('raisonnement') && title.includes('numérique'))) return 'iae_raisonnement';
+  if (key === 'iae_anglais' || key.includes('anglais') || title.includes('anglais')) return 'iae_anglais';
+  if (key === 'iae_mock_exam' || key.includes('iae_mock') || title.includes('épreuve blanche')) return 'iae_mock_exam';
+
+  return item.subKey || '';
+}
+
 function saveQuizResult(score, total) {
   if (!total || total <= 0) return;
   const history = getResultsHistory();
+  const rawSubKey = currentCategory || (currentOption ? currentOption.id : 'quizz');
   const entry = {
     id: Date.now().toString(),
     exam: currentExam || 'tage',
-    subKey: currentOption ? currentOption.id : 'quizz',
+    subKey: rawSubKey,
     subTitle: currentOption ? currentOption.title : 'Quizz',
     score: score,
     total: total,
@@ -2222,6 +2245,7 @@ function saveQuizResult(score, total) {
     date: new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }),
     timestamp: Date.now()
   };
+  entry.normalizedSubKey = getNormalizedSubKey(entry);
   history.push(entry);
   try {
     localStorage.setItem('tage_iae_results_history', JSON.stringify(history));
@@ -2294,10 +2318,11 @@ function renderStatsDashboard() {
   if (elSubSelector) {
     const examSubs = EXAM_SUBTESTS[activeStatsExamFilter] || EXAM_SUBTESTS.tage;
     
-    // Count history entries per subKey for active exam
+    // Count history entries per normalized subKey for active exam
     const subCounts = new Map();
     examFilteredHistory.forEach(item => {
-      subCounts.set(item.subKey, (subCounts.get(item.subKey) || 0) + 1);
+      const normKey = getNormalizedSubKey(item);
+      subCounts.set(normKey, (subCounts.get(normKey) || 0) + 1);
     });
 
     let pillsHtml = '';
@@ -2330,10 +2355,10 @@ function renderStatsDashboard() {
     });
   }
 
-  // 4. Filter History by Sub-Test Key
+  // 4. Filter History by Normalized Sub-Test Key
   const filteredHistory = activeStatsSubKey === 'all' 
     ? examFilteredHistory 
-    : examFilteredHistory.filter(item => item.subKey === activeStatsSubKey);
+    : examFilteredHistory.filter(item => getNormalizedSubKey(item) === activeStatsSubKey);
 
   // 5. Update Metrics Cards
   const elAvgScore = document.getElementById('dash-avg-score');
@@ -2468,7 +2493,6 @@ function renderSVGProgressChart(historyData) {
   const baselineY = paddingTop + height;
   const areaPathD = `M ${firstX} ${baselineY} L ${points.map(p => `${p.x} ${p.y}`).join(' L ')} L ${lastX} ${baselineY} Z`;
 
-  const y60 = paddingTop + height - (60 / 100) * height;
   const y100 = paddingTop;
   const y75 = paddingTop + 0.25 * height;
   const y50 = paddingTop + 0.5 * height;
@@ -2478,12 +2502,10 @@ function renderSVGProgressChart(historyData) {
   const renderChartBody = (selectedIdx) => {
     let elementsHtml = points.map((p, idx) => {
       const isSelected = idx === selectedIdx;
-      const isPass = p.percentage >= 60;
-      const dotColor = isPass ? '#34C759' : '#FF3B30';
       
-      const r = isSelected ? 8 : 5.5;
+      const r = isSelected ? 7 : 5;
       const strokeW = isSelected ? 3 : 2;
-      const glowRing = isSelected ? `<circle cx="${p.x}" cy="${p.y}" r="15" fill="${dotColor}" opacity="0.25" />` : '';
+      const glowRing = isSelected ? `<circle cx="${p.x}" cy="${p.y}" r="14" fill="#0071E3" opacity="0.18" />` : '';
 
       return `
         <!-- Vertical guide line -->
@@ -2492,23 +2514,21 @@ function renderSVGProgressChart(historyData) {
         ${glowRing}
 
         <!-- Clean Circle Dot -->
-        <circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${dotColor}" stroke="#FFFFFF" stroke-width="${strokeW}" class="chart-point-dot" data-point-idx="${idx}" style="cursor:pointer; transition:all 0.15s ease;">
+        <circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${isSelected ? '#0071E3' : '#FFFFFF'}" stroke="#0071E3" stroke-width="${strokeW}" class="chart-point-dot" data-point-idx="${idx}" style="cursor:pointer; transition:all 0.15s ease;">
           <title>#${p.idx} ${p.title}: ${p.scoreText} (${p.percentage}%) - ${p.dateText}</title>
         </circle>
 
-        <!-- Bottom X Axis Label (Session number + short date) -->
+        <!-- Bottom X Axis Label (Session number) -->
         <text x="${p.x}" y="${baselineY + 18}" fill="${isSelected ? '#0071E3' : '#86868B'}" font-size="${isSelected ? '11' : '10'}" font-weight="${isSelected ? '800' : '600'}" text-anchor="middle" class="chart-point-dot" data-point-idx="${idx}" style="cursor:pointer;">#${p.idx}</text>
       `;
     }).join('');
 
     // Floating Tooltip Callout ONLY for the active point
     const activeP = points[selectedIdx];
-    const activePass = activeP.percentage >= 60;
-    const calloutBg = activePass ? '#34C759' : '#FF3B30';
 
     const activeCallout = `
       <g transform="translate(${activeP.x}, ${activeP.y - 14})" style="transition: transform 0.2s ease;">
-        <rect x="-24" y="-12" width="48" height="18" rx="6" fill="${calloutBg}" />
+        <rect x="-24" y="-12" width="48" height="18" rx="6" fill="#0071E3" />
         <text x="0" y="1" fill="#FFFFFF" font-size="10.5" font-weight="800" text-anchor="middle" dominant-baseline="middle">${activeP.percentage}%</text>
       </g>
     `;
@@ -2525,7 +2545,7 @@ function renderSVGProgressChart(historyData) {
         <svg viewBox="0 0 ${svgWidth} ${svgHeight}" class="chart-svg" style="min-width:100%; width:${svgWidth}px; height:${svgHeight}px; overflow:visible;">
           <defs>
             <linearGradient id="score-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#0071E3" stop-opacity="0.22" />
+              <stop offset="0%" stop-color="#0071E3" stop-opacity="0.18" />
               <stop offset="100%" stop-color="#0071E3" stop-opacity="0.0" />
             </linearGradient>
           </defs>
@@ -2536,10 +2556,6 @@ function renderSVGProgressChart(historyData) {
 
           <line x1="${paddingLeft}" y1="${y75}" x2="${svgWidth - paddingRight}" y2="${y75}" stroke="rgba(0,0,0,0.04)" stroke-dasharray="3,3" />
           <text x="${paddingLeft - 10}" y="${y75 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">75%</text>
-
-          <!-- Target 60% Admissibility Line -->
-          <line x1="${paddingLeft}" y1="${y60}" x2="${svgWidth - paddingRight}" y2="${y60}" stroke="#FF9500" stroke-dasharray="4,4" stroke-width="1.5" />
-          <text x="${svgWidth - paddingRight}" y="${y60 - 5}" fill="#E67E00" font-size="9.5" font-weight="800" text-anchor="end">🎯 Seuil Admissibilité (60%)</text>
 
           <line x1="${paddingLeft}" y1="${y50}" x2="${svgWidth - paddingRight}" y2="${y50}" stroke="rgba(0,0,0,0.06)" stroke-dasharray="3,3" />
           <text x="${paddingLeft - 10}" y="${y50 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">50%</text>
@@ -2554,7 +2570,7 @@ function renderSVGProgressChart(historyData) {
           ${points.length > 1 ? `<path d="${areaPathD}" fill="url(#score-gradient)" />` : ''}
 
           <!-- Connecting Line -->
-          ${points.length > 1 ? `<polyline fill="none" stroke="#0071E3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${polylinePoints}" />` : ''}
+          ${points.length > 1 ? `<polyline fill="none" stroke="#0071E3" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" points="${polylinePoints}" />` : ''}
 
           <!-- Data Points -->
           ${elementsHtml}
@@ -2580,8 +2596,8 @@ function renderSVGProgressChart(historyData) {
             <div style="font-size:11px; color:#86868B; font-weight:700; text-transform:uppercase;">Score Obtenu</div>
             <div style="font-size:20px; font-weight:800; color:#1D1D1F;">${activeP.scoreText} <span style="font-size:16px; color:#0071E3;">(${activeP.percentage}%)</span></div>
           </div>
-          <span style="background:${activeP.percentage >= 60 ? '#E8F5E9' : '#FFEBEE'}; color:${activeP.percentage >= 60 ? '#1B5E20' : '#C62828'}; padding:6px 12px; border-radius:8px; font-size:12px; font-weight:800;">
-            ${activeP.percentage >= 60 ? '🟢 Score Validé (≥ 60%)' : '🔴 À Réviser (< 60%)'}
+          <span style="background:rgba(0,113,227,0.1); color:#0071E3; padding:6px 12px; border-radius:8px; font-size:12px; font-weight:800;">
+            Score : ${activeP.percentage}%
           </span>
         </div>
 
@@ -2590,18 +2606,6 @@ function renderSVGProgressChart(historyData) {
           <button id="btn-chart-prev" class="sub-pill-btn" ${selectedIdx === 0 ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} style="flex:1;">‹ Précédent</button>
           <button id="btn-chart-next" class="sub-pill-btn" ${selectedIdx === points.length - 1 ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} style="flex:1;">Suivant ›</button>
         </div>
-      </div>
-
-      <!-- Legend -->
-      <div style="display:flex; align-items:center; justify-content:space-around; font-size:12px; font-weight:700; color:#1D1D1F; background:#FFFFFF; padding:10px 14px; border-radius:12px; border:1px solid rgba(0,0,0,0.08); margin-top:6px;">
-        <span style="display:inline-flex; align-items:center; gap:6px;">
-          <span style="width:10px; height:10px; border-radius:50%; background:#34C759; display:inline-block; box-shadow:0 0 6px rgba(52,199,89,0.5);"></span>
-          🟢 Score Validé (≥ 60%)
-        </span>
-        <span style="display:inline-flex; align-items:center; gap:6px;">
-          <span style="width:10px; height:10px; border-radius:50%; background:#FF3B30; display:inline-block; box-shadow:0 0 6px rgba(255,59,48,0.5);"></span>
-          🔴 À Réviser (< 60%)
-        </span>
       </div>
     `;
   };
