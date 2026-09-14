@@ -1862,6 +1862,7 @@ let activeFicheIndex = 0;
 let currentExam = 'tage';
 let selectedQuestionCount = 20;
 let activeStatsSubKey = 'all';
+let activeStatsExamFilter = 'tage';
 
 const views = {
   portal: document.getElementById('portal-view'),
@@ -2241,7 +2242,11 @@ function stopPractice() {
   views.resultsModal.classList.add('active');
 }
 
-function openStatsDashboard() {
+function openStatsDashboard(exam) {
+  if (exam) {
+    activeStatsExamFilter = exam;
+  }
+  activeStatsSubKey = 'all';
   renderStatsDashboard();
   showView('stats');
 }
@@ -2249,11 +2254,26 @@ function openStatsDashboard() {
 function renderStatsDashboard() {
   const history = getResultsHistory();
   
+  // 1. Update Exam Selector Active Buttons
+  const btnTage = document.getElementById('btn-stats-exam-tage');
+  const btnIae = document.getElementById('btn-stats-exam-iae');
+  const btnAll = document.getElementById('btn-stats-exam-all');
+
+  if (btnTage) btnTage.classList.toggle('active', activeStatsExamFilter === 'tage');
+  if (btnIae) btnIae.classList.toggle('active', activeStatsExamFilter === 'iae');
+  if (btnAll) btnAll.classList.toggle('active', activeStatsExamFilter === 'all');
+
+  // 2. Filter History by Exam Mode
+  const examFilteredHistory = activeStatsExamFilter === 'all'
+    ? history
+    : history.filter(item => item.exam === activeStatsExamFilter);
+
+  // 3. Render Sub-Test Filter Pills (only for the active exam!)
   const elSubSelector = document.getElementById('dash-sub-selector');
   if (elSubSelector) {
     const uniqueSubs = new Map();
     uniqueSubs.set('all', 'Tous les Sous-Tests');
-    history.forEach(item => {
+    examFilteredHistory.forEach(item => {
       if (!uniqueSubs.has(item.subKey)) {
         uniqueSubs.set(item.subKey, item.subTitle || item.subKey);
       }
@@ -2274,10 +2294,12 @@ function renderStatsDashboard() {
     });
   }
 
+  // 4. Filter History by Sub-Test Key
   const filteredHistory = activeStatsSubKey === 'all' 
-    ? history 
-    : history.filter(item => item.subKey === activeStatsSubKey);
+    ? examFilteredHistory 
+    : examFilteredHistory.filter(item => item.subKey === activeStatsSubKey);
 
+  // 5. Update Metrics Cards
   const elAvgScore = document.getElementById('dash-avg-score');
   const elTotalQuizzes = document.getElementById('dash-total-quizzes');
   const elBestScore = document.getElementById('dash-best-score');
@@ -2296,21 +2318,25 @@ function renderStatsDashboard() {
     if (elBestScore) elBestScore.textContent = `${maxPct}%`;
   }
 
+  // 6. Render SVG Progress Chart
   renderSVGProgressChart(filteredHistory);
 
+  // 7. Render Recent Sessions List
   const elHistoryList = document.getElementById('dash-history-list');
   if (elHistoryList) {
     if (filteredHistory.length === 0) {
-      elHistoryList.innerHTML = `<p style="color:var(--text-apple-sub); font-size:13px; text-align:center; padding:20px 0;">Aucun historique enregistré pour le moment. Réalisez un quizz pour suivre vos scores !</p>`;
+      const examName = activeStatsExamFilter === 'tage' ? 'TAGE MAGE' : (activeStatsExamFilter === 'iae' ? 'Score IAE Message' : 'concours');
+      elHistoryList.innerHTML = `<p style="color:var(--text-apple-sub); font-size:13px; text-align:center; padding:20px 0;">Aucun historique enregistré pour ${examName}. Réalisez un quizz pour suivre vos scores !</p>`;
     } else {
       const reversed = [...filteredHistory].reverse().slice(0, 15);
       let listHtml = '';
       reversed.forEach(item => {
         const passClass = item.percentage >= 60 ? 'pass' : 'fail';
+        const badgeTag = item.exam === 'iae' ? ' [IAE]' : ' [TAGE]';
         listHtml += `
           <div class="history-item-row">
             <div class="history-item-left">
-              <span class="history-item-title">${item.subTitle}</span>
+              <span class="history-item-title">${item.subTitle}<span style="font-size:11px; opacity:0.6; margin-left:4px;">${activeStatsExamFilter === 'all' ? badgeTag : ''}</span></span>
               <span class="history-item-date">${item.date}</span>
             </div>
             <span class="history-badge ${passClass}">${item.score}/${item.total} (${item.percentage}%)</span>
@@ -2426,14 +2452,35 @@ function init() {
   document.getElementById('btn-back-start').addEventListener('click', () => showView('subcategory'));
 
   const btnOpenStatsPortal = document.getElementById('btn-open-stats-portal');
-  if (btnOpenStatsPortal) btnOpenStatsPortal.addEventListener('click', openStatsDashboard);
+  if (btnOpenStatsPortal) btnOpenStatsPortal.addEventListener('click', () => openStatsDashboard('all'));
   const btnOpenStatsMenu = document.getElementById('btn-open-stats-menu');
-  if (btnOpenStatsMenu) btnOpenStatsMenu.addEventListener('click', openStatsDashboard);
+  if (btnOpenStatsMenu) btnOpenStatsMenu.addEventListener('click', () => openStatsDashboard('tage'));
   const btnOpenStatsIae = document.getElementById('btn-open-stats-iae');
-  if (btnOpenStatsIae) btnOpenStatsIae.addEventListener('click', openStatsDashboard);
+  if (btnOpenStatsIae) btnOpenStatsIae.addEventListener('click', () => openStatsDashboard('iae'));
+
+  const btnStatsExamTage = document.getElementById('btn-stats-exam-tage');
+  if (btnStatsExamTage) btnStatsExamTage.addEventListener('click', () => {
+    activeStatsExamFilter = 'tage';
+    activeStatsSubKey = 'all';
+    renderStatsDashboard();
+  });
+
+  const btnStatsExamIae = document.getElementById('btn-stats-exam-iae');
+  if (btnStatsExamIae) btnStatsExamIae.addEventListener('click', () => {
+    activeStatsExamFilter = 'iae';
+    activeStatsSubKey = 'all';
+    renderStatsDashboard();
+  });
+
+  const btnStatsExamAll = document.getElementById('btn-stats-exam-all');
+  if (btnStatsExamAll) btnStatsExamAll.addEventListener('click', () => {
+    activeStatsExamFilter = 'all';
+    activeStatsSubKey = 'all';
+    renderStatsDashboard();
+  });
 
   const btnBackStats = document.getElementById('btn-back-stats');
-  if (btnBackStats) btnBackStats.addEventListener('click', () => showView('portal'));
+  if (btnBackStats) btnBackStats.addEventListener('click', () => showView(currentExam === 'iae' ? 'iaeMenu' : (currentExam === 'tage' ? 'menu' : 'portal')));
 
   const btnResetStats = document.getElementById('btn-reset-stats');
   if (btnResetStats) {
