@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>TAGE MAGE & Score IAE Message Trainer</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0071E3">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TAGE MAGE">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app" class="app-container">
+    
+    <!-- Portal View (Exam Selection Landing) -->
+    <main id="portal-view" class="view active">
+      <div class="portal-logo-wrapper">
+        <h1 class="portal-title">Choisis ton épreuve</h1>
+        
+        <div class="portal-logo-grid">
+          
+          <!-- Logo 1: TAGE MAGE -->
+          <button id="btn-select-tage" class="logo-card" aria-label="Réviser le TAGE MAGE">
+            <img src="/assets/logo-tage-mage.png" alt="TAGE MAGE" class="logo-img logo-tage-img">
+          </button>
+
+          <!-- Logo 2: SCORE IAE MESSAGE -->
+          <button id="btn-select-iae" class="logo-card" aria-label="Réviser le SCORE IAE MESSAGE">
+            <img src="/assets/logo-iae-message.png" alt="SCORE IAE MESSAGE" class="logo-img logo-iae-img">
+          </button>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- TAGE MAGE Menu View -->
+    <div id="menu-view" class="view">
+      <header class="top-nav">
+        <button id="btn-back-portal-tage" class="nav-btn-apple">‹ Épreuves</button>
+      </header>
+
+      <div class="scroll-container">
+        <div class="categories-list">
+          
+          <!-- Automatismes (Calcul Mental & Rang A-Z) -->
+          <button class="category-card" data-category="automatismes">
+            <div class="category-info">
+              <h2>Automatismes & Calcul Mental</h2>
+              <p>Rangs des lettres A-Z, Carrés (1-25), Cubes (1-20), Nombres premiers & Décompositions</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+          
+          <!-- Sub-test 1: Compréhension -->
+          <button class="category-card" data-category="tm_comprehension">
+            <div class="category-info">
+              <h2>1. Compréhension de Texte</h2>
+              <p>Analyse de textes, idées principales, ton de l'auteur & inférences (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Sub-test 2: Calcul -->
+          <button class="category-card" data-category="tm_calcul">
+            <div class="category-info">
+              <h2>2. Calcul & Mathématiques</h2>
+              <p>Fractions, %, mélanges, vitesses, géométrie, probabilités & automatismes (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Sub-test 3: Raisonnement -->
+          <button class="category-card" data-category="tm_raisonnement">
+            <div class="category-info">
+              <h2>3. Raisonnement & Logique</h2>
+              <p>Logigrammes, ordonnancement, déduction, vérités/mensonges & ensembles (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Sub-test 4: Conditions Minimales -->
+          <button class="category-card" data-category="tm_conditions_minimales">
+            <div class="category-info">
+              <h2>4. Conditions Minimales</h2>
+              <p>Suffisance des informations (1) & (2), méthodes réflexes A, B, C, D, E (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Sub-test 5: Expression -->
+          <button class="category-card" data-category="tm_expression">
+            <div class="category-info">
+              <h2>5. Expression & Français</h2>
+              <p>Grammaire, orthographe, paronymes, pléonasmes, proverbes & figures de style (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Sub-test 6: Logique -->
+          <button class="category-card" data-category="tm_logique">
+            <div class="category-info">
+              <h2>6. Logique Numérique & Alphabétique</h2>
+              <p>Séries de chiffres, lettres, rangs A-Z, séries croisées & leurres (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Sub-test 7: Test Blanc Officiel -->
+          <button class="category-card" data-category="tm_mock_exam" style="background: linear-gradient(135deg, #FF9500 0%, #E67E00 100%); color: white;">
+            <div class="category-info">
+              <h2 style="color: white;">7. Test Blanc Officiel TAGE MAGE (90 Q)</h2>
+              <p style="color: rgba(255, 255, 255, 0.9);">Chrono 60 min : 15 Q Compréhension, 15 Calcul, 15 Raisonnement, 15 Conditions Min, 15 Expression & 15 Logique</p>
+            </div>
+            <span class="chevron" style="color: white;">›</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SCORE IAE MESSAGE Menu View -->
+    <div id="iae-menu-view" class="view">
+      <header class="top-nav">
+        <button id="btn-back-portal-iae" class="nav-btn-apple">‹ Épreuves</button>
+      </header>
+
+      <div class="scroll-container">
+        <div class="categories-list">
+          
+          <!-- Section 1: Culture G & Management -->
+          <button class="category-card" data-category="iae_culture_g">
+            <div class="category-info">
+              <h2>1. Culture Générale, Éco & Management</h2>
+              <p>Institutions, théories du management, économie, entreprises & actualités (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Section 2: Français -->
+          <button class="category-card" data-category="iae_francais">
+            <div class="category-info">
+              <h2>2. Compréhension & Expression en Français</h2>
+              <p>Grammaire, orthographe, tournures fautives, barbarismes & vocabulaire IAE</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Section 3: Raisonnement Logique -->
+          <button class="category-card" data-category="iae_raisonnement">
+            <div class="category-info">
+              <h2>3. Raisonnement Logique & Numérique</h2>
+              <p>Suites numériques, logique déductive & calculs rapides (Automatismes & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Section 4: Anglais -->
+          <button class="category-card" data-category="iae_anglais">
+            <div class="category-info">
+              <h2>4. Compréhension & Expression en Anglais</h2>
+              <p>Grammar, Business English, phrasal verbs, false friends & idioms (Fiches & QCM)</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Section 5: Épreuve Blanche Officielle -->
+          <button class="category-card" data-category="iae_mock_exam" style="background: linear-gradient(135deg, #0071E3 0%, #0051A8 100%); color: white;">
+            <div class="category-info">
+              <h2 style="color: white;">5. Épreuve Blanche Officielle 100 Questions</h2>
+              <p style="color: rgba(255, 255, 255, 0.85);">Chrono & Conditions Réelles : 25 Culture G, 25 Français, 25 Logique & 25 Anglais (Annales Gualino)</p>
+            </div>
+            <span class="chevron" style="color: white;">›</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sub-category Options View -->
+    <div id="subcategory-view" class="view">
+      <header class="top-nav">
+        <button id="btn-back-categories" class="nav-btn-apple">‹ Accueil</button>
+        <span id="subcategory-title" class="mode-title-apple">Section</span>
+        <div class="nav-spacer"></div>
+      </header>
+
+      <div class="scroll-container">
+        <div id="subcategory-options-list" class="subcategories-list">
+          <!-- Dynamic options populated by main.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Memo View with Tabs Bar -->
+    <div id="memo-view" class="view">
+      <header class="top-nav">
+        <button id="btn-back-subcat" class="nav-btn-apple">‹ Retour</button>
+        <span id="memo-title" class="mode-title-apple">Fiches Mémo</span>
+        <div class="nav-spacer"></div>
+      </header>
+
+      <!-- Scrollable Horizontal Tabs Bar -->
+      <div id="memo-tabs" class="memo-tabs-bar">
+        <!-- Dynamic tabs generated by main.js -->
+      </div>
+
+      <div class="scroll-container">
+        <div class="memo-card">
+          <div class="memo-header">
+            <h2 id="memo-card-title">Fiche de révision</h2>
+            <p id="memo-card-subtitle">Formules et notions clés à connaître</p>
+          </div>
+          <div id="memo-table-container" class="memo-table-wrapper">
+            <!-- Dynamic memo content generated by main.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pre-Start View -->
+    <div id="start-view" class="view">
+      <header class="top-nav">
+        <button id="btn-back-start" class="nav-btn-apple">‹ Retour</button>
+        <span id="start-mode-title" class="mode-title-apple">Module</span>
+        <div class="nav-spacer"></div>
+      </header>
+
+      <div class="start-card-apple">
+        <div class="apple-badge">MODULE D'ENTRAÎNEMENT</div>
+        <h2 id="start-headline">Prêt à réviser ?</h2>
+        <p id="start-description">Les éléments s'enchaîneront dans un ordre aléatoire.</p>
+        <button id="btn-commencer" class="btn-apple-primary">Commencer</button>
+      </div>
+    </div>
+
+    <!-- Practice View -->
+    <div id="practice-view" class="view">
+      <header class="top-nav">
+        <span id="practice-mode-title" class="mode-title-apple">Session</span>
+        <button id="btn-stop" class="btn-stop-apple" title="Quitter la session">Quitter</button>
+      </header>
+
+      <div class="practice-area">
+        <!-- Question display card -->
+        <div id="question-card" class="question-card-apple">
+          <div id="question-display" class="question-text-apple">P</div>
+          
+          <!-- Answer Input Display -->
+          <div id="answer-box-container" class="answer-box-apple">
+            <span id="user-answer-display" class="answer-text-apple"></span>
+            <span class="cursor-apple"></span>
+          </div>
+        </div>
+
+        <!-- Keypad / Options Container -->
+        <div class="keypad-container">
+          <div id="keypad-grid" class="keypad-grid-apple">
+            <!-- Dynamic Keypad -->
+          </div>
+        </div>
+
+        <div class="keyboard-hint">
+          <span id="keyboard-hint-text">Clavier physique activé.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Completion Modal (NO TIMER) -->
+    <div id="results-modal" class="modal">
+      <div class="modal-content-apple">
+        <div class="modal-header">
+          <div class="modal-badge">ENTRAÎNEMENT</div>
+          <h2>Session terminée</h2>
+          <p id="results-mode-name">Rang des lettres</p>
+        </div>
+
+        <div class="stats-container-apple single-stat">
+          <div class="stat-card-apple highlight-stat-apple">
+            <span class="stat-value" id="stat-total-count">0</span>
+            <span class="stat-label">Bonnes réponses trouvées</span>
+          </div>
+        </div>
+
+        <div class="modal-actions-apple">
+          <button id="btn-restart" class="btn-apple-primary">Recommencer</button>
+          <button id="btn-modal-menu" class="btn-apple-secondary">Retour aux options</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
