@@ -4330,1054 +4330,1064 @@ export const TM_CONDITIONS_MINIMALES_QUESTIONS = [
 
 export const TM_EXPRESSION_QUESTIONS = [
   {
-    "prompt": "Question Expression n°1 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
+    "prompt": "Question Expression n°1 : Quelle est la tournure correcte avec le verbe 'pallier' ?",
     "options": [
-      "Pallier de ce problème",
-      "Pallier le problème (COD direct)",
-      "Pallier avec le problème",
-      "Pallier au problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°2 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "serait",
-      "est (Indicatif obligatoire)",
-      "soit (Subjonctif faux)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°3 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait (Indicatif faux)",
-      "fît",
-      "ferait",
-      "fasse (Subjonctif obligatoire)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°4 : Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Masculin (un aphte)",
-      "Féminin (une aphte)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°5 : Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Variable",
-      "Féminin (une acné)",
-      "Masculin (un acné)",
-      "Neutre"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°6 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
-    "options": [
-      "Dilemme (avec 2 'm')",
-      "Dillemme",
-      "Dileme",
-      "Dilemne (avec 'nm')"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°7 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Invariable (une demi-heure)",
-      "Accordé en nombre (des demis-heures)",
-      "Variable selon le contexte",
-      "Accordé en genre (une demie-heure)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°8 : Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyés",
-      "envoyers",
-      "envoyé (invariable car COD après)",
-      "envoyées"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°9 : Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Rédiger un texte",
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Prescrire un médicament"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°10 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
-    "options": [
-      "Décidé de",
-      "De collaborer",
-      "Ils ont décidé",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°11 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle de cette règle",
-      "Je me rappelle cette règle",
-      "Je me rappelle sur cette règle",
-      "Je me rappelle à cette règle"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°12 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
-    "options": [
-      "rappelle (avec 'de')",
-      "remémore de",
-      "repense de",
-      "souviens (avec 'de')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°13 : Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleu marine",
-      "bleues marines",
-      "bleu marines",
-      "bleues marine"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°14 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marrons",
-      "marron",
-      "marrone",
-      "marronnes"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°15 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faite",
-      "fait (invariable devant infinitif)",
-      "faites",
-      "faits"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°16 : Orthographe correcte du mot désignant l'avance sur paiement :",
-    "options": [
-      "Acompte (un seul 'c')",
-      "Aconte",
-      "Ahcompte",
-      "Accompte"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°17 : Quel est le genre du mot 'épitaphe' ?",
-    "options": [
-      "Féminin (une épitaphe)",
-      "Neutre",
-      "Variable",
-      "Masculin (un épitaphe)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°18 : Quel est le genre du mot 'pétale' ?",
-    "options": [
-      "Variable",
-      "Neutre",
-      "Masculin (un pétale)",
-      "Féminin (une pétale)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°19 : Que signifie le paronyme 'démythifier' ?",
-    "options": [
-      "Accuser à tort",
-      "Raconter une légende",
-      "Dépouiller un récit de son caractère mythique",
-      "Dévoiler une supercherie"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°20 : Que signifie le paronyme 'démystifier' ?",
-    "options": [
-      "Enlever le caractère mythique",
-      "Consacrer un texte",
-      "Détruire une tromperie ou mystification",
-      "Raconter un conte"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°21 : Quel est le genre du mot 'alvéole' ?",
-    "options": [
-      "Masculin uniquement",
-      "Féminin (une alvéole) ou Masculin accepté",
-      "Toujours pluriel",
-      "Neutre"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°22 : Quel est le genre du mot 'astérisque' ?",
-    "options": [
-      "Variable",
-      "Masculin (un astérisque)",
-      "Neutre",
-      "Féminin (une astérisque)"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°23 : Quel est le genre du mot 'orbite' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Féminin (une orbite)",
-      "Masculin (un orbite)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°24 : Quelle est l'orthographe correcte du mot 'cauchemar' ?",
-    "options": [
-      "Cauchemar (sans 'd' final)",
-      "Cossemare",
-      "Cauchemard",
-      "Cauchemarre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°25 : Quelle est l'orthographe correcte du mot 'langage' ?",
-    "options": [
-      "Langaj",
-      "Language",
-      "Langage (sans 'u')",
-      "Langages"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°26 : Quelle est la locution latine signifiant 'par le fait même' ?",
-    "options": [
-      "Ipso facto",
-      "In fine",
-      "Sine die",
-      "De facto"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°27 : Quelle locution latine signifie 'en dernière analyse' ?",
-    "options": [
-      "In fine",
-      "A priori",
-      "Ipso facto",
-      "Ad hoc"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°28 : Accord de 'tout' adverbe devant consonne : 'Elles sont _____ honteuses.'",
-    "options": [
-      "toute",
-      "tout",
-      "touts",
-      "toutes (devant consonne ou 'h' aspiré)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°29 : Accord de 'tout' adverbe devant voyelle : 'Elles sont _____ étonnées.'",
-    "options": [
-      "touts",
-      "toutes",
-      "toute",
-      "tout (invariable devant voyelle)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°30 : Quel est le sens exact de 'prescrire' ?",
-    "options": [
-      "Ordonner ou recommander officiellement",
-      "Annuler un contrat",
-      "Rédiger un poème",
-      "Interdire formellement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°31 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier le problème (COD direct)",
-      "Pallier au problème"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°32 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "serait",
-      "est (Indicatif obligatoire)",
-      "soit (Subjonctif faux)",
-      "fût"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°33 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fît",
-      "ferait",
-      "fasse (Subjonctif obligatoire)",
-      "fait (Indicatif faux)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°34 : Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Masculin (un aphte)",
-      "Féminin (une aphte)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°35 : Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Variable",
-      "Féminin (une acné)",
-      "Masculin (un acné)",
-      "Neutre"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°36 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
-    "options": [
-      "Dilemne (avec 'nm')",
-      "Dileme",
-      "Dilemme (avec 2 'm')",
-      "Dillemme"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°37 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Invariable (une demi-heure)",
-      "Accordé en genre (une demie-heure)",
-      "Variable selon le contexte",
-      "Accordé en nombre (des demis-heures)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°38 : Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyé (invariable car COD après)",
-      "envoyers"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°39 : Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Rédiger un texte",
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Prescrire un médicament"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°40 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
-    "options": [
-      "Collaborer ensemble",
-      "De collaborer",
-      "Ils ont décidé",
-      "Décidé de"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°41 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle de cette règle",
-      "Je me rappelle à cette règle",
-      "Je me rappelle sur cette règle",
-      "Je me rappelle cette règle"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°42 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
-    "options": [
-      "rappelle (avec 'de')",
-      "remémore de",
-      "souviens (avec 'de')",
-      "repense de"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°43 : Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleues marine",
-      "bleu marines",
-      "bleues marines",
-      "bleu marine"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°44 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marron",
-      "marrons",
-      "marrone",
-      "marronnes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°45 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faite",
-      "fait (invariable devant infinitif)",
-      "faits",
-      "faites"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°46 : Orthographe correcte du mot désignant l'avance sur paiement :",
-    "options": [
-      "Acompte (un seul 'c')",
-      "Aconte",
-      "Accompte",
-      "Ahcompte"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°47 : Quel est le genre du mot 'épitaphe' ?",
-    "options": [
-      "Variable",
-      "Féminin (une épitaphe)",
-      "Masculin (un épitaphe)",
-      "Neutre"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°48 : Quel est le genre du mot 'pétale' ?",
-    "options": [
-      "Féminin (une pétale)",
-      "Variable",
-      "Neutre",
-      "Masculin (un pétale)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°49 : Que signifie le paronyme 'démythifier' ?",
-    "options": [
-      "Dépouiller un récit de son caractère mythique",
-      "Accuser à tort",
-      "Raconter une légende",
-      "Dévoiler une supercherie"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°50 : Que signifie le paronyme 'démystifier' ?",
-    "options": [
-      "Enlever le caractère mythique",
-      "Raconter un conte",
-      "Consacrer un texte",
-      "Détruire une tromperie ou mystification"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°51 : Quel est le genre du mot 'alvéole' ?",
-    "options": [
-      "Féminin (une alvéole) ou Masculin accepté",
-      "Masculin uniquement",
-      "Toujours pluriel",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°52 : Quel est le genre du mot 'astérisque' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Féminin (une astérisque)",
-      "Masculin (un astérisque)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°53 : Quel est le genre du mot 'orbite' ?",
-    "options": [
-      "Féminin (une orbite)",
-      "Neutre",
-      "Masculin (un orbite)",
-      "Variable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°54 : Quelle est l'orthographe correcte du mot 'cauchemar' ?",
-    "options": [
-      "Cauchemar (sans 'd' final)",
-      "Cauchemard",
-      "Cossemare",
-      "Cauchemarre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°55 : Quelle est l'orthographe correcte du mot 'langage' ?",
-    "options": [
-      "Language",
-      "Langages",
-      "Langaj",
-      "Langage (sans 'u')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°56 : Quelle est la locution latine signifiant 'par le fait même' ?",
-    "options": [
-      "De facto",
-      "Sine die",
-      "Ipso facto",
-      "In fine"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°57 : Quelle locution latine signifie 'en dernière analyse' ?",
-    "options": [
-      "Ipso facto",
-      "In fine",
-      "A priori",
-      "Ad hoc"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°58 : Accord de 'tout' adverbe devant consonne : 'Elles sont _____ honteuses.'",
-    "options": [
-      "tout",
-      "toutes (devant consonne ou 'h' aspiré)",
-      "touts",
-      "toute"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°59 : Accord de 'tout' adverbe devant voyelle : 'Elles sont _____ étonnées.'",
-    "options": [
-      "tout (invariable devant voyelle)",
-      "toute",
-      "toutes",
-      "touts"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°60 : Quel est le sens exact de 'prescrire' ?",
-    "options": [
-      "Annuler un contrat",
-      "Ordonner ou recommander officiellement",
-      "Interdire formellement",
-      "Rédiger un poème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°61 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier le problème (COD direct)",
       "Pallier au problème",
       "Pallier avec le problème",
+      "Pallier le problème",
       "Pallier de ce problème"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°62 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "serait",
-      "est (Indicatif obligatoire)",
-      "soit (Subjonctif faux)"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Question Expression n°63 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "prompt": "Question Expression n°2 : Complétez : 'Après qu'il _____ arrivé, le cours a commencé.'",
     "options": [
-      "fasse (Subjonctif obligatoire)",
-      "fît",
-      "ferait",
-      "fait (Indicatif faux)"
+      "soit",
+      "fût",
+      "serait",
+      "est"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "Question Expression n°64 : Quel est le genre exact du mot 'aphte' ?",
+    "prompt": "Question Expression n°3 : Complétez : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
     "options": [
-      "Féminin (une aphte)",
+      "ferait",
+      "fît",
+      "fait",
+      "fasse"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°4 : Quel est le genre du mot 'aphte' ?",
+    "options": [
       "Neutre",
+      "Féminin (une aphte)",
       "Variable",
       "Masculin (un aphte)"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Question Expression n°65 : Quel est le genre exact du mot 'acné' ?",
+    "prompt": "Question Expression n°5 : Quel est le genre du mot 'acné' ?",
     "options": [
+      "Variable",
+      "Neutre",
       "Féminin (une acné)",
-      "Masculin (un acné)",
-      "Variable",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°66 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
-    "options": [
-      "Dilemme (avec 2 'm')",
-      "Dilemne (avec 'nm')",
-      "Dileme",
-      "Dillemme"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°67 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Accordé en genre (une demie-heure)",
-      "Accordé en nombre (des demis-heures)",
-      "Invariable (une demi-heure)",
-      "Variable selon le contexte"
+      "Masculin (un acné)"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Question Expression n°68 : Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "prompt": "Question Expression n°6 : Quel est le genre du mot 'alvéole' ?",
     "options": [
-      "envoyés",
-      "envoyées",
-      "envoyé (invariable car COD après)",
-      "envoyers"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°69 : Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Rédiger un texte",
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Prescrire un médicament"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°70 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
-    "options": [
-      "Ils ont décidé",
-      "Décidé de",
-      "Collaborer ensemble",
-      "De collaborer"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°71 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle cette règle",
-      "Je me rappelle sur cette règle",
-      "Je me rappelle à cette règle",
-      "Je me rappelle de cette règle"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°72 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
-    "options": [
-      "rappelle (avec 'de')",
-      "repense de",
-      "remémore de",
-      "souviens (avec 'de')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°73 : Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleues marines",
-      "bleues marine",
-      "bleu marine",
-      "bleu marines"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°74 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marrone",
-      "marronnes",
-      "marrons",
-      "marron"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°75 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faites",
-      "fait (invariable devant infinitif)",
-      "faite",
-      "faits"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°76 : Orthographe correcte du mot désignant l'avance sur paiement :",
-    "options": [
-      "Acompte (un seul 'c')",
-      "Aconte",
-      "Ahcompte",
-      "Accompte"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°77 : Quel est le genre du mot 'épitaphe' ?",
-    "options": [
-      "Féminin (une épitaphe)",
-      "Masculin (un épitaphe)",
-      "Variable",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°78 : Quel est le genre du mot 'pétale' ?",
-    "options": [
-      "Masculin (un pétale)",
-      "Variable",
-      "Féminin (une pétale)",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°79 : Que signifie le paronyme 'démythifier' ?",
-    "options": [
-      "Accuser à tort",
-      "Dévoiler une supercherie",
-      "Dépouiller un récit de son caractère mythique",
-      "Raconter une légende"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°80 : Que signifie le paronyme 'démystifier' ?",
-    "options": [
-      "Enlever le caractère mythique",
-      "Détruire une tromperie ou mystification",
-      "Raconter un conte",
-      "Consacrer un texte"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°81 : Quel est le genre du mot 'alvéole' ?",
-    "options": [
-      "Toujours pluriel",
+      "Féminin (une alvéole)",
+      "Masculin (un alvéole)",
       "Neutre",
-      "Masculin uniquement",
-      "Féminin (une alvéole) ou Masculin accepté"
+      "Variable"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "Question Expression n°82 : Quel est le genre du mot 'astérisque' ?",
+    "prompt": "Question Expression n°7 : Quel est le genre du mot 'astérisque' ?",
     "options": [
-      "Masculin (un astérisque)",
+      "Féminin (une astérisque)",
       "Neutre",
       "Variable",
-      "Féminin (une astérisque)"
+      "Masculin (un astérisque)"
     ],
-    "answerIndex": 0
+    "answerIndex": 3
   },
   {
-    "prompt": "Question Expression n°83 : Quel est le genre du mot 'orbite' ?",
+    "prompt": "Question Expression n°8 : Quel est le genre du mot 'orbite' ?",
     "options": [
       "Féminin (une orbite)",
-      "Variable",
+      "Masculin (un orbite)",
       "Neutre",
-      "Masculin (un orbite)"
+      "Variable"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Question Expression n°84 : Quelle est l'orthographe correcte du mot 'cauchemar' ?",
+    "prompt": "Question Expression n°9 : Quel est le genre du mot 'épitaphe' ?",
+    "options": [
+      "Masculin (un épitaphe)",
+      "Féminin (une épitaphe)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°10 : Quel est le genre du mot 'pétale' ?",
+    "options": [
+      "Féminin (une pétale)",
+      "Neutre",
+      "Variable",
+      "Masculin (un pétale)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°11 : Quel est le genre du mot 'armistice' ?",
+    "options": [
+      "Féminin (une armistice)",
+      "Variable",
+      "Neutre",
+      "Masculin (un armistice)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°12 : Quel est le genre du mot 'haltère' ?",
+    "options": [
+      "Neutre",
+      "Féminin (une haltère)",
+      "Variable",
+      "Masculin (un haltère)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°13 : Quel est le genre du mot 'omoplate' ?",
+    "options": [
+      "Féminin (une omoplate)",
+      "Variable",
+      "Masculin (un omoplate)",
+      "Neutre"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°14 : Quel est le genre du mot 'hémisphère' ?",
+    "options": [
+      "Variable",
+      "Masculin (un hémisphère)",
+      "Féminin (une hémisphère)",
+      "Neutre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°15 : Quel est le genre du mot 'ébène' ?",
+    "options": [
+      "Variable",
+      "Neutre",
+      "Masculin (un ébène)",
+      "Féminin (une ébène)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°16 : Quel est le genre du mot 'amiante' ?",
+    "options": [
+      "Féminin (une amiante)",
+      "Neutre",
+      "Variable",
+      "Masculin (un amiante)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°17 : Quel est le genre du mot 'arôme' ?",
+    "options": [
+      "Masculin (un arôme)",
+      "Féminin (une arôme)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°18 : Quel est le genre du mot 'asile' ?",
+    "options": [
+      "Neutre",
+      "Féminin (une asile)",
+      "Variable",
+      "Masculin (un asile)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°19 : Quel est le genre du mot 'éloge' ?",
+    "options": [
+      "Neutre",
+      "Variable",
+      "Féminin (une éloge)",
+      "Masculin (un éloge)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°20 : Quel est le genre du mot 'exode' ?",
+    "options": [
+      "Neutre",
+      "Masculin (un exode)",
+      "Variable",
+      "Féminin (une exode)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°21 : Quel est le genre du mot 'insigne' ?",
+    "options": [
+      "Variable",
+      "Féminin (une insigne)",
+      "Neutre",
+      "Masculin (un insigne)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°22 : Quel est le genre du mot 'interstice' ?",
+    "options": [
+      "Féminin (une interstice)",
+      "Variable",
+      "Neutre",
+      "Masculin (un interstice)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°23 : Quel est le genre du mot 'obélisque' ?",
+    "options": [
+      "Variable",
+      "Féminin (une obélisque)",
+      "Neutre",
+      "Masculin (un obélisque)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°24 : Quel est le genre du mot 'opprobre' ?",
+    "options": [
+      "Féminin (une opprobre)",
+      "Masculin (un opprobre)",
+      "Variable",
+      "Neutre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°25 : Quel est le genre du mot 'orgue' au pluriel ?",
+    "options": [
+      "Variable",
+      "Féminin (de belles orgues)",
+      "Masculin (de beaux orgues)",
+      "Neutre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°26 : Quel est le genre du mot 'délices' au pluriel ?",
+    "options": [
+      "Masculin (de nombreux délices)",
+      "Variable",
+      "Neutre",
+      "Féminin (de nombreuses délices)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°27 : Quel est le genre du mot 'amours' au pluriel ?",
+    "options": [
+      "Masculin (de premiers amours)",
+      "Neutre",
+      "Variable",
+      "Féminin (de premières amours)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°28 : Quelle est l'orthographe correcte du mot désignant un choix cornélien ?",
+    "options": [
+      "Dilemme",
+      "Dillemme",
+      "Dileme",
+      "Dilemne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°29 : Quelle est l'orthographe correcte du mot désignant un mauvais rêve ?",
     "options": [
       "Cauchemarre",
       "Cossemare",
-      "Cauchemar (sans 'd' final)",
+      "Cauchemar",
       "Cauchemard"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Question Expression n°85 : Quelle est l'orthographe correcte du mot 'langage' ?",
+    "prompt": "Question Expression n°30 : Quelle est l'orthographe correcte du mot désignant le système de communication ?",
     "options": [
+      "Langage",
+      "Language",
       "Langaj",
-      "Langage (sans 'u')",
-      "Langages",
-      "Language"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°86 : Quelle est la locution latine signifiant 'par le fait même' ?",
-    "options": [
-      "Ipso facto",
-      "In fine",
-      "De facto",
-      "Sine die"
+      "Langages"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Question Expression n°87 : Quelle locution latine signifie 'en dernière analyse' ?",
+    "prompt": "Question Expression n°31 : Quelle est l'orthographe correcte du mot désignant l'acompte bancaire ?",
     "options": [
-      "In fine",
-      "A priori",
-      "Ipso facto",
-      "Ad hoc"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Question Expression n°88 : Accord de 'tout' adverbe devant consonne : 'Elles sont _____ honteuses.'",
-    "options": [
-      "touts",
-      "toute",
-      "toutes (devant consonne ou 'h' aspiré)",
-      "tout"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°89 : Accord de 'tout' adverbe devant voyelle : 'Elles sont _____ étonnées.'",
-    "options": [
-      "toute",
-      "touts",
-      "tout (invariable devant voyelle)",
-      "toutes"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°90 : Quel est le sens exact de 'prescrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Ordonner ou recommander officiellement",
-      "Rédiger un poème",
-      "Annuler un contrat"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°91 : Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier le problème (COD direct)",
-      "Pallier au problème",
-      "Pallier de ce problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°92 : Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "soit (Subjonctif faux)",
-      "est (Indicatif obligatoire)",
-      "serait",
-      "fût"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°93 : Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait (Indicatif faux)",
-      "fît",
-      "fasse (Subjonctif obligatoire)",
-      "ferait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Question Expression n°94 : Quel est le genre exact du mot 'aphte' ?",
-    "options": [
-      "Féminin (une aphte)",
-      "Masculin (un aphte)",
-      "Variable",
-      "Neutre"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Question Expression n°95 : Quel est le genre exact du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Masculin (un acné)",
-      "Féminin (une acné)"
+      "Ahcompte",
+      "Aconte",
+      "Accompte",
+      "Acompte"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "Question Expression n°96 : Quelle est l'orthographe correcte du mot désignant un choix difficile ?",
+    "prompt": "Question Expression n°32 : Quelle est l'orthographe correcte du mot désignant l'arrivée d'un événement ?",
     "options": [
-      "Dilemne (avec 'nm')",
-      "Dileme",
-      "Dillemme",
-      "Dilemme (avec 2 'm')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°97 : Comment s'accorde l'adjectif 'demi' placé avant le nom ?",
-    "options": [
-      "Accordé en nombre (des demis-heures)",
-      "Accordé en genre (une demie-heure)",
-      "Invariable (une demi-heure)",
-      "Variable selon le contexte"
+      "Évènemant",
+      "Evènement uniquement",
+      "Événement ou Évènement",
+      "Evenement sans accent"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "Question Expression n°98 : Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "prompt": "Question Expression n°33 : Quelle est l'orthographe correcte du verbe désignant l'émission d'un son ?",
     "options": [
-      "envoyés",
-      "envoyé (invariable car COD après)",
-      "envoyers",
-      "envoyées"
+      "Raisonner",
+      "Ressoner",
+      "Résonner",
+      "Rézonner"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°34 : Quelle est l'orthographe correcte du mot désignant la maturité d'un projet ?",
+    "options": [
+      "Maturitée",
+      "Mâterie ou Mâture",
+      "Matuture",
+      "Maturess"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Question Expression n°99 : Quel est le sens exact du verbe 'proscrire' ?",
+    "prompt": "Question Expression n°35 : Quelle est l'orthographe correcte du mot désignant la bêtise extrême ?",
     "options": [
-      "Rédiger un texte",
-      "Prescrire un médicament",
-      "Recommander chaudement",
-      "Interdire formellement"
+      "Imbessillité",
+      "Imbécilité",
+      "Imbécillité",
+      "Imbécilitée"
     ],
-    "answerIndex": 3
+    "answerIndex": 2
   },
   {
-    "prompt": "Question Expression n°100 : Quel est le pléonasme dans la phrase : 'Ils ont décidé de collaborer ensemble.' ?",
+    "prompt": "Question Expression n°36 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
     "options": [
-      "De collaborer",
-      "Décidé de",
-      "Ils ont décidé",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°101 : Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle sur cette règle",
-      "Je me rappelle cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle à cette règle"
+      "Je me rappelle sur cette histoire",
+      "Je me rappelle cette histoire",
+      "Je me rappelle de cette histoire",
+      "Je me rappelle à cette histoire"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Question Expression n°102 : Complétez la phrase : 'Je me _____ de cet événement tragique.'",
+    "prompt": "Question Expression n°37 : Complétez : 'Je me _____ de cette personne.'",
     "options": [
       "repense de",
-      "rappelle (avec 'de')",
-      "remémore de",
-      "souviens (avec 'de')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Question Expression n°103 : Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleues marine",
-      "bleu marine",
-      "bleues marines",
-      "bleu marines"
+      "souviens",
+      "rappelle",
+      "remémore de"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "Question Expression n°104 : Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "prompt": "Question Expression n°38 : Complétez : 'Il a été convenu _____ la séance débuterait à 9h.'",
     "options": [
-      "marron",
-      "marrone",
-      "marronnes",
-      "marrons"
+      "de ce que",
+      "que",
+      "à ce que",
+      "pour que"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°39 : Complétez : 'Il s'agit _____ trouver une solution rapide.'",
+    "options": [
+      "pour",
+      "de",
+      "sur",
+      "à"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°40 : Complétez : 'Elle s'est aperçue _____ son erreur.'",
+    "options": [
+      "à",
+      "de",
+      "pour",
+      "sur"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°41 : Accord de l'adjectif composé de couleur : 'Des robes _____'",
+    "options": [
+      "bleu foncé",
+      "bleu foncées",
+      "bleues foncées",
+      "bleues foncé"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "Question Expression n°105 : Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "prompt": "Question Expression n°42 : Accord de l'adjectif composé de couleur : 'Des yeux _____'",
     "options": [
-      "faits",
-      "faite",
-      "fait (invariable devant infinitif)",
-      "faites"
+      "verts clair",
+      "verts clairs",
+      "vert clairs",
+      "vert clair"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°43 : Accord de l'adjectif de couleur issu d'un fruit : 'Des chemises _____'",
+    "options": [
+      "oranges",
+      "orangees",
+      "orangées",
+      "orange"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°44 : Accord de l'adjectif de couleur issu d'un minerai : 'Des vestes _____'",
+    "options": [
+      "marronnes",
+      "marrons",
+      "marrone",
+      "marron"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°45 : Accord de l'adjectif de couleur 'rose' : 'Des joues _____'",
+    "options": [
+      "rosées",
+      "rose",
+      "roses",
+      "rosez"
     ],
     "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°46 : Accord de l'adjectif de couleur 'pourpre' : 'Des étoffes _____'",
+    "options": [
+      "pourvrez",
+      "pourprées",
+      "pourpres",
+      "pourpre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°47 : Accord de 'demi' avant le nom : 'Une _____ heure'",
+    "options": [
+      "demie-",
+      "demis-",
+      "demi-",
+      "demies-"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°48 : Accord de 'demi' après le nom : 'Trois heures et _____'",
+    "options": [
+      "demie",
+      "demi",
+      "demis",
+      "demies"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°49 : Accord de 'nu' avant le nom : 'Marcher _____ pieds'",
+    "options": [
+      "nues-",
+      "nue-",
+      "nu-",
+      "nus-"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°50 : Accord de 'nu' après le nom : 'Marcher pieds _____'",
+    "options": [
+      "nu",
+      "nues",
+      "nue",
+      "nus"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°51 : Accord de 'mi' : 'Les yeux _____ clos'",
+    "options": [
+      "mis-",
+      "mies-",
+      "mie-",
+      "mi-"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°52 : Accord du participe passé : 'La lettre que j'ai _____'",
+    "options": [
+      "écrite",
+      "écrit",
+      "écrites",
+      "écrits"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°53 : Accord du participe passé : 'J'ai _____ la lettre'",
+    "options": [
+      "écrite",
+      "écrites",
+      "écrit",
+      "écrits"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°54 : Accord du participe passé suivi d'un infinitif : 'La maison que j'ai _____ construire'",
+    "options": [
+      "vues",
+      "vu",
+      "vue",
+      "vus"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°55 : Accord du participe passé suivi d'un infinitif : 'La cantatrice que j'ai _____ chanter'",
+    "options": [
+      "entendue",
+      "entendu",
+      "entendus",
+      "entendues"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°56 : Accord du participe passé pronominal : 'Elles se sont _____ des cadeaux'",
+    "options": [
+      "offerte",
+      "offertes",
+      "offert",
+      "offerts"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°57 : Accord du participe passé pronominal : 'Elles se sont _____ hier soir'",
+    "options": [
+      "rencontrée",
+      "rencontré",
+      "rencontrées",
+      "rencontrés"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°58 : Accord du participe passé pronominal : 'Elles se sont _____ les mains'",
+    "options": [
+      "lavés",
+      "lavé",
+      "lavée",
+      "lavées"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°59 : Accord de 'tout' adverbe devant voyelle : 'Elle est _____ étonnée'",
+    "options": [
+      "toutes",
+      "tout",
+      "toute",
+      "touts"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°60 : Accord de 'tout' adverbe devant consonne : 'Elle est _____ honteuse'",
+    "options": [
+      "toute",
+      "tout",
+      "toutes",
+      "touts"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°61 : Accord de 'tout' adjectif : '_____ les étudiants sont présents'",
+    "options": [
+      "Tout",
+      "Toute",
+      "Tous",
+      "Toutes"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°62 : Accord de 'même' adjectif : 'Les _____ personnes sont revenues'",
+    "options": [
+      "mêmes",
+      "même-",
+      "mêmes-",
+      "même"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°63 : Accord de 'même' adverbe : 'Les adultes et _____ les enfants ont ri'",
+    "options": [
+      "même-",
+      "mêmes-",
+      "même",
+      "mêmes"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°64 : Accord de 'leur' pronom : 'Je _____ ai parlé'",
+    "options": [
+      "leurre",
+      "leur",
+      "leurres",
+      "leurs"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°65 : Accord de 'leur' adjectif possessif au pluriel : 'Ils ont pris _____ affaires'",
+    "options": [
+      "leur",
+      "leurs",
+      "leurres",
+      "leurre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°66 : Que signifie 'démythifier' ?",
+    "options": [
+      "Détruire une tromperie",
+      "Raconter une légende",
+      "Dépouiller de son caractère mythique",
+      "Créer un mythe"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°67 : Que signifie 'démystifier' ?",
+    "options": [
+      "Consacrer un texte",
+      "Inventer une histoire",
+      "Détruire une mystification ou tromperie",
+      "Enlever le caractère mythique"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°68 : Que signifie 'proscrire' ?",
+    "options": [
+      "Interdire formellement",
+      "Pardonner une faute",
+      "Recommander un soin",
+      "Rédiger un texte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°69 : Que signifie 'prescrire' ?",
+    "options": [
+      "Supprimer une loi",
+      "Ordonner ou recommander officiellement",
+      "Interdire formellement",
+      "Rédiger un contrat"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°70 : Que signifie 'infiniment' vs 'infiniment petit' ?",
+    "options": [
+      "Sans valeur",
+      "Toujours faux",
+      "Extrêmement / Quantité négligeable",
+      "Égal"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°71 : Distinction paronymique : 'Accident' vs 'Incident'",
+    "options": [
+      "Accident est verbal",
+      "Un incident est mineur, un accident implique des dommages",
+      "Incident est grave",
+      "Stricte synonimie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°72 : Distinction paronymique : 'Allocation' vs 'Allocution'",
+    "options": [
+      "Allocation = discours",
+      "Stricte synonymie",
+      "Allocution = argent",
+      "Allocation = somme d'argent / Allocution = discours"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°73 : Distinction paronymique : 'Affectectation' vs 'Affection'",
+    "options": [
+      "Affection = poste",
+      "Affectation = amour",
+      "Affectation = poste ou pose / Affection = sentiment",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°74 : Distinction paronymique : 'Alternance' vs 'Alternative'",
+    "options": [
+      "Alternance = choix",
+      "Stricte synonymie",
+      "Alternative = choix entre 2 options / Alternance = succession",
+      "Alternative = rotation"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°75 : Distinction paronymique : 'Attention' vs 'Intention'",
+    "options": [
+      "Attention = projet",
+      "Intention = concentration",
+      "Attention = concentration / Intention = objectif",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°76 : Distinction paronymique : 'Collision' vs 'Collusion'",
+    "options": [
+      "Stricte synonymie",
+      "Collision = complot",
+      "Collision = choc physique / Collusion = entente secrète",
+      "Collusion = choc"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°77 : Distinction paronymique : 'Compétence' vs 'Compétition'",
+    "options": [
+      "Stricte synonymie",
+      "Compétition = savoir",
+      "Compétence = match",
+      "Compétence = savoir-faire / Compétition = rivalité"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°78 : Distinction paronymique : 'Comprehensive' (anglais) vs 'Compréhensif'",
+    "options": [
+      "Aucun sens",
+      "Comprehensive = exhaustif / Compréhensif = bienveillant",
+      "Exhaustif = bienveillant",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°79 : Distinction paronymique : 'Conjecture' vs 'Conjoncture'",
+    "options": [
+      "Conjecture = hypothèse / Conjoncture = situation économique",
+      "Conjoncture = hypothèse",
+      "Stricte synonymie",
+      "Conjecture = économie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°80 : Distinction paronymique : 'Consommer' vs 'Consumer'",
+    "options": [
+      "Consommer = utiliser ou manger / Consumer = détruire par le feu",
+      "Stricte synonymie",
+      "Consommer = brûler",
+      "Consumer = manger"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°81 : Distinction paronymique : 'Décéder' vs 'Disséder'",
+    "options": [
+      "Disséder existe",
+      "Décéder existe (mourir), disséder est un barbarisme",
+      "Aucun mot n'existe",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°82 : Distinction paronymique : 'Dénégation' vs 'Dénégat'",
+    "options": [
+      "Dénégation = action de nier",
+      "Synonyme de vérité",
+      "Terme médical",
+      "Dénégat existe"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°83 : Distinction paronymique : 'Désintéressement' vs 'Désintérêt'",
+    "options": [
+      "Désintéressement = générosité sans profit / Désintérêt = indifférence",
+      "Désintérêt = générosité",
+      "Stricte synonymie",
+      "Désintéressement = ennui"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°84 : Distinction paronymique : 'Éligible' vs 'Illégible'",
+    "options": [
+      "Illégible = peut être élu",
+      "Éligible = qui peut être élu / Illégible = impossible à lire",
+      "Éligible = impossible à lire",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°85 : Distinction paronymique : 'Émerger' vs 'Immerger'",
+    "options": [
+      "Émerger = plonger",
+      "Immerger = sortir",
+      "Stricte synonymie",
+      "Émerger = sortir de l'eau / Immerger = plonger sous l'eau"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°86 : Distinction paronymique : 'Éminent' vs 'Imminent'",
+    "options": [
+      "Imminent = remarquable",
+      "Éminent = bientot",
+      "Stricte synonymie",
+      "Éminent = remarquable / Imminent = très proche dans le temps"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°87 : Distinction paronymique : 'Éruption' vs 'Iruption'",
+    "options": [
+      "Irruption = volcan",
+      "Stricte synonymie",
+      "Éruption = jaillissement (volcan) / Irruption = entrée de force",
+      "Éruption = entrée"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°88 : Distinction paronymique : 'Exalter' vs 'Exulter'",
+    "options": [
+      "Exalter = crier de joie",
+      "Exulter = glorifier",
+      "Stricte synonymie",
+      "Exalter = glorifier ou enthousiasmer / Exulter = manifester une joie intense"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°89 : Distinction paronymique : 'Explicite' vs 'Implicite'",
+    "options": [
+      "Explicite = caché",
+      "Explicite = formulé clairement / Implicite = sous-entendu",
+      "Stricte synonymie",
+      "Implicite = clair"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°90 : Distinction paronymique : 'Infecter' vs 'Infester'",
+    "options": [
+      "Infecter = contaminer par des germes / Infester = envahir en grand nombre",
+      "Stricte synonymie",
+      "Infecter = insectes",
+      "Infester = germes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°91 : Distinction paronymique : 'Ingénieux' vs 'Ingénu'",
+    "options": [
+      "Ingénieux = inventif / Ingénu = innocent et naïf",
+      "Stricte synonymie",
+      "Ingénieux = naïf",
+      "Ingénu = inventif"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°92 : Distinction paronymique : 'Notoriété' vs 'Notabilité'",
+    "options": [
+      "Notoriété = fait d'être connu / Notabilité = position sociale élevée",
+      "Notabilité = connu",
+      "Notoriété = rang",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°93 : Distinction paronymique : 'Officiel' vs 'Officieux'",
+    "options": [
+      "Stricte synonymie",
+      "Officieux = garanti",
+      "Officiel = secret",
+      "Officiel = émanant de l'autorité / Officieux = non garanti officiellement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°94 : Distinction paronymique : 'Percepteur' vs 'Perception'",
+    "options": [
+      "Percepteur = sensation",
+      "Perception = agent",
+      "Stricte synonymie",
+      "Percepteur = fonctionnaire du Trésor / Perception = sensation ou recouvrement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°95 : Distinction paronymique : 'Spécieux' vs 'Spacieux'",
+    "options": [
+      "Spacieux = séduisant",
+      "Spécieux = d'une fausse vérité séduisante / Spacieux = vaste",
+      "Spécieux = grand",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°96 : Locution latine : 'Ipso facto'",
+    "options": [
+      "En dernière analyse",
+      "Sans date fixée",
+      "Pour la circonstance",
+      "Par le fait même"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°97 : Locution latine : 'In fine'",
+    "options": [
+      "A priori",
+      "Selon l'usage",
+      "Par le fait même",
+      "À la fin / En dernière analyse"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "Question Expression n°98 : Locution latine : 'Ad hoc'",
+    "options": [
+      "De manière permanente",
+      "Sans restriction",
+      "Qui convient parfaitement à un usage précis",
+      "Par le fait même"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°99 : Locution latine : 'A priori'",
+    "options": [
+      "Par obligation",
+      "Au premier abord / Avant toute expérience",
+      "Après expérience",
+      "En secret"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°100 : Locution latine : 'De facto'",
+    "options": [
+      "De manière temporaire",
+      "Selon la loi",
+      "Dans les faits / De fait",
+      "Par hasard"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°101 : Locution latine : 'De jure'",
+    "options": [
+      "De droit / Selon la loi",
+      "Dans les faits",
+      "Par accident",
+      "Sans condition"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°102 : Locution latine : 'Modus operandi'",
+    "options": [
+      "Accord de paix",
+      "Statut actuel",
+      "Mode d'opérer / Méthode de travail",
+      "Déclaration officielle"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "Question Expression n°103 : Locution latine : 'Status quo'",
+    "options": [
+      "État actuel des choses",
+      "Nouvelle décision",
+      "Changement brutal",
+      "Fin de contrat"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°104 : Locution latine : 'Sine qua non'",
+    "options": [
+      "Sans conséquence",
+      "Condition absolument indispensable",
+      "Avec réserve",
+      "Par faveur spéciale"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "Question Expression n°105 : Pléonasme à bannir : 'S'avérer vrai'",
+    "options": [
+      "S'avérer signifie déjà se révéler vrai",
+      "Vrai est un nom",
+      "S'avérer vrai est obligatoire",
+      "S'avérer s'écrit avec un s"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "Question Expression n°106 : Pléonasme à bannir : 'Monter en haut'",
+    "options": [
+      "Monter en haut est correct",
+      "Monter implique déjà d'aller vers le haut",
+      "Monter s'écrit sans r",
+      "Haut est un adjectif"
+    ],
+    "answerIndex": 1
   }
 ];
 

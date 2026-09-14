@@ -2004,15 +2004,24 @@ function renderMemoTabs() {
   }
 }
 
-// Deduplicate a deck by normalized prompt string to ensure zero duplicate questions in a single quiz session
+// Extract clean question body for strict deduplication, removing HTML and prefix headers (e.g. "Question n°12 :", "[Français SIM n°3]")
+function getCleanPromptText(rawPrompt) {
+  if (!rawPrompt) return '';
+  let clean = rawPrompt.replace(/<[^>]*>/g, ' ');
+  clean = clean.replace(/^(Question|Problème|Série|Matrice|Disposition|Conditions Minimales|Ordre|Énigme|Article|Texte|\[.*?\])\s*([a-zà-ÿ\s]*?n°\d+|:\s*|\d+)?/gi, '');
+  clean = clean.replace(/n°\d+/gi, '');
+  return clean.replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+// Deduplicate a deck by normalized prompt body to ensure zero duplicate questions in a single quiz session
 function deduplicateDeck(deck) {
   if (!Array.isArray(deck)) return [];
   const seenPrompts = new Set();
   const uniqueDeck = [];
   for (const item of deck) {
     if (!item || !item.prompt) continue;
-    const norm = item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
-    if (!seenPrompts.has(norm)) {
+    const norm = getCleanPromptText(item.prompt);
+    if (norm && !seenPrompts.has(norm)) {
       seenPrompts.add(norm);
       uniqueDeck.push(item);
     }
@@ -2036,9 +2045,9 @@ function getNonRepeatingDeck(optionId, rawDeck, count) {
 
   const seenSet = new Set(seenPrompts);
   
-  // Filter items whose normalized prompt hasn't been seen recently
+  // Filter items whose normalized prompt body hasn't been seen recently
   const unseenItems = cleanRaw.filter(item => {
-    const norm = item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const norm = getCleanPromptText(item.prompt);
     return !seenSet.has(norm);
   });
 
@@ -2054,9 +2063,9 @@ function getNonRepeatingDeck(optionId, rawDeck, count) {
     seenPrompts = []; // Reset history
     const remainingNeeded = count - selectedItems.length;
     
-    const unseenNorms = new Set(selectedItems.map(item => item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase()));
+    const unseenNorms = new Set(selectedItems.map(item => getCleanPromptText(item.prompt)));
     const recycledPool = cleanRaw.filter(item => {
-      const norm = item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+      const norm = getCleanPromptText(item.prompt);
       return !unseenNorms.has(norm);
     });
 
@@ -2064,8 +2073,8 @@ function getNonRepeatingDeck(optionId, rawDeck, count) {
     selectedItems.push(...reshuffledRecycled.slice(0, remainingNeeded));
   }
 
-  // Save the newly selected prompts to history
-  const newlySelectedNorms = selectedItems.map(item => item.prompt.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().toLowerCase());
+  // Save the newly selected prompt bodies to history
+  const newlySelectedNorms = selectedItems.map(item => getCleanPromptText(item.prompt));
   const updatedSeen = [...seenPrompts, ...newlySelectedNorms];
   try {
     localStorage.setItem(storageKey, JSON.stringify(updatedSeen.slice(-400))); // Keep last 400

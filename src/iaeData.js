@@ -3090,30 +3090,30 @@ export const IAE_FRENCH_QUIZ_DATA = [
   {
     "prompt": "[Français SIM n°1] Quelle est la tournure correcte avec le verbe 'pallier' ?",
     "options": [
-      "Pallier avec le problème",
-      "Pallier le problème (COD direct)",
+      "Pallier le problème",
       "Pallier de ce problème",
+      "Pallier avec le problème",
       "Pallier au problème"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°2] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "prompt": "[Français SIM n°2] Complétez : 'Après qu'il _____ arrivé, le cours a commencé.'",
     "options": [
-      "serait",
+      "est",
+      "soit",
       "fût",
-      "est (Indicatif)",
-      "soit (Subjonctif)"
+      "serait"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°3] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "prompt": "[Français SIM n°3] Complétez : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
     "options": [
-      "fait (Indicatif)",
-      "ferait",
-      "fasse (Subjonctif)",
-      "fît"
+      "fît",
+      "fait",
+      "fasse",
+      "ferait"
     ],
     "answerIndex": 2
   },
@@ -3121,9 +3121,9 @@ export const IAE_FRENCH_QUIZ_DATA = [
     "prompt": "[Français SIM n°4] Quel est le genre du mot 'aphte' ?",
     "options": [
       "Masculin (un aphte)",
-      "Neutre",
       "Variable",
-      "Féminin (une aphte)"
+      "Féminin (une aphte)",
+      "Neutre"
     ],
     "answerIndex": 0
   },
@@ -3131,1011 +3131,1021 @@ export const IAE_FRENCH_QUIZ_DATA = [
     "prompt": "[Français SIM n°5] Quel est le genre du mot 'acné' ?",
     "options": [
       "Féminin (une acné)",
+      "Neutre",
       "Masculin (un acné)",
+      "Variable"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°6] Quel est le genre du mot 'alvéole' ?",
+    "options": [
+      "Neutre",
+      "Variable",
+      "Masculin (un alvéole)",
+      "Féminin (une alvéole)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°7] Quel est le genre du mot 'astérisque' ?",
+    "options": [
+      "Neutre",
+      "Féminin (une astérisque)",
+      "Masculin (un astérisque)",
+      "Variable"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°8] Quel est le genre du mot 'orbite' ?",
+    "options": [
+      "Neutre",
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°9] Quel est le genre du mot 'épitaphe' ?",
+    "options": [
+      "Variable",
+      "Neutre",
+      "Féminin (une épitaphe)",
+      "Masculin (un épitaphe)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°10] Quel est le genre du mot 'pétale' ?",
+    "options": [
+      "Féminin (une pétale)",
+      "Masculin (un pétale)",
+      "Neutre",
+      "Variable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°11] Quel est le genre du mot 'armistice' ?",
+    "options": [
+      "Variable",
+      "Masculin (un armistice)",
+      "Féminin (une armistice)",
+      "Neutre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°12] Quel est le genre du mot 'haltère' ?",
+    "options": [
+      "Féminin (une haltère)",
+      "Masculin (un haltère)",
       "Variable",
       "Neutre"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°6] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
-    "options": [
-      "Dileme",
-      "Dillemme",
-      "Dilemne (avec 'nm')",
-      "Dilemme (avec 2 'm')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°7] Comment s'accorde le mot 'demi' avant le nom ?",
+    "prompt": "[Français SIM n°13] Quel est le genre du mot 'omoplate' ?",
     "options": [
       "Variable",
-      "Accordé en nombre (des demis-heures)",
-      "Accordé en genre (une demie-heure)",
-      "Invariable (une demi-heure)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°8] Accord du participe passé : 'Elles se sont _____ des lettres.'",
-    "options": [
-      "envoyé (invariable car COD après)",
-      "envoyées",
-      "envoyers",
-      "envoyés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°9] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Recommander chaudement",
-      "Rédiger un texte",
-      "Prescrire un traitement",
-      "Interdire formellement"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°10] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
-    "options": [
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Parler fort",
-      "Décider de"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°11] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle à cette règle",
-      "Je me rappelle cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle sur cette règle"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°12] Complétez la phrase : 'Je me _____ de cet événement.'",
-    "options": [
-      "souviens (avec 'de')",
-      "repense de",
-      "remémore de",
-      "rappelle (avec 'de')"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°13] Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleues marine",
-      "bleu marine",
-      "bleues marines",
-      "bleu marines"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°14] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marrone",
-      "marron",
-      "marrons",
-      "marronnes"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°15] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faite",
-      "faites",
-      "fait (invariable devant infinitif)",
-      "faits"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°16] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier au problème",
-      "Pallier le problème (COD direct)",
-      "Pallier de ce problème"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°17] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "est (Indicatif)",
-      "soit (Subjonctif)",
-      "fût",
-      "serait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°18] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse (Subjonctif)",
-      "fît",
-      "ferait",
-      "fait (Indicatif)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°19] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Masculin (un aphte)",
-      "Féminin (une aphte)",
-      "Neutre",
-      "Variable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°20] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Masculin (un acné)",
-      "Neutre",
-      "Variable",
-      "Féminin (une acné)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°21] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
-    "options": [
-      "Dilemme (avec 2 'm')",
-      "Dilemne (avec 'nm')",
-      "Dillemme",
-      "Dileme"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°22] Comment s'accorde le mot 'demi' avant le nom ?",
-    "options": [
-      "Accordé en genre (une demie-heure)",
-      "Invariable (une demi-heure)",
-      "Accordé en nombre (des demis-heures)",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°23] Accord du participe passé : 'Elles se sont _____ des lettres.'",
-    "options": [
-      "envoyé (invariable car COD après)",
-      "envoyés",
-      "envoyers",
-      "envoyées"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°24] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Prescrire un traitement",
-      "Rédiger un texte",
-      "Recommander chaudement",
-      "Interdire formellement"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°25] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
-    "options": [
-      "Collaborer ensemble",
-      "Sortir rapidement",
-      "Parler fort",
-      "Décider de"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°26] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle sur cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle cette règle",
-      "Je me rappelle à cette règle"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°27] Complétez la phrase : 'Je me _____ de cet événement.'",
-    "options": [
-      "souviens (avec 'de')",
-      "rappelle (avec 'de')",
-      "repense de",
-      "remémore de"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°28] Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleu marines",
-      "bleues marine",
-      "bleu marine",
-      "bleues marines"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°29] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marrone",
-      "marron",
-      "marronnes",
-      "marrons"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°30] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faits",
-      "faites",
-      "faite",
-      "fait (invariable devant infinitif)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°31] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier de ce problème",
-      "Pallier le problème (COD direct)",
-      "Pallier au problème",
-      "Pallier avec le problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°32] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "est (Indicatif)",
-      "soit (Subjonctif)",
-      "fût",
-      "serait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°33] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse (Subjonctif)",
-      "fait (Indicatif)",
-      "ferait",
-      "fît"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°34] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Variable",
-      "Féminin (une aphte)",
-      "Masculin (un aphte)",
+      "Masculin (un omoplate)",
+      "Féminin (une omoplate)",
       "Neutre"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Français SIM n°35] Quel est le genre du mot 'acné' ?",
+    "prompt": "[Français SIM n°14] Quel est le genre du mot 'hémisphère' ?",
     "options": [
-      "Masculin (un acné)",
-      "Féminin (une acné)",
+      "Féminin (une hémisphère)",
+      "Variable",
+      "Masculin (un hémisphère)",
+      "Neutre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°15] Quel est le genre du mot 'ébène' ?",
+    "options": [
+      "Masculin (un ébène)",
+      "Variable",
       "Neutre",
+      "Féminin (une ébène)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°16] Quel est le genre du mot 'amiante' ?",
+    "options": [
+      "Neutre",
+      "Masculin (un amiante)",
+      "Variable",
+      "Féminin (une amiante)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°17] Quel est le genre du mot 'arôme' ?",
+    "options": [
+      "Féminin (une arôme)",
+      "Variable",
+      "Neutre",
+      "Masculin (un arôme)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°18] Quel est le genre du mot 'asile' ?",
+    "options": [
+      "Féminin (une asile)",
+      "Variable",
+      "Masculin (un asile)",
+      "Neutre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°19] Quel est le genre du mot 'éloge' ?",
+    "options": [
+      "Masculin (un éloge)",
+      "Variable",
+      "Neutre",
+      "Féminin (une éloge)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°20] Quel est le genre du mot 'exode' ?",
+    "options": [
+      "Variable",
+      "Féminin (une exode)",
+      "Masculin (un exode)",
+      "Neutre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°21] Quel est le genre du mot 'insigne' ?",
+    "options": [
+      "Féminin (une insigne)",
+      "Variable",
+      "Masculin (un insigne)",
+      "Neutre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°22] Quel est le genre du mot 'interstice' ?",
+    "options": [
+      "Féminin (une interstice)",
+      "Variable",
+      "Masculin (un interstice)",
+      "Neutre"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°23] Quel est le genre du mot 'obélisque' ?",
+    "options": [
+      "Neutre",
+      "Masculin (un obélisque)",
+      "Féminin (une obélisque)",
       "Variable"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°36] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
+    "prompt": "[Français SIM n°24] Quel est le genre du mot 'opprobre' ?",
+    "options": [
+      "Variable",
+      "Féminin (une opprobre)",
+      "Neutre",
+      "Masculin (un opprobre)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°25] Quel est le genre du mot 'orgue' au pluriel ?",
+    "options": [
+      "Variable",
+      "Féminin (de belles orgues)",
+      "Neutre",
+      "Masculin (de beaux orgues)"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°26] Quel est le genre du mot 'délices' au pluriel ?",
+    "options": [
+      "Variable",
+      "Masculin (de nombreux délices)",
+      "Neutre",
+      "Féminin (de nombreuses délices)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°27] Quel est le genre du mot 'amours' au pluriel ?",
+    "options": [
+      "Variable",
+      "Neutre",
+      "Féminin (de premières amours)",
+      "Masculin (de premiers amours)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°28] Quelle est l'orthographe correcte du mot désignant un choix cornélien ?",
     "options": [
       "Dileme",
+      "Dilemne",
       "Dillemme",
-      "Dilemne (avec 'nm')",
-      "Dilemme (avec 2 'm')"
+      "Dilemme"
     ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Français SIM n°37] Comment s'accorde le mot 'demi' avant le nom ?",
+    "prompt": "[Français SIM n°29] Quelle est l'orthographe correcte du mot désignant un mauvais rêve ?",
     "options": [
-      "Invariable (une demi-heure)",
-      "Variable",
-      "Accordé en nombre (des demis-heures)",
-      "Accordé en genre (une demie-heure)"
+      "Cauchemard",
+      "Cauchemar",
+      "Cauchemarre",
+      "Cossemare"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°30] Quelle est l'orthographe correcte du mot désignant le système de communication ?",
+    "options": [
+      "Langage",
+      "Language",
+      "Langages",
+      "Langaj"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°38] Accord du participe passé : 'Elles se sont _____ des lettres.'",
+    "prompt": "[Français SIM n°31] Quelle est l'orthographe correcte du mot désignant l'acompte bancaire ?",
     "options": [
-      "envoyées",
-      "envoyers",
-      "envoyé (invariable car COD après)",
-      "envoyés"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°39] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Prescrire un traitement",
-      "Recommander chaudement",
-      "Rédiger un texte"
+      "Acompte",
+      "Ahcompte",
+      "Accompte",
+      "Aconte"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°40] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "prompt": "[Français SIM n°32] Quelle est l'orthographe correcte du mot désignant l'arrivée d'un événement ?",
     "options": [
-      "Décider de",
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Parler fort"
+      "Évènemant",
+      "Evenement sans accent",
+      "Evènement uniquement",
+      "Événement ou Évènement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°33] Quelle est l'orthographe correcte du verbe désignant l'émission d'un son ?",
+    "options": [
+      "Rézonner",
+      "Résonner",
+      "Ressoner",
+      "Raisonner"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°34] Quelle est l'orthographe correcte du mot désignant la maturité d'un projet ?",
+    "options": [
+      "Matuture",
+      "Maturitée",
+      "Mâterie ou Mâture",
+      "Maturess"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Français SIM n°41] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "prompt": "[Français SIM n°35] Quelle est l'orthographe correcte du mot désignant la bêtise extrême ?",
     "options": [
-      "Je me rappelle sur cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle cette règle",
-      "Je me rappelle à cette règle"
+      "Imbécilitée",
+      "Imbécillité",
+      "Imbessillité",
+      "Imbécilité"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°36] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle sur cette histoire",
+      "Je me rappelle à cette histoire",
+      "Je me rappelle cette histoire",
+      "Je me rappelle de cette histoire"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Français SIM n°42] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "prompt": "[Français SIM n°37] Complétez : 'Je me _____ de cette personne.'",
     "options": [
-      "repense de",
+      "rappelle",
       "remémore de",
-      "souviens (avec 'de')",
-      "rappelle (avec 'de')"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°43] Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleu marine",
-      "bleu marines",
-      "bleues marine",
-      "bleues marines"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°44] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marron",
-      "marrons",
-      "marrone",
-      "marronnes"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°45] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faites",
-      "faits",
-      "fait (invariable devant infinitif)",
-      "faite"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°46] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier de ce problème",
-      "Pallier avec le problème",
-      "Pallier le problème (COD direct)",
-      "Pallier au problème"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°47] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "soit (Subjonctif)",
-      "serait",
-      "est (Indicatif)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°48] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fît",
-      "fait (Indicatif)",
-      "fasse (Subjonctif)",
-      "ferait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°49] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Variable",
-      "Féminin (une aphte)",
-      "Neutre",
-      "Masculin (un aphte)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°50] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Féminin (une acné)",
-      "Variable",
-      "Neutre",
-      "Masculin (un acné)"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°51] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
-    "options": [
-      "Dileme",
-      "Dilemme (avec 2 'm')",
-      "Dilemne (avec 'nm')",
-      "Dillemme"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°52] Comment s'accorde le mot 'demi' avant le nom ?",
-    "options": [
-      "Accordé en nombre (des demis-heures)",
-      "Variable",
-      "Invariable (une demi-heure)",
-      "Accordé en genre (une demie-heure)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°53] Accord du participe passé : 'Elles se sont _____ des lettres.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyers",
-      "envoyé (invariable car COD après)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°54] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Recommander chaudement",
-      "Rédiger un texte",
-      "Prescrire un traitement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°55] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
-    "options": [
-      "Décider de",
-      "Collaborer ensemble",
-      "Sortir rapidement",
-      "Parler fort"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°56] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle cette règle",
-      "Je me rappelle à cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle sur cette règle"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°57] Complétez la phrase : 'Je me _____ de cet événement.'",
-    "options": [
-      "repense de",
-      "remémore de",
-      "souviens (avec 'de')",
-      "rappelle (avec 'de')"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°58] Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleues marines",
-      "bleu marine",
-      "bleu marines",
-      "bleues marine"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°59] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
-      "marrons",
-      "marron",
-      "marrone",
-      "marronnes"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°60] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faite",
-      "fait (invariable devant infinitif)",
-      "faits",
-      "faites"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°61] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier de ce problème",
-      "Pallier le problème (COD direct)",
-      "Pallier au problème",
-      "Pallier avec le problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°62] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "est (Indicatif)",
-      "serait",
-      "soit (Subjonctif)"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°63] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse (Subjonctif)",
-      "fît",
-      "fait (Indicatif)",
-      "ferait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°64] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Masculin (un aphte)",
-      "Féminin (une aphte)",
-      "Neutre",
-      "Variable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°65] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Féminin (une acné)",
-      "Masculin (un acné)",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°66] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
-    "options": [
-      "Dillemme",
-      "Dilemne (avec 'nm')",
-      "Dileme",
-      "Dilemme (avec 2 'm')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°67] Comment s'accorde le mot 'demi' avant le nom ?",
-    "options": [
-      "Accordé en genre (une demie-heure)",
-      "Variable",
-      "Accordé en nombre (des demis-heures)",
-      "Invariable (une demi-heure)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°68] Accord du participe passé : 'Elles se sont _____ des lettres.'",
-    "options": [
-      "envoyers",
-      "envoyés",
-      "envoyées",
-      "envoyé (invariable car COD après)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°69] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Rédiger un texte",
-      "Prescrire un traitement"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°70] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
-    "options": [
-      "Sortir rapidement",
-      "Décider de",
-      "Parler fort",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°71] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle sur cette règle",
-      "Je me rappelle cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle à cette règle"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°72] Complétez la phrase : 'Je me _____ de cet événement.'",
-    "options": [
-      "souviens (avec 'de')",
-      "remémore de",
-      "rappelle (avec 'de')",
+      "souviens",
       "repense de"
     ],
-    "answerIndex": 0
+    "answerIndex": 2
   },
   {
-    "prompt": "[Français SIM n°73] Accord de l'adjectif composé : 'Des vestes _____'",
+    "prompt": "[Français SIM n°38] Complétez : 'Il a été convenu _____ la séance débuterait à 9h.'",
     "options": [
-      "bleues marine",
-      "bleu marine",
-      "bleues marines",
-      "bleu marines"
+      "de ce que",
+      "que",
+      "à ce que",
+      "pour que"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°74] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "prompt": "[Français SIM n°39] Complétez : 'Il s'agit _____ trouver une solution rapide.'",
     "options": [
-      "marrons",
-      "marronnes",
-      "marron",
-      "marrone"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°75] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "faites",
-      "faite",
-      "fait (invariable devant infinitif)",
-      "faits"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°76] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier de ce problème",
-      "Pallier au problème",
-      "Pallier avec le problème",
-      "Pallier le problème (COD direct)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°77] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "serait",
-      "est (Indicatif)",
-      "soit (Subjonctif)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°78] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fît",
-      "fait (Indicatif)",
-      "ferait",
-      "fasse (Subjonctif)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°79] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Féminin (une aphte)",
-      "Masculin (un aphte)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°80] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Masculin (un acné)",
-      "Féminin (une acné)",
-      "Neutre",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°81] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
-    "options": [
-      "Dilemne (avec 'nm')",
-      "Dilemme (avec 2 'm')",
-      "Dileme",
-      "Dillemme"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°82] Comment s'accorde le mot 'demi' avant le nom ?",
-    "options": [
-      "Variable",
-      "Invariable (une demi-heure)",
-      "Accordé en genre (une demie-heure)",
-      "Accordé en nombre (des demis-heures)"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°83] Accord du participe passé : 'Elles se sont _____ des lettres.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyers",
-      "envoyé (invariable car COD après)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°84] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Interdire formellement",
-      "Recommander chaudement",
-      "Prescrire un traitement",
-      "Rédiger un texte"
+      "de",
+      "sur",
+      "à",
+      "pour"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°85] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
+    "prompt": "[Français SIM n°40] Complétez : 'Elle s'est aperçue _____ son erreur.'",
     "options": [
-      "Collaborer ensemble",
-      "Sortir rapidement",
-      "Parler fort",
-      "Décider de"
+      "de",
+      "sur",
+      "pour",
+      "à"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°86] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "prompt": "[Français SIM n°41] Accord de l'adjectif composé de couleur : 'Des robes _____'",
     "options": [
-      "Je me rappelle à cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle sur cette règle",
-      "Je me rappelle cette règle"
+      "bleues foncé",
+      "bleu foncé",
+      "bleues foncées",
+      "bleu foncées"
     ],
-    "answerIndex": 3
+    "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°87] Complétez la phrase : 'Je me _____ de cet événement.'",
+    "prompt": "[Français SIM n°42] Accord de l'adjectif composé de couleur : 'Des yeux _____'",
     "options": [
-      "souviens (avec 'de')",
-      "repense de",
-      "rappelle (avec 'de')",
-      "remémore de"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°88] Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleues marine",
-      "bleues marines",
-      "bleu marine",
-      "bleu marines"
+      "vert clairs",
+      "verts clairs",
+      "vert clair",
+      "verts clair"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Français SIM n°89] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
+    "prompt": "[Français SIM n°43] Accord de l'adjectif de couleur issu d'un fruit : 'Des chemises _____'",
     "options": [
-      "marrons",
-      "marron",
+      "oranges",
+      "orangées",
+      "orangees",
+      "orange"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°44] Accord de l'adjectif de couleur issu d'un minerai : 'Des vestes _____'",
+    "options": [
       "marrone",
-      "marronnes"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°90] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
-    "options": [
-      "fait (invariable devant infinitif)",
-      "faits",
-      "faite",
-      "faites"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°91] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier le problème (COD direct)",
-      "Pallier de ce problème",
-      "Pallier au problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°92] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "soit (Subjonctif)",
-      "fût",
-      "est (Indicatif)",
-      "serait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°93] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fait (Indicatif)",
-      "fît",
-      "ferait",
-      "fasse (Subjonctif)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°94] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Masculin (un aphte)",
-      "Variable",
-      "Féminin (une aphte)",
-      "Neutre"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°95] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Variable",
-      "Neutre",
-      "Féminin (une acné)",
-      "Masculin (un acné)"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°96] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
-    "options": [
-      "Dileme",
-      "Dilemne (avec 'nm')",
-      "Dilemme (avec 2 'm')",
-      "Dillemme"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°97] Comment s'accorde le mot 'demi' avant le nom ?",
-    "options": [
-      "Variable",
-      "Accordé en genre (une demie-heure)",
-      "Accordé en nombre (des demis-heures)",
-      "Invariable (une demi-heure)"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°98] Accord du participe passé : 'Elles se sont _____ des lettres.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyé (invariable car COD après)",
-      "envoyers"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°99] Quel est le sens exact du verbe 'proscrire' ?",
-    "options": [
-      "Rédiger un texte",
-      "Prescrire un traitement",
-      "Recommander chaudement",
-      "Interdire formellement"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°100] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
-    "options": [
-      "Collaborer ensemble",
-      "Sortir rapidement",
-      "Décider de",
-      "Parler fort"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°101] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
-    "options": [
-      "Je me rappelle sur cette règle",
-      "Je me rappelle de cette règle",
-      "Je me rappelle à cette règle",
-      "Je me rappelle cette règle"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°102] Complétez la phrase : 'Je me _____ de cet événement.'",
-    "options": [
-      "remémore de",
-      "rappelle (avec 'de')",
-      "repense de",
-      "souviens (avec 'de')"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°103] Accord de l'adjectif composé : 'Des vestes _____'",
-    "options": [
-      "bleu marines",
-      "bleu marine",
-      "bleues marines",
-      "bleues marine"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°104] Accord de l'adjectif de couleur simple issu d'un nom : 'Des chaussures _____'",
-    "options": [
       "marronnes",
-      "marrone",
       "marron",
       "marrons"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Français SIM n°105] Accord du participe passé suivi d'un infinitif : 'La lettre que j'ai _____ rédiger.'",
+    "prompt": "[Français SIM n°45] Accord de l'adjectif de couleur 'rose' : 'Des joues _____'",
     "options": [
-      "faite",
-      "fait (invariable devant infinitif)",
-      "faites",
-      "faits"
+      "rose",
+      "rosées",
+      "rosez",
+      "roses"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°46] Accord de l'adjectif de couleur 'pourpre' : 'Des étoffes _____'",
+    "options": [
+      "pourpres",
+      "pourprées",
+      "pourpre",
+      "pourvrez"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°47] Accord de 'demi' avant le nom : 'Une _____ heure'",
+    "options": [
+      "demies-",
+      "demie-",
+      "demis-",
+      "demi-"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°48] Accord de 'demi' après le nom : 'Trois heures et _____'",
+    "options": [
+      "demi",
+      "demie",
+      "demies",
+      "demis"
     ],
     "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°49] Accord de 'nu' avant le nom : 'Marcher _____ pieds'",
+    "options": [
+      "nu-",
+      "nue-",
+      "nus-",
+      "nues-"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°50] Accord de 'nu' après le nom : 'Marcher pieds _____'",
+    "options": [
+      "nus",
+      "nue",
+      "nu",
+      "nues"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°51] Accord de 'mi' : 'Les yeux _____ clos'",
+    "options": [
+      "mie-",
+      "mi-",
+      "mies-",
+      "mis-"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°52] Accord du participe passé : 'La lettre que j'ai _____'",
+    "options": [
+      "écrits",
+      "écrit",
+      "écrites",
+      "écrite"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°53] Accord du participe passé : 'J'ai _____ la lettre'",
+    "options": [
+      "écrites",
+      "écrite",
+      "écrit",
+      "écrits"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°54] Accord du participe passé suivi d'un infinitif : 'La maison que j'ai _____ construire'",
+    "options": [
+      "vus",
+      "vues",
+      "vue",
+      "vu"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°55] Accord du participe passé suivi d'un infinitif : 'La cantatrice que j'ai _____ chanter'",
+    "options": [
+      "entendu",
+      "entendue",
+      "entendues",
+      "entendus"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°56] Accord du participe passé pronominal : 'Elles se sont _____ des cadeaux'",
+    "options": [
+      "offerte",
+      "offert",
+      "offerts",
+      "offertes"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°57] Accord du participe passé pronominal : 'Elles se sont _____ hier soir'",
+    "options": [
+      "rencontré",
+      "rencontrées",
+      "rencontrés",
+      "rencontrée"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°58] Accord du participe passé pronominal : 'Elles se sont _____ les mains'",
+    "options": [
+      "lavées",
+      "lavé",
+      "lavée",
+      "lavés"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°59] Accord de 'tout' adverbe devant voyelle : 'Elle est _____ étonnée'",
+    "options": [
+      "touts",
+      "toute",
+      "tout",
+      "toutes"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°60] Accord de 'tout' adverbe devant consonne : 'Elle est _____ honteuse'",
+    "options": [
+      "toute",
+      "touts",
+      "tout",
+      "toutes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°61] Accord de 'tout' adjectif : '_____ les étudiants sont présents'",
+    "options": [
+      "Tous",
+      "Toutes",
+      "Toute",
+      "Tout"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°62] Accord de 'même' adjectif : 'Les _____ personnes sont revenues'",
+    "options": [
+      "même-",
+      "mêmes-",
+      "mêmes",
+      "même"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°63] Accord de 'même' adverbe : 'Les adultes et _____ les enfants ont ri'",
+    "options": [
+      "même",
+      "même-",
+      "mêmes",
+      "mêmes-"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°64] Accord de 'leur' pronom : 'Je _____ ai parlé'",
+    "options": [
+      "leur",
+      "leurs",
+      "leurre",
+      "leurres"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°65] Accord de 'leur' adjectif possessif au pluriel : 'Ils ont pris _____ affaires'",
+    "options": [
+      "leur",
+      "leurs",
+      "leurre",
+      "leurres"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°66] Que signifie 'démythifier' ?",
+    "options": [
+      "Raconter une légende",
+      "Dépouiller de son caractère mythique",
+      "Créer un mythe",
+      "Détruire une tromperie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°67] Que signifie 'démystifier' ?",
+    "options": [
+      "Enlever le caractère mythique",
+      "Inventer une histoire",
+      "Consacrer un texte",
+      "Détruire une mystification ou tromperie"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°68] Que signifie 'proscrire' ?",
+    "options": [
+      "Interdire formellement",
+      "Recommander un soin",
+      "Pardonner une faute",
+      "Rédiger un texte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°69] Que signifie 'prescrire' ?",
+    "options": [
+      "Supprimer une loi",
+      "Rédiger un contrat",
+      "Ordonner ou recommander officiellement",
+      "Interdire formellement"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°70] Que signifie 'infiniment' vs 'infiniment petit' ?",
+    "options": [
+      "Égal",
+      "Extrêmement / Quantité négligeable",
+      "Sans valeur",
+      "Toujours faux"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°71] Distinction paronymique : 'Accident' vs 'Incident'",
+    "options": [
+      "Stricte synonimie",
+      "Accident est verbal",
+      "Incident est grave",
+      "Un incident est mineur, un accident implique des dommages"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°72] Distinction paronymique : 'Allocation' vs 'Allocution'",
+    "options": [
+      "Allocution = argent",
+      "Stricte synonymie",
+      "Allocation = somme d'argent / Allocution = discours",
+      "Allocation = discours"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°73] Distinction paronymique : 'Affectectation' vs 'Affection'",
+    "options": [
+      "Affectation = poste ou pose / Affection = sentiment",
+      "Stricte synonymie",
+      "Affectation = amour",
+      "Affection = poste"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°74] Distinction paronymique : 'Alternance' vs 'Alternative'",
+    "options": [
+      "Alternative = choix entre 2 options / Alternance = succession",
+      "Alternance = choix",
+      "Alternative = rotation",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°75] Distinction paronymique : 'Attention' vs 'Intention'",
+    "options": [
+      "Intention = concentration",
+      "Attention = concentration / Intention = objectif",
+      "Attention = projet",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°76] Distinction paronymique : 'Collision' vs 'Collusion'",
+    "options": [
+      "Collision = choc physique / Collusion = entente secrète",
+      "Stricte synonymie",
+      "Collision = complot",
+      "Collusion = choc"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°77] Distinction paronymique : 'Compétence' vs 'Compétition'",
+    "options": [
+      "Stricte synonymie",
+      "Compétition = savoir",
+      "Compétence = savoir-faire / Compétition = rivalité",
+      "Compétence = match"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°78] Distinction paronymique : 'Comprehensive' (anglais) vs 'Compréhensif'",
+    "options": [
+      "Comprehensive = exhaustif / Compréhensif = bienveillant",
+      "Exhaustif = bienveillant",
+      "Stricte synonymie",
+      "Aucun sens"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°79] Distinction paronymique : 'Conjecture' vs 'Conjoncture'",
+    "options": [
+      "Stricte synonymie",
+      "Conjecture = économie",
+      "Conjoncture = hypothèse",
+      "Conjecture = hypothèse / Conjoncture = situation économique"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°80] Distinction paronymique : 'Consommer' vs 'Consumer'",
+    "options": [
+      "Stricte synonymie",
+      "Consumer = manger",
+      "Consommer = brûler",
+      "Consommer = utiliser ou manger / Consumer = détruire par le feu"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°81] Distinction paronymique : 'Décéder' vs 'Disséder'",
+    "options": [
+      "Disséder existe",
+      "Stricte synonymie",
+      "Aucun mot n'existe",
+      "Décéder existe (mourir), disséder est un barbarisme"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°82] Distinction paronymique : 'Dénégation' vs 'Dénégat'",
+    "options": [
+      "Terme médical",
+      "Synonyme de vérité",
+      "Dénégation = action de nier",
+      "Dénégat existe"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°83] Distinction paronymique : 'Désintéressement' vs 'Désintérêt'",
+    "options": [
+      "Désintéressement = ennui",
+      "Désintéressement = générosité sans profit / Désintérêt = indifférence",
+      "Désintérêt = générosité",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°84] Distinction paronymique : 'Éligible' vs 'Illégible'",
+    "options": [
+      "Éligible = impossible à lire",
+      "Éligible = qui peut être élu / Illégible = impossible à lire",
+      "Stricte synonymie",
+      "Illégible = peut être élu"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°85] Distinction paronymique : 'Émerger' vs 'Immerger'",
+    "options": [
+      "Immerger = sortir",
+      "Émerger = sortir de l'eau / Immerger = plonger sous l'eau",
+      "Émerger = plonger",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°86] Distinction paronymique : 'Éminent' vs 'Imminent'",
+    "options": [
+      "Stricte synonymie",
+      "Éminent = remarquable / Imminent = très proche dans le temps",
+      "Éminent = bientot",
+      "Imminent = remarquable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°87] Distinction paronymique : 'Éruption' vs 'Iruption'",
+    "options": [
+      "Éruption = entrée",
+      "Irruption = volcan",
+      "Éruption = jaillissement (volcan) / Irruption = entrée de force",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°88] Distinction paronymique : 'Exalter' vs 'Exulter'",
+    "options": [
+      "Stricte synonymie",
+      "Exalter = glorifier ou enthousiasmer / Exulter = manifester une joie intense",
+      "Exalter = crier de joie",
+      "Exulter = glorifier"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°89] Distinction paronymique : 'Explicite' vs 'Implicite'",
+    "options": [
+      "Explicite = caché",
+      "Implicite = clair",
+      "Stricte synonymie",
+      "Explicite = formulé clairement / Implicite = sous-entendu"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°90] Distinction paronymique : 'Infecter' vs 'Infester'",
+    "options": [
+      "Infecter = insectes",
+      "Infecter = contaminer par des germes / Infester = envahir en grand nombre",
+      "Infester = germes",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°91] Distinction paronymique : 'Ingénieux' vs 'Ingénu'",
+    "options": [
+      "Ingénieux = inventif / Ingénu = innocent et naïf",
+      "Ingénieux = naïf",
+      "Ingénu = inventif",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°92] Distinction paronymique : 'Notoriété' vs 'Notabilité'",
+    "options": [
+      "Notoriété = fait d'être connu / Notabilité = position sociale élevée",
+      "Notoriété = rang",
+      "Stricte synonymie",
+      "Notabilité = connu"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°93] Distinction paronymique : 'Officiel' vs 'Officieux'",
+    "options": [
+      "Officieux = garanti",
+      "Stricte synonymie",
+      "Officiel = secret",
+      "Officiel = émanant de l'autorité / Officieux = non garanti officiellement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°94] Distinction paronymique : 'Percepteur' vs 'Perception'",
+    "options": [
+      "Percepteur = fonctionnaire du Trésor / Perception = sensation ou recouvrement",
+      "Percepteur = sensation",
+      "Stricte synonymie",
+      "Perception = agent"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°95] Distinction paronymique : 'Spécieux' vs 'Spacieux'",
+    "options": [
+      "Spécieux = grand",
+      "Spacieux = séduisant",
+      "Spécieux = d'une fausse vérité séduisante / Spacieux = vaste",
+      "Stricte synonymie"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°96] Locution latine : 'Ipso facto'",
+    "options": [
+      "Par le fait même",
+      "En dernière analyse",
+      "Sans date fixée",
+      "Pour la circonstance"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°97] Locution latine : 'In fine'",
+    "options": [
+      "Selon l'usage",
+      "À la fin / En dernière analyse",
+      "Par le fait même",
+      "A priori"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°98] Locution latine : 'Ad hoc'",
+    "options": [
+      "De manière permanente",
+      "Qui convient parfaitement à un usage précis",
+      "Sans restriction",
+      "Par le fait même"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°99] Locution latine : 'A priori'",
+    "options": [
+      "Au premier abord / Avant toute expérience",
+      "En secret",
+      "Par obligation",
+      "Après expérience"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°100] Locution latine : 'De facto'",
+    "options": [
+      "De manière temporaire",
+      "Selon la loi",
+      "Par hasard",
+      "Dans les faits / De fait"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°101] Locution latine : 'De jure'",
+    "options": [
+      "Par accident",
+      "Sans condition",
+      "Dans les faits",
+      "De droit / Selon la loi"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Français SIM n°102] Locution latine : 'Modus operandi'",
+    "options": [
+      "Mode d'opérer / Méthode de travail",
+      "Statut actuel",
+      "Déclaration officielle",
+      "Accord de paix"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°103] Locution latine : 'Status quo'",
+    "options": [
+      "Fin de contrat",
+      "Nouvelle décision",
+      "État actuel des choses",
+      "Changement brutal"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°104] Locution latine : 'Sine qua non'",
+    "options": [
+      "Condition absolument indispensable",
+      "Sans conséquence",
+      "Par faveur spéciale",
+      "Avec réserve"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°105] Pléonasme à bannir : 'S'avérer vrai'",
+    "options": [
+      "S'avérer s'écrit avec un s",
+      "Vrai est un nom",
+      "S'avérer signifie déjà se révéler vrai",
+      "S'avérer vrai est obligatoire"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Français SIM n°106] Pléonasme à bannir : 'Monter en haut'",
+    "options": [
+      "Monter s'écrit sans r",
+      "Haut est un adjectif",
+      "Monter en haut est correct",
+      "Monter implique déjà d'aller vers le haut"
+    ],
+    "answerIndex": 3
   }
 ];
 
@@ -5194,7 +5204,7 @@ export const IAE_LOGICAL_QUIZ_DATA = [
 
 export const IAE_ENGLISH_QUIZ_DATA = [
   {
-    "prompt": "[Business English n°1] Complete the sentence: 'I look forward to _____ you next week.'",
+    "prompt": "[Business English n°1] Complete: 'I look forward to _____ you at the conference.'",
     "options": [
       "have met",
       "met",
@@ -5204,1042 +5214,1042 @@ export const IAE_ENGLISH_QUIZ_DATA = [
     "answerIndex": 3
   },
   {
-    "prompt": "[Business English n°2] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay out",
-      "lay down",
-      "lay on",
-      "lay off"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°3] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "be",
-      "am",
-      "were",
-      "was"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°4] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "for",
-      "since",
-      "from",
-      "during"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°5] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "since",
-      "during",
-      "for",
-      "from"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°6] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had better",
-      "should to",
-      "had rather",
-      "would better"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°7] What is the meaning of 'shareholder'?",
-    "options": [
-      "Fournisseur",
-      "Partenaire social",
-      "Client principal",
-      "Actionnaire"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°8] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he did",
-      "had he",
-      "did he",
-      "he had"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°9] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A bankruptcy",
-      "A turnover",
-      "A layoff"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°10] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Probablement",
-      "Actuellement",
-      "Récemment",
-      "En fait / En réalité"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°11] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meet",
-      "have met",
-      "meeting",
-      "met"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°12] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay down",
-      "lay on",
-      "lay out",
-      "lay off"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°13] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "be",
-      "were",
-      "was",
-      "am"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°14] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "during",
-      "since",
-      "from",
-      "for"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°15] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "during",
-      "from",
-      "since",
-      "for"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°16] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "would better",
-      "had better",
-      "should to",
-      "had rather"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°17] What is the meaning of 'shareholder'?",
-    "options": [
-      "Actionnaire",
-      "Partenaire social",
-      "Client principal",
-      "Fournisseur"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°18] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he did",
-      "had he",
-      "he had",
-      "did he"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°19] Select the correct term for a company merger:",
-    "options": [
-      "A turnover",
-      "A layoff",
-      "A bankruptcy",
-      "A merger"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°20] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "En fait / En réalité",
-      "Actuellement",
-      "Probablement",
-      "Récemment"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°21] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "have met",
-      "meeting",
-      "met",
-      "meet"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°22] Choose the correct word: 'The company decided to _____ 500 workers.'",
+    "prompt": "[Business English n°2] Complete: 'The board decided to _____ 300 employees.'",
     "options": [
       "lay down",
       "lay off",
-      "lay out",
-      "lay on"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°23] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "be",
-      "were",
-      "was",
-      "am"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°24] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "during",
-      "for",
-      "from",
-      "since"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°25] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "during",
-      "since",
-      "for",
-      "from"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°26] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had better",
-      "had rather",
-      "should to",
-      "would better"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°27] What is the meaning of 'shareholder'?",
-    "options": [
-      "Client principal",
-      "Actionnaire",
-      "Partenaire social",
-      "Fournisseur"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°28] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he had",
-      "he did",
-      "had he",
-      "did he"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°29] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A bankruptcy",
-      "A layoff",
-      "A turnover"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°30] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Récemment",
-      "Probablement",
-      "Actuellement",
-      "En fait / En réalité"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°31] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meet",
-      "have met",
-      "meeting",
-      "met"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°32] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay off",
-      "lay out",
-      "lay down",
-      "lay on"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°33] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "be",
-      "am",
-      "were",
-      "was"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°34] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "for",
-      "from",
-      "since",
-      "during"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°35] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "for",
-      "during",
-      "since",
-      "from"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°36] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "should to",
-      "would better",
-      "had better",
-      "had rather"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°37] What is the meaning of 'shareholder'?",
-    "options": [
-      "Actionnaire",
-      "Client principal",
-      "Partenaire social",
-      "Fournisseur"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°38] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "had he",
-      "he did",
-      "he had",
-      "did he"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°39] Select the correct term for a company merger:",
-    "options": [
-      "A bankruptcy",
-      "A turnover",
-      "A merger",
-      "A layoff"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°40] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Probablement",
-      "Actuellement",
-      "En fait / En réalité",
-      "Récemment"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°41] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "have met",
-      "meeting",
-      "meet",
-      "met"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°42] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay out",
-      "lay on",
-      "lay off",
-      "lay down"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°43] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "am",
-      "be",
-      "was",
-      "were"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°44] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "during",
-      "for",
-      "from",
-      "since"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°45] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "since",
-      "for",
-      "from",
-      "during"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°46] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had better",
-      "had rather",
-      "should to",
-      "would better"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°47] What is the meaning of 'shareholder'?",
-    "options": [
-      "Partenaire social",
-      "Client principal",
-      "Fournisseur",
-      "Actionnaire"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°48] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "did he",
-      "had he",
-      "he did",
-      "he had"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°49] Select the correct term for a company merger:",
-    "options": [
-      "A turnover",
-      "A layoff",
-      "A merger",
-      "A bankruptcy"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°50] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Actuellement",
-      "Probablement",
-      "En fait / En réalité",
-      "Récemment"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°51] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meeting",
-      "met",
-      "have met",
-      "meet"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°52] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay out",
-      "lay on",
-      "lay off",
-      "lay down"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°53] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "am",
-      "was",
-      "were",
-      "be"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°54] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "from",
-      "for",
-      "since",
-      "during"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°55] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "during",
-      "for",
-      "from",
-      "since"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°56] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had better",
-      "would better",
-      "should to",
-      "had rather"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°57] What is the meaning of 'shareholder'?",
-    "options": [
-      "Fournisseur",
-      "Partenaire social",
-      "Actionnaire",
-      "Client principal"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°58] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "had he",
-      "he did",
-      "he had",
-      "did he"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°59] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A turnover",
-      "A bankruptcy",
-      "A layoff"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°60] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Actuellement",
-      "Récemment",
-      "En fait / En réalité",
-      "Probablement"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°61] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meeting",
-      "met",
-      "meet",
-      "have met"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°62] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay off",
-      "lay down",
-      "lay out",
-      "lay on"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°63] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "am",
-      "was",
-      "be",
-      "were"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°64] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "for",
-      "from",
-      "during",
-      "since"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°65] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "during",
-      "for",
-      "since",
-      "from"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°66] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had better",
-      "would better",
-      "had rather",
-      "should to"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°67] What is the meaning of 'shareholder'?",
-    "options": [
-      "Actionnaire",
-      "Partenaire social",
-      "Client principal",
-      "Fournisseur"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°68] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "did he",
-      "had he",
-      "he had",
-      "he did"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°69] Select the correct term for a company merger:",
-    "options": [
-      "A turnover",
-      "A merger",
-      "A layoff",
-      "A bankruptcy"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°70] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Récemment",
-      "En fait / En réalité",
-      "Actuellement",
-      "Probablement"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°71] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "met",
-      "meeting",
-      "meet",
-      "have met"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°72] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay out",
-      "lay on",
-      "lay down",
-      "lay off"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°73] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "was",
-      "were",
-      "am",
-      "be"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°74] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "for",
-      "since",
-      "from",
-      "during"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°75] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "for",
-      "during",
-      "from",
-      "since"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°76] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "would better",
-      "should to",
-      "had rather",
-      "had better"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°77] What is the meaning of 'shareholder'?",
-    "options": [
-      "Fournisseur",
-      "Partenaire social",
-      "Client principal",
-      "Actionnaire"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°78] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "had he",
-      "did he",
-      "he did",
-      "he had"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°79] Select the correct term for a company merger:",
-    "options": [
-      "A merger",
-      "A turnover",
-      "A layoff",
-      "A bankruptcy"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°80] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Récemment",
-      "Probablement",
-      "En fait / En réalité",
-      "Actuellement"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°81] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "have met",
-      "met",
-      "meeting",
-      "meet"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°82] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay out",
-      "lay on",
-      "lay down",
-      "lay off"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°83] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "be",
-      "was",
-      "were",
-      "am"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°84] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
-      "for",
-      "during",
-      "from",
-      "since"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°85] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "for",
-      "since",
-      "during",
-      "from"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°86] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "had better",
-      "would better",
-      "had rather",
-      "should to"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°87] What is the meaning of 'shareholder'?",
-    "options": [
-      "Actionnaire",
-      "Client principal",
-      "Partenaire social",
-      "Fournisseur"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°88] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he did",
-      "had he",
-      "he had",
-      "did he"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°89] Select the correct term for a company merger:",
-    "options": [
-      "A bankruptcy",
-      "A merger",
-      "A turnover",
-      "A layoff"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Business English n°90] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "En fait / En réalité",
-      "Probablement",
-      "Actuellement",
-      "Récemment"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°91] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "meet",
-      "met",
-      "meeting",
-      "have met"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°92] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay off",
-      "lay down",
       "lay on",
       "lay out"
     ],
-    "answerIndex": 0
+    "answerIndex": 1
   },
   {
-    "prompt": "[Business English n°93] Complete the sentence: 'If I _____ you, I would accept the offer.'",
+    "prompt": "[Business English n°3] Complete: 'If I _____ in your position, I would sign the contract.'",
     "options": [
-      "was",
       "be",
+      "was",
       "were",
       "am"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°94] Select the correct preposition: 'He has been working here _____ 2018.'",
+    "prompt": "[Business English n°4] Preposition choice: 'He has been working here _____ 2019.'",
     "options": [
-      "since",
-      "for",
-      "from",
-      "during"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°95] Select the correct preposition: 'She has lived in London _____ five years.'",
-    "options": [
-      "for",
-      "from",
       "during",
+      "from",
+      "for",
       "since"
     ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°96] Choose the correct phrase: 'You _____ consult a specialist.'",
-    "options": [
-      "would better",
-      "had rather",
-      "should to",
-      "had better"
-    ],
     "answerIndex": 3
   },
   {
-    "prompt": "[Business English n°97] What is the meaning of 'shareholder'?",
+    "prompt": "[Business English n°5] Preposition choice: 'She has lived in London _____ six years.'",
     "options": [
-      "Actionnaire",
-      "Partenaire social",
-      "Fournisseur",
-      "Client principal"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Business English n°98] Complete the sentence: 'Hardly _____ entered the room when the phone rang.'",
-    "options": [
-      "he did",
-      "he had",
-      "had he",
-      "did he"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°99] Select the correct term for a company merger:",
-    "options": [
-      "A turnover",
-      "A bankruptcy",
-      "A merger",
-      "A layoff"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°100] Choose the false friend: 'Actually' in English means:",
-    "options": [
-      "Récemment",
-      "Actuellement",
-      "Probablement",
-      "En fait / En réalité"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°101] Complete the sentence: 'I look forward to _____ you next week.'",
-    "options": [
-      "have met",
-      "met",
-      "meet",
-      "meeting"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°102] Choose the correct word: 'The company decided to _____ 500 workers.'",
-    "options": [
-      "lay down",
-      "lay out",
-      "lay on",
-      "lay off"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Business English n°103] Complete the sentence: 'If I _____ you, I would accept the offer.'",
-    "options": [
-      "be",
-      "am",
-      "were",
-      "was"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Business English n°104] Select the correct preposition: 'He has been working here _____ 2018.'",
-    "options": [
+      "since",
       "for",
       "from",
-      "since",
       "during"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°6] Choose the correct expression: 'You _____ consult an attorney.'",
+    "options": [
+      "would better",
+      "had better",
+      "should to",
+      "had rather"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°7] Meaning of 'shareholder':",
+    "options": [
+      "Client principal",
+      "Partenaire social",
+      "Actionnaire",
+      "Fournisseur"
     ],
     "answerIndex": 2
   },
   {
-    "prompt": "[Business English n°105] Select the correct preposition: 'She has lived in London _____ five years.'",
+    "prompt": "[Business English n°8] Meaning of 'stakeholder':",
     "options": [
-      "since",
-      "during",
+      "Directeur financier",
+      "Partie prenante / Intervenant",
+      "Actionnaire unique",
+      "Acheteur"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°9] Complete: 'Hardly _____ entered the office when the alarm went off.'",
+    "options": [
+      "he did",
+      "did he",
+      "had he",
+      "he had"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°10] Corporate term for business merger:",
+    "options": [
+      "A bankruptcy",
+      "A merger",
+      "A turnover",
+      "A layoff"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°11] False friend: 'Actually' means:",
+    "options": [
+      "Probablement",
+      "En fait / En réalité",
+      "Actuellement",
+      "Récemment"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°12] False friend: 'Currently' means:",
+    "options": [
+      "Actuellement",
+      "En fait",
+      "Couramment",
+      "Récemment"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°13] False friend: 'Eventually' means:",
+    "options": [
+      "Peut-être",
+      "Probablement",
+      "Éventuellement",
+      "Finalement / À terme"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°14] False friend: 'Notice' means:",
+    "options": [
+      "Note d'information",
+      "Nouvelle",
+      "Avis / Préavis / Remarquer",
+      "Notice d'utilisation"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°15] False friend: 'Comprehensive' means:",
+    "options": [
+      "Tolérant",
+      "Compréhensif",
+      "Sympathique",
+      "Exhaustif / Complet"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°16] False friend: 'Sympathetic' means:",
+    "options": [
+      "Sympathique",
+      "Agréable",
+      "Sociable",
+      "Compatissant / Enclin"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°17] False friend: 'Opportunity' means:",
+    "options": [
+      "Opposition",
+      "Opportunisme",
+      "Occasion / Opportunité",
+      "Obligation"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°18] False friend: 'Supply' means:",
+    "options": [
+      "Fournir / Approvisionnement",
+      "Subir",
+      "Supporter",
+      "Supplier"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°19] False friend: 'Demand' means:",
+    "options": [
+      "Déclarer",
+      "Demander gentiment",
+      "Exiger / Demande économique",
+      "Demander la permission"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°20] False friend: 'Survey' means:",
+    "options": [
+      "Survoler",
+      "Surveiller",
+      "Survivre",
+      "Enquête / Sondage"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°21] Meaning of 'turnover':",
+    "options": [
+      "Marge brute",
+      "Chiffre d'affaires / Renouvellement",
+      "Bénéfice net",
+      "Dette totale"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°22] Meaning of 'asset':",
+    "options": [
+      "Perte",
+      "Dette",
+      "Passif",
+      "Actif / Atout"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°23] Meaning of 'liability':",
+    "options": [
+      "Bénéfice",
+      "Revenu",
+      "Actif immobilisé",
+      "Passif / Responsabilité financière"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°24] Meaning of 'balance sheet':",
+    "options": [
+      "Bilan comptable",
+      "Relevé bancaire",
+      "Compte de résultat",
+      "Tableau de trésorerie"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°25] Meaning of 'income statement':",
+    "options": [
+      "Budget prévisionnel",
+      "Bilan comptable",
+      "Facture",
+      "Compte de résultat"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°26] Meaning of 'cash flow':",
+    "options": [
+      "Bénéfice brut",
+      "Capital social",
+      "Flux de trésorerie",
+      "Chiffre d'affaires"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°27] Meaning of 'benchmark':",
+    "options": [
+      "Étalonnage / Référence comparative",
+      "Marque commerciale",
+      "Slogan",
+      "Prix de vente"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°28] Meaning of 'bottleneck':",
+    "options": [
+      "Ligne d'assemblage",
+      "Goulot d'étranglement / Obstacle",
+      "Bouteille de vin",
+      "Département R&D"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°29] Meaning of 'brainstorming':",
+    "options": [
+      "Remue-méninges / Recherche d'idées",
+      "Tempête cérébrale",
+      "Réunion de crise",
+      "Épuisement professionnel"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°30] Meaning of 'core business':",
+    "options": [
+      "Affaire secondaire",
+      "Bureau central",
+      "Siège social",
+      "Cœur de métier / Activité principale"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°31] Phrasal verb: 'Call off' means:",
+    "options": [
+      "Appeler fort",
+      "Reporter",
+      "Continuer",
+      "Annuler"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°32] Phrasal verb: 'Put off' means:",
+    "options": [
+      "Annuler",
+      "Reporter / Différer",
+      "Organiser",
+      "Éteindre"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°33] Phrasal verb: 'Carry out' means:",
+    "options": [
+      "Exécuter / Mener à bien",
+      "Refuser",
+      "Abandonner",
+      "Transporter dehors"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°34] Phrasal verb: 'Run out of' means:",
+    "options": [
+      "Acheter",
+      "Manquer de / Épuiser le stock",
+      "Courir hors de",
+      "Accumuler"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°35] Phrasal verb: 'Cut down on' means:",
+    "options": [
+      "Augmenter",
+      "Couper en morceaux",
+      "Supprimer complètement",
+      "Réduire la consommation de"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°36] Phrasal verb: 'Look into' means:",
+    "options": [
+      "Publier",
+      "Examiner / Enquêter sur",
+      "Ignorer",
+      "Regarder à l'intérieur"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°37] Phrasal verb: 'Bring up' means:",
+    "options": [
+      "Évoquer un sujet / Élever un enfant",
+      "Annuler",
+      "Apporter en haut",
+      "Baisser le ton"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°38] Phrasal verb: 'Back up' means:",
+    "options": [
+      "Soutenir / Faire une sauvegarde",
+      "Démissionner",
+      "Reculer sans raison",
+      "Annuler un projet"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°39] Phrasal verb: 'Break down' means:",
+    "options": [
+      "Casser la porte",
+      "Tomber en panne / Analyser en détail",
+      "Reconstruire",
+      "Réussir"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°40] Phrasal verb: 'Set up' means:",
+    "options": [
+      "Régler l'heure",
+      "Créer / Installer une entreprise",
+      "Vendre",
+      "Fermer une usine"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°41] Grammar: 'Unless you _____ now, you will be late.'",
+    "options": [
+      "will leave",
+      "leave",
+      "don't leave",
+      "left"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°42] Grammar: 'By the time we arrive, the meeting _____.'",
+    "options": [
+      "finished",
+      "has finished",
+      "will finish",
+      "will have finished"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°43] Grammar: 'I wish I _____ more time to finish the report.'",
+    "options": [
+      "would have",
+      "will have",
+      "had",
+      "have"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°44] Grammar: 'Neither the manager nor the employees _____ present.'",
+    "options": [
+      "were",
+      "be",
+      "was",
+      "is"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°45] Grammar: 'Either John or his assistants _____ responsible.'",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "be"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°46] Grammar: 'It is essential that he _____ the document today.'",
+    "options": [
+      "signs",
+      "sign",
+      "will sign",
+      "signed"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°47] Grammar: 'The project was delayed owing _____ bad weather.'",
+    "options": [
       "from",
-      "for"
+      "to",
+      "for",
+      "with"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°48] Grammar: 'Despite _____ hard, he failed the exam.'",
+    "options": [
+      "studied",
+      "study",
+      "to study",
+      "studying"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°49] Grammar: 'In spite of _____ a high salary, she left the firm.'",
+    "options": [
+      "had",
+      "have",
+      "having",
+      "to have"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°50] Grammar: 'He behaves as if he _____ the CEO.'",
+    "options": [
+      "is",
+      "were",
+      "was",
+      "be"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°51] Grammar: 'The company is committed _____ reducing emissions.'",
+    "options": [
+      "on",
+      "for",
+      "to",
+      "with"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°52] Grammar: 'She succeeded _____ passing the accreditation.'",
+    "options": [
+      "on",
+      "in",
+      "to",
+      "at"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°53] Grammar: 'They prevented us _____ entering the facility.'",
+    "options": [
+      "of",
+      "to",
+      "against",
+      "from"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°54] Grammar: 'Are you interested _____ investing in AI?'",
+    "options": [
+      "on",
+      "for",
+      "in",
+      "at"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°55] Grammar: 'He was accused _____ breaching the non-disclosure agreement.'",
+    "options": [
+      "to",
+      "with",
+      "for",
+      "of"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°56] Grammar: 'I am not used to _____ so early.'",
+    "options": [
+      "woke up",
+      "wake up",
+      "waking up",
+      "have woken up"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°57] Grammar: 'He used to _____ in New York.'",
+    "options": [
+      "lived",
+      "living",
+      "lives",
+      "live"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°58] Grammar: 'She stopped _____ a break after three hours.'",
+    "options": [
+      "took",
+      "taking",
+      "take",
+      "to take"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°59] Grammar: 'He stopped _____ when he had a heart attack.'",
+    "options": [
+      "smoking",
+      "smoke",
+      "smoked",
+      "to smoke"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°60] Grammar: 'Remember _____ the file before closing.'",
+    "options": [
+      "saved",
+      "saving",
+      "to save",
+      "save"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°61] Corporate acronym: 'CEO' stands for:",
+    "options": [
+      "Corporate Enterprise Owner",
+      "Chief Executive Officer",
+      "Central Executive Operations",
+      "Chief Economic Officer"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°62] Corporate acronym: 'CFO' stands for:",
+    "options": [
+      "Central Finance Operations",
+      "Chief Financial Officer",
+      "Corporate Financial Overseer",
+      "Chief Funding Officer"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°63] Corporate acronym: 'CTO' stands for:",
+    "options": [
+      "Chief Technology Officer",
+      "Corporate Tech Officer",
+      "Chief Technical Overseer",
+      "Central Trade Operations"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°64] Corporate acronym: 'CMO' stands for:",
+    "options": [
+      "Chief Media Officer",
+      "Central Marketing Director",
+      "Chief Marketing Officer",
+      "Corporate Management Officer"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°65] Corporate acronym: 'HR' stands for:",
+    "options": [
+      "Human Resources",
+      "Head Relations",
+      "Hiring Resources",
+      "High Risk"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°66] Corporate acronym: 'R&D' stands for:",
+    "options": [
+      "Risk and Debt",
+      "Retail and Distribution",
+      "Research and Development",
+      "Real and Direct"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°67] Corporate acronym: 'B2B' stands for:",
+    "options": [
+      "Back to Back",
+      "Bank to Bank",
+      "Board to Board",
+      "Business to Business"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°68] Corporate acronym: 'B2C' stands for:",
+    "options": [
+      "Bank to Consumer",
+      "Business to Company",
+      "Board to Consumer",
+      "Business to Consumer"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°69] Corporate acronym: 'KPI' stands for:",
+    "options": [
+      "Key Performance Indicator",
+      "Key Process Index",
+      "Key Profit Indicator",
+      "Known Performance Item"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°70] Corporate acronym: 'ROI' stands for:",
+    "options": [
+      "Rate of Interest",
+      "Return on Investment",
+      "Revenue on Income",
+      "Risk of Inflation"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°71] Vocabulary: 'Acquisition' means:",
+    "options": [
+      "Fusion égale",
+      "Vente d'actifs",
+      "Faillite",
+      "Rachat / Acquisition d'une entreprise"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°72] Vocabulary: 'Bankruptcy' means:",
+    "options": [
+      "Faillite / Dépôt de bilan",
+      "Croissance record",
+      "Embauche massive",
+      "Paiement de dividende"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°73] Vocabulary: 'Benchmark' means:",
+    "options": [
+      "Contrat de travail",
+      "Comparaison sectorielle / Étalonnage",
+      "Chiffre d'affaires",
+      "Bilan comptable"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°74] Vocabulary: 'Bid' means:",
+    "options": [
+      "Offre de prix / Enchère",
+      "Baisse de tarif",
+      "Facture",
+      "Dette bancaire"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°75] Vocabulary: 'Board of directors' means:",
+    "options": [
+      "Assemblée d'actionnaires",
+      "Bureau du personnel",
+      "Conseil d'administration",
+      "Comité d'entreprise"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°76] Vocabulary: 'Brand awareness' means:",
+    "options": [
+      "Slogan",
+      "Notoriété de la marque",
+      "Prix du produit",
+      "Logo commercial"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°77] Vocabulary: 'Breakeven point' means:",
+    "options": [
+      "Perte nette",
+      "Bénéfice maximal",
+      "Point mort / Seuil de rentabilité",
+      "Prix plafond"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°78] Vocabulary: 'Budget constraint' means:",
+    "options": [
+      "Recette fiscale",
+      "Dépense imprévue",
+      "Contrainte budgétaire",
+      "Investissement"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°79] Vocabulary: 'Cash advance' meants:",
+    "options": [
+      "Taxe",
+      "Crédit immobilier",
+      "Avance de trésorerie",
+      "Paiement différé"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°80] Vocabulary: 'Claim' means:",
+    "options": [
+      "Remise commerciale",
+      "Facture acquittée",
+      "Réclamation / Sinistre / Affirmation",
+      "Clientèle"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°81] Vocabulary: 'Commission' means:",
+    "options": [
+      "Amende",
+      "Salaire fixe",
+      "Taxe d'État",
+      "Prime / Pourcentage sur vente"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°82] Vocabulary: 'Competitor' means:",
+    "options": [
+      "Compétence",
+      "Concurrent",
+      "Collaborateur",
+      "Client"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°83] Vocabulary: 'Compliance' means:",
+    "options": [
+      "Complaisance",
+      "Conformité réglementaire",
+      "Complicité",
+      "Compromis"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°84] Vocabulary: 'Core competence' meants:",
+    "options": [
+      "Brevet expiré",
+      "Compétence clé / Savoir-faire fondamental",
+      "Diplôme universitaire",
+      "Coût fixe"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°85] Vocabulary: 'Deadline' means:",
+    "options": [
+      "Date limite / Échéance",
+      "Congé payé",
+      "Ligne d'arrêt",
+      "Horaires de travail"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°86] Vocabulary: 'Default' means:",
+    "options": [
+      "Option de base",
+      "Qualité supérieure",
+      "Erreur de frappe",
+      "Défaut de paiement"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°87] Vocabulary: 'Deficit' means:",
+    "options": [
+      "Bénéfice net",
+      "Déficit / Solde négatif",
+      "Excédent",
+      "Réserve"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°88] Vocabulary: 'Discount' means:",
+    "options": [
+      "Rabais / Remise commerciale",
+      "Taxe additionnelle",
+      "Prix fort",
+      "Majoration"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°89] Vocabulary: 'Dividend' means:",
+    "options": [
+      "Division de capital",
+      "Impôt",
+      "Dette obligataire",
+      "Dividende / Part de bénéfice distribuée"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°90] Vocabulary: 'Draft' means:",
+    "options": [
+      "Brouillon / Projet de contrat",
+      "Facture originale",
+      "Copie conforme",
+      "Version finale"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°91] Vocabulary: 'Endorsement' means:",
+    "options": [
+      "Refus",
+      "Annulation",
+      "Opposition",
+      "Soutien officiel / Approbation"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°92] Vocabulary: 'Equity' means:",
+    "options": [
+      "Dette à court terme",
+      "Égalité parfaite",
+      "Fonds propres / Capitaux propres",
+      "Emprunt bancaire"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°93] Vocabulary: 'Forecast' means:",
+    "options": [
+      "Facture acquittée",
+      "Prévision économique",
+      "Statistique officielle",
+      "Compte-rendu passé"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°94] Vocabulary: 'Franchise' means:",
+    "options": [
+      "Marque déposée",
+      "Exemption d'impôt",
+      "Franchise commerciale",
+      "Licence exclusive"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°95] Vocabulary: 'Fundraising' means:",
+    "options": [
+      "Levée de fonds",
+      "Faillite",
+      "Dépense de trésorerie",
+      "Don caritatif"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°96] Vocabulary: 'Gross profit' means:",
+    "options": [
+      "Bénéfice net",
+      "Bénéfice brut",
+      "Chiffre d'affaires",
+      "Perte brute"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°97] Vocabulary: 'Headquarters' means:",
+    "options": [
+      "Quartier général militaire",
+      "Filiale régionale",
+      "Siège social / Direction générale",
+      "Magasin phare"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°98] Vocabulary: 'Incentive' means:",
+    "options": [
+      "Interdiction",
+      "Pénalité",
+      "Incitation / Motivation financière",
+      "Obligation"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°99] Vocabulary: 'Insurance policy' means:",
+    "options": [
+      "Loi fiscale",
+      "Politique de prix",
+      "Contrat d'assurance",
+      "Règlement intérieur"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "prompt": "[Business English n°100] Vocabulary: 'Inventory' means:",
+    "options": [
+      "Investissement",
+      "Stock de marchandises / Inventaire",
+      "Facture d'achat",
+      "Relevé de compte"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°101] Vocabulary: 'Invoice' means:",
+    "options": [
+      "Bon de commande",
+      "Reçu",
+      "Devis",
+      "Facture"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°102] Vocabulary: 'Joint venture' means:",
+    "options": [
+      "Filiale à 100%",
+      "Coentreprise / Partenariat stratégique",
+      "Fusion complète",
+      "Rachat d'actions"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Business English n°103] Vocabulary: 'Market share' means:",
+    "options": [
+      "Part de marché",
+      "Capitalisation boursière",
+      "Prix de l'action",
+      "Marge commerciale"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Business English n°104] Vocabulary: 'Net profit' means:",
+    "options": [
+      "Marge brute",
+      "Chiffre d'affaires",
+      "Bénéfice brut",
+      "Bénéfice net"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "prompt": "[Business English n°105] Vocabulary: 'Outsourcing' means:",
+    "options": [
+      "Exportation",
+      "Implantation locale",
+      "Embauche interne",
+      "Sous-traitance / Externalisation"
     ],
     "answerIndex": 3
   }
