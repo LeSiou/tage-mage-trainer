@@ -2369,15 +2369,18 @@ function renderSVGProgressChart(historyData) {
   if (!historyData || historyData.length === 0) {
     if (chartSubTitle) chartSubTitle.textContent = "Évolution des Scores";
     wrapper.innerHTML = `
-      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:200px; color:#86868B; text-align:center; padding:20px;">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:180px; color:#86868B; text-align:center; padding:20px;">
         <span style="font-size:36px; margin-bottom:8px;">📊</span>
         <span style="font-size:15px; font-weight:700; color:#1D1D1F;">Aucun historique pour ce sous-test</span>
-        <span style="font-size:12px; margin-top:4px; opacity:0.8;">Réalisez un quizz pour faire apparaître vos données de progression.</span>
+        <span style="font-size:12px; margin-top:4px; opacity:0.8;">Réalisez un quizz pour enregistrer vos premiers résultats !</span>
       </div>`;
     return;
   }
 
-  // Update dynamic Chart Title
+  // Active Selected Index (default to last point)
+  let activeIndex = historyData.length - 1;
+
+  // Update Dynamic Chart Title
   if (chartSubTitle) {
     if (isGlobalView) {
       chartSubTitle.innerHTML = `📈 Évolution Chronologique Globale <span style="font-size:12px; font-weight:600; color:#86868B; margin-left:4px;">(${historyData.length} session${historyData.length > 1 ? 's' : ''})</span>`;
@@ -2387,12 +2390,16 @@ function renderSVGProgressChart(historyData) {
     }
   }
 
-  const svgWidth = 600;
-  const svgHeight = 250;
-  const paddingLeft = 50;
-  const paddingRight = 30;
+  // Compute SVG dimensions with guaranteed spacing
+  const minSpacing = 65;
+  const paddingLeft = 55;
+  const paddingRight = 45;
   const paddingTop = 40;
-  const paddingBottom = 50;
+  const paddingBottom = 45;
+
+  const calculatedWidth = (historyData.length - 1) * minSpacing + paddingLeft + paddingRight;
+  const svgWidth = Math.max(580, calculatedWidth);
+  const svgHeight = 220;
 
   const width = svgWidth - paddingLeft - paddingRight;
   const height = svgHeight - paddingTop - paddingBottom;
@@ -2404,7 +2411,6 @@ function renderSVGProgressChart(historyData) {
     const y = paddingTop + height - (item.percentage / 100) * height;
     const shortDate = item.date ? item.date.split(' ')[0] : `S${idx + 1}`;
     
-    // Clean short tag for global chart labels
     let shortTag = item.subTitle || '';
     if (shortTag.includes('Calcul')) shortTag = 'Calcul';
     else if (shortTag.includes('Logique')) shortTag = 'Logique';
@@ -2423,8 +2429,11 @@ function renderSVGProgressChart(historyData) {
       title: item.subTitle,
       shortTag,
       scoreText: `${item.score}/${item.total}`,
+      score: item.score,
+      total: item.total,
       dateText: item.date || shortDate,
       shortDate,
+      exam: item.exam,
       idx: idx + 1
     };
   });
@@ -2436,102 +2445,132 @@ function renderSVGProgressChart(historyData) {
   const baselineY = paddingTop + height;
   const areaPathD = `M ${firstX} ${baselineY} L ${points.map(p => `${p.x} ${p.y}`).join(' L ')} L ${lastX} ${baselineY} Z`;
 
-  // Target 60% Admissibility Line
   const y60 = paddingTop + height - (60 / 100) * height;
-
-  let elementsHtml = points.map((p, idx) => {
-    const isPass = p.percentage >= 60;
-    const dotColor = isPass ? '#34C759' : '#FF3B30';
-    const badgeBg = isPass ? '#E8F5E9' : '#FFEBEE';
-    const badgeTextColor = isPass ? '#1B5E20' : '#C62828';
-
-    const showDate = points.length <= 10 || idx % Math.ceil(points.length / 6) === 0 || idx === points.length - 1;
-
-    // Show category name in badge when in global view
-    const badgeLabel = isGlobalView ? `${p.shortTag}: ${p.percentage}%` : `${p.percentage}%`;
-    const rectWidth = isGlobalView ? Math.max(54, p.shortTag.length * 6 + 28) : 40;
-
-    return `
-      <!-- Vertical guide line -->
-      <line x1="${p.x}" y1="${p.y}" x2="${p.x}" y2="${baselineY}" stroke="rgba(0,0,0,0.06)" stroke-dasharray="3,3" />
-
-      <!-- Top Score Badge -->
-      <g transform="translate(${p.x}, ${p.y - 15})" class="chart-point-g" data-point-idx="${idx}" style="cursor:pointer;">
-        <rect x="-${rectWidth/2}" y="-12" width="${rectWidth}" height="20" rx="6" fill="${badgeBg}" stroke="${dotColor}" stroke-width="1.2" />
-        <text x="0" y="2" fill="${badgeTextColor}" font-size="${isGlobalView ? '9.5' : '10.5'}" font-weight="800" text-anchor="middle" dominant-baseline="middle">${badgeLabel}</text>
-      </g>
-
-      <!-- Circle Dot -->
-      <circle cx="${p.x}" cy="${p.y}" r="6.5" fill="${dotColor}" stroke="#FFFFFF" stroke-width="2.5" class="chart-point-circle" data-point-idx="${idx}" style="cursor:pointer;">
-        <title>#${p.idx} ${p.title}: ${p.scoreText} (${p.percentage}%) - ${p.dateText}</title>
-      </circle>
-
-      <!-- Bottom X Axis Label -->
-      ${showDate ? `<text x="${p.x}" y="${baselineY + 18}" fill="#6E6E73" font-size="10" font-weight="700" text-anchor="middle">#${p.idx} (${p.shortDate})</text>` : ''}
-    `;
-  }).join('');
-
   const y100 = paddingTop;
   const y75 = paddingTop + 0.25 * height;
   const y50 = paddingTop + 0.5 * height;
   const y25 = paddingTop + 0.75 * height;
   const y0 = paddingTop + height;
 
-  const svgContent = `
-    <div style="display:flex; flex-direction:column; gap:12px;">
+  const renderChartBody = (selectedIdx) => {
+    let elementsHtml = points.map((p, idx) => {
+      const isSelected = idx === selectedIdx;
+      const isPass = p.percentage >= 60;
+      const dotColor = isPass ? '#34C759' : '#FF3B30';
       
-      <!-- Apple Tip Guidance Box -->
-      <div style="background:rgba(0,113,227,0.06); border:1px solid rgba(0,113,227,0.15); padding:10px 14px; border-radius:12px; font-size:12px; color:#0071E3; font-weight:600; display:flex; align-items:center; gap:8px;">
-        <span style="font-size:16px;">💡</span>
-        <span>${isGlobalView ? "<strong>Conseil :</strong> Pour suivre votre véritable courbe d'apprentissage sur une épreuve (ex: <em>Calcul</em>), sélectionnez son sous-test ci-dessus." : "Toucher n'importe quel point du graphique pour afficher la fiche détaillée de la session."}</span>
+      const r = isSelected ? 8 : 5.5;
+      const strokeW = isSelected ? 3 : 2;
+      const glowRing = isSelected ? `<circle cx="${p.x}" cy="${p.y}" r="15" fill="${dotColor}" opacity="0.25" />` : '';
+
+      return `
+        <!-- Vertical guide line -->
+        <line x1="${p.x}" y1="${p.y}" x2="${p.x}" y2="${baselineY}" stroke="${isSelected ? 'rgba(0,113,227,0.3)' : 'rgba(0,0,0,0.06)'}" stroke-dasharray="3,3" stroke-width="${isSelected ? '1.5' : '1'}" />
+
+        ${glowRing}
+
+        <!-- Clean Circle Dot -->
+        <circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${dotColor}" stroke="#FFFFFF" stroke-width="${strokeW}" class="chart-point-dot" data-point-idx="${idx}" style="cursor:pointer; transition:all 0.15s ease;">
+          <title>#${p.idx} ${p.title}: ${p.scoreText} (${p.percentage}%) - ${p.dateText}</title>
+        </circle>
+
+        <!-- Bottom X Axis Label (Session number + short date) -->
+        <text x="${p.x}" y="${baselineY + 18}" fill="${isSelected ? '#0071E3' : '#86868B'}" font-size="${isSelected ? '11' : '10'}" font-weight="${isSelected ? '800' : '600'}" text-anchor="middle" class="chart-point-dot" data-point-idx="${idx}" style="cursor:pointer;">#${p.idx}</text>
+      `;
+    }).join('');
+
+    // Floating Tooltip Callout ONLY for the active point
+    const activeP = points[selectedIdx];
+    const activePass = activeP.percentage >= 60;
+    const calloutBg = activePass ? '#34C759' : '#FF3B30';
+
+    const activeCallout = `
+      <g transform="translate(${activeP.x}, ${activeP.y - 14})" style="transition: transform 0.2s ease;">
+        <rect x="-24" y="-12" width="48" height="18" rx="6" fill="${calloutBg}" />
+        <text x="0" y="1" fill="#FFFFFF" font-size="10.5" font-weight="800" text-anchor="middle" dominant-baseline="middle">${activeP.percentage}%</text>
+      </g>
+    `;
+
+    return `
+      <!-- Tip Guidance Box -->
+      <div style="background:rgba(0,113,227,0.06); border:1px solid rgba(0,113,227,0.15); padding:8px 12px; border-radius:10px; font-size:12px; color:#0071E3; font-weight:600; display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+        <span style="font-size:15px;">💡</span>
+        <span>Cliquez sur n'importe quel point (#1, #2...) pour voir la fiche détaillée de la session.</span>
       </div>
 
-      <!-- Main SVG Canvas -->
-      <svg viewBox="0 0 ${svgWidth} ${svgHeight}" class="chart-svg" preserveAspectRatio="none" style="width:100%; height:230px; overflow:visible;">
-        <defs>
-          <linearGradient id="score-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#0071E3" stop-opacity="0.25" />
-            <stop offset="100%" stop-color="#0071E3" stop-opacity="0.0" />
-          </linearGradient>
-        </defs>
+      <!-- Scrollable Chart Wrapper -->
+      <div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:6px;">
+        <svg viewBox="0 0 ${svgWidth} ${svgHeight}" class="chart-svg" style="min-width:100%; width:${svgWidth}px; height:${svgHeight}px; overflow:visible;">
+          <defs>
+            <linearGradient id="score-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#0071E3" stop-opacity="0.22" />
+              <stop offset="100%" stop-color="#0071E3" stop-opacity="0.0" />
+            </linearGradient>
+          </defs>
 
-        <!-- Grid Lines & Y Axis Percentage Labels -->
-        <line x1="${paddingLeft}" y1="${y100}" x2="${svgWidth - paddingRight}" y2="${y100}" stroke="rgba(0,0,0,0.06)" stroke-dasharray="3,3" />
-        <text x="${paddingLeft - 8}" y="${y100 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">100%</text>
+          <!-- Grid Lines & Y Axis Percentage Labels -->
+          <line x1="${paddingLeft}" y1="${y100}" x2="${svgWidth - paddingRight}" y2="${y100}" stroke="rgba(0,0,0,0.06)" stroke-dasharray="3,3" />
+          <text x="${paddingLeft - 10}" y="${y100 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">100%</text>
 
-        <line x1="${paddingLeft}" y1="${y75}" x2="${svgWidth - paddingRight}" y2="${y75}" stroke="rgba(0,0,0,0.04)" stroke-dasharray="3,3" />
-        <text x="${paddingLeft - 8}" y="${y75 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">75%</text>
+          <line x1="${paddingLeft}" y1="${y75}" x2="${svgWidth - paddingRight}" y2="${y75}" stroke="rgba(0,0,0,0.04)" stroke-dasharray="3,3" />
+          <text x="${paddingLeft - 10}" y="${y75 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">75%</text>
 
-        <!-- Target 60% Admissibility Line -->
-        <line x1="${paddingLeft}" y1="${y60}" x2="${svgWidth - paddingRight}" y2="${y60}" stroke="#FF9500" stroke-dasharray="4,4" stroke-width="1.5" />
-        <text x="${svgWidth - paddingRight}" y="${y60 - 5}" fill="#E67E00" font-size="9.5" font-weight="800" text-anchor="end">🎯 Seuil Admissibilité (60%)</text>
+          <!-- Target 60% Admissibility Line -->
+          <line x1="${paddingLeft}" y1="${y60}" x2="${svgWidth - paddingRight}" y2="${y60}" stroke="#FF9500" stroke-dasharray="4,4" stroke-width="1.5" />
+          <text x="${svgWidth - paddingRight}" y="${y60 - 5}" fill="#E67E00" font-size="9.5" font-weight="800" text-anchor="end">🎯 Seuil Admissibilité (60%)</text>
 
-        <line x1="${paddingLeft}" y1="${y50}" x2="${svgWidth - paddingRight}" y2="${y50}" stroke="rgba(0,0,0,0.06)" stroke-dasharray="3,3" />
-        <text x="${paddingLeft - 8}" y="${y50 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">50%</text>
+          <line x1="${paddingLeft}" y1="${y50}" x2="${svgWidth - paddingRight}" y2="${y50}" stroke="rgba(0,0,0,0.06)" stroke-dasharray="3,3" />
+          <text x="${paddingLeft - 10}" y="${y50 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">50%</text>
 
-        <line x1="${paddingLeft}" y1="${y25}" x2="${svgWidth - paddingRight}" y2="${y25}" stroke="rgba(0,0,0,0.04)" stroke-dasharray="3,3" />
-        <text x="${paddingLeft - 8}" y="${y25 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">25%</text>
+          <line x1="${paddingLeft}" y1="${y25}" x2="${svgWidth - paddingRight}" y2="${y25}" stroke="rgba(0,0,0,0.04)" stroke-dasharray="3,3" />
+          <text x="${paddingLeft - 10}" y="${y25 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">25%</text>
 
-        <line x1="${paddingLeft}" y1="${y0}" x2="${svgWidth - paddingRight}" y2="${y0}" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
-        <text x="${paddingLeft - 8}" y="${y0 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">0%</text>
+          <line x1="${paddingLeft}" y1="${y0}" x2="${svgWidth - paddingRight}" y2="${y0}" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+          <text x="${paddingLeft - 10}" y="${y0 + 4}" fill="#86868B" font-size="10" font-weight="700" text-anchor="end">0%</text>
 
-        <!-- Area fill under line -->
-        ${points.length > 1 ? `<path d="${areaPathD}" fill="url(#score-gradient)" />` : ''}
+          <!-- Area fill under line -->
+          ${points.length > 1 ? `<path d="${areaPathD}" fill="url(#score-gradient)" />` : ''}
 
-        <!-- Connecting Line -->
-        ${points.length > 1 ? `<polyline fill="none" stroke="#0071E3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${polylinePoints}" />` : ''}
+          <!-- Connecting Line -->
+          ${points.length > 1 ? `<polyline fill="none" stroke="#0071E3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${polylinePoints}" />` : ''}
 
-        <!-- Data Points & Badges -->
-        ${elementsHtml}
-      </svg>
+          <!-- Data Points -->
+          ${elementsHtml}
 
-      <!-- Selected Session Detail Card Container -->
-      <div id="chart-point-detail-card" style="display:none; background:#F2F2F7; border:1px solid rgba(0,0,0,0.08); padding:12px 14px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); transition:all 0.2s ease;">
-        <!-- Dynamic detail populated on tap -->
+          <!-- Active Single Callout -->
+          ${activeCallout}
+        </svg>
+      </div>
+
+      <!-- Active Session Detail Card -->
+      <div id="chart-active-card" style="background:#FFFFFF; border:1px solid rgba(0,0,0,0.08); border-radius:14px; padding:14px; box-shadow:0 4px 14px rgba(0,0,0,0.04); margin-top:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-size:11px; font-weight:800; color:#0071E3; background:rgba(0,113,227,0.1); padding:3px 10px; border-radius:6px; text-transform:uppercase;">
+            SESSION #${activeP.idx} SUR ${points.length}
+          </span>
+          <span style="font-size:12px; color:#86868B; font-weight:600;">📅 ${activeP.dateText}</span>
+        </div>
+
+        <h4 style="font-size:15px; font-weight:800; color:#1D1D1F; margin:4px 0 10px 0;">${activeP.title}</h4>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; background:#F5F5F7; padding:10px 12px; border-radius:10px;">
+          <div>
+            <div style="font-size:11px; color:#86868B; font-weight:700; text-transform:uppercase;">Score Obtenu</div>
+            <div style="font-size:20px; font-weight:800; color:#1D1D1F;">${activeP.scoreText} <span style="font-size:16px; color:#0071E3;">(${activeP.percentage}%)</span></div>
+          </div>
+          <span style="background:${activeP.percentage >= 60 ? '#E8F5E9' : '#FFEBEE'}; color:${activeP.percentage >= 60 ? '#1B5E20' : '#C62828'}; padding:6px 12px; border-radius:8px; font-size:12px; font-weight:800;">
+            ${activeP.percentage >= 60 ? '🟢 Score Validé (≥ 60%)' : '🔴 À Réviser (< 60%)'}
+          </span>
+        </div>
+
+        <!-- Navigation Buttons for Sessions -->
+        <div style="display:flex; gap:8px; margin-top:12px;">
+          <button id="btn-chart-prev" class="sub-pill-btn" ${selectedIdx === 0 ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} style="flex:1;">‹ Précédent</button>
+          <button id="btn-chart-next" class="sub-pill-btn" ${selectedIdx === points.length - 1 ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} style="flex:1;">Suivant ›</button>
+        </div>
       </div>
 
       <!-- Legend -->
-      <div style="display:flex; align-items:center; justify-content:space-around; font-size:12px; font-weight:700; color:#1D1D1F; background:#FFFFFF; padding:10px 14px; border-radius:12px; border:1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+      <div style="display:flex; align-items:center; justify-content:space-around; font-size:12px; font-weight:700; color:#1D1D1F; background:#FFFFFF; padding:10px 14px; border-radius:12px; border:1px solid rgba(0,0,0,0.08); margin-top:6px;">
         <span style="display:inline-flex; align-items:center; gap:6px;">
           <span style="width:10px; height:10px; border-radius:50%; background:#34C759; display:inline-block; box-shadow:0 0 6px rgba(52,199,89,0.5);"></span>
           🟢 Score Validé (≥ 60%)
@@ -2541,42 +2580,33 @@ function renderSVGProgressChart(historyData) {
           🔴 À Réviser (< 60%)
         </span>
       </div>
-    </div>`;
+    `;
+  };
 
-  wrapper.innerHTML = svgContent;
+  const updateChartDisplay = (idx) => {
+    activeIndex = Math.max(0, Math.min(points.length - 1, idx));
+    wrapper.innerHTML = renderChartBody(activeIndex);
 
-  // Add interactive click/tap listeners to chart points
-  const detailCard = document.getElementById('chart-point-detail-card');
-  if (detailCard) {
-    wrapper.querySelectorAll('.chart-point-g, .chart-point-circle').forEach(el => {
-      el.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const idx = parseInt(el.getAttribute('data-point-idx'), 10);
-        const p = points[idx];
-        if (!p) return;
-
-        const isPass = p.percentage >= 60;
-        const passText = isPass ? '🟢 Score Validé (≥ 60%)' : '🔴 À Réviser (< 60%)';
-        const badgeBg = isPass ? '#E8F5E9' : '#FFEBEE';
-        const badgeTextColor = isPass ? '#1B5E20' : '#C62828';
-
-        detailCard.style.display = 'block';
-        detailCard.innerHTML = `
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px;">
-            <div>
-              <span style="font-size:11px; font-weight:800; color:#0071E3; text-transform:uppercase;">Session #${p.idx}</span>
-              <h4 style="font-size:14px; font-weight:800; color:#1D1D1F; margin:2px 0 0 0;">${p.title}</h4>
-            </div>
-            <span style="font-size:11px; font-weight:600; color:#86868B;">${p.dateText}</span>
-          </div>
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:8px; padding-top:8px; border-top:1px dashed rgba(0,0,0,0.1);">
-            <span style="font-size:15px; font-weight:800; color:#1D1D1F;">Score : ${p.scoreText} (${p.percentage}%)</span>
-            <span style="background:${badgeBg}; color:${badgeTextColor}; padding:3px 10px; border-radius:8px; font-size:12px; font-weight:800;">${passText}</span>
-          </div>
-        `;
+    // Attach Event Listeners
+    wrapper.querySelectorAll('.chart-point-dot').forEach(el => {
+      el.addEventListener('click', () => {
+        const pointIdx = parseInt(el.getAttribute('data-point-idx'), 10);
+        updateChartDisplay(pointIdx);
       });
     });
-  }
+
+    const btnPrev = document.getElementById('btn-chart-prev');
+    if (btnPrev && activeIndex > 0) {
+      btnPrev.addEventListener('click', () => updateChartDisplay(activeIndex - 1));
+    }
+
+    const btnNext = document.getElementById('btn-chart-next');
+    if (btnNext && activeIndex < points.length - 1) {
+      btnNext.addEventListener('click', () => updateChartDisplay(activeIndex + 1));
+    }
+  };
+
+  updateChartDisplay(activeIndex);
 }
 
 function init() {
