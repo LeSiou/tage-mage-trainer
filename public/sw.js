@@ -1,10 +1,10 @@
-const CACHE_NAME = 'tage-mage-trainer-v1.0.5';
+const CACHE_NAME = 'tage-mage-trainer-__BUILD_TIMESTAMP__';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png'
+  './',
+  './index.html',
+  './manifest.json',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 // Install Event

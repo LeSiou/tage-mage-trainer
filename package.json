@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && node -e \"const fs=require('fs');const f='dist/sw.js';fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace('__BUILD_TIMESTAMP__',Date.now().toString()))\"",
+    "preview": "vite preview",
+    "deploy": "npm run build && npx -y surge ./dist tage-mage-alessio.surge.sh"
   },
   "devDependencies": {
     "vite": "^5.1.0"
