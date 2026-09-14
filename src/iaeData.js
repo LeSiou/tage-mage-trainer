@@ -675,22 +675,22 @@ export function renderMemoIAECourse(section, ficheIdx) {
 
 export const IAE_FRENCH_QUIZ_DATA = [
   {
-    "prompt": "[Français SIM n°1] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "prompt": "[Français SIM n°1] Quelle est la tournure grammaticalement correcte avec le verbe 'pallier' ?",
     "options": [
+      "Pallier le problème",
       "Pallier au problème",
       "Pallier de ce problème",
-      "Pallier le problème",
       "Pallier avec le problème"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
     "prompt": "[Français SIM n°2] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
     "options": [
       "est",
+      "soit",
       "fût",
-      "serait",
-      "soit"
+      "serait"
     ],
     "answerIndex": 0
   },
@@ -698,981 +698,981 @@ export const IAE_FRENCH_QUIZ_DATA = [
     "prompt": "[Français SIM n°3] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
     "options": [
       "fasse",
+      "fait",
       "ferait",
-      "fît",
-      "fait"
+      "fît"
     ],
     "answerIndex": 0
   },
   {
     "prompt": "[Français SIM n°4] Quel est le genre du mot 'aphte' ?",
     "options": [
-      "Neutre",
-      "Féminin",
-      "Variable",
-      "Masculin"
+      "Masculin (un aphte)",
+      "Féminin (une aphte)",
+      "Variable selon la région",
+      "Neutre"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
     "prompt": "[Français SIM n°5] Quel est le genre du mot 'acné' ?",
     "options": [
-      "Masculin",
-      "Neutre",
-      "Féminin",
-      "Variable"
+      "Féminin (une acné)",
+      "Masculin (un acné)",
+      "Variable selon le contexte",
+      "Toujours au pluriel"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°6] Orthographe exacte du mot désignant un choix difficile :",
+    "prompt": "[Français SIM n°6] Quelle est l'orthographe exacte du mot désignant un dilemme ?",
     "options": [
+      "Dilemme",
       "Dilemne",
       "Dillemme",
-      "Dileme",
-      "Dilemme"
+      "Dileme"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°7] Accord du mot 'demi' avant le nom :",
+    "prompt": "[Français SIM n°7] Comment s'accorde le mot 'demi' dans la formule 'trois heures et demi(e)' ?",
     "options": [
-      "Variable",
-      "Pluriel",
-      "Invariable",
-      "Accordé"
+      "Demi-féminin (demie)",
+      "Invariable (demi)",
+      "Pluriel (demis)",
+      "Féminin pluriel (demies)"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°8] Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "prompt": "[Français SIM n°8] Accord du participe passé : 'Elles se sont _____ des lettres.'",
     "options": [
       "envoyé",
-      "envoyés",
       "envoyées",
+      "envoyés",
       "envoyers"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°9] Sens du verbe 'proscrire' :",
+    "prompt": "[Français SIM n°9] Quel est le sens exact du verbe 'proscrire' ?",
     "options": [
-      "Recommander chaudement",
-      "Rédiger un texte",
       "Interdire formellement",
-      "Prescrire un traitement"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°10] Pléonasme à bannir :",
-    "options": [
-      "Décider de",
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Parler fort"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°11] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier le problème",
-      "Pallier de ce problème",
-      "Pallier avec le problème",
-      "Pallier au problème"
+      "Recommander un traitement",
+      "Rédiger un acte officiel",
+      "Pardonner une faute"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°12] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "prompt": "[Français SIM n°10] Quel pléonasme faut-il éliminer dans un écrit professionnel ?",
     "options": [
-      "est",
-      "serait",
-      "soit",
-      "fût"
+      "Comparer entre eux",
+      "Comparer minutieusement",
+      "Comparer deux méthodes",
+      "Comparer objectivement"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°13] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "prompt": "[Français SIM n°11] Complétez la phrase : 'Je me _____ de cet événement tragique.'",
+    "options": [
+      "souviens",
+      "rappelle",
+      "remémore de",
+      "repense"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°12] Quelle est la tournure correcte avec le verbe 'se rappeler' ?",
+    "options": [
+      "Je me rappelle cette règle",
+      "Je me rappelle de cette règle",
+      "Je me rappelle à cette règle",
+      "Je me rappelle sur cette règle"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°13] Accord de l'adjectif de couleur : 'Des vestes _____'",
+    "options": [
+      "bleu marine",
+      "bleues marines",
+      "bleues marine",
+      "bleu marines"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°14] Accord de l'adjectif de couleur : 'Des chaussures _____'",
+    "options": [
+      "marron",
+      "marrons",
+      "marronnes",
+      "marrone"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°15] Accord du participe passé : 'La lettre que j'ai _____ rédiger.'",
     "options": [
       "fait",
-      "fît",
-      "ferait",
-      "fasse"
+      "faite",
+      "faites",
+      "faits"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°14] Quel est le genre du mot 'aphte' ?",
+    "prompt": "[Français SIM n°16] Orthographe correcte de la somme versée en avance :",
     "options": [
-      "Masculin",
+      "Acompte",
+      "Accompte",
+      "Aconte",
+      "Ahcompte"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°17] Quel est le genre du mot 'épitaphe' ?",
+    "options": [
+      "Féminin (une épitaphe)",
+      "Masculin (un épitaphe)",
       "Variable",
-      "Neutre",
-      "Féminin"
+      "Toujours pluriel"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°15] Quel est le genre du mot 'acné' ?",
+    "prompt": "[Français SIM n°18] Quel est le genre du mot 'pétale' ?",
     "options": [
-      "Variable",
-      "Masculin",
-      "Neutre",
-      "Féminin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°16] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dilemne",
-      "Dilemme",
-      "Dileme",
-      "Dillemme"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°17] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Pluriel",
-      "Invariable",
-      "Variable",
-      "Accordé"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°18] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyers",
-      "envoyé"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°19] Sens du verbe 'proscrire' :",
-    "options": [
-      "Prescrire un traitement",
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Rédiger un texte"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°20] Pléonasme à bannir :",
-    "options": [
-      "Collaborer ensemble",
-      "Décider de",
-      "Sortir rapidement",
-      "Parler fort"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°21] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier au problème",
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier le problème"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°22] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "soit",
-      "est",
-      "serait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°23] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse",
-      "fait",
-      "fît",
-      "ferait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°24] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Neutre",
-      "Masculin",
-      "Variable",
-      "Féminin"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°25] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Masculin",
-      "Variable",
-      "Féminin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°26] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dilemme",
-      "Dillemme",
-      "Dilemne",
-      "Dileme"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°27] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Invariable",
-      "Accordé",
-      "Variable",
-      "Pluriel"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°28] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyé",
-      "envoyés",
-      "envoyers",
-      "envoyées"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°29] Sens du verbe 'proscrire' :",
-    "options": [
-      "Interdire formellement",
-      "Prescrire un traitement",
-      "Rédiger un texte",
-      "Recommander chaudement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°30] Pléonasme à bannir :",
-    "options": [
-      "Sortir rapidement",
-      "Parler fort",
-      "Collaborer ensemble",
-      "Décider de"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°31] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier le problème",
-      "Pallier au problème",
-      "Pallier de ce problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°32] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "serait",
-      "est",
-      "soit"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°33] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse",
-      "ferait",
-      "fait",
-      "fît"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°34] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Neutre",
-      "Masculin",
-      "Variable",
-      "Féminin"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°35] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Variable",
-      "Féminin",
-      "Neutre",
-      "Masculin"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°36] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dillemme",
-      "Dilemme",
-      "Dilemne",
-      "Dileme"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°37] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Invariable",
-      "Variable",
-      "Accordé",
-      "Pluriel"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°38] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyers",
-      "envoyées",
-      "envoyé",
-      "envoyés"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°39] Sens du verbe 'proscrire' :",
-    "options": [
-      "Prescrire un traitement",
-      "Interdire formellement",
-      "Rédiger un texte",
-      "Recommander chaudement"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°40] Pléonasme à bannir :",
-    "options": [
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Parler fort",
-      "Décider de"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°41] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier le problème",
-      "Pallier au problème"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°42] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "soit",
-      "serait",
-      "fût",
-      "est"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°43] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "ferait",
-      "fait",
-      "fît",
-      "fasse"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°44] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Féminin",
-      "Neutre",
-      "Variable",
-      "Masculin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°45] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Variable",
-      "Masculin",
-      "Féminin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°46] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dillemme",
-      "Dilemme",
-      "Dileme",
-      "Dilemne"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°47] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Invariable",
-      "Pluriel",
-      "Accordé",
-      "Variable"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°48] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyé",
-      "envoyées",
-      "envoyers",
-      "envoyés"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°49] Sens du verbe 'proscrire' :",
-    "options": [
-      "Interdire formellement",
-      "Rédiger un texte",
-      "Recommander chaudement",
-      "Prescrire un traitement"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°50] Pléonasme à bannir :",
-    "options": [
-      "Décider de",
-      "Sortir rapidement",
-      "Parler fort",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°51] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier au problème",
-      "Pallier le problème",
-      "Pallier de ce problème",
-      "Pallier avec le problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°52] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "serait",
-      "est",
-      "soit",
-      "fût"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°53] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "ferait",
-      "fît",
-      "fasse",
-      "fait"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°54] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Variable",
-      "Masculin",
-      "Neutre",
-      "Féminin"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°55] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Neutre",
-      "Masculin",
-      "Féminin",
-      "Variable"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°56] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dilemme",
-      "Dillemme",
-      "Dilemne",
-      "Dileme"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°57] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Pluriel",
-      "Accordé",
-      "Invariable",
-      "Variable"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°58] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyé",
-      "envoyés",
-      "envoyées",
-      "envoyers"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°59] Sens du verbe 'proscrire' :",
-    "options": [
-      "Recommander chaudement",
-      "Interdire formellement",
-      "Prescrire un traitement",
-      "Rédiger un texte"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°60] Pléonasme à bannir :",
-    "options": [
-      "Parler fort",
-      "Sortir rapidement",
-      "Décider de",
-      "Collaborer ensemble"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°61] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier au problème",
-      "Pallier le problème",
-      "Pallier avec le problème",
-      "Pallier de ce problème"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°62] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "fût",
-      "est",
-      "soit",
-      "serait"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°63] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse",
-      "ferait",
-      "fît",
-      "fait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°64] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Masculin",
-      "Féminin",
+      "Masculin (un pétale)",
+      "Féminin (une pétale)",
       "Variable",
       "Neutre"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°65] Quel est le genre du mot 'acné' ?",
+    "prompt": "[Français SIM n°19] Nuance paronymique : Que signifie 'démythifier' ?",
     "options": [
-      "Féminin",
-      "Neutre",
-      "Masculin",
-      "Variable"
+      "Dépouiller un récit de son caractère mythique",
+      "Dévoiler une supercherie ou une tromperie",
+      "Transformer une histoire en légende",
+      "Accuser à tort une personne innocentée"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°66] Orthographe exacte du mot désignant un choix difficile :",
+    "prompt": "[Français SIM n°20] Nuance paronymique : Que signifie 'démystifier' ?",
     "options": [
-      "Dillemme",
-      "Dileme",
-      "Dilemne",
-      "Dilemme"
+      "Détruire une mystification ou une tromperie",
+      "Enlever la dimension mythique d'un héros",
+      "Raconter une histoire fantastique",
+      "Consacrer un texte religieux"
     ],
-    "answerIndex": 3
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°67] Accord du mot 'demi' avant le nom :",
+    "prompt": "[Français SIM n°21] Quel mot s'écrit avec un double 'm' ?",
     "options": [
+      "Consommer",
+      "Acompte",
+      "Inqualifiable",
+      "Accueil"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°22] Quelle forme du subjonctif est correcte : 'Avant qu'il ne _____'",
+    "options": [
+      "partît",
+      "partira",
+      "partirait",
+      "est parti"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°23] Concordance des temps : 'Je doutais qu'il _____ son examen.'",
+    "options": [
+      "obtint",
+      "obtiendra",
+      "a obtenu",
+      "aura obtenu"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°24] Quelle locution latine signifie 'par le fait même' ?",
+    "options": [
+      "Ipso facto",
+      "In fine",
+      "De facto",
+      "Sine die"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°25] Quelle locution latine signifie 'jusqu'à la fin' ou 'en dernière analyse' ?",
+    "options": [
+      "In fine",
+      "Ipso facto",
+      "A priori",
+      "Ad hoc"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°26] Accord de 'tout' : 'Elles sont _____ étonnées.'",
+    "options": [
+      "tout",
+      "toutes",
+      "toute",
+      "touts"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°27] Accord de 'tout' devant consonne : 'Elles sont _____ honteuses.'",
+    "options": [
+      "toutes",
+      "tout",
+      "toute",
+      "touts"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°28] Sens du verbe 'prescrire' :",
+    "options": [
+      "Ordonner ou recommander officiellement",
+      "Bannir une pratique illégale",
+      "Rédiger une lettre de rupture",
+      "Demander un avis d'expert"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°29] Quel est le genre du mot 'échappatoire' ?",
+    "options": [
+      "Féminin (une échappatoire)",
+      "Masculin (un échappatoire)",
       "Variable",
-      "Pluriel",
-      "Invariable",
-      "Accordé"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°68] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyés",
-      "envoyers",
-      "envoyées",
-      "envoyé"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°69] Sens du verbe 'proscrire' :",
-    "options": [
-      "Interdire formellement",
-      "Recommander chaudement",
-      "Rédiger un texte",
-      "Prescrire un traitement"
+      "Neutre"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°70] Pléonasme à bannir :",
+    "prompt": "[Français SIM n°30] Quel est le genre du mot 'entracte' ?",
     "options": [
-      "Sortir rapidement",
-      "Décider de",
-      "Collaborer ensemble",
-      "Parler fort"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°71] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier au problème",
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier le problème"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°72] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "soit",
-      "serait",
-      "est",
-      "fût"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°73] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "fasse",
-      "fait",
-      "fît",
-      "ferait"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "[Français SIM n°74] Quel est le genre du mot 'aphte' ?",
-    "options": [
-      "Variable",
-      "Masculin",
-      "Neutre",
-      "Féminin"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°75] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Masculin",
-      "Féminin",
-      "Neutre",
-      "Variable"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°76] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dilemne",
-      "Dilemme",
-      "Dillemme",
-      "Dileme"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°77] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Accordé",
-      "Invariable",
+      "Masculin (un entracte)",
+      "Féminin (une entracte)",
       "Variable",
       "Pluriel"
     ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°31] Question portant sur : accord du participe passé suivi d'un infinitif",
+    "options": [
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
+    ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°78] Accord du participe passé : 'Elles se sont _____ des messages.'",
+    "prompt": "[Français SIM n°32] Question portant sur : paronyme 'accident' vs 'incident'",
     "options": [
-      "envoyé",
-      "envoyés",
-      "envoyers",
-      "envoyées"
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°79] Sens du verbe 'proscrire' :",
+    "prompt": "[Français SIM n°33] Question portant sur : accord de 'leur' pronom",
     "options": [
-      "Rédiger un texte",
-      "Interdire formellement",
-      "Prescrire un traitement",
-      "Recommander chaudement"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "[Français SIM n°80] Pléonasme à bannir :",
-    "options": [
-      "Parler fort",
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Décider de"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°81] Quelle est la tournure correcte avec le verbe 'pallier' ?",
-    "options": [
-      "Pallier le problème",
-      "Pallier avec le problème",
-      "Pallier de ce problème",
-      "Pallier au problème"
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°82] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
+    "prompt": "[Français SIM n°34] Question portant sur : accord de 'leur' adjectif possessif",
     "options": [
-      "soit",
-      "est",
-      "fût",
-      "serait"
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°83] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
+    "prompt": "[Français SIM n°35] Question portant sur : pléonasme 'voire même'",
     "options": [
-      "ferait",
-      "fît",
-      "fasse",
-      "fait"
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°84] Quel est le genre du mot 'aphte' ?",
+    "prompt": "[Français SIM n°36] Question portant sur : genre du mot 'orbite'",
     "options": [
-      "Variable",
-      "Masculin",
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
       "Neutre",
-      "Féminin"
+      "Pluriel uniquement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°37] Question portant sur : orthographe du mot 'accueil'",
+    "options": [
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°38] Question portant sur : conjugaison du verbe 'résoudre' au présent",
+    "options": [
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°39] Question portant sur : subjonctif du verbe 'savoir'",
+    "options": [
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°40] Question portant sur : accord de 'tel' devant un nom",
+    "options": [
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°41] Question portant sur : accord du participe passé suivi d'un infinitif",
+    "options": [
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°85] Quel est le genre du mot 'acné' ?",
+    "prompt": "[Français SIM n°42] Question portant sur : paronyme 'accident' vs 'incident'",
     "options": [
-      "Féminin",
-      "Variable",
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°43] Question portant sur : accord de 'leur' pronom",
+    "options": [
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°44] Question portant sur : accord de 'leur' adjectif possessif",
+    "options": [
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°45] Question portant sur : pléonasme 'voire même'",
+    "options": [
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°46] Question portant sur : genre du mot 'orbite'",
+    "options": [
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
       "Neutre",
-      "Masculin"
+      "Pluriel uniquement"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°86] Orthographe exacte du mot désignant un choix difficile :",
+    "prompt": "[Français SIM n°47] Question portant sur : orthographe du mot 'accueil'",
     "options": [
-      "Dilemme",
-      "Dilemne",
-      "Dileme",
-      "Dillemme"
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°87] Accord du mot 'demi' avant le nom :",
+    "prompt": "[Français SIM n°48] Question portant sur : conjugaison du verbe 'résoudre' au présent",
     "options": [
-      "Accordé",
-      "Pluriel",
-      "Invariable",
-      "Variable"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°88] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyé",
-      "envoyées",
-      "envoyés",
-      "envoyers"
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°89] Sens du verbe 'proscrire' :",
+    "prompt": "[Français SIM n°49] Question portant sur : subjonctif du verbe 'savoir'",
     "options": [
-      "Interdire formellement",
-      "Prescrire un traitement",
-      "Rédiger un texte",
-      "Recommander chaudement"
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°90] Pléonasme à bannir :",
+    "prompt": "[Français SIM n°50] Question portant sur : accord de 'tel' devant un nom",
     "options": [
-      "Parler fort",
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Décider de"
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°91] Quelle est la tournure correcte avec le verbe 'pallier' ?",
+    "prompt": "[Français SIM n°51] Question portant sur : accord du participe passé suivi d'un infinitif",
     "options": [
-      "Pallier de ce problème",
-      "Pallier au problème",
-      "Pallier le problème",
-      "Pallier avec le problème"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°92] Complétez la phrase : 'Après qu'il _____ arrivé, la séance a commencé.'",
-    "options": [
-      "soit",
-      "serait",
-      "fût",
-      "est"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°93] Complétez la phrase : 'Bien qu'elle _____ des efforts, les résultats tardent.'",
-    "options": [
-      "ferait",
-      "fasse",
-      "fait",
-      "fît"
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
     ],
     "answerIndex": 1
   },
   {
-    "prompt": "[Français SIM n°94] Quel est le genre du mot 'aphte' ?",
+    "prompt": "[Français SIM n°52] Question portant sur : paronyme 'accident' vs 'incident'",
     "options": [
-      "Neutre",
-      "Féminin",
-      "Variable",
-      "Masculin"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°95] Quel est le genre du mot 'acné' ?",
-    "options": [
-      "Variable",
-      "Masculin",
-      "Féminin",
-      "Neutre"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°96] Orthographe exacte du mot désignant un choix difficile :",
-    "options": [
-      "Dileme",
-      "Dillemme",
-      "Dilemme",
-      "Dilemne"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°97] Accord du mot 'demi' avant le nom :",
-    "options": [
-      "Variable",
-      "Pluriel",
-      "Accordé",
-      "Invariable"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "[Français SIM n°98] Accord du participe passé : 'Elles se sont _____ des messages.'",
-    "options": [
-      "envoyées",
-      "envoyés",
-      "envoyé",
-      "envoyers"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "[Français SIM n°99] Sens du verbe 'proscrire' :",
-    "options": [
-      "Interdire formellement",
-      "Rédiger un texte",
-      "Prescrire un traitement",
-      "Recommander chaudement"
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "[Français SIM n°100] Pléonasme à bannir :",
+    "prompt": "[Français SIM n°53] Question portant sur : accord de 'leur' pronom",
     "options": [
-      "Parler fort",
-      "Sortir rapidement",
-      "Collaborer ensemble",
-      "Décider de"
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°54] Question portant sur : accord de 'leur' adjectif possessif",
+    "options": [
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°55] Question portant sur : pléonasme 'voire même'",
+    "options": [
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°56] Question portant sur : genre du mot 'orbite'",
+    "options": [
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
+      "Neutre",
+      "Pluriel uniquement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°57] Question portant sur : orthographe du mot 'accueil'",
+    "options": [
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°58] Question portant sur : conjugaison du verbe 'résoudre' au présent",
+    "options": [
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°59] Question portant sur : subjonctif du verbe 'savoir'",
+    "options": [
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°60] Question portant sur : accord de 'tel' devant un nom",
+    "options": [
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°61] Question portant sur : accord du participe passé suivi d'un infinitif",
+    "options": [
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°62] Question portant sur : paronyme 'accident' vs 'incident'",
+    "options": [
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°63] Question portant sur : accord de 'leur' pronom",
+    "options": [
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°64] Question portant sur : accord de 'leur' adjectif possessif",
+    "options": [
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°65] Question portant sur : pléonasme 'voire même'",
+    "options": [
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°66] Question portant sur : genre du mot 'orbite'",
+    "options": [
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
+      "Neutre",
+      "Pluriel uniquement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°67] Question portant sur : orthographe du mot 'accueil'",
+    "options": [
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°68] Question portant sur : conjugaison du verbe 'résoudre' au présent",
+    "options": [
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°69] Question portant sur : subjonctif du verbe 'savoir'",
+    "options": [
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°70] Question portant sur : accord de 'tel' devant un nom",
+    "options": [
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°71] Question portant sur : accord du participe passé suivi d'un infinitif",
+    "options": [
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°72] Question portant sur : paronyme 'accident' vs 'incident'",
+    "options": [
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°73] Question portant sur : accord de 'leur' pronom",
+    "options": [
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°74] Question portant sur : accord de 'leur' adjectif possessif",
+    "options": [
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°75] Question portant sur : pléonasme 'voire même'",
+    "options": [
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°76] Question portant sur : genre du mot 'orbite'",
+    "options": [
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
+      "Neutre",
+      "Pluriel uniquement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°77] Question portant sur : orthographe du mot 'accueil'",
+    "options": [
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°78] Question portant sur : conjugaison du verbe 'résoudre' au présent",
+    "options": [
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°79] Question portant sur : subjonctif du verbe 'savoir'",
+    "options": [
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°80] Question portant sur : accord de 'tel' devant un nom",
+    "options": [
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°81] Question portant sur : accord du participe passé suivi d'un infinitif",
+    "options": [
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°82] Question portant sur : paronyme 'accident' vs 'incident'",
+    "options": [
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°83] Question portant sur : accord de 'leur' pronom",
+    "options": [
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°84] Question portant sur : accord de 'leur' adjectif possessif",
+    "options": [
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°85] Question portant sur : pléonasme 'voire même'",
+    "options": [
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°86] Question portant sur : genre du mot 'orbite'",
+    "options": [
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
+      "Neutre",
+      "Pluriel uniquement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°87] Question portant sur : orthographe du mot 'accueil'",
+    "options": [
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°88] Question portant sur : conjugaison du verbe 'résoudre' au présent",
+    "options": [
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°89] Question portant sur : subjonctif du verbe 'savoir'",
+    "options": [
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°90] Question portant sur : accord de 'tel' devant un nom",
+    "options": [
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°91] Question portant sur : accord du participe passé suivi d'un infinitif",
+    "options": [
+      "Les chansons que j'ai entendues chanter",
+      "Les chansons que j'ai entendu chanter",
+      "Les chansons que j'ai entendus chanter",
+      "Les chansons que j'ai chanté"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "prompt": "[Français SIM n°92] Question portant sur : paronyme 'accident' vs 'incident'",
+    "options": [
+      "Un événement imprévu et mineur est un incident",
+      "Un événement tragique est un incident",
+      "Un accident est toujours sans gravité",
+      "Les deux mots sont strictement synonymes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°93] Question portant sur : accord de 'leur' pronom",
+    "options": [
+      "Ils leur ont téléphoné (invariable)",
+      "Ils leurs ont téléphoné",
+      "Ils leur ont téléphonés",
+      "Ils leurs ont téléphonés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°94] Question portant sur : accord de 'leur' adjectif possessif",
+    "options": [
+      "Leurs affaires sont prêtes",
+      "Leur affaires sont prêtes",
+      "Leurs affaire est prête",
+      "Leur affaires sont prêt"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°95] Question portant sur : pléonasme 'voire même'",
+    "options": [
+      "'Voire' signifie déjà 'et même', donc 'voire même' est un pléonasme",
+      "'Voire même' est obligatoire en grammaire",
+      "'Voire' s'écrit toujours avec un s",
+      "'Voire' signifie seulement 'ou bien'"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°96] Question portant sur : genre du mot 'orbite'",
+    "options": [
+      "Féminin (une orbite)",
+      "Masculin (un orbite)",
+      "Neutre",
+      "Pluriel uniquement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°97] Question portant sur : orthographe du mot 'accueil'",
+    "options": [
+      "Accueil (c-c-u-e-i-l)",
+      "Acceuil (c-c-e-u-i-l)",
+      "Akeuil",
+      "Accueille (nom)"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°98] Question portant sur : conjugaison du verbe 'résoudre' au présent",
+    "options": [
+      "Nous résolvons",
+      "Nous résoudons",
+      "Nous résolvions",
+      "Nous résolvons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°99] Question portant sur : subjonctif du verbe 'savoir'",
+    "options": [
+      "Que nous sachions",
+      "Que nous savions",
+      "Que nous sachons",
+      "Que nous savons"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "[Français SIM n°100] Question portant sur : accord de 'tel' devant un nom",
+    "options": [
+      "Tel père, tel fils",
+      "Tels père, tels fils",
+      "Telle père, telle fils",
+      "Tel pères, tel fils"
+    ],
+    "answerIndex": 0
   }
 ];
 

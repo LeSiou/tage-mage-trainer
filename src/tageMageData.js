@@ -13,1054 +13,1004 @@ export function shuffleArray(array) {
 
 export const TM_COMPREHENSION_QUESTIONS = [
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 1 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
     "options": [
-      "Subventionner uniquement les géants américains",
-      "Interdire toute forme de programmation informatique",
-      "Forcer le retour au travail exclusivement sur papier",
-      "Encadrer la technologie sans asphyxier l'innovation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 2 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "La suppression immédiate du réseau Internet",
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression d'emplois qualifiés et la désinformation",
-      "L'interdiction de communiquer à distance"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 3 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
-    "options": [
-      "La gratuité absolue de l'énergie électrique",
-      "La disparition complète des ordinateurs personnels",
-      "La fin de toute forme d'impôt sur les entreprises",
-      "Des gains inédits de productivité et d'innovation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 4 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
-    "options": [
-      "L'interdiction légale du commerce maritime international",
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance",
-      "Le manque de demande pour les produits manufacturés",
-      "L'augmentation des tarifs de transport ferroviaire régional"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 5 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
-    "options": [
-      "La baisse générale des compétences des ingénieurs",
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée",
-      "L'interdiction européenne de construire de nouvelles usines",
-      "Le coût nul des matières premières importées"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 6 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
-    "options": [
-      "Le monopole absolu des entreprises publiques",
-      "La hausse des taxes à la consommation intérieure",
-      "Leur indépendance d'approvisionnement sur les biens stratégiques",
-      "L'abandon complet du secteur des hautes technologies"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 7 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
-    "options": [
-      "Son coût en combustible fossile particulièrement élevé",
-      "Son incompatibilité avec les lignes électriques à haute tension",
-      "Son interdiction dans l'ensemble des zones urbanisées",
-      "Son caractère intermittent qui fragilise le réseau électrique"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 8 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
-    "options": [
-      "Le développement de solutions de stockage à grande échelle",
-      "La fermeture immédiate de tous les barrages hydroélectriques",
-      "L'arrêt de toutes les lignes électriques souterraines",
-      "Le remplacement complet de l'électricité par le gaz naturel"
+      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
+      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
+      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
+      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 9 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
     "options": [
-      "Augmenter la consommation des ménages durant la nuit",
-      "Empêcher l'exportation d'énergie vers les pays voisins",
-      "Garantir la sécurité d'approvisionnement électrique",
-      "Réduire de moitié la vitesse de rotation des éoliennes"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 10 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
-    "options": [
-      "La baisse brutale du salaire net mensuel",
-      "La perte totale de toute compétence technique",
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "L'obligation de déménager à proximité immédiate du bureau"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 11 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
-    "options": [
-      "Pour économiser les batteries des terminaux mobiles",
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour réduire les coûts de connexion des entreprises"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 12 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
-    "options": [
-      "La gratuité de leurs repas quotidiens",
-      "La suppression de tout rapport hiérarchique",
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "L'obtention automatique d'une promotion annuelle"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 13 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
-    "options": [
-      "Freiner la demande et contenir la hausse des prix",
-      "Faciliter l'accès aux prêts immobiliers à taux zéro",
-      "Accélérer l'augmentation des prix à la consommation",
-      "Réduire la valeur extérieure de la monnaie nationale"
+      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
+      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
+      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
+      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 14 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
     "options": [
-      "Faire disparaître l'ensemble du système bancaire",
-      "Générer un boom incontrôlé de la consommation",
-      "Annuler la dette souveraine de tous les États",
-      "Déclencher une récession et alourdir le service de la dette"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 15 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
-    "options": [
-      "En bloquant le remboursement de leurs dettes",
-      "En interdisant les dépôts sur les comptes courants",
-      "En leur offrant un revenu universel automatique",
-      "En renchérissant le coût d'accès à l'emprunt bancaire"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 16 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
-    "options": [
-      "Subventionner uniquement les géants américains",
-      "Forcer le retour au travail exclusivement sur papier",
-      "Encadrer la technologie sans asphyxier l'innovation",
-      "Interdire toute forme de programmation informatique"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 17 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression immédiate du réseau Internet",
-      "L'interdiction de communiquer à distance",
-      "La suppression d'emplois qualifiés et la désinformation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 6 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 18 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
-    "options": [
-      "La gratuité absolue de l'énergie électrique",
-      "La disparition complète des ordinateurs personnels",
-      "Des gains inédits de productivité et d'innovation",
-      "La fin de toute forme d'impôt sur les entreprises"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 19 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
-    "options": [
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance",
-      "L'augmentation des tarifs de transport ferroviaire régional",
-      "L'interdiction légale du commerce maritime international",
-      "Le manque de demande pour les produits manufacturés"
+      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
+      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
+      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
+      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 20 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
     "options": [
-      "L'interdiction européenne de construire de nouvelles usines",
-      "Le coût nul des matières premières importées",
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée",
-      "La baisse générale des compétences des ingénieurs"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 7 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 21 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
-    "options": [
-      "La hausse des taxes à la consommation intérieure",
-      "Leur indépendance d'approvisionnement sur les biens stratégiques",
-      "Le monopole absolu des entreprises publiques",
-      "L'abandon complet du secteur des hautes technologies"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 22 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
-    "options": [
-      "Son coût en combustible fossile particulièrement élevé",
-      "Son caractère intermittent qui fragilise le réseau électrique",
-      "Son incompatibilité avec les lignes électriques à haute tension",
-      "Son interdiction dans l'ensemble des zones urbanisées"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 23 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
-    "options": [
-      "La fermeture immédiate de tous les barrages hydroélectriques",
-      "L'arrêt de toutes les lignes électriques souterraines",
-      "Le remplacement complet de l'électricité par le gaz naturel",
-      "Le développement de solutions de stockage à grande échelle"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 8 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 24 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
-    "options": [
-      "Empêcher l'exportation d'énergie vers les pays voisins",
-      "Garantir la sécurité d'approvisionnement électrique",
-      "Réduire de moitié la vitesse de rotation des éoliennes",
-      "Augmenter la consommation des ménages durant la nuit"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 25 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
-    "options": [
-      "La perte totale de toute compétence technique",
-      "L'obligation de déménager à proximité immédiate du bureau",
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "La baisse brutale du salaire net mensuel"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 26 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
-    "options": [
-      "Pour économiser les batteries des terminaux mobiles",
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour réduire les coûts de connexion des entreprises"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 9 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 27 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
-    "options": [
-      "L'obtention automatique d'une promotion annuelle",
-      "La gratuité de leurs repas quotidiens",
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "La suppression de tout rapport hiérarchique"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 28 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
-    "options": [
-      "Faciliter l'accès aux prêts immobiliers à taux zéro",
-      "Freiner la demande et contenir la hausse des prix",
-      "Accélérer l'augmentation des prix à la consommation",
-      "Réduire la valeur extérieure de la monnaie nationale"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 29 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
-    "options": [
-      "Faire disparaître l'ensemble du système bancaire",
-      "Déclencher une récession et alourdir le service de la dette",
-      "Générer un boom incontrôlé de la consommation",
-      "Annuler la dette souveraine de tous les États"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 10 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 30 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
-    "options": [
-      "En leur offrant un revenu universel automatique",
-      "En renchérissant le coût d'accès à l'emprunt bancaire",
-      "En bloquant le remboursement de leurs dettes",
-      "En interdisant les dépôts sur les comptes courants"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 31 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
-    "options": [
-      "Interdire toute forme de programmation informatique",
-      "Encadrer la technologie sans asphyxier l'innovation",
-      "Subventionner uniquement les géants américains",
-      "Forcer le retour au travail exclusivement sur papier"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 32 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "L'interdiction de communiquer à distance",
-      "La suppression d'emplois qualifiés et la désinformation",
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression immédiate du réseau Internet"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 11 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 33 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
-    "options": [
-      "Des gains inédits de productivité et d'innovation",
-      "La fin de toute forme d'impôt sur les entreprises",
-      "La disparition complète des ordinateurs personnels",
-      "La gratuité absolue de l'énergie électrique"
+      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
+      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
+      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
+      "Indifférente aux mutations technologiques apportées par la collecte de données"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 34 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
     "options": [
-      "L'interdiction légale du commerce maritime international",
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance",
-      "Le manque de demande pour les produits manufacturés",
-      "L'augmentation des tarifs de transport ferroviaire régional"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 35 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
-    "options": [
-      "L'interdiction européenne de construire de nouvelles usines",
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée",
-      "Le coût nul des matières premières importées",
-      "La baisse générale des compétences des ingénieurs"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 12 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 36 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
-    "options": [
-      "Leur indépendance d'approvisionnement sur les biens stratégiques",
-      "Le monopole absolu des entreprises publiques",
-      "La hausse des taxes à la consommation intérieure",
-      "L'abandon complet du secteur des hautes technologies"
+      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
+      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
+      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
+      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 37 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
     "options": [
-      "Son coût en combustible fossile particulièrement élevé",
-      "Son caractère intermittent qui fragilise le réseau électrique",
-      "Son interdiction dans l'ensemble des zones urbanisées",
-      "Son incompatibilité avec les lignes électriques à haute tension"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 38 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
-    "options": [
-      "Le remplacement complet de l'électricité par le gaz naturel",
-      "La fermeture immédiate de tous les barrages hydroélectriques",
-      "Le développement de solutions de stockage à grande échelle",
-      "L'arrêt de toutes les lignes électriques souterraines"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 13 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 39 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
-    "options": [
-      "Garantir la sécurité d'approvisionnement électrique",
-      "Augmenter la consommation des ménages durant la nuit",
-      "Réduire de moitié la vitesse de rotation des éoliennes",
-      "Empêcher l'exportation d'énergie vers les pays voisins"
+      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
+      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
+      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
+      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 40 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
     "options": [
-      "L'obligation de déménager à proximité immédiate du bureau",
-      "La baisse brutale du salaire net mensuel",
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "La perte totale de toute compétence technique"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 41 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
-    "options": [
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour économiser les batteries des terminaux mobiles",
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour réduire les coûts de connexion des entreprises"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 14 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 42 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
-    "options": [
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "La gratuité de leurs repas quotidiens",
-      "L'obtention automatique d'une promotion annuelle",
-      "La suppression de tout rapport hiérarchique"
+      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
+      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
+      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
+      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 43 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
     "options": [
-      "Réduire la valeur extérieure de la monnaie nationale",
-      "Faciliter l'accès aux prêts immobiliers à taux zéro",
-      "Accélérer l'augmentation des prix à la consommation",
-      "Freiner la demande et contenir la hausse des prix"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 44 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
-    "options": [
-      "Annuler la dette souveraine de tous les États",
-      "Faire disparaître l'ensemble du système bancaire",
-      "Générer un boom incontrôlé de la consommation",
-      "Déclencher une récession et alourdir le service de la dette"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 15 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 45 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
-    "options": [
-      "En renchérissant le coût d'accès à l'emprunt bancaire",
-      "En interdisant les dépôts sur les comptes courants",
-      "En leur offrant un revenu universel automatique",
-      "En bloquant le remboursement de leurs dettes"
+      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
+      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
+      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
+      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 46 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
     "options": [
-      "Subventionner uniquement les géants américains",
-      "Forcer le retour au travail exclusivement sur papier",
-      "Encadrer la technologie sans asphyxier l'innovation",
-      "Interdire toute forme de programmation informatique"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 47 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "L'interdiction de communiquer à distance",
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression immédiate du réseau Internet",
-      "La suppression d'emplois qualifiés et la désinformation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 16 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 48 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
-    "options": [
-      "Des gains inédits de productivité et d'innovation",
-      "La gratuité absolue de l'énergie électrique",
-      "La disparition complète des ordinateurs personnels",
-      "La fin de toute forme d'impôt sur les entreprises"
+      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
+      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
+      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
+      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 49 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
     "options": [
-      "Le manque de demande pour les produits manufacturés",
-      "L'augmentation des tarifs de transport ferroviaire régional",
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance",
-      "L'interdiction légale du commerce maritime international"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 50 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
-    "options": [
-      "La baisse générale des compétences des ingénieurs",
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée",
-      "Le coût nul des matières premières importées",
-      "L'interdiction européenne de construire de nouvelles usines"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 17 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 51 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
-    "options": [
-      "L'abandon complet du secteur des hautes technologies",
-      "La hausse des taxes à la consommation intérieure",
-      "Leur indépendance d'approvisionnement sur les biens stratégiques",
-      "Le monopole absolu des entreprises publiques"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 52 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
-    "options": [
-      "Son incompatibilité avec les lignes électriques à haute tension",
-      "Son interdiction dans l'ensemble des zones urbanisées",
-      "Son coût en combustible fossile particulièrement élevé",
-      "Son caractère intermittent qui fragilise le réseau électrique"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 53 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
-    "options": [
-      "Le développement de solutions de stockage à grande échelle",
-      "L'arrêt de toutes les lignes électriques souterraines",
-      "La fermeture immédiate de tous les barrages hydroélectriques",
-      "Le remplacement complet de l'électricité par le gaz naturel"
+      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
+      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
+      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
+      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 18 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 54 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
     "options": [
-      "Garantir la sécurité d'approvisionnement électrique",
-      "Augmenter la consommation des ménages durant la nuit",
-      "Empêcher l'exportation d'énergie vers les pays voisins",
-      "Réduire de moitié la vitesse de rotation des éoliennes"
+      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
+      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
+      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
+      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 55 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
     "options": [
-      "La perte totale de toute compétence technique",
-      "L'obligation de déménager à proximité immédiate du bureau",
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "La baisse brutale du salaire net mensuel"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 56 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
-    "options": [
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour économiser les batteries des terminaux mobiles",
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour réduire les coûts de connexion des entreprises"
+      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
+      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
+      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
+      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 19 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 57 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
     "options": [
-      "La suppression de tout rapport hiérarchique",
-      "La gratuité de leurs repas quotidiens",
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "L'obtention automatique d'une promotion annuelle"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 58 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
-    "options": [
-      "Réduire la valeur extérieure de la monnaie nationale",
-      "Freiner la demande et contenir la hausse des prix",
-      "Accélérer l'augmentation des prix à la consommation",
-      "Faciliter l'accès aux prêts immobiliers à taux zéro"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 59 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
-    "options": [
-      "Générer un boom incontrôlé de la consommation",
-      "Annuler la dette souveraine de tous les États",
-      "Faire disparaître l'ensemble du système bancaire",
-      "Déclencher une récession et alourdir le service de la dette"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 20 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 60 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
-    "options": [
-      "En renchérissant le coût d'accès à l'emprunt bancaire",
-      "En leur offrant un revenu universel automatique",
-      "En bloquant le remboursement de leurs dettes",
-      "En interdisant les dépôts sur les comptes courants"
+      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
+      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
+      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
+      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 61 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
     "options": [
-      "Interdire toute forme de programmation informatique",
-      "Forcer le retour au travail exclusivement sur papier",
-      "Subventionner uniquement les géants américains",
-      "Encadrer la technologie sans asphyxier l'innovation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 62 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "L'interdiction de communiquer à distance",
-      "La suppression immédiate du réseau Internet",
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression d'emplois qualifiés et la désinformation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 21 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 63 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
-    "options": [
-      "La fin de toute forme d'impôt sur les entreprises",
-      "Des gains inédits de productivité et d'innovation",
-      "La disparition complète des ordinateurs personnels",
-      "La gratuité absolue de l'énergie électrique"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 22 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 64 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
-    "options": [
-      "L'augmentation des tarifs de transport ferroviaire régional",
-      "L'interdiction légale du commerce maritime international",
-      "Le manque de demande pour les produits manufacturés",
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 22 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 65 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
-    "options": [
-      "L'interdiction européenne de construire de nouvelles usines",
-      "La baisse générale des compétences des ingénieurs",
-      "Le coût nul des matières premières importées",
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 22 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 66 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
-    "options": [
-      "L'abandon complet du secteur des hautes technologies",
-      "La hausse des taxes à la consommation intérieure",
-      "Le monopole absolu des entreprises publiques",
-      "Leur indépendance d'approvisionnement sur les biens stratégiques"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 23 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 67 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
-    "options": [
-      "Son caractère intermittent qui fragilise le réseau électrique",
-      "Son coût en combustible fossile particulièrement élevé",
-      "Son interdiction dans l'ensemble des zones urbanisées",
-      "Son incompatibilité avec les lignes électriques à haute tension"
+      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
+      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
+      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
+      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 23 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 68 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
     "options": [
-      "L'arrêt de toutes les lignes électriques souterraines",
-      "Le développement de solutions de stockage à grande échelle",
-      "Le remplacement complet de l'électricité par le gaz naturel",
-      "La fermeture immédiate de tous les barrages hydroélectriques"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 23 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 69 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
-    "options": [
-      "Augmenter la consommation des ménages durant la nuit",
-      "Empêcher l'exportation d'énergie vers les pays voisins",
-      "Garantir la sécurité d'approvisionnement électrique",
-      "Réduire de moitié la vitesse de rotation des éoliennes"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 24 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 70 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
-    "options": [
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "La perte totale de toute compétence technique",
-      "L'obligation de déménager à proximité immédiate du bureau",
-      "La baisse brutale du salaire net mensuel"
+      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
+      "La recherche systématique de l'impact environnemental le plus neutre possible",
+      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
+      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 24 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 71 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
     "options": [
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour économiser les batteries des terminaux mobiles",
-      "Pour réduire les coûts de connexion des entreprises"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 24 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 72 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
-    "options": [
-      "L'obtention automatique d'une promotion annuelle",
-      "La suppression de tout rapport hiérarchique",
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "La gratuité de leurs repas quotidiens"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 25 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 73 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
-    "options": [
-      "Réduire la valeur extérieure de la monnaie nationale",
-      "Faciliter l'accès aux prêts immobiliers à taux zéro",
-      "Accélérer l'augmentation des prix à la consommation",
-      "Freiner la demande et contenir la hausse des prix"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 25 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 74 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
-    "options": [
-      "Générer un boom incontrôlé de la consommation",
-      "Annuler la dette souveraine de tous les États",
-      "Faire disparaître l'ensemble du système bancaire",
-      "Déclencher une récession et alourdir le service de la dette"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 25 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 75 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
-    "options": [
-      "En bloquant le remboursement de leurs dettes",
-      "En leur offrant un revenu universel automatique",
-      "En renchérissant le coût d'accès à l'emprunt bancaire",
-      "En interdisant les dépôts sur les comptes courants"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 26 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 76 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
-    "options": [
-      "Subventionner uniquement les géants américains",
-      "Forcer le retour au travail exclusivement sur papier",
-      "Interdire toute forme de programmation informatique",
-      "Encadrer la technologie sans asphyxier l'innovation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 26 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 77 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "L'interdiction de communiquer à distance",
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression immédiate du réseau Internet",
-      "La suppression d'emplois qualifiés et la désinformation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 26 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 78 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
-    "options": [
-      "La disparition complète des ordinateurs personnels",
-      "La gratuité absolue de l'énergie électrique",
-      "Des gains inédits de productivité et d'innovation",
-      "La fin de toute forme d'impôt sur les entreprises"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 27 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 79 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
-    "options": [
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance",
-      "Le manque de demande pour les produits manufacturés",
-      "L'augmentation des tarifs de transport ferroviaire régional",
-      "L'interdiction légale du commerce maritime international"
+      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
+      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
+      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
+      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 27 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 80 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
     "options": [
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée",
-      "La baisse générale des compétences des ingénieurs",
-      "Le coût nul des matières premières importées",
-      "L'interdiction européenne de construire de nouvelles usines"
+      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
+      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
+      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
+      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 27 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 81 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
     "options": [
-      "La hausse des taxes à la consommation intérieure",
-      "L'abandon complet du secteur des hautes technologies",
-      "Leur indépendance d'approvisionnement sur les biens stratégiques",
-      "Le monopole absolu des entreprises publiques"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 28 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 82 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
-    "options": [
-      "Son incompatibilité avec les lignes électriques à haute tension",
-      "Son caractère intermittent qui fragilise le réseau électrique",
-      "Son interdiction dans l'ensemble des zones urbanisées",
-      "Son coût en combustible fossile particulièrement élevé"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 28 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 83 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
-    "options": [
-      "L'arrêt de toutes les lignes électriques souterraines",
-      "Le développement de solutions de stockage à grande échelle",
-      "La fermeture immédiate de tous les barrages hydroélectriques",
-      "Le remplacement complet de l'électricité par le gaz naturel"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 28 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 84 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
-    "options": [
-      "Augmenter la consommation des ménages durant la nuit",
-      "Réduire de moitié la vitesse de rotation des éoliennes",
-      "Garantir la sécurité d'approvisionnement électrique",
-      "Empêcher l'exportation d'énergie vers les pays voisins"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 29 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 85 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
-    "options": [
-      "L'obligation de déménager à proximité immédiate du bureau",
-      "La baisse brutale du salaire net mensuel",
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "La perte totale de toute compétence technique"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 29 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 86 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
-    "options": [
-      "Pour réduire les coûts de connexion des entreprises",
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour économiser les batteries des terminaux mobiles"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 29 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 87 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
-    "options": [
-      "La gratuité de leurs repas quotidiens",
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "La suppression de tout rapport hiérarchique",
-      "L'obtention automatique d'une promotion annuelle"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 30 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 88 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
-    "options": [
-      "Freiner la demande et contenir la hausse des prix",
-      "Faciliter l'accès aux prêts immobiliers à taux zéro",
-      "Réduire la valeur extérieure de la monnaie nationale",
-      "Accélérer l'augmentation des prix à la consommation"
+      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
+      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
+      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
+      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 30 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 89 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
     "options": [
-      "Faire disparaître l'ensemble du système bancaire",
-      "Annuler la dette souveraine de tous les États",
-      "Déclencher une récession et alourdir le service de la dette",
-      "Générer un boom incontrôlé de la consommation"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 30 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 90 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
-    "options": [
-      "En renchérissant le coût d'accès à l'emprunt bancaire",
-      "En bloquant le remboursement de leurs dettes",
-      "En leur offrant un revenu universel automatique",
-      "En interdisant les dépôts sur les comptes courants"
+      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
+      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
+      "Entraîner la fermeture automatique des filiales situées à l'étranger",
+      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 31 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 91 : Quel est le dilemme majeur des régulateurs face à l'IA ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
     "options": [
-      "Subventionner uniquement les géants américains",
-      "Interdire toute forme de programmation informatique",
-      "Forcer le retour au travail exclusivement sur papier",
-      "Encadrer la technologie sans asphyxier l'innovation"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 31 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 92 : Quel risque explicite est attribué à l'IA générative dans ce texte ?</div>",
-    "options": [
-      "La suppression d'emplois qualifiés et la désinformation",
-      "L'interdiction de communiquer à distance",
-      "Une baisse des capacités de stockage des ordinateurs",
-      "La suppression immédiate du réseau Internet"
+      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
+      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
+      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
+      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 31 : L'Intelligence Artificielle Générative</strong><br>L'intelligence artificielle générative a connu un essor fulgurant. Si certains y voient une opportunité sans précédent pour la productivité et l'innovation, d'autres s'inquiètent des risques de désinformation et de la suppression d'emplois qualifiés. Les régulateurs cherchent à encadrer la technologie sans étouffer la compétitivité.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 93 : Quelle opportunité les partisans de l'IA mettent-ils en avant ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
     "options": [
-      "La disparition complète des ordinateurs personnels",
-      "Des gains inédits de productivité et d'innovation",
-      "La gratuité absolue de l'énergie électrique",
-      "La fin de toute forme d'impôt sur les entreprises"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 32 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 94 : Qu'est-ce qui motive le mouvement vers le nearshoring ?</div>",
-    "options": [
-      "L'interdiction légale du commerce maritime international",
-      "L'augmentation des tarifs de transport ferroviaire régional",
-      "La vulnérabilité des chaînes logistiques mondiales et la dépendance",
-      "Le manque de demande pour les produits manufacturés"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 32 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 95 : Quelle difficulté majeure est associée à la relocalisation industrielle ?</div>",
-    "options": [
-      "L'interdiction européenne de construire de nouvelles usines",
-      "Le besoin de capitaux colossaux et de main-d'œuvre formée",
-      "Le coût nul des matières premières importées",
-      "La baisse générale des compétences des ingénieurs"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 32 : La Souveraineté Industrielle & Le Nearshoring</strong><br>La mondialisation des chaînes d'approvisionnement a démontré sa vulnérabilité lors des crises géopolitiques récentes. La dépendance excessive à l'égard de monopoles d'approvisionnement asiatiques pousse les États à promouvoir le nearshoring ou la souveraineté industrielle. Cependant, relocaliser des usines nécessite des investissements colossaux et une main-d'œuvre qualifiée.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 96 : Que cherchent à garantir les États par la souveraineté industrielle ?</div>",
-    "options": [
-      "L'abandon complet du secteur des hautes technologies",
-      "Leur indépendance d'approvisionnement sur les biens stratégiques",
-      "La hausse des taxes à la consommation intérieure",
-      "Le monopole absolu des entreprises publiques"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 33 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 97 : Quel inconvénient majeur présente l'énergie solaire et éolienne ?</div>",
-    "options": [
-      "Son incompatibilité avec les lignes électriques à haute tension",
-      "Son caractère intermittent qui fragilise le réseau électrique",
-      "Son interdiction dans l'ensemble des zones urbanisées",
-      "Son coût en combustible fossile particulièrement élevé"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 33 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 98 : Quelle technologie complémentaire est indispensable selon l'auteur ?</div>",
-    "options": [
-      "Le remplacement complet de l'électricité par le gaz naturel",
-      "Le développement de solutions de stockage à grande échelle",
-      "L'arrêt de toutes les lignes électriques souterraines",
-      "La fermeture immédiate de tous les barrages hydroélectriques"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 33 : La Transition Énergétique Européenne</strong><br>La transition énergétique européenne repose largement sur le développement des énergies renouvelables intermittentes (éolien, solaire). Néanmoins, sans solutions de stockage à grande échelle ou de centrales de soutien, l'instabilité du réseau électrique demeure un défi technique majeur pour la sécurité d'approvisionnement.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 99 : Quel est l'enjeu prioritaire lié à la stabilité du réseau ?</div>",
-    "options": [
-      "Réduire de moitié la vitesse de rotation des éoliennes",
-      "Empêcher l'exportation d'énergie vers les pays voisins",
-      "Augmenter la consommation des ménages durant la nuit",
-      "Garantir la sécurité d'approvisionnement électrique"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 34 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 100 : Quel danger psychologique le télétravail peut-il entraîner ?</div>",
-    "options": [
-      "L'épuisement professionnel lié à la porosité vie privée/pro",
-      "La perte totale de toute compétence technique",
-      "La baisse brutale du salaire net mensuel",
-      "L'obligation de déménager à proximité immédiate du bureau"
+      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
+      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
+      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
+      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 34 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 101 : Pourquoi le droit à la déconnexion est-il devenu un enjeu central ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
     "options": [
-      "Pour économiser les batteries des terminaux mobiles",
-      "Pour interdire les communications le week-end entre collègues",
-      "Pour protéger les salariés contre le surengagement et le burn-out",
-      "Pour réduire les coûts de connexion des entreprises"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 34 : Le Télétravail & Le Droit à la Déconnexion</strong><br>Le télétravail a redéfini le rapport au temps et à l'espace professionnel. En supprimant les trajets quotidiens, il améliore la qualité de vie perçue de nombreux salariés. Toutefois, l'estompage de la frontière entre vie privée et vie professionnelle favorise le surengagement et le syndrome d'épuisement. La déconnexion devient un enjeu de santé au travail.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 102 : Quel bénéfice direct les salariés retirent-ils du travail à domicile ?</div>",
-    "options": [
-      "Le gain de temps lié à l'absence de trajets quotidiens",
-      "La gratuité de leurs repas quotidiens",
-      "L'obtention automatique d'une promotion annuelle",
-      "La suppression de tout rapport hiérarchique"
+      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
+      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
+      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
+      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 35 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 103 : Quel est l'objectif premier du relèvement des taux directeurs ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
     "options": [
-      "Freiner la demande et contenir la hausse des prix",
-      "Faciliter l'accès aux prêts immobiliers à taux zéro",
-      "Réduire la valeur extérieure de la monnaie nationale",
-      "Accélérer l'augmentation des prix à la consommation"
+      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
+      "La destruction physique immédiate des transformateurs de quartier",
+      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
+      "La baisse automatique de la température moyenne des villes côtières"
     ],
     "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 35 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 104 : Quel risque économique fait peser une hausse trop forte des taux ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
     "options": [
-      "Annuler la dette souveraine de tous les États",
-      "Faire disparaître l'ensemble du système bancaire",
-      "Déclencher une récession et alourdir le service de la dette",
-      "Générer un boom incontrôlé de la consommation"
+      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
+      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
+      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
+      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
     ],
-    "answerIndex": 2
+    "answerIndex": 0
   },
   {
-    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 35 : La Politique Monétaire & L'Inflation</strong><br>Les banques centrales ont relevé leurs taux directeurs pour juguler une inflation tenace. Cette politique monétaire restrictive vise à refroidir la demande en renchérissant le crédit. Cependant, un resserrement excessif risque de provoquer une récession économique et d'alourdir la charge de la dette des États fortement endettés.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question 105 : Comment la hausse des taux agit-elle sur les ménages et entreprises ?</div>",
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
     "options": [
-      "En interdisant les dépôts sur les comptes courants",
-      "En renchérissant le coût d'accès à l'emprunt bancaire",
-      "En leur offrant un revenu universel automatique",
-      "En bloquant le remboursement de leurs dettes"
+      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
+      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
+      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
+      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
     ],
-    "answerIndex": 1
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "options": [
+      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
+      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
+      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
+      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "options": [
+      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
+      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
+      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
+      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "options": [
+      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
+      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
+      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
+      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "options": [
+      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
+      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
+      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
+      "Indifférente aux mutations technologiques apportées par la collecte de données"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "options": [
+      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
+      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
+      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
+      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "options": [
+      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
+      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
+      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
+      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "options": [
+      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
+      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
+      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
+      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "options": [
+      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
+      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
+      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
+      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "options": [
+      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
+      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
+      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
+      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "options": [
+      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
+      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
+      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
+      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "options": [
+      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
+      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
+      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
+      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "options": [
+      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
+      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
+      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
+      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "options": [
+      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
+      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
+      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
+      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "options": [
+      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
+      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
+      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
+      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "options": [
+      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
+      "La recherche systématique de l'impact environnemental le plus neutre possible",
+      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
+      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "options": [
+      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
+      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
+      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
+      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "options": [
+      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
+      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
+      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
+      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "options": [
+      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
+      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
+      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
+      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "options": [
+      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
+      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
+      "Entraîner la fermeture automatique des filiales situées à l'étranger",
+      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "options": [
+      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
+      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
+      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
+      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "options": [
+      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
+      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
+      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
+      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "options": [
+      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
+      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
+      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
+      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "options": [
+      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
+      "La destruction physique immédiate des transformateurs de quartier",
+      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
+      "La baisse automatique de la température moyenne des villes côtières"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "options": [
+      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
+      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
+      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
+      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "options": [
+      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
+      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
+      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
+      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "options": [
+      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
+      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
+      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
+      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "options": [
+      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
+      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
+      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
+      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "options": [
+      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
+      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
+      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
+      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "options": [
+      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
+      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
+      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
+      "Indifférente aux mutations technologiques apportées par la collecte de données"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "options": [
+      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
+      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
+      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
+      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "options": [
+      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
+      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
+      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
+      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "options": [
+      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
+      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
+      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
+      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "options": [
+      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
+      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
+      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
+      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "options": [
+      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
+      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
+      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
+      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "options": [
+      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
+      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
+      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
+      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "options": [
+      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
+      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
+      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
+      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "options": [
+      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
+      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
+      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
+      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "options": [
+      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
+      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
+      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
+      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "options": [
+      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
+      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
+      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
+      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "options": [
+      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
+      "La recherche systématique de l'impact environnemental le plus neutre possible",
+      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
+      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "options": [
+      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
+      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
+      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
+      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "options": [
+      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
+      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
+      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
+      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "options": [
+      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
+      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
+      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
+      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "options": [
+      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
+      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
+      "Entraîner la fermeture automatique des filiales situées à l'étranger",
+      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "options": [
+      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
+      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
+      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
+      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "options": [
+      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
+      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
+      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
+      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "options": [
+      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
+      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
+      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
+      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "options": [
+      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
+      "La destruction physique immédiate des transformateurs de quartier",
+      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
+      "La baisse automatique de la température moyenne des villes côtières"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "options": [
+      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
+      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
+      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
+      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "options": [
+      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
+      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
+      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
+      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le dilemme central de l'autorité de régulation européenne présenté dans le texte ?</div>",
+    "options": [
+      "Concilier la modernisation des outils juridiques anti-cartels avec la préservation de la compétitivité et de l'innovation",
+      "Remplacer l'ensemble des réglementations industrielles par des normes environnementales plus strictes",
+      "Autoriser les ententes tarifaires entre géants du numérique pour favoriser leur expansion internationale",
+      "Sanctionner systématiquement les services gratuits en raison de leur impact négatif sur les recettes fiscales"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, pour quelle raison les modèles du numérique échappent-ils en partie au droit classique de la concurrence ?</div>",
+    "options": [
+      "Parce qu'ils ne reposent pas sur des ententes tarifaires classiques mais sur la gratuité d'usage et la collecte de données",
+      "Parce qu'ils sont exemptés de toute obligation légale en vertu des traités commerciaux transatlantiques",
+      "Parce qu'ils refusent de commercialiser leurs produits au sein des pays membres de l'Union européenne",
+      "Parce qu'ils investissent l'intégralité de leurs bénéfices dans des projets de recherche d'intérêt général"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence des cartels transfrontaliers est explicitement dénoncée par la Commission européenne ?</div>",
+    "options": [
+      "L'altération directe du pouvoir d'achat des consommateurs et la dégradation de la compétitivité du marché unique",
+      "La baisse spectaculaire des investissements publics dans le secteur des transports ferroviaires",
+      "L'obligation pour les petites entreprises de délocaliser leurs centres de recherche hors d'Europe",
+      "La hausse artificielle des taux d'intérêt accordés aux prêts bancaires d'équipement"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel qualificatif résume le mieux la position des économistes cités dans le texte ?</div>",
+    "options": [
+      "Réservée quant à l'adéquation de la réglementation actuelle face aux nouvelles réalités numériques",
+      "Pleinement enthousiaste devant la sévérité accrue des amendes prononcées contre les cartels",
+      "Hostile à toute forme d'interventionnisme étatique dans la sphère commerciale",
+      "Indifférente aux mutations technologiques apportées par la collecte de données"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 1 : Le Droit de la Concurrence et la Régulation des Ententes</strong><br>L’encadrement européen des règles de concurrence repose sur une dualité fondamentale : réprimer les abus de position dominante tout en autorisant les coopérations industrielles génératrices d'efficience. La Commission européenne a récemment durci ses sanctions contre les cartels transfrontaliers, estimant que la fixation illicite des prix et le partage des marchés portent une atteinte irréparable au pouvoir d'achat des consommateurs et à la compétitivité du marché unique. Toutefois, plusieurs économistes soulignent la rigidité croissante de ces réglementations face à l'émergence des géants du numérique, dont les modèles économiques s'appuient sur la gratuité apparente des services et la captation massive de données plutôt que sur des ententes tarifaires traditionnelles. Dès lors, le défi majeur de l'autorité de régulation consiste à adapter des outils juridiques conçus pour l'économie industrielle du XXe siècle à un écosystème algorithmique complexe, sans entraver l'innovation stratégique des acteurs continentaux.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'idée générale qui se dégage de cet extrait ?</div>",
+    "options": [
+      "Le droit de la concurrence doit évoluer pour traiter efficacement les défis posés par les acteurs de la nouvelle économie",
+      "La répression des ententes industrielles a perdu toute utilité dans le contexte de la mondialisation",
+      "Les entreprises européennes doivent fusionner sans restriction pour résister à la concurrence asiatique",
+      "La gratuité des services en ligne constitue le principal risque d'inflation pour l'économie européenne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Selon le texte, quelle contrainte légale étrangère suscite la vive inquiétude des acteurs européens ?</div>",
+    "options": [
+      "La portée extraterritoriale de lois permettant l'accès et la saisie de données par des autorités étrangères",
+      "L'interdiction stricte d'exporter des processeurs à haute performance vers les pays d'Europe continentale",
+      "L'imposition de taxes exorbitantes sur les transactions bancaires effectuées via des plateformes mobiles",
+      "L'obligation de traduire l'ensemble des codes sources des logiciels en langue anglaise"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel obstacle majeur entrave la conquête rapide d'une véritable autonomie numérique européenne ?</div>",
+    "options": [
+      "Le retard cumulé dans les infrastructures matérielles et le manque d'opérateurs souverains de taille critique",
+      "Le désintérêt total des entreprises privées pour la confidentialité de leurs informations stratégiques",
+      "L'interdiction promulguée par l'Union européenne de construire de nouveaux data centers écologiques",
+      "La supériorité incontestée des normes européennes de protection des données sur l'ensemble de la planète"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment est qualifié l'arbitrage auquel font face les entreprises européennes ?</div>",
+    "options": [
+      "Une tension permanente entre l'efficience d'usage des offres dominantes et l'exigence de sécurité souveraine",
+      "Un conflit irréconciliable entre la rémunération de leurs salariés et le paiement des abonnements logiciels",
+      "Une obligation d'abandonner l'usage de l'informatique pour revenir à des processus purement manuels",
+      "Un choix imposé par la législation d'utiliser exclusivement des infrastructures développées en interne"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est l'intention principale de l'auteur à travers cet extrait ?</div>",
+    "options": [
+      "Analyser la complexité stratégique et les limites d'une quête de souveraineté numérique en Europe",
+      "Faire l'éloge inconditionnel des monopoles informatiques asiatiques et américains",
+      "Démontrer que la protection des données personnelles est un sujet secondaire pour la compétitivité",
+      "Proposer le démantèlement immédiat de tous les réseaux de télécommunication intercontinentaux"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 2 : La Souveraineté Numérique et le Cloud de Confiance</strong><br>La question de la souveraineté numérique est devenue le pivot des stratégies industrielles européennes. Face à l'hégémonie des fournisseurs d'infrastructures informatiques extra-européens (les Cloud Service Providers américains et chinois), les organisations publiques et privées s'inquiètent de l'extragouvernance de lois comme le Cloud Act américain, susceptible d'autoriser la saisie de données sensibles stockées sur des serveurs distants. En réponse, plusieurs initiatives nationales et communautaires tentent d'émerger pour promouvoir des solutions d'hébergement dites de « confiance », garantissant l'immunité juridique et la maîtrise technologique. Néanmoins, le retard pris en matière d'infrastructures matérielles (data centers, semi-conducteurs) et d'éco-systèmes d'opérateurs souverains rend la dépendance difficile à résorber à court terme. Pour les entreprises, le choix oscille constamment entre l'ergonomie inégalée des solutions dominantes et l'exigence éthique et sécuritaire du stockage souverain.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que garantissent idéalement les initiatives de « cloud de confiance » évoquées dans le texte ?</div>",
+    "options": [
+      "L'immunité contre les lois d'injonction extraterritoriales et le contrôle technologique des infrastructures",
+      "Le remboursement intégral de l'ensemble des dépenses informatiques en cas de panne de réseau",
+      "La baisse automatique de moitié de la consommation d'électricité des serveurs hébergés",
+      "L'accès gratuit et universel à toutes les bases de données d'études de marché mondiales"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : D'après l'auteur, quelle réorientation majeure caractérise les nouvelles stratégies logistiques ?</div>",
+    "options": [
+      "Le passage de la recherche prioritaire du coût minimal à la recherche de la résilience globale",
+      "Le retour définitif à des économies agricoles strictement locales sans échanges régionaux",
+      "L'abandon du transport maritime au profit exclusif du fret aérien longue distance",
+      "La fermeture totale des frontières commerciales avec l'ensemble des nations émergentes"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle distinction le texte établit-il entre le repli autarcique et le « nearshoring » ?</div>",
+    "options": [
+      "Le nearshoring est une réorganisation géographique pragmatique axée sur la résilience et non un rejet des échanges",
+      "Le nearshoring interdit tout échange de produits finis entre pays membres d'un même continent",
+      "L'autarcie cherche à exporter massivement alors que le nearshoring se concentre sur les importations",
+      "Il n'existe aucune différence fondamentale entre ces deux concepts selon les économistes cités"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quels obstacles concrétisent la difficulté de relocaliser rapidement la production ?</div>",
+    "options": [
+      "L'ampleur des capitaux à investir et le déficit local de compétences techniques spécialisées",
+      "L'opposition farouche des consommateurs à acheter des produits fabriqués à proximité",
+      "L'absence totale de technologies automatisées dans les usines européennes actuelles",
+      "La surabondance de matières premières qui déprécie la valeur des biens manufacturés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Que désigne précisément le terme « friendshoring » dans le contexte du texte ?</div>",
+    "options": [
+      "Le transfert prioritaire d'activités industrielles vers des nations partenaires stratégiques et politiques",
+      "L'obligation de créer des joint-ventures avec des associations à but non lucratif",
+      "La baisse des tarifs de douane uniquement pour les produits de grande consommation biologique",
+      "Le recrutement exclusif de managers diplômés d'écoles partenaires de l'entreprise"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 3 : La Réorganisation des Chaînes de Valeur et le Nearshoring</strong><br>Pendant trois décennies, la recherche de coûts de main-d'œuvre optimisés a dicté la fragmentation géographique des processus de production. Les récentes secousses géopolitiques et la crise sanitaire ont toutefois mis à nu la fragilité de cette organisation en flux tendus dépendante de hubs manufacturiers éloignés. Face aux ruptures d'approvisionnement critiques, les stratégies de gestion des risques évoluent vers le « nearshoring » — la relocalisation à proximité des marchés de consommation — et le « friendshoring » — le ciblage de pays alliés politiquement. Ce mouvement ne signifie pas pour autant un repli autarcique ou un abandon de la mondialisation : il reflète la substitution du critère unique du coût le plus bas par celui de la résilience globale de la chaîne de valeur. Cependant, la mise en œuvre de ces politiques heurte deux réalités : le coût d'investissement requis pour rebâtir un tissu industriel local et la raréfaction des compétences techniques disponibles.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel était le principe directeur dominant des chaînes d'approvisionnement au cours des trente dernières années ?</div>",
+    "options": [
+      "La maximisation des gains de coût de production via la fragmentation et la délocalisation",
+      "La recherche systématique de l'impact environnemental le plus neutre possible",
+      "La constitution de stocks stratégiques massifs au sein de chaque pays consommateur",
+      "L'égalisation stricte des rémunérations entre ouvriers des différents continents"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle mutation des aspirations des hauts potentiels est mise en évidence dans cet extrait ?</div>",
+    "options": [
+      "Le rejet d'un plan de carrière imposé au détriment de l'équilibre de vie et de la santé personnelle",
+      "Le souhait d'effectuer l'intégralité de leur temps de travail sans aucun outil informatique",
+      "La demande d'une baisse générale de leurs responsabilités opérationnelles et salariales",
+      "Le refus d'accéder aux postes de direction générale dans les entreprises cotées"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Comment évoluent les critères de sélection des talents au sein des DRH selon l'auteur ?</div>",
+    "options": [
+      "L'expérience concrète du terrain et la résilience l'emportent sur le charisme statutaire classique",
+      "La priorité absolue est donnée au nombre d'heures de présence physique au bureau",
+      "La sélection s'effectue désormais exclusivement sur des critères d'ancienneté dans l'organisation",
+      "Les compétences managériales sont totalement abandonnées au profit de tests de mémoire"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel reproche est adressé aux systèmes traditionnels de gestion des hauts potentiels ?</div>",
+    "options": [
+      "Leur opacité organisationnelle et leur rigidité face aux évolutions des modes de vie",
+      "Leur coût de fonctionnement nul qui dévalorise le travail des consultants externes",
+      "L'obligation légale d'embaucher uniquement des profils issus du secteur public",
+      "Leur incapacité à proposer des augmentations de salaire aux dirigeants chevronnés"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel risque pose le maintien de statuts managériaux hermétiques selon le texte ?</div>",
+    "options": [
+      "Susciter de vives frustrations parmi les collaborateurs et nuire à la cohésion d'équipe",
+      "Provoquer une baisse immédiate du chiffre d'affaires sur le marché boursier",
+      "Entraîner la fermeture automatique des filiales situées à l'étranger",
+      "Empêcher les entreprises de souscrire des assurances responsabilité civile"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 4 : La Gestion des Talent et les Nouvelles Attentes du Travail</strong><br>Les dispositifs d'identification et de rétention des « hauts potentiels » en entreprise traversent une crise de légitimité. Historiquement conçus comme des pépinières destinées à alimenter l'état-major corporate via des parcours accélérés et une mobilité fonctionnelle intense, ces programmes se heurtent à la mutation des aspirations individuelles. Les cadres à fort potentiel expriment aujourd'hui un refus croissant du sacrifice de leur équilibre personnel au profit d'un plan de carrière rigide. Par ailleurs, la crise de la représentativité du management intermédiaire et l'exigence de transparence remettent en cause l'opacité des critères de sélection. De nombreuses directions des ressources humaines reconfigurent donc leurs outils : la valorisation de l'expertise terrain et de la résilience émotionnelle supplante progressivement l'attrait pour le charisme d'appareil. L'enjeu est désormais d'offrir une flexibilité d'apprentissage sans enfermer les collaborateurs dans des étiquettes statutaires potentiellement génératrices de frustrations.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel titre résume le mieux l'orientation principale du texte ?</div>",
+    "options": [
+      "Gestion des talents : vers la fin du modèle classique et l'émergence de nouveaux critères",
+      "Pourquoi les entreprises doivent supprimer l'ensemble de leurs services Ressources Humaines",
+      "La hausse ininterrompue de la mobilité internationale chez les jeunes diplômés",
+      "L'impact positif des carrières rigides sur la motivation des salariés du secteur privé"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quel est le problème fondamental posé par l'intégration massive du solaire et de l'éolien ?</div>",
+    "options": [
+      "Leur nature intermittente qui s'oppose à la logique de régulation centralisée des réseaux historiques",
+      "Leur coût de fabrication qui demeure plus élevé que celui des centrales thermiques à charbon",
+      "L'interdiction légale de raccorder ces installations aux lignes à haute tension européennes",
+      "L'impossibilité physique de mesurer l'électricité produite par des méthodes électroniques"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Où se situe désormais le goulot d'étranglement majeur de la transition énergétique selon l'auteur ?</div>",
+    "options": [
+      "Dans la capacité industrielle à déployer des technologies de stockage et de flexibilité du réseau",
+      "Dans le refus des consommateurs d'utiliser de l'électricité issue de ressources renouvelables",
+      "Dans la hausse du prix des composants mécaniques d'assemblage des éoliennes terrestres",
+      "Dans l'absence totale de politiques publiques de soutien à la décarbonation dans le monde"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle conséquence paradoxale est associée aux pics d'injection de production renouvelable ?</div>",
+    "options": [
+      "L'émergence de cours monétaires ou prix négatifs sur les marchés de gros de l'électricité",
+      "La destruction physique immédiate des transformateurs de quartier",
+      "L'augmentation des émissions de dioxyde de carbone de l'industrie lourde",
+      "La baisse automatique de la température moyenne des villes côtières"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelles technologies sont citées pour résoudre le défi de l'intermittence ?</div>",
+    "options": [
+      "Les batteries stationnaires, les stations de pompage-turbinage et l'hydrogène décarboné",
+      "Le renforcement exclusif du parc de centrales thermiques alimentées au fioul lourd",
+      "Le remplacement des lignes électriques par des conduites souterraines de gaz naturel",
+      "L'arrêt des centrales hydrauliques pendant les périodes de forte insolation"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "prompt": "<div class=\"passage-box\" style=\"background:#F0F4F8; border-left:4px solid #0071E3; padding:12px 14px; font-size:14px; line-height:1.45; margin-bottom:12px; border-radius:8px; text-align:left; color:#1D1D1F; font-weight:500;\"><strong>Texte 5 : La Transition Énergétique et le Défi du Stockage</strong><br>Le déploiement massif des énergies renouvelables — principalement éoliennes et photovoltaïques — constitue la pierre angulaire des stratégies de décarbonation. Toutefois, la variabilité naturelle de ces sources soulève un problème critique d'intermittence que les réseaux électriques traditionnels, conçus pour une production pilotable et centralisée, peinent à réguler. Sans capacités d'accumulation et de restitution à grande échelle, les périodes de faible production menacent la sécurité de l'approvisionnement, tandis que les pics d'injection risquent d'entraîner des prix négatifs sur les marchés de gros. Le véritable goulot d'étranglement de la transition écologique ne réside donc plus uniquement dans la baisse du coût des capteurs ou des turbines, mais dans le développement industriel de solutions d'amont et d'aval : batteries stationnaires à haute densité, stations de transfert d'énergie par pompage, et filière d'hydrogène décarboné. La neutralité carbone exige une mutation systémique de l'ensemble de l'architecture électrique.</div><div style=\"font-size:16px; font-weight:700; text-align:center;\">Question : Quelle est la conclusion essentielle défendue dans cet extrait ?</div>",
+    "options": [
+      "La transition écologique nécessite une transformation globale de l'architecture et du stockage électrique",
+      "Les énergies renouvelables doivent être abandonnées au profit des énergies fossiles classiques",
+      "Le stockage de l'énergie est un problème résolu qui ne nécessite plus d'investissements publics",
+      "La consommation d'électricité doit être réduite de 90 % pour maintenir l'équilibre du réseau"
+    ],
+    "answerIndex": 0
   }
 ];
 
