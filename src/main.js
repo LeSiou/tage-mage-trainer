@@ -159,8 +159,9 @@ const CATEGORIES = {
       {
         id: 'alphabet_ranks',
         title: 'Rang des lettres (A-Z)',
-        desc: "Entraînement sur la position des 26 lettres (A=1 ... Z=26)",
+        desc: "Entraînement direct en mode infini sur la position des 26 lettres (A=1 ... Z=26)",
         type: 'quiz',
+        isInfinite: true,
         generateDeck: () => {
           const items = [];
           for (let i = 0; i < 26; i++) {
@@ -172,8 +173,9 @@ const CATEGORIES = {
       {
         id: 'squares_all',
         title: 'Carrés (1 à 25)',
-        desc: "Entraînement complet sur les carrés de 1² à 25²",
+        desc: "Entraînement direct en mode infini sur les carrés de 1² à 25²",
         type: 'quiz',
+        isInfinite: true,
         generateDeck: () => {
           const items = [];
           for (let i = 1; i <= 25; i++) items.push({ prompt: `${i}²`, expectedAnswer: i * i });
@@ -183,8 +185,9 @@ const CATEGORIES = {
       {
         id: 'cubes_all',
         title: 'Cubes (1 à 20)',
-        desc: "Entraînement sur les cubes de 1³ à 20³",
+        desc: "Entraînement direct en mode infini sur les cubes de 1³ à 20³",
         type: 'quiz',
+        isInfinite: true,
         generateDeck: () => {
           const items = [];
           for (let i = 1; i <= 20; i++) items.push({ prompt: `${i}³`, expectedAnswer: i * i * i });
@@ -194,8 +197,9 @@ const CATEGORIES = {
       {
         id: 'mult_all',
         title: 'Multiplications (1 à 20)',
-        desc: "Entraînement complet sur les tables de 1 à 20",
+        desc: "Entraînement direct en mode infini sur les tables de 1 à 20",
         type: 'quiz',
+        isInfinite: true,
         generateDeck: () => {
           const items = [];
           for (let i = 1; i <= 20; i++) {
@@ -207,8 +211,9 @@ const CATEGORIES = {
       {
         id: 'primes_quiz',
         title: 'Nombres Premiers (2 à 101)',
-        desc: "Quiz Oui / Non sur les 25 nombres premiers",
+        desc: "Quiz Oui / Non direct en mode infini sur les 25 nombres premiers",
         type: 'quiz_yesno',
+        isInfinite: true,
         generateDeck: () => {
           const items = [];
           for (let i = 2; i <= 101; i++) {
@@ -220,8 +225,9 @@ const CATEGORIES = {
       {
         id: 'quiz_decomposition',
         title: 'Quiz Nombres à Décomposer (Faux Premiers)',
-        desc: "Entraînement sur les faux premiers (51, 91, 119, 143, 221, 323, 437...)",
+        desc: "Entraînement direct en mode infini sur les faux premiers",
         type: 'quiz_qcm',
+        isInfinite: true,
         generateDeck: () => {
           return shuffleArray(DECOMPOSITION_QUIZ_DATA).map(item => {
             const correctText = item.options[item.answerIndex];
@@ -1945,10 +1951,11 @@ function selectOption(option) {
     openMemoFiche(option.ficheIdx !== undefined ? option.ficheIdx : 0);
   } else if (option.type === 'memo_direct') {
     openDirectMemo(option.renderMemo());
+  } else if (option.isInfinite) {
+    startPracticeInfinite();
   } else {
-    elStartModeTitle.textContent = option.title;
-    elStartHeadline.textContent = option.title;
-    elStartDescription.textContent = option.desc;
+    if (elStartHeadline) elStartHeadline.textContent = option.title;
+    if (elStartDescription) elStartDescription.textContent = option.desc;
     showView('start');
   }
 }
@@ -2083,7 +2090,24 @@ function getNonRepeatingDeck(optionId, rawDeck, count) {
   return selectedItems;
 }
 
+let isInfiniteMode = false;
+
+function startPracticeInfinite() {
+  isInfiniteMode = true;
+  const rawDeck = currentOption.generateDeck();
+  currentDeck = shuffleArray(rawDeck);
+  deckIndex = 0;
+  totalCorrect = 0;
+  userAnswer = '';
+  isProcessingFeedback = false;
+
+  renderKeypadUI();
+  showView('practice');
+  nextQuestion();
+}
+
 function startPractice() {
+  isInfiniteMode = false;
   const rawDeck = currentOption.generateDeck();
   currentDeck = getNonRepeatingDeck(currentOption.id, rawDeck, selectedQuestionCount);
   deckIndex = 0;
@@ -2091,7 +2115,6 @@ function startPractice() {
   userAnswer = '';
   isProcessingFeedback = false;
 
-  elPracticeModeTitle.textContent = `${currentOption.title} (${currentDeck.length} Q)`;
   renderKeypadUI();
   showView('practice');
   nextQuestion();
@@ -2159,8 +2182,14 @@ function attachKeypadListeners() {
 
 function nextQuestion() {
   if (deckIndex >= currentDeck.length) {
-    stopPractice();
-    return;
+    if (isInfiniteMode) {
+      const rawDeck = currentOption.generateDeck();
+      currentDeck = shuffleArray(rawDeck);
+      deckIndex = 0;
+    } else {
+      stopPractice();
+      return;
+    }
   }
 
   currentQuestion = currentDeck[deckIndex];
@@ -2338,9 +2367,13 @@ function clearResultsHistory() {
 }
 
 function stopPractice() {
+  if (isInfiniteMode && deckIndex === 0) {
+    showView('subcategory');
+    return;
+  }
   const totalQuestions = deckIndex > 0 ? deckIndex : (currentDeck ? currentDeck.length : 1);
   saveQuizResult(totalCorrect, totalQuestions);
-  elResultsModeName.textContent = currentOption ? currentOption.title : 'Quizz Terminé';
+  elResultsModeName.textContent = currentOption ? `${currentOption.title}${isInfiniteMode ? ' (Mode Infini)' : ''}` : 'Quizz Terminé';
   elStatTotalCount.textContent = `${totalCorrect} / ${totalQuestions}`;
   views.resultsModal.classList.add('active');
 }
