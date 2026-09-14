@@ -2636,8 +2636,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
   if (section === 'culture_g') {
     if (ficheIdx === 0) {
       return {
-        title: 'Fiche 1 : Économie, Finance & Institutions Internationales',
-        subtitle: 'Théories économiques, politique monétaire, devises & agrégats des annales',
+        title: 'Fiche 1 : Économie & Finance',
+        subtitle: 'Smith, Keynes, BCE, FMI, PIB & agrégats',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2669,8 +2669,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 1) {
       return {
-        title: 'Fiche 2 : Management, Stratégie & Entreprises',
-        subtitle: 'Théories des organisations, modèles stratégiques & culture d’entreprise',
+        title: 'Fiche 2 : Management & Stratégie',
+        subtitle: 'Taylor, Fayol, Porter, BCG & PESTEL',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2700,8 +2700,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 2) {
       return {
-        title: 'Fiche 3 : Actualités Récentes, Géopolitique & Révolution IA',
-        subtitle: 'Actualités 2023-2026, IA générative, géopolitique & grands événements',
+        title: 'Fiche 3 : Actualités & IA',
+        subtitle: 'IA générative, JO 2024, BRICS & géopolitique',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2728,8 +2728,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else {
       return {
-        title: 'Fiche 4 : Histoire, Droit, Arts, Lettres & Géographie',
-        subtitle: 'Culture générale classique indispensable des annales',
+        title: 'Fiche 4 : Histoire, Droit & Arts',
+        subtitle: 'Institutions Vème République & capitales pièges',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2737,7 +2737,7 @@ export function renderMemoIAECourse(section, ficheIdx) {
               <div class="math-desc-list">
                 <p>• <strong>Promulgation de 1958 :</strong> Constitution de la Vème République initiée par le général de Gaulle et rédigée avec Michel Debré (1er Premier ministre).</p>
                 <p>• <strong>Suffrage Universel Direct (1962) :</strong> Référendum instaurant l'élection présidentielle au suffrage universel direct (première élection en 1965).</p>
-                <p>• <strong>Réformes Majeures :</strong> Abolition de la peine de mort en 1981 (Robert Badinter), passage au Quinquennat adopté par référendum en 2000.</p>
+                <p>• <strong>Réformes Majeures :</strong> Abolition de la peine de mort en 1981 (Robert Badinter), passage au Quinquennat adopted par référendum en 2000.</p>
                 <p>• <strong>Cour Internationale de Justice (CIJ) :</strong> Organe judiciaire principal de l'ONU siégeant à La Haye (Pays-Bas).</p>
               </div>
             </div>
@@ -2756,8 +2756,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
   } else if (section === 'francais') {
     if (ficheIdx === 0) {
       return {
-        title: 'Fiche Cours 1 (Français) : Grammaire & Accords Complexes',
-        subtitle: 'Participe passé, verbes pronominaux, adjectifs de couleur & adjectifs sensibles',
+        title: 'Fiche 1 : Grammaire & Accords',
+        subtitle: 'Participe passé, Tout, Même, Demi, Leur',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2782,8 +2782,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 1) {
       return {
-        title: 'Fiche Cours 2 (Français) : Syntaxe, Subjonctif & Tournures Fautives',
-        subtitle: 'Ne dites pas... mais dites..., concordance des temps et subjonctif',
+        title: 'Fiche 2 : Syntaxe & Subjonctif',
+        subtitle: 'Ne dites pas / dites & subjonctif',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2827,8 +2827,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 2) {
       return {
-        title: 'Fiche Cours 3 (Français) : Orthographe & Genre des Noms Pièges',
-        subtitle: 'Masculin/Féminin pièges, consonnes doubles & homonymes',
+        title: 'Fiche 3 : Orthographe & Homonymes',
+        subtitle: 'Consonnes doubles & mots pièges',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2854,8 +2854,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else {
       return {
-        title: 'Fiche Cours 4 (Français) : Vocabulaire Soutenu, Paronymes & Locutions Latines',
-        subtitle: 'Paronymes fréquents, pléonasmes à bannir et locutions latines',
+        title: 'Fiche 4 : Vocabulaire & Paronymes',
+        subtitle: 'Vocabulaire soutenu, pléonasmes & paronymes',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2883,8 +2883,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
   } else if (section === 'raisonnement') {
     if (ficheIdx === 0) {
       return {
-        title: 'Fiche Cours 1 (Logique) : Réflexes, Suites Numériques & Séries Phoniques',
-        subtitle: 'Techniques de résolution des suites numériques et alphabétiques des annales',
+        title: 'Fiche 1 : Séries Numériques',
+        subtitle: 'Suites arithmétiques, alternées & Fibonacci',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2908,8 +2908,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 1) {
       return {
-        title: 'Fiche Cours 2 (Logique) : Variations Composées, Pourcentages & Échelles',
-        subtitle: 'Calcul des évolutions successives et formules d’échelles de cartes',
+        title: 'Fiche 2 : Calcul Mental & %',
+        subtitle: 'Variations successives & coefficients',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2933,8 +2933,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 2) {
       return {
-        title: 'Fiche Cours 3 (Logique) : Vitesses, Croisements, Débits & Combinatoire',
-        subtitle: 'Problèmes de rattrapage, débits de robinets et dénombrement',
+        title: 'Fiche 3 : Vitesses & Débits',
+        subtitle: 'V=D/T, croisement & travail partagé',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2956,8 +2956,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else {
       return {
-        title: 'Fiche Cours 4 (Logique) : Syllogismes, Équations & Optimisation',
-        subtitle: 'Règles de déduction logique, contraposée et extrema de fonctions',
+        title: 'Fiche 4 : Syllogismes & Logique',
+        subtitle: 'Contraposée & déduction d\'ensembles',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -2981,8 +2981,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
   } else if (section === 'anglais') {
     if (ficheIdx === 0) {
       return {
-        title: 'Fiche Cours 1 (Anglais) : Grammar & Advanced SIM Structures',
-        subtitle: 'Since vs For, Inversions, Conditionals & Subjunctive',
+        title: 'Fiche 1 : Grammaire & Temps',
+        subtitle: 'Present Perfect, Conditionals & Subjunctive',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -3006,8 +3006,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 1) {
       return {
-        title: 'Fiche Cours 2 (Anglais) : Essential Business Vocabulary',
-        subtitle: 'Vocabulaire des affaires, management & acronymes du SIM',
+        title: 'Fiche 2 : Vocabulaire Business',
+        subtitle: 'Turnover, Shareholder, Merge, CEO/CFO',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -3025,8 +3025,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else if (ficheIdx === 2) {
       return {
-        title: 'Fiche Cours 3 (Anglais) : Top False Friends & Lexical Nuances',
-        subtitle: 'Les faux-amis du SIM et distinctions de vocabulaire précises',
+        title: 'Fiche 3 : Faux-Amis Essential',
+        subtitle: 'Actually, Currently, Notice, Comprehensive',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">
@@ -3053,8 +3053,8 @@ export function renderMemoIAECourse(section, ficheIdx) {
       };
     } else {
       return {
-        title: 'Fiche Cours 4 (Anglais) : Phrasal Verbs & Business Idioms',
-        subtitle: 'Verbes à particule et expressions idiomatiques des annales',
+        title: 'Fiche 4 : Phrasal Verbs',
+        subtitle: 'Put off, Call off, Carry out, Cut down on',
         html: `
           <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="math-card-visual">

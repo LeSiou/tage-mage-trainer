@@ -134,32 +134,32 @@ const FRENCH_PROVERBES_QUIZ_DATA = [
 // ---------------------------------------------------------
 // CATEGORIES & OPTIONS
 const MEMO_FICHES_LIST = [
-  { id: 0, tabLabel: 'F1 : Nombres Pièges', title: 'Fiche 1 : Nombres Pièges & Divisibilité', render: () => renderMemoFiche1() },
-  { id: 1, tabLabel: 'F2 : Fractions & %', title: 'Fiche 2 : Fractions, % & Variations', render: () => renderMemoFiche2() },
-  { id: 2, tabLabel: 'F3 : Vitesses', title: 'Fiche 3 : Vitesses, Rattrapages & Débits', render: () => renderMemoFiche3() },
-  { id: 3, tabLabel: 'F4 : Barycentre', title: 'Fiche 4 : Barycentre & Moyennes', render: () => renderMemoFiche4() },
-  { id: 4, tabLabel: 'F5 : Géométrie', title: 'Fiche 5 : Géométrie & Triples Pythagoriciens', render: () => renderMemoFiche5() },
-  { id: 5, tabLabel: 'F6 : Dénombrement', title: 'Fiche 6 : Dénombrement, Combinaisons & Triangles', render: () => renderMemoFiche6() },
-  { id: 6, tabLabel: 'F7 : Astuces & Cubes', title: 'Fiche 7 : Astuces & Identités Remarquables', render: () => renderMemoFiche7() },
-  { id: 7, tabLabel: 'F8 : Intérêts & Capitaux', title: 'Fiche 8 : Intérêts Simples & Composés (Capital K)', render: () => renderMemoFiche8() },
-  { id: 8, tabLabel: 'F9 : Rattrapages & Trains', title: 'Fiche 9 : Rattrapages, Croisements & Trains', render: () => renderMemoFiche9() }
+  { id: 0, tabLabel: 'F1 : Divisibilité', title: 'Fiche 1 : Divisibilité & Nombres Pièges', render: () => renderMemoFiche1() },
+  { id: 1, tabLabel: 'F2 : Fractions & %', title: 'Fiche 2 : Fractions & Pourcentages', render: () => renderMemoFiche2() },
+  { id: 2, tabLabel: 'F3 : Vitesses', title: 'Fiche 3 : Vitesses & Débits', render: () => renderMemoFiche3() },
+  { id: 3, tabLabel: 'F4 : Barycentres', title: 'Fiche 4 : Barycentres & Moyennes', render: () => renderMemoFiche4() },
+  { id: 4, tabLabel: 'F5 : Géométrie', title: 'Fiche 5 : Géométrie & Pythagore', render: () => renderMemoFiche5() },
+  { id: 5, tabLabel: 'F6 : Dénombrement', title: 'Fiche 6 : Dénombrement & Combinaisons', render: () => renderMemoFiche6() },
+  { id: 6, tabLabel: 'F7 : Calcul Rapide', title: 'Fiche 7 : Calcul Rapide & Identités', render: () => renderMemoFiche7() },
+  { id: 7, tabLabel: 'F8 : Intérêts', title: 'Fiche 8 : Intérêts Simples & Composés', render: () => renderMemoFiche8() },
+  { id: 8, tabLabel: 'F9 : Croisements', title: 'Fiche 9 : Croisements & Trains', render: () => renderMemoFiche9() }
 ];
 
 const CATEGORIES = {
   automatismes: {
-    title: 'Automatismes & Calcul Mental (Direct)',
+    title: 'Automatismes & Calcul Mental',
     options: [
       {
         id: 'memo_automatismes_all',
-        title: 'Fiche : Carrés (1-25), Cubes (1-20), Puissances de 2 & Premiers (2-101)',
-        desc: "Consultation complète : Carrés parfaits, cubes, puissances de 2 et 25 nombres premiers",
+        title: 'Fiche : Tables & Constantes',
+        desc: "Carrés parfaits, cubes, puissances de 2 et 25 nombres premiers",
         type: 'memo_direct',
         renderMemo: () => renderMemoFicheAutomatismes()
       },
       {
         id: 'alphabet_ranks',
-        title: 'Rang des lettres (A-Z)',
-        desc: "Entraînement direct en mode infini sur la position des 26 lettres (A=1 ... Z=26)",
+        title: 'Rang des Lettres (A-Z)',
+        desc: "Entraînement direct en mode infini (A=1 ... Z=26)",
         type: 'quiz',
         isInfinite: true,
         generateDeck: () => {
@@ -173,7 +173,7 @@ const CATEGORIES = {
       {
         id: 'squares_all',
         title: 'Carrés (1 à 25)',
-        desc: "Entraînement direct en mode infini sur les carrés de 1² à 25²",
+        desc: "Entraînement direct en mode infini (1² à 25²)",
         type: 'quiz',
         isInfinite: true,
         generateDeck: () => {
@@ -185,7 +185,7 @@ const CATEGORIES = {
       {
         id: 'cubes_all',
         title: 'Cubes (1 à 20)',
-        desc: "Entraînement direct en mode infini sur les cubes de 1³ à 20³",
+        desc: "Entraînement direct en mode infini (1³ à 20³)",
         type: 'quiz',
         isInfinite: true,
         generateDeck: () => {
@@ -197,7 +197,7 @@ const CATEGORIES = {
       {
         id: 'mult_all',
         title: 'Multiplications (1 à 20)',
-        desc: "Entraînement direct en mode infini sur les tables de 1 à 20",
+        desc: "Entraînement direct en mode infini (tables 1 à 20)",
         type: 'quiz',
         isInfinite: true,
         generateDeck: () => {
@@ -211,7 +211,7 @@ const CATEGORIES = {
       {
         id: 'primes_quiz',
         title: 'Nombres Premiers (2 à 101)',
-        desc: "Quiz Oui / Non direct en mode infini sur les 25 nombres premiers",
+        desc: "Quiz Oui / Non direct en mode infini",
         type: 'quiz_yesno',
         isInfinite: true,
         generateDeck: () => {
@@ -224,8 +224,8 @@ const CATEGORIES = {
       },
       {
         id: 'quiz_decomposition',
-        title: 'Quiz Nombres à Décomposer (Faux Premiers)',
-        desc: "Entraînement direct en mode infini sur les faux premiers",
+        title: 'Faux Premiers & Décompositions',
+        desc: "Entraînement direct en mode infini sur les décompositions",
         type: 'quiz_qcm',
         isInfinite: true,
         generateDeck: () => {
@@ -243,16 +243,16 @@ const CATEGORIES = {
     ]
   },
   tm_comprehension: {
-    title: '1. Compréhension de Texte TAGE MAGE',
+    title: '1. Compréhension de Texte',
     options: [
-      { id: 'memo_tm_comp_0', title: 'Fiche 1 : Lecture Rapide & Mots-Clés', desc: "Techniques de lecture active et pivots argumentatifs", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 0) },
-      { id: 'memo_tm_comp_1', title: 'Fiche 2 : Idée Principale vs Détail', desc: "Distinguer la thèse centrale des simples exemples", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 1) },
-      { id: 'memo_tm_comp_2', title: 'Fiche 3 : Ton de l’Auteur & Inférences', desc: "Neutre, polemique, ironique et conclusions logiques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 2) },
-      { id: 'memo_tm_comp_3', title: 'Fiche 4 : Pièges de Reformulation', desc: "Détection des adverbes absolus à bannir (toujours, jamais)", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 3) },
+      { id: 'memo_tm_comp_0', title: 'Fiche 1 : Lecture & Mots-Clés', desc: "Lecture active et pivots argumentatifs", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 0) },
+      { id: 'memo_tm_comp_1', title: 'Fiche 2 : Thèse & Idée Principale', desc: "Distinguer l'idée centrale des détails", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 1) },
+      { id: 'memo_tm_comp_2', title: 'Fiche 3 : Ton & Inférences', desc: "Nuances de ton et déductions logiques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 2) },
+      { id: 'memo_tm_comp_3', title: 'Fiche 4 : Pièges de Reformulation', desc: "Adverbes absolus et pièges de texte", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 3) },
       {
         id: 'quiz_tm_comprehension',
-        title: 'Quiz QCM : Compréhension de Texte (Grand Manuel)',
-        desc: "100+ Extraits de textes et questions d’analyse/inférence TAGE MAGE",
+        title: 'Quiz : Compréhension de Texte',
+        desc: "Questions QCM d'analyse de texte et d'inférence",
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(TM_COMPREHENSION_QUESTIONS).map(item => {
@@ -265,16 +265,16 @@ const CATEGORIES = {
     ]
   },
   tm_calcul: {
-    title: '2. Calcul & Mathématiques TAGE MAGE',
+    title: '2. Calcul & Mathématiques',
     options: [
-      { id: 'memo_tm_calc_0', title: 'Fiche 1 : Fractions & Pourcentages Composés', desc: "Tableau des 12 fractions usuelles et hausses/baisses", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 0) },
-      { id: 'memo_tm_calc_1', title: 'Fiche 2 : Vitesses V=D/T, Rattrapages & Robinets', desc: "Conversions m/s, vitesses relatives et débits cumulés", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 1) },
-      { id: 'memo_tm_calc_2', title: 'Fiche 3 : Barycentre & Mélanges de Solutions', desc: "Formule des concentrations et moyennes pondérées", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 2) },
-      { id: 'memo_tm_calc_3', title: 'Fiche 4 : Géométrie, Aires & Triples Pythagoriciens', desc: "Triples 3-4-5, 5-12-13, 8-15-17, cercles & diagonales", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 3) },
+      { id: 'memo_tm_calc_0', title: 'Fiche 1 : Fractions & Pourcentages', desc: "Fractions usuelles et variations", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 0) },
+      { id: 'memo_tm_calc_1', title: 'Fiche 2 : Vitesses & Débits', desc: "Formules V=D/T, conversions et robinets", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 1) },
+      { id: 'memo_tm_calc_2', title: 'Fiche 3 : Barycentres & Mélanges', desc: "Moyennes pondérées et concentrations", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 2) },
+      { id: 'memo_tm_calc_3', title: 'Fiche 4 : Géométrie & Pythagore', desc: "Triples pythagoriciens, aires et volumes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 3) },
       {
         id: 'quiz_tm_calcul',
-        title: 'Quiz QCM : Calcul & Équations (Grand Manuel)',
-        desc: "100+ Problèmes de calcul, pourcentages, vitesses, géométrie & probabilités",
+        title: 'Quiz : Calcul & Équations',
+        desc: "Problèmes de calcul, pourcentages et géométrie",
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(TM_CALCUL_QUESTIONS).map(item => {
@@ -287,16 +287,16 @@ const CATEGORIES = {
     ]
   },
   tm_raisonnement: {
-    title: '3. Raisonnement & Logique TAGE MAGE',
+    title: '3. Raisonnement & Logique',
     options: [
-      { id: 'memo_tm_rais_0', title: 'Fiche 1 : Logigrammes & Grilles de Déduction', desc: "Tableaux croisés 2D/3D et règle d exclusion", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 0) },
-      { id: 'memo_tm_rais_1', title: 'Fiche 2 : Diagrammes d’Ensembles & Venn', desc: "Inclusion, intersection et formule de l union N(A∪B)", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 1) },
-      { id: 'memo_tm_rais_2', title: 'Fiche 3 : Syllogismes & Contraposée Absolue', desc: "Règles de déduction et équivalences logiques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 2) },
-      { id: 'memo_tm_rais_3', title: 'Fiche 4 : Épreuves de Vérité & Mensonge', desc: "Résolution par méthode des hypothèses disjonctives", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 3) },
+      { id: 'memo_tm_rais_0', title: 'Fiche 1 : Logigrammes & Grilles', desc: "Grilles 2D/3D et exclusion binaire", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 0) },
+      { id: 'memo_tm_rais_1', title: 'Fiche 2 : Ensembles & Diagrammes', desc: "Inclusion, intersection et formule de Venn", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 1) },
+      { id: 'memo_tm_rais_2', title: 'Fiche 3 : Syllogismes & Logique', desc: "Contraposée et règles de déduction", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 2) },
+      { id: 'memo_tm_rais_3', title: 'Fiche 4 : Épreuves de Vérité', desc: "Méthode par élimination des contradictions", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 3) },
       {
         id: 'quiz_tm_raisonnement',
-        title: 'Quiz QCM : Raisonnement & Logigrammes (Grand Manuel)',
-        desc: "100+ Exercices de déduction, ordonnancement & vérité/mensonge",
+        title: 'Quiz : Raisonnement & Logique',
+        desc: "Exercices de déduction et vérités/mensonges",
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(TM_RAISONNEMENT_QUESTIONS).map(item => {
@@ -309,16 +309,16 @@ const CATEGORIES = {
     ]
   },
   tm_conditions_minimales: {
-    title: '4. Conditions Minimales TAGE MAGE',
+    title: '4. Conditions Minimales',
     options: [
-      { id: 'memo_tm_cm_0', title: 'Fiche 1 : Les 5 Réponses A, B, C, D, E', desc: "Signification exacte et méthode en 3 étapes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 0) },
-      { id: 'memo_tm_cm_1', title: 'Fiche 2 : Équations & Systèmes à n Inconnues', desc: "Vérification de l indépendance des équations", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 1) },
-      { id: 'memo_tm_cm_2', title: 'Fiche 3 : Géométrie & Figures Spatiales', desc: "Aire, périmètre et inconnues manquantes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 2) },
-      { id: 'memo_tm_cm_3', title: 'Fiche 4 : Pièges Récurrents (x² = K & Signes)', desc: "Solutions multiples et fausses évidences", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 3) },
+      { id: 'memo_tm_cm_0', title: 'Fiche 1 : Méthode & Choix (A-E)', desc: "Signification des 5 choix et méthode en 3 étapes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 0) },
+      { id: 'memo_tm_cm_1', title: 'Fiche 2 : Équations & Inconnues', desc: "Nombre d'équations indépendantes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 1) },
+      { id: 'memo_tm_cm_2', title: 'Fiche 3 : Géométrie & Figures', desc: "Données suffisantes pour aires et volumes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 2) },
+      { id: 'memo_tm_cm_3', title: 'Fiche 4 : Pièges & Fausses Évidences', desc: "Solutions multiples x²=K et cas pièges", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 3) },
       {
         id: 'quiz_tm_cm',
-        title: 'Quiz QCM : Conditions Minimales (Grand Manuel)',
-        desc: "100+ Questions officielles (1) & (2) - Réponses A, B, C, D, E",
+        title: 'Quiz : Conditions Minimales',
+        desc: "Questions officielles (1) & (2) - Choix A à E",
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(TM_CONDITIONS_MINIMALES_QUESTIONS).map(item => {
@@ -330,16 +330,16 @@ const CATEGORIES = {
     ]
   },
   tm_expression: {
-    title: '5. Expression & Français TAGE MAGE',
+    title: '5. Expression & Français',
     options: [
-      { id: 'memo_tm_exp_0', title: 'Fiche 1 : Accords Complexes & Participe Passé', desc: "Tout, Même, Demi, Leur et verbes pronominaux", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 0) },
-      { id: 'memo_tm_exp_1', title: 'Fiche 2 : Syntaxe & Tournures Fautives', desc: "Ne dites pas / dites, Pallier, Se rappeler, Après que", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 1) },
-      { id: 'memo_tm_exp_2', title: 'Fiche 3 : Orthographe & Genre des Noms Pièges', desc: "Aphte, Agrume, Acné & consonnes doubles (Dilemme)", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 2) },
-      { id: 'memo_tm_exp_3', title: 'Fiche 4 : Paronymes & Locutions Latines', desc: "In fine, Ipso facto, Ad hoc & distinctions fines", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 3) },
+      { id: 'memo_tm_exp_0', title: 'Fiche 1 : Accords & Participe Passé', desc: "Tout, Même, Demi, Leur et verbes pronominaux", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 0) },
+      { id: 'memo_tm_exp_1', title: 'Fiche 2 : Syntaxe & Tournures', desc: "Formulations fautives, pallier et se rappeler", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 1) },
+      { id: 'memo_tm_exp_2', title: 'Fiche 3 : Orthographe & Genre', desc: "Genre des noms (aphte, acné) et dilemme", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 2) },
+      { id: 'memo_tm_exp_3', title: 'Fiche 4 : Paronymes & Locutions', desc: "In fine, ipso facto, démythifier / démystifier", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 3) },
       {
         id: 'quiz_tm_expression',
-        title: 'Quiz QCM : Expression & Pièges du Français (Grand Manuel)',
-        desc: "100+ Questions de correction grammaticale, orthographe & syntaxe",
+        title: 'Quiz : Expression & Français',
+        desc: "Questions de correction grammaticale et syntaxe",
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(TM_EXPRESSION_QUESTIONS).map(item => {
@@ -352,16 +352,16 @@ const CATEGORIES = {
     ]
   },
   tm_logique: {
-    title: '6. Logique Numérique & Alphabétique TAGE MAGE',
+    title: '6. Logique & Séries',
     options: [
-      { id: 'memo_tm_log_0', title: 'Fiche 1 : Rang des Lettres A-Z & Méthode EJOTY', desc: "Position des 26 lettres et séries alphabétiques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 0) },
-      { id: 'memo_tm_log_1', title: 'Fiche 2 : Séries Numériques, Carrés & Cubes', desc: "Carrés parfaits (1-25), cubes (1-20) et Fibonacci", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 1) },
-      { id: 'memo_tm_log_2', title: 'Fiche 3 : Astuce de la Mise à la Verticale', desc: "La méthode absolue pour résoudre les matrices 3x3", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 2) },
-      { id: 'memo_tm_log_3', title: 'Fiche 4 : Détection des Leurres & Séries Doubles', desc: "Éliminer les pièges volontaires et involontaires", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 3) },
+      { id: 'memo_tm_log_0', title: 'Fiche 1 : Rang des Lettres & Séries', desc: "Rangs A-Z et méthode EJOTY", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 0) },
+      { id: 'memo_tm_log_1', title: 'Fiche 2 : Séries Numériques & Carrés', desc: "Carrés, cubes et Fibonacci", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 1) },
+      { id: 'memo_tm_log_2', title: 'Fiche 3 : Matrices 3x3 & Grilles', desc: "Lecture horizontale, verticale et sommes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 2) },
+      { id: 'memo_tm_log_3', title: 'Fiche 4 : Séries Doubles & Leurres', desc: "Séries croisées et pièges phoniques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 3) },
       {
         id: 'quiz_tm_logique',
-        title: 'Quiz QCM : Logique Chiffres & Lettres (Grand Manuel)',
-        desc: "100+ Séries numériques, alphabétiques & matrices 3x3 TAGE MAGE",
+        title: 'Quiz : Logique & Séries',
+        desc: "Séries numériques, alphabétiques et matrices",
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(TM_LOGIQUE_QUESTIONS).map(item => {
@@ -374,72 +374,72 @@ const CATEGORIES = {
     ]
   },
   tm_mock_exam: {
-    title: '7. Test Blanc Officiel TAGE MAGE 90 Questions',
+    title: '7. Test Blanc TAGE MAGE',
     options: [
       {
         id: 'quiz_tm_mock_exam_90',
-        title: 'Test Blanc Complexe 90 Questions (Conditions Réelles)',
-        desc: "15 Q Compréhension, 15 Calcul, 15 Raisonnement, 15 Conditions Min, 15 Expression & 15 Logique",
+        title: 'Test Blanc Officiel (90 Q)',
+        desc: "Session chrono de 90 questions TAGE MAGE",
         type: 'quiz_qcm',
         generateDeck: () => generateOfficialTageMageMockExamDeck()
       }
     ]
   },
     fiches_memo: {
-    title: 'Fiches Mémo de Révision (Complet)',
+    title: 'Fiches Mémo (Synthèse)',
     options: [
       {
         id: 'memo_1_automatismes',
-        title: 'Fiche 1 : Nombres Pièges & Divisibilité',
-        desc: 'Alphabet, divisibilité et décompositions des faux premiers (51, 91, 119...)',
+        title: 'Fiche 1 : Divisibilité & Nombres Pièges',
+        desc: 'Divisibilité et décompositions des faux premiers',
         type: 'memo',
         ficheIdx: 0,
         renderMemo: () => renderMemoFiche1()
       },
       {
         id: 'memo_2_fractions',
-        title: 'Fiche 2 : Fractions, % & Variations',
-        desc: 'Tableau des fractions usuelles (1/2 à 1/20), %, inversion X% de Y et variations inverses',
+        title: 'Fiche 2 : Fractions & Pourcentages',
+        desc: 'Fractions usuelles et variations',
         type: 'memo',
         ficheIdx: 1,
         renderMemo: () => renderMemoFiche2()
       },
       {
         id: 'memo_3_vitesses',
-        title: 'Fiche 3 : Vitesses, Rattrapages & Débits',
-        desc: 'Formules V=D/T, conversions m/s, vitesse moyenne, rattrapage, croisement et travail partagé',
+        title: 'Fiche 3 : Vitesses & Débits',
+        desc: 'V=D/T, vitesses moyennes et croisement',
         type: 'memo',
         ficheIdx: 2,
         renderMemo: () => renderMemoFiche3()
       },
       {
         id: 'memo_4_barycentre',
-        title: 'Fiche 4 : Barycentre & Moyennes',
-        desc: 'Technique ultra-rapide du barycentre (mélanges) et moyennes pondérées',
+        title: 'Fiche 4 : Barycentres & Moyennes',
+        desc: 'Technique du barycentre et moyennes pondérées',
         type: 'memo',
         ficheIdx: 3,
         renderMemo: () => renderMemoFiche4()
       },
       {
         id: 'memo_5_geometrie',
-        title: 'Fiche 5 : Géométrie & Triples Pythagoriciens',
-        desc: 'Triples 3-4-5, 5-12-13, 8-15-17, triangles particuliers, aires, volumes et polygone',
+        title: 'Fiche 5 : Géométrie & Pythagore',
+        desc: 'Triples pythagoriciens, aires et volumes',
         type: 'memo',
         ficheIdx: 4,
         renderMemo: () => renderMemoFiche5()
       },
       {
         id: 'memo_6_denombrement',
-        title: 'Fiche 6 : Dénombrement, Combinaisons & Triangles',
-        desc: 'Permutations, arrangements A(n,k), combinaisons C(n,k), nombre de triangles & grilles',
+        title: 'Fiche 6 : Dénombrement & Combinaisons',
+        desc: 'Permutations, arrangements et combinaisons',
         type: 'memo',
         ficheIdx: 5,
         renderMemo: () => renderMemoFiche6()
       },
       {
         id: 'memo_7_astuces',
-        title: 'Fiche 7 : Astuces & Identités Remarquables',
-        desc: 'Astuce de l\'écart, carrés en 5, mult par 11 & identités au carré/cube',
+        title: 'Fiche 7 : Calcul Rapide & Identités',
+        desc: 'Astuce de l\'écart et identités remarquables',
         type: 'memo',
         ficheIdx: 6,
         renderMemo: () => renderMemoFiche7()
@@ -447,15 +447,15 @@ const CATEGORIES = {
       {
         id: 'memo_8_interets',
         title: 'Fiche 8 : Intérêts Simples & Composés',
-        desc: 'Capitalisation, placement, intérêts simples, composés (Capital K) & règle de 72',
+        desc: 'Placement, capitalisation et règle de 72',
         type: 'memo',
         ficheIdx: 7,
         renderMemo: () => renderMemoFiche8()
       },
       {
         id: 'memo_9_rattrapages',
-        title: 'Fiche 9 : Rattrapages, Croisements & Trains',
-        desc: 'Vitesses relatives, poursuite, croisement, trains, tunnels & rivières',
+        title: 'Fiche 9 : Croisements & Trains',
+        desc: 'Vitesses relatives, poursuite et croisement',
         type: 'memo',
         ficheIdx: 8,
         renderMemo: () => renderMemoFiche9()
@@ -463,40 +463,40 @@ const CATEGORIES = {
     ]
   },
   francais: {
-    title: 'Français & Expression (Sous-tests 3 & 5)',
+    title: 'Français & Orthographe',
     options: [
       {
         id: 'memo_fr_grammaire',
-        title: 'Fiche 1 : Grammaire, Accords & Participe Passé',
-        desc: 'Accords sensibles (Tout, Même, Demi, Leur), Participe Passé & Subjonctif',
+        title: 'Fiche 1 : Grammaire & Accords',
+        desc: 'Tout, Même, Demi, Leur et participe passé',
         type: 'memo_direct',
         renderMemo: () => renderMemoFicheGrammaire()
       },
       {
         id: 'memo_fr_syntaxe',
-        title: 'Fiche 2 : Syntaxe, Pléonasmes & Paronymes',
-        desc: 'Fautes de syntaxe, pléonasmes à bannir et paronymes pièges TAGE MAGE',
+        title: 'Fiche 2 : Syntaxe & Pléonasmes',
+        desc: 'Fautes de syntaxe et pléonasmes à bannir',
         type: 'memo_direct',
         renderMemo: () => renderMemoFicheSyntaxe()
       },
       {
         id: 'memo_fr_orthographe',
-        title: 'Fiche 3 : Mots Difficiles & Genre des Noms',
-        desc: 'Masculin / Féminin pièges (Aphte, Agrume, Acné...), consonnes doubles & orthographe',
+        title: 'Fiche 3 : Orthographe & Genre',
+        desc: 'Genre des noms pièges et consonnes doubles',
         type: 'memo_direct',
         renderMemo: () => renderMemoFicheOrthographe()
       },
       {
         id: 'memo_fr_proverbes',
-        title: 'Fiche 4 : Proverbes, Expressions & Locutions Latines',
-        desc: 'Signification des proverbes classiques, expressions imagées & locutions latines',
+        title: 'Fiche 4 : Proverbes & Locutions',
+        desc: 'Proverbes classiques et locutions latines',
         type: 'memo_direct',
         renderMemo: () => renderMemoFicheProverbes()
       },
       {
         id: 'quiz_fr_syntaxe',
-        title: 'Quiz QCM : Ne Dites Pas / Syntaxe & Pléonasmes',
-        desc: 'Entraînement sur les pièges de formulation et de syntaxe',
+        title: 'Quiz : Syntaxe & Tournures',
+        desc: 'Pièges de formulation et de syntaxe',
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(FRENCH_SYNTAX_QUIZ_DATA).map(item => {
@@ -512,8 +512,8 @@ const CATEGORIES = {
       },
       {
         id: 'quiz_fr_gender',
-        title: 'Quiz Genre : Masculin ou Féminin ?',
-        desc: 'Boutons Masculin / Féminin pour s’entraîner sur les mots au genre piège',
+        title: 'Quiz : Genre des Noms (M/F)',
+        desc: 'Entraînement sur les mots au genre piège',
         type: 'quiz_gender',
         generateDeck: () => {
           return shuffleArray(FRENCH_GENDER_QUIZ_DATA);
@@ -521,8 +521,8 @@ const CATEGORIES = {
       },
       {
         id: 'quiz_fr_proverbes',
-        title: 'Quiz QCM : Proverbes, Expressions & Locutions Latines',
-        desc: 'Quiz de vocabulaire, proverbes et locutions latines du GM',
+        title: 'Quiz : Proverbes & Locutions',
+        desc: 'Vocabulaire, proverbes et locutions latines',
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(FRENCH_PROVERBES_QUIZ_DATA).map(item => {
@@ -539,80 +539,80 @@ const CATEGORIES = {
     ]
   },
   iae_culture_g: {
-    title: '1. Culture Générale, Éco & Management',
+    title: '1. Culture Générale & Éco',
     options: [
       {
         id: 'memo_iae_cg_1',
-        title: 'Fiche 1 : Économie, Finance & Institutions Internationales',
-        desc: 'Grands auteurs (Smith, Keynes, Schumpeter), BCE, FMI, PIB & agrégats',
+        title: 'Fiche 1 : Économie & Finance',
+        desc: 'Smith, Keynes, BCE, FMI, PIB & agrégats',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('culture_g', 0)
       },
       {
         id: 'memo_iae_cg_2',
-        title: 'Fiche 2 : Management, Stratégie & Entreprises',
-        desc: 'Taylor, Fayol, Mayo, Weber, 5 forces de Porter, matrices BCG & PESTEL',
+        title: 'Fiche 2 : Management & Stratégie',
+        desc: 'Taylor, Fayol, Porter, BCG & PESTEL',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('culture_g', 1)
       },
       {
         id: 'memo_iae_cg_3',
-        title: 'Fiche 3 : Actualités Récentes (2023-2026) & IA',
-        desc: 'Révolution de l\'IA (ChatGPT, Gemini, Mistral AI), JO Paris 2024 & BRICS',
+        title: 'Fiche 3 : Actualités & IA',
+        desc: 'IA générative, JO 2024, BRICS & géopolitique',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('culture_g', 2)
       },
       {
         id: 'memo_iae_cg_4',
-        title: 'Fiche 4 : Histoire, Droit, Arts & Géographie',
-        desc: 'Institutions Vème République, capitales pièges & Prix Nobel récents',
+        title: 'Fiche 4 : Histoire, Droit & Arts',
+        desc: 'Institutions Vème République & capitales pièges',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('culture_g', 3)
       },
       {
         id: 'quiz_iae_culture_g_massive',
-        title: 'Quiz QCM Géant : 1000+ Questions Culture G & Management',
-        desc: 'Tirage aléatoire haute fréquence parmi la banque complète de questions SIM',
+        title: 'Quiz : Culture Générale & Management',
+        desc: 'Banque complète de questions Culture G',
         type: 'quiz_qcm',
         generateDeck: () => getMassiveCultureGDeck(30)
       }
     ]
   },
   iae_francais: {
-    title: '2. Compréhension & Expression en Français',
+    title: '2. Français & Expression',
     options: [
       {
         id: 'memo_iae_fr_1',
-        title: 'Fiche 1 : Grammaire & Accords Complexes',
-        desc: 'Participe passé, Tout, Même, Demi, Leur, Ci-joint',
+        title: 'Fiche 1 : Grammaire & Accords',
+        desc: 'Participe passé, Tout, Même, Demi, Leur',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('francais', 0)
       },
       {
         id: 'memo_iae_fr_2',
-        title: 'Fiche 2 : Syntaxe, Subjonctif & Tournures Fautives',
-        desc: 'Ne dites pas / dites, concordance des temps et subjonctif',
+        title: 'Fiche 2 : Syntaxe & Subjonctif',
+        desc: 'Ne dites pas / dites & subjonctif',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('francais', 1)
       },
       {
         id: 'memo_iae_fr_3',
-        title: 'Fiche 3 : Orthographe & Homonymes Pièges',
-        desc: 'Consonnes doubles (dilemme), mots pièges & homonymes du SIM',
+        title: 'Fiche 3 : Orthographe & Homonymes',
+        desc: 'Consonnes doubles & mots pièges',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('francais', 2)
       },
       {
         id: 'memo_iae_fr_4',
-        title: 'Fiche 4 : Vocabulaire Soutenu, Paronymes & Pléonasmes',
-        desc: 'Démystifier/Démythifier, proscrire/prescrire & pléonasmes à bannir',
+        title: 'Fiche 4 : Vocabulaire & Paronymes',
+        desc: 'Vocabulaire soutenu, pléonasmes & paronymes',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('francais', 3)
       },
       {
         id: 'quiz_iae_francais',
-        title: 'Quiz QCM : Expression & Pièges de Français SIM',
-        desc: 'Entraînement intensif sur les fautes de syntaxe, grammaire et vocabulaire',
+        title: 'Quiz : Expression Français',
+        desc: 'Entraînement sur les pièges de français SIM',
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(IAE_FRENCH_QUIZ_DATA).map(item => {
@@ -625,40 +625,40 @@ const CATEGORIES = {
     ]
   },
   iae_raisonnement: {
-    title: '3. Raisonnement Logique & Numérique',
+    title: '3. Raisonnement & Logique',
     options: [
       {
         id: 'memo_iae_log_1',
-        title: 'Fiche 1 : Réflexes & Suites Numériques SIM',
-        desc: 'Suites arithmétiques, géométriques, alternées, Fibonacci & carrés/cubes',
+        title: 'Fiche 1 : Séries Numériques',
+        desc: 'Suites arithmétiques, alternées & Fibonacci',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('raisonnement', 0)
       },
       {
         id: 'memo_iae_log_2',
-        title: 'Fiche 2 : Calcul Mental Rapide & Pourcentages',
-        desc: 'Variations successives (+20% puis -20%), coefficients multiplicateurs',
+        title: 'Fiche 2 : Calcul Mental & %',
+        desc: 'Variations successives & coefficients',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('raisonnement', 1)
       },
       {
         id: 'memo_iae_log_3',
-        title: 'Fiche 3 : Vitesses, Croisements & Travail Partagé',
-        desc: 'V=D/T, vitesses relatives, temps de rencontre & débits de robinets',
+        title: 'Fiche 3 : Vitesses & Débits',
+        desc: 'V=D/T, croisement & travail partagé',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('raisonnement', 2)
       },
       {
         id: 'memo_iae_log_4',
-        title: 'Fiche 4 : Syllogismes & Logique Déductive',
-        desc: 'Contraposée, déductions d\'ensembles & pièges d\'inversion',
+        title: 'Fiche 4 : Syllogismes & Logique',
+        desc: 'Contraposée & déduction d\'ensembles',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('raisonnement', 3)
       },
       {
         id: 'quiz_iae_raisonnement',
-        title: 'Quiz QCM : Raisonnement Logique & Numérique',
-        desc: 'Exercices chrono de suites numériques et problèmes de calcul',
+        title: 'Quiz : Raisonnement & Logique',
+        desc: 'Séries numériques et problèmes de calcul',
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(IAE_LOGICAL_QUIZ_DATA).map(item => {
@@ -671,40 +671,40 @@ const CATEGORIES = {
     ]
   },
   iae_anglais: {
-    title: '4. Compréhension & Expression en Anglais',
+    title: '4. Anglais & Vocabulaire',
     options: [
       {
         id: 'memo_iae_ang_1',
-        title: 'Fiche 1 : Grammar & Verb Tenses SIM',
-        desc: 'Present Perfect, Since vs For, Conditionals & Subjunctive',
+        title: 'Fiche 1 : Grammaire & Temps',
+        desc: 'Present Perfect, Conditionals & Subjunctive',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('anglais', 0)
       },
       {
         id: 'memo_iae_ang_2',
-        title: 'Fiche 2 : Essential Business Vocabulary',
-        desc: 'Turnover, Shareholder/Stakeholder, Lay off, Merge, CEO/CFO',
+        title: 'Fiche 2 : Vocabulaire Business',
+        desc: 'Turnover, Shareholder, Merge, CEO/CFO',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('anglais', 1)
       },
       {
         id: 'memo_iae_ang_3',
-        title: 'Fiche 3 : Top False Friends (Faux-Amis du SIM)',
-        desc: 'Actually, Currently, Eventually, Notice, Comprehensive, Sympathetic',
+        title: 'Fiche 3 : Faux-Amis Essential',
+        desc: 'Actually, Currently, Notice, Comprehensive',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('anglais', 2)
       },
       {
         id: 'memo_iae_ang_4',
-        title: 'Fiche 4 : Phrasal Verbs & Corporate Expressions',
-        desc: 'Put off, Call off, Carry out, Run out of, Cut down on',
+        title: 'Fiche 4 : Phrasal Verbs',
+        desc: 'Put off, Call off, Carry out, Cut down on',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('anglais', 3)
       },
       {
         id: 'quiz_iae_anglais',
-        title: 'Quiz QCM : English Grammar & Business Vocabulary',
-        desc: 'Grammaire, vocabulaire des affaires et faux-amis type SIM',
+        title: 'Quiz : Anglais Business',
+        desc: 'Grammaire, vocabulaire des affaires & faux-amis',
         type: 'quiz_qcm',
         generateDeck: () => {
           return shuffleArray(IAE_ENGLISH_QUIZ_DATA).map(item => {
@@ -717,12 +717,12 @@ const CATEGORIES = {
     ]
   },
   iae_mock_exam: {
-    title: '5. Épreuve Blanche Officielle 100 Questions',
+    title: '5. Test Blanc Score IAE',
     options: [
       {
         id: 'quiz_iae_mock_exam_100',
-        title: 'Épreuve Blanche 100 Questions (Conditions Concours)',
-        desc: '25 questions de Culture G, 25 de Français, 25 de Logique & 25 d\'Anglais',
+        title: 'Test Blanc Officiel (100 Q)',
+        desc: 'Session chrono de 100 questions Score IAE Message',
         type: 'quiz_qcm',
         generateDeck: () => generateOfficialIAEMockExamDeck()
       }
@@ -2380,20 +2380,20 @@ function stopPractice() {
 
 const EXAM_SUBTESTS = {
   tage: [
-    { key: 'tm_calcul', title: '1. Calcul & Problèmes' },
-    { key: 'tm_raisonnement', title: '2. Raisonnement & Argumentation' },
-    { key: 'tm_comprehension', title: '3. Compréhension de Texte' },
+    { key: 'tm_calcul', title: '1. Calcul' },
+    { key: 'tm_raisonnement', title: '2. Raisonnement' },
+    { key: 'tm_comprehension', title: '3. Compréhension' },
     { key: 'tm_conditions', title: '4. Conditions Minimales' },
-    { key: 'tm_expression', title: '5. Expression & Français' },
-    { key: 'tm_logique', title: '6. Logique Chiffres & Lettres' },
-    { key: 'tm_mock_exam', title: '7. Test Blanc Officiel (90 Q)' }
+    { key: 'tm_expression', title: '5. Expression' },
+    { key: 'tm_logique', title: '6. Logique' },
+    { key: 'tm_mock_exam', title: '7. Test Blanc' }
   ],
   iae: [
-    { key: 'iae_culture_g', title: '1. Culture Générale, Éco & Mgmt' },
-    { key: 'iae_francais', title: '2. Compréhension & Expression en Français' },
-    { key: 'iae_raisonnement', title: '3. Raisonnement Logique & Numérique' },
-    { key: 'iae_anglais', title: '4. Compréhension & Expression en Anglais' },
-    { key: 'iae_mock_exam', title: '5. Épreuve Blanche Officielle (100 Q)' }
+    { key: 'iae_culture_g', title: '1. Culture Générale' },
+    { key: 'iae_francais', title: '2. Français' },
+    { key: 'iae_raisonnement', title: '3. Raisonnement' },
+    { key: 'iae_anglais', title: '4. Anglais' },
+    { key: 'iae_mock_exam', title: '5. Test Blanc' }
   ]
 };
 

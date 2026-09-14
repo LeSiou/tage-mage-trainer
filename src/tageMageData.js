@@ -6217,363 +6217,122 @@ export const TM_LOGIQUE_QUESTIONS = [
     "options": [
       "14",
       "49",
-      "55",
-      "44"
+      "64",
+      "81"
     ],
     "answerIndex": 1
-  },
-  {
-    "prompt": "Matrice 3x3 n°84 : Quelle est la valeur manquante ?<br>84 &nbsp;&nbsp; 168 &nbsp;&nbsp; 336<br>85 &nbsp;&nbsp; 170 &nbsp;&nbsp; 340<br>86 &nbsp;&nbsp; 172 &nbsp;&nbsp; ?",
-    "options": [
-      "688",
-      "340",
-      "344",
-      "346"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série phonique piège n°85 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
-    "options": [
-      "Z",
-      "V",
-      "K",
-      "T"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Série numérique n°86 : Complétez la suite arithmétique : 87, 90, 93, 96, 99, ?",
-    "options": [
-      "99",
-      "104",
-      "102",
-      "105"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série alphabétique n°87 : Complétez la suite de lettres : C, G, K, O, S, ?",
-    "options": [
-      "Y",
-      "X",
-      "W",
-      "V"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série des carrés parfaits n°88 : Complétez la suite : 64, 81, 100, 121, ?",
-    "options": [
-      "144",
-      "139",
-      "150",
-      "24"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Matrice 3x3 n°89 : Quelle est la valeur manquante ?<br>89 &nbsp;&nbsp; 178 &nbsp;&nbsp; 356<br>90 &nbsp;&nbsp; 180 &nbsp;&nbsp; 360<br>91 &nbsp;&nbsp; 182 &nbsp;&nbsp; ?",
-    "options": [
-      "366",
-      "360",
-      "364",
-      "728"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série phonique piège n°90 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "V",
-      "K",
-      "Z"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Série numérique n°91 : Complétez la suite arithmétique : 92, 95, 98, 101, 104, ?",
-    "options": [
-      "109",
-      "107",
-      "104",
-      "110"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Série alphabétique n°92 : Complétez la suite de lettres : B, E, H, K, N, ?",
-    "options": [
-      "S",
-      "P",
-      "Q",
-      "R"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série des carrés parfaits n°93 : Complétez la suite : 9, 16, 25, 36, ?",
-    "options": [
-      "55",
-      "49",
-      "14",
-      "44"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Matrice 3x3 n°94 : Quelle est la valeur manquante ?<br>94 &nbsp;&nbsp; 188 &nbsp;&nbsp; 376<br>95 &nbsp;&nbsp; 190 &nbsp;&nbsp; 380<br>96 &nbsp;&nbsp; 192 &nbsp;&nbsp; ?",
-    "options": [
-      "380",
-      "768",
-      "384",
-      "386"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série phonique piège n°95 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "V",
-      "K",
-      "Z"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Série numérique n°96 : Complétez la suite arithmétique : 97, 100, 103, 106, 109, ?",
-    "options": [
-      "115",
-      "114",
-      "112",
-      "109"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série alphabétique n°97 : Complétez la suite de lettres : A, C, E, G, I, ?",
-    "options": [
-      "M",
-      "K",
-      "J",
-      "L"
-    ],
-    "answerIndex": 1
-  },
-  {
-    "prompt": "Série des carrés parfaits n°98 : Complétez la suite : 64, 81, 100, 121, ?",
-    "options": [
-      "144",
-      "139",
-      "150",
-      "24"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Matrice 3x3 n°99 : Quelle est la valeur manquante ?<br>99 &nbsp;&nbsp; 198 &nbsp;&nbsp; 396<br>100 &nbsp;&nbsp; 200 &nbsp;&nbsp; 400<br>101 &nbsp;&nbsp; 202 &nbsp;&nbsp; ?",
-    "options": [
-      "406",
-      "808",
-      "400",
-      "404"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Série phonique piège n°100 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "K",
-      "Z",
-      "V"
-    ],
-    "answerIndex": 0
-  },
-  {
-    "prompt": "Série numérique n°101 : Complétez la suite arithmétique : 102, 105, 108, 111, 114, ?",
-    "options": [
-      "114",
-      "120",
-      "119",
-      "117"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Série alphabétique n°102 : Complétez la suite de lettres : F, J, N, R, V, ?",
-    "options": [
-      "Y",
-      "\\",
-      "[",
-      "Z"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Série des carrés parfaits n°103 : Complétez la suite : 9, 16, 25, 36, ?",
-    "options": [
-      "55",
-      "14",
-      "44",
-      "49"
-    ],
-    "answerIndex": 3
-  },
-  {
-    "prompt": "Matrice 3x3 n°104 : Quelle est la valeur manquante ?<br>104 &nbsp;&nbsp; 208 &nbsp;&nbsp; 416<br>105 &nbsp;&nbsp; 210 &nbsp;&nbsp; 420<br>106 &nbsp;&nbsp; 212 &nbsp;&nbsp; ?",
-    "options": [
-      "426",
-      "420",
-      "424",
-      "848"
-    ],
-    "answerIndex": 2
-  },
-  {
-    "prompt": "Série phonique piège n°105 : Complétez la suite de lettres (consonnes se terminant par le son 'é') : B, C, D, G, P, ?",
-    "options": [
-      "T",
-      "K",
-      "Z",
-      "V"
-    ],
-    "answerIndex": 0
   }
 ];
-
-export function generateOfficialTageMageMockExamDeck() {
-  const mapDeck = (list, prefix) => shuffleArray(list).slice(0, 15).map(item => {
-    const correctText = item.options[item.answerIndex];
-    const shuffledOpts = shuffleArray(item.options);
-    return {
-      prompt: `<div style="display:inline-block; padding:4px 10px; background:rgba(0,113,227,0.1); color:#0071E3; font-weight:700; border-radius:6px; font-size:12px; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">${prefix}</div><br>${item.prompt}`,
-      options: shuffledOpts,
-      answerIndex: shuffledOpts.indexOf(correctText)
-    };
-  });
-
-  const compDeck = mapDeck(TM_COMPREHENSION_QUESTIONS, 'Compréhension');
-  const calcDeck = mapDeck(TM_CALCUL_QUESTIONS, 'Calcul');
-  const raisDeck = mapDeck(TM_RAISONNEMENT_QUESTIONS, 'Raisonnement');
-  const cmDeck = mapDeck(TM_CONDITIONS_MINIMALES_QUESTIONS, 'Conditions Minimales');
-  const expDeck = mapDeck(TM_EXPRESSION_QUESTIONS, 'Expression');
-  const logDeck = mapDeck(TM_LOGIQUE_QUESTIONS, 'Logique');
-
-  return [...compDeck, ...calcDeck, ...raisDeck, ...cmDeck, ...expDeck, ...logDeck];
-}
 
 export function renderMemoTageMageCourse(subtestKey, ficheIdx) {
   const fichesMap = {
   "tm_comprehension": [
     {
-      "title": "Fiche 1 : Lecture Rapide & Mots-Clés",
-      "subtitle": "Techniques de lecture active, structures de paragraphes et pivots argumentatifs",
+      "title": "Fiche 1 : Lecture & Mots-Clés",
+      "subtitle": "Techniques de lecture active et pivots argumentatifs",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Méthode Réflexe de la Lecture Active</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Lecture de la question avant le texte :</strong> Repérer immédiatement s'il s'agit d'une question d'idée générale, d'un détail précis ou d'une inférence.</p>\n                  <p>• <strong>Repérage des Mots-Clés :</strong> Surligner visuellement les noms propres, dates, chiffrages, concepts entre guillemets et néologismes.</p>\n                  <p>• <strong>Découpage par Paragraphes :</strong> Chaque paragraphe contient UNE seule idée principale (souvent exprimée dans la première ou dernière phrase).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Les Connecteurs Logiques & Pivots Argumentatifs</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Opposition / Nuance (Pivots critiques) :</strong> <em>Cependant, néanmoins, toutefois, or, en revanche, pourtant</em>. L'idée véritable de l'auteur se trouve TOUJOURS après le pivot !</p>\n                  <p>• <strong>Causalité / Illustration :</strong> <em>En effet, car, parce que, notamment, ainsi</em> (introduisent des exemples secondaires).</p>\n                  <p>• <strong>Conclusion / Thèse :</strong> <em>Par conséquent, dès lors, en somme, ainsi, il s'ensuit que</em> (annoncent le bilan de l'auteur).</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 2 : Idée Principale vs Détails Secondaires",
-      "subtitle": "Distinguer la thèse centrale de l'auteur des simples illustrations et pièges",
+      "title": "Fiche 2 : Thèse & Idée Principale",
+      "subtitle": "Distinguer l'idée centrale des simples exemples",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Identifier la Thèse Centrale de l'Auteur</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Thèse Centrale vs Exemple :</strong> La réponse exacte à la question 'Quelle est l'idée principale ?' englobe TOUT le texte et ne se cantonne pas à un exemple particulier.</p>\n                  <p>• <strong>Le Piège du Vrai-Faux du Texte :</strong> Une proposition peut être 100 % vraie selon le texte mais être un DÉTAIL secondaire, donc FAUSSE si la question demande l'idée principale.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Grille de Sélection des Réponses aux QCM</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Élimination des Hors-Sujets :</strong> Éliminer les options qui ajoutent des éléments extérieurs non mentionnés dans le texte.</p>\n                  <p>• <strong>Élimination des Contres-Sens :</strong> Vérifier attentivement les négations et les inversions de sujets/verbes.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 3 : Ton de l'Auteur & Inférences Logiques",
-      "subtitle": "Nuances de ton (ironique, polemique, neutre) et conclusions implicites",
+      "title": "Fiche 3 : Ton & Inférences",
+      "subtitle": "Nuances de ton et déductions logiques",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Nuances de Ton & Posture de l'Auteur</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Didactique / Informatif :</strong> Ton neutre, objectif, présentant des faits, des statistiques sans prise de parti affective.</p>\n                  <p>• <strong>Polémique / Critique :</strong> Utilisation d'un vocabulaire péjoratif, de figures d'opposition, remettant en cause une idée reçue.</p>\n                  <p>• <strong>Ironique / Satirique :</strong> Décalage entre ce qui est écrit et ce qui est pensé (antiphrase, exagération volontaire).</p>\n                  <p>• <strong>Alarmiste / Engagé :</strong> Accent mis sur les dangers, les urgences (vocabulaire du risque, de la crise).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Inférences & Déductions Implicites</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Définition d'une Inférence :</strong> Une conclusion qui n'est pas écrite mot pour mot mais qui découle INÉVITABLEMENT des prémisses du texte.</p>\n                  <p>• <strong>Règle de Prudence :</strong> L'inférence correcte ne doit jamais spéculer au-delà de ce que les faits du texte garantissent.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 4 : Pièges de Reformulation & Adverbes Absolus",
-      "subtitle": "Détection des mots pièges éliminatoires (toujours, jamais, aucun, tous)",
+      "title": "Fiche 4 : Pièges de Reformulation",
+      "subtitle": "Adverbes absolus et pièges de texte",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Les Adverbes et Quantificateurs Pièges</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Adverbes Absolus (Éliminatoires à 95 %) :</strong> <em>Toujours, jamais, aucun, tous, exclusivement, obligatoirement, totalement</em>. Si le texte dit 'souvent', l'option qui écrit 'toujours' est FAUSSE.</p>\n                  <p>• <strong>Modalisateurs de Nuance (À privilégier) :</strong> <em>Parfois, certains, généralement, susceptible de, peut contribuer à</em>.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Pièges de Chiffres & de Chronologie</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Confusion Cause / Conséquence :</strong> Inverser l'ordre des événements décrits dans le texte.</p>\n                  <p>• <strong>Confusion Pourcentage / Valeur Absolue :</strong> Une hausse de 50 % sur une faible quantité peut représenter moins qu'une hausse de 5 % sur une grande quantité.</p>\n                </div>\n              </div>\n            </div>"
     }
   ],
   "tm_calcul": [
     {
-      "title": "Fiche 1 : Fractions & Pourcentages Composés",
-      "subtitle": "Tableau des 12 fractions usuelles, coefficients multiplicateurs & variations",
+      "title": "Fiche 1 : Fractions & Pourcentages",
+      "subtitle": "Fractions usuelles et variations",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Les 12 Fractions Usuelles des Annales (À connaître par cœur)</div>\n                <div class=\"math-table-grid\" style=\"grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));\">\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">2</span></span> = <strong>50 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">3</span></span> ≈ <strong>33,3 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">2</span><span class=\"den\">3</span></span> ≈ <strong>66,7 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">4</span></span> = <strong>25 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">4</span></span> = <strong>75 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">5</span></span> = <strong>20 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">6</span></span> ≈ <strong>16,7 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">8</span></span> = <strong>12,5 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">3</span><span class=\"den\">8</span></span> = <strong>37,5 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">8</span></span> = <strong>62,5 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">7</span><span class=\"den\">8</span></span> = <strong>87,5 %</strong></div>\n                  <div class=\"math-table-cell\"><span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">9</span></span> ≈ <strong>11,1 %</strong></div>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Coefficient Multiplicateur (CM) & Variations Successives</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Hausse de x % :</strong> <span class=\"math-op\">CM = 1 + <span class=\"math-frac\"><span class=\"num\">x</span><span class=\"den\">100</span></span></span> (ex: Hausse de +20 % ➔ CM = 1,20).</p>\n                  <p>• <strong>Baisse de y % :</strong> <span class=\"math-op\">CM = 1 - <span class=\"math-frac\"><span class=\"num\">y</span><span class=\"den\">100</span></span></span> (ex: Baisse de -30 % ➔ CM = 0,70).</p>\n                  <p>• <strong>Variations Successives :</strong> <span class=\"math-op\">CM<sub>global</sub> = CM₁ × CM₂</span>.</p>\n                  <p>• <strong>Piège Récurrent des Annales :</strong> +20 % puis -20 % ne s'annulent pas ! <span class=\"math-op\">1,20 × 0,80 = 0,96</span> ➔ <strong>Perte globale de 4 %</strong>.</p>\n                  <p>• <strong>Évolution Réciproque (Revenir au prix initial) :</strong> <span class=\"math-op\">CM<sub>réciproque</sub> = <span class=\"math-frac\"><span class=\"num\">1</span><span class=\"den\">CM</span></span></span>. (ex: +25 % ➔ CM = <span class=\"math-frac\"><span class=\"num\">5</span><span class=\"den\">4</span></span> ➔ CM<sub>réciproque</sub> = <span class=\"math-frac\"><span class=\"num\">4</span><span class=\"den\">5</span></span> = 0,80 ➔ <strong>Baisse de 20 % nécessaire</strong>).</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 2 : Vitesses V=D/T, Rattrapages & Robinets",
-      "subtitle": "Conversions m/s, vitesse moyenne, vitesses relatives & travail partagé",
+      "title": "Fiche 2 : Vitesses & Débits",
+      "subtitle": "Formules V=D/T, conversions et robinets",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Formules de Vitesse & Conversion Réflexe</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Formules Fondamentales :</strong> <span class=\"math-op\">V = <span class=\"math-frac\"><span class=\"num\">D</span><span class=\"den\">T</span></span></span> &nbsp;|&nbsp; <span class=\"math-op\">D = V × T</span> &nbsp;|&nbsp; <span class=\"math-op\">T = <span class=\"math-frac\"><span class=\"num\">D</span><span class=\"den\">V</span></span></span>.</p>\n                  <p>• <strong>Conversion Réflexe m/s ➔ km/h :</strong> <span class=\"math-op\">1 m/s = 3,6 km/h</span> (ex: 20 m/s × 3,6 = 72 km/h).</p>\n                  <p>• <strong>Vitesse Moyenne sur Aller-Retour (Piège Annales !) :</strong> <span class=\"math-op\">V<sub>moy</sub> = <span class=\"math-frac\"><span class=\"num\">2 × V₁ × V₂</span><span class=\"den\">V₁ + V₂</span></span></span> (Moyenne harmonique, JAMAIS la moyenne arithmétique !).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Vitesses Relatives & Débits de Robinets</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Mobiles en sens opposés (Croisement) :</strong> <span class=\"math-op\">V<sub>rel</sub> = V₁ + V₂</span> ➔ <span class=\"math-op\">T<sub>rencontre</sub> = <span class=\"math-frac\"><span class=\"num\">D</span><span class=\"den\">V₁ + V₂</span></span></span>.</p>\n                  <p>• <strong>Mobiles dans le même sens (Rattrapage) :</strong> <span class=\"math-op\">V<sub>rel</sub> = V₁ - V₂</span> ➔ <span class=\"math-op\">T<sub>rattrapage</sub> = <span class=\"math-frac\"><span class=\"num\">Retard</span><span class=\"den\">V₁ - V₂</span></span></span>.</p>\n                  <p>• <strong>Robinets / Travail Partagé :</strong> Débit total <span class=\"math-op\">D<sub>tot</sub> = D₁ + D₂</span> ➔ <span class=\"math-op\">T<sub>tot</sub> = <span class=\"math-frac\"><span class=\"num\">T₁ × T₂</span><span class=\"den\">T₁ + T₂</span></span></span>.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 3 : Barycentre, Concentrations & Mélanges de Solutions",
-      "subtitle": "Moyennes pondérées, règle de la balance & dilutions d'acide",
+      "title": "Fiche 3 : Barycentres & Mélanges",
+      "subtitle": "Moyennes pondérées et concentrations",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Formule du Barycentre & Moyenne Pondérée</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Moyenne Pondérée :</strong> <span class=\"math-op\">Mbar = <span class=\"math-frac\"><span class=\"num\">p₁ × x₁ + p₂ × x₂</span><span class=\"den\">p₁ + p₂</span></span></span>.</p>\n                  <p>• <strong>Règle de l'Écart (Balance du Barycentre) :</strong> L'écart à la moyenne est inversement proportionnel aux poids : <span class=\"math-op\">p₁ × (x₁ - M) = p₂ × (M - x₂)</span>.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Mélanges & Concentrations</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Concentration Finale :</strong> <span class=\"math-op\">C<sub>finale</sub> = <span class=\"math-frac\"><span class=\"num\">V₁ × C₁ + V₂ × C₂</span><span class=\"den\">V₁ + V₂</span></span></span>.</p>\n                  <p>• <strong>Dilution avec de l'eau pure (C₂ = 0 %) :</strong> <span class=\"math-op\">C<sub>finale</sub> = <span class=\"math-frac\"><span class=\"num\">V₁ × C₁</span><span class=\"den\">V₁ + V<sub>eau</sub></span></span></span>.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 4 : Géométrie, Aires, Volumes & Triples Pythagoriciens",
-      "subtitle": "Triples 3-4-5, 5-12-13, 8-15-17, cercles, diagonales & polygones",
+      "title": "Fiche 4 : Géométrie & Pythagore",
+      "subtitle": "Triples pythagoriciens, aires et volumes",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Triples Pythagoriciens Sacrés du TAGE MAGE</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Triple 3 - 4 - 5 :</strong> Multiples récurrents : 6 - 8 - 10 | 9 - 12 - 15 | 12 - 16 - 20.</p>\n                  <p>• <strong>Triple 5 - 12 - 13 :</strong> Multiples récurrents : 10 - 24 - 26.</p>\n                  <p>• <strong>Triple 8 - 15 - 17 :</strong> hypoténuse = 17 cm.</p>\n                  <p>• <strong>Triple 7 - 24 - 25 :</strong> hypoténuse = 25 cm.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Formules Géométriques Réflexes</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Triangle Équilatéral de côté a :</strong> <span class=\"math-op\">Hauteur = <span class=\"math-frac\"><span class=\"num\">a √3</span><span class=\"den\">2</span></span></span> &nbsp;|&nbsp; <span class=\"math-op\">Aire = <span class=\"math-frac\"><span class=\"num\">a² √3</span><span class=\"den\">4</span></span></span>.</p>\n                  <p>• <strong>Carré de côté a :</strong> Diagonale = <span class=\"math-op\">a √2</span>.</p>\n                  <p>• <strong>Cube de côté a :</strong> Diagonale principale = <span class=\"math-op\">a √3</span>.</p>\n                  <p>• <strong>Diagonales d'un polygone à n côtés :</strong> <span class=\"math-op\">N = <span class=\"math-frac\"><span class=\"num\">n(n - 3)</span><span class=\"den\">2</span></span></span> (ex: Octogone 8 côtés ➔ 8×5/2 = 20 diagonales).</p>\n                </div>\n              </div>\n            </div>"
     }
   ],
   "tm_raisonnement": [
     {
-      "title": "Fiche 1 : Logigrammes & Grilles de Déduction",
-      "subtitle": "Tableaux croisés 2D/3D et règle d'exclusion binaire",
+      "title": "Fiche 1 : Logigrammes & Grilles",
+      "subtitle": "Grilles 2D/3D et exclusion binaire",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. La Méthode de la Grille Croisée (Logigramme)</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Règle d'Exclusion Binaire :</strong> Dès qu'une case contient une coche affirmative (✓), cochez négativement (×) tout le reste de la ligne et de la colonne.</p>\n                  <p>• <strong>Déduction Directe :</strong> Si une ligne comporte N-1 cases négatives (×), la case restante est OBLIGATOIREMENT affirmative (✓).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Ordonnancement & Positions</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Repérage des Ancrages Absolus :</strong> Placer d'abord les éléments fixés à un endroit précis (ex: 'A est à l'extrême gauche').</p>\n                  <p>• <strong>Blocs Inséparables :</strong> Si 'A est immédiatement avant B', traiter le couple (A, B) comme un bloc unique d'une seule pièce.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 2 : Diagrammes d'Ensembles & Formule de Venn",
-      "subtitle": "Inclusion, intersection et formule d'union N(A ∪ B)",
+      "title": "Fiche 2 : Ensembles & Diagrammes",
+      "subtitle": "Inclusion, intersection et formule de Venn",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Formule Fondamentale des Ensembles (Venn)</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Union de 2 Ensembles :</strong> <span class=\"math-op\">N(A ∪ B) = N(A) + N(B) - N(A ∩ B)</span>.</p>\n                  <p>• <strong>Ni A ni B :</strong> <span class=\"math-op\">N(Ni A ni B) = N(Total) - N(A ∪ B)</span>.</p>\n                  <p>• <strong>Seulement A (Exclusif) :</strong> <span class=\"math-op\">N(Seulement A) = N(A) - N(A ∩ B)</span>.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Union de 3 Ensembles</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Formule à 3 Groupes :</strong> <span class=\"math-op\">N(A∪B∪C) = N(A)+N(B)+N(C) - N(A∩B)-N(B∩C)-N(A∩C) + N(A∩B∩C)</span>.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 3 : Syllogismes & Contraposée Absolue",
-      "subtitle": "Règles de déduction rigoureuses et équivalences logiques",
+      "title": "Fiche 3 : Syllogismes & Logique",
+      "subtitle": "Contraposée et règles de déduction",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. La Règle Absolue de la Contraposée</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Équivalence Royale :</strong> <span class=\"math-op\">Si A alors B &nbsp;≡&nbsp; Si Non B alors Non A</span>.</p>\n                  <p>• <strong>Exemple Annales :</strong> 'S'il pleut, le sol est mouillé' ➔ Contraposée exacte : 'Si le sol n'est pas mouillé, c'est qu'il ne pleut pas'.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Les Deux Faux Raisonnements à Bannir (Pièges)</div>\n                <div class=\"math-desc-list\">\n                  <p>• [INCORRECT] <strong>Inversion Fausse :</strong> 'Si B alors A' est FAUX ! (Le sol peut être mouillé car on a lavé la voiture, pas forcément parce qu'il a plu).</p>\n                  <p>• [INCORRECT] <strong>Négation Fausse :</strong> 'Si Non A alors Non B' est FAUX !</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 4 : Épreuves de Vérité & Mensonge",
-      "subtitle": "Méthode des hypothèses disjonctives et détection d'incohérences",
+      "title": "Fiche 4 : Épreuves de Vérité",
+      "subtitle": "Méthode par élimination des contradictions",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Méthode par Élimination de Contradictions</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Étape 1 :</strong> Fixer une hypothèse de départ : 'Supposons que le Témoin A dise la vérité'.</p>\n                  <p>• <strong>Étape 2 :</strong> Dérouler les conséquences logiques de cette déclaration sur les propos des autres personnes.</p>\n                  <p>• <strong>Étape 3 :</strong> Si vous obtenez une contradiction (ex: B est à la fois menteur et véridique), l'hypothèse de départ est FAUSSE.</p>\n                </div>\n              </div>\n            </div>"
     }
   ],
   "tm_conditions_minimales": [
     {
-      "title": "Fiche 1 : Guide Définitif des 5 Réponses A, B, C, D, E",
-      "subtitle": "Explication rigoureuse de chaque option et méthode en 3 étapes",
+      "title": "Fiche 1 : Méthode & Choix (A-E)",
+      "subtitle": "Signification des 5 choix et méthode en 3 étapes",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Signification Exacte des 5 Choix Officiels</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Réponse (A) :</strong> L'information (1) seule est SUFFISANTE, mais l'information (2) seule ne l'est PAS.</p>\n                  <p>• <strong>Réponse (B) :</strong> L'information (2) seule est SUFFISANTE, mais l'information (1) seule ne l'est PAS.</p>\n                  <p>• <strong>Réponse (C) :</strong> Les informations (1) et (2) sont insuffisantes séparément, mais SUFFISENT ENSEMBLE.</p>\n                  <p>• <strong>Réponse (D) :</strong> L'information (1) seule suffit ET l'information (2) seule suffit séparément.</p>\n                  <p>• <strong>Réponse (E) :</strong> Même combinées ensemble, les informations (1) et (2) NE SUFFISENT PAS.</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. La Méthode Systématique en 3 Étapes</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Étape 1 :</strong> Masquer (2). Tester l'information (1) SEULE. Est-elle suffisante ?</p>\n                  <p>• <strong>Étape 2 :</strong> Masquer (1). Tester l'information (2) SEULE. Est-elle suffisante ?</p>\n                  <p>• <strong>Étape 3 :</strong> Si ni (1) ni (2) ne suffisent seules, combiner (1) + (2). Est-ce suffisant ? (Verdict C ou E).</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 2 : Équations & Systèmes à n Inconnues",
-      "subtitle": "Vérification de l'indépendance des équations",
+      "title": "Fiche 2 : Équations & Inconnues",
+      "subtitle": "Nombre d'équations indépendantes",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Règle du Nombre d'Équations Indépendantes</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Principe Général :</strong> Pour déterminer n inconnues distinctes, il faut au minimum n équations indépendantes.</p>\n                  <p>• <strong>Piège des Équations Redondantes (Multiples) :</strong> Si Info (1) donne <span class=\"math-op\">2x + 3y = 10</span> et Info (2) donne <span class=\"math-op\">4x + 6y = 20</span>, l'info (2) est juste 2×Info (1). Elles ne forment qu'une seule équation ➔ <strong>Réponse (E) !</strong></p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 3 : Géométrie & Figures Spatiales",
-      "subtitle": "Données suffisantes vs données insuffisantes pour surfaces et volumes",
+      "title": "Fiche 3 : Géométrie & Figures",
+      "subtitle": "Données suffisantes pour aires et volumes",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Déterminer la Surface ou le Rayon</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Cercle :</strong> Connaître le rayon R, le diamètre D ou le périmètre P suffit seul à déterminer l'Aire (Réponse D si présent séparément).</p>\n                  <p>• <strong>Rectangle :</strong> Connaître le périmètre seul NE SUFFIT PAS à connaître l'aire. Il faut la Longueur ET la Largeur (Réponse C).</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 4 : Pièges Récurrents (x² = K, Signes & Entiers)",
-      "subtitle": "Solutions multiples, fausses évidences et cas particuliers",
+      "title": "Fiche 4 : Pièges & Fausses Évidences",
+      "subtitle": "Solutions multiples x²=K et cas pièges",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Le Piège du Carré (x² = K)</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>L'équation x² = 49 :</strong> Donne 2 solutions réelles (<span class=\"math-op\">x = 7</span> ou <span class=\"math-op\">x = -7</span>). Si la question demande la valeur exacte de x sans préciser son signe, l'information est INSUFFISANTE !</p>\n                  <p>• <strong>L'équation x³ = 343 :</strong> Donne 1 seule solution réelle (<span class=\"math-op\">x = 7</span>). Cette information est SUFFISANTE !</p>\n                </div>\n              </div>\n            </div>"
     }
   ],
   "tm_expression": [
     {
-      "title": "Fiche 1 : Accords Complexes & Participe Passé",
-      "subtitle": "Règles sur Tout, Même, Demi, Leur et verbes pronominaux",
-      "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Règles d'Accord de TOUT, MÊME, DEMI, LEUR</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>TOUT :</strong> Adjectif ➔ S'accorde (<em>tous les jours, toutes les femmes</em>). Adverbe (= tout à fait) ➔ Invariable sauf devant un adjectif féminin commençant par une consonne (<em>toute contente, toutes honteuses</em>).</p>\n                  <p>• <strong>DEMI :</strong> Placé avant le nom avec trait d'union ➔ INVARIABLE (<em>une demi-heure</em>). Placé après le nom ➔ S'accorde uniquement en genre (<em>deux heures et demie</em>).</p>\n                  <p>• <strong>LEUR :</strong> Pronom (devant un verbe) ➔ Toujours INVARIABLE (<em>je leur ai parlé</em>). Adjectif possessif (devant un nom) ➔ S'accorde (<em>leurs idées</em>).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Participe Passé des Verbes Pronominaux (Les Invariables à Bannir)</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Pas d'accord si le pronom réfléchi est COI :</strong> <em>Ils se sont parlé, elles se sont succédé, ils se sont téléphoné, elles se sont plu, ils se sont réjouis, elles se sont envoyé des lettres</em>.</p>\n                </div>\n              </div>\n            </div>"
+      "title": "Fiche 1 : Accords & Participe Passé",
+      "subtitle": "Tout, Même, Demi, Leur et verbes pronominaux",
+      "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Règles d'Accord de TOUT, MÊME, DEMI, LEUR</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>TOUT :</strong> Adjectif ➔ S'accorde (<em>tous les jours, toutes les femmes</em>). Adverbe (= tout à fait) ➔ Invariable sauf devant un adjectif féminin commençant par une consonne (<em>toute contente, toutes honteuses</em>).</p>\n                  <p>• <strong>DEMI :</strong> Placé avant le nom avec trait d'union ➔ INVARIABLE (<em>une demi-heure</em>). Placé après le nom ➔ S'accorde uniquement en genre (<em>deux heures et demie</em>).</p>\n                  <p>• <strong>LEUR :</strong> Pronom (devant un verbe) ➔ Toujours INVARIABLE (<em>je leur ai parlé</em>). Adjectif possessif (devant un nom) ➔ S'accorde (<em>leurs idées</em>).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Participe Passé des Verbes Pronominaux (Les Invariables à Bannir)</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Pas d'accord si le pronom réfléchi est COI :</strong> <em>Ils se sont parlé, elles se sont succédé, ils se sont téléphoné, elles se sont plu, elles se sont réjouis, elles se sont envoyé des lettres</em>.</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 2 : Syntaxe & Tournures Fautives",
-      "subtitle": "Ne dites pas / dites du TAGE MAGE et concordance des temps",
+      "title": "Fiche 2 : Syntaxe & Tournures",
+      "subtitle": "Formulations fautives, pallier et se rappeler",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Tournures Fautives Éliminatoires</div>\n                <div class=\"math-desc-list\">\n                  <p>• [INCORRECT] <em>Pallier à un problème</em> ➔ ✓ <strong>Pallier un problème</strong> (COD direct).</p>\n                  <p>• [INCORRECT] <em>Se rappeler de quelque chose</em> ➔ ✓ <strong>Se rappeler quelque chose</strong> (COD direct).</p>\n                  <p>• [INCORRECT] <em>Après qu'il soit parti</em> ➔ ✓ <strong>Après qu'il est parti</strong> (Indicatif obligatoire !).</p>\n                  <p>• [INCORRECT] <em>Au jour d'aujourd'hui</em> ➔ ✓ <strong>Aujourd'hui / À ce jour</strong> (Pléonasme).</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 3 : Orthographe & Genre des Noms Pièges",
-      "subtitle": "Masculin/Féminin et consonnes doubles",
+      "title": "Fiche 3 : Orthographe & Genre",
+      "subtitle": "Genre des noms (aphte, acné) et dilemme",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Genre des Noms Pièges</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>MASCULIN :</strong> Un aphte, un agrume, un amalgame, un apogée, un entracte, un éloge, un pétale, un astérisque, un haltère, un obélisque.</p>\n                  <p>• <strong>FÉMININ :</strong> Une acné, une anagramme, une épitaphe, une échappatoire, une orbite, une immondice, une alvéole.</p>\n                  <p>• <strong>Dilemme :</strong> S'écrit avec <strong>mm</strong> (et jamais [INCORRECT] <em>dilemne</em> !).</p>\n                </div>\n              </div>\n            </div>"
     },
     {
-      "title": "Fiche 4 : Paronymes & Locutions Latines",
-      "subtitle": "Distinctions fines et vocabulaire officiel du Grand Manuel",
+      "title": "Fiche 4 : Paronymes & Locutions",
+      "subtitle": "In fine, ipso facto, démythifier / démystifier",
       "html": "\n            <div style=\"display:flex; flex-direction:column; gap:16px;\">\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">1. Distinctions de Paronymes Récurrentes</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>Démythifier :</strong> Ôter sa valeur de mythe <em>vs</em> <strong>Démystifier :</strong> Détromper les gens d'une supercherie.</p>\n                  <p>• <strong>Proscrire :</strong> Interdire formellement <em>vs</em> <strong>Prescrire :</strong> Ordonner / recommander.</p>\n                  <p>• <strong>Inculquer :</strong> Faire entrer dans l'esprit de façon durable (une valeur, une idée).</p>\n                </div>\n              </div>\n              <div class=\"math-card-visual\">\n                <div class=\"math-card-title\">2. Locutions Latines Incontournables</div>\n                <div class=\"math-desc-list\">\n                  <p>• <strong>In fine :</strong> En fin de compte / À la fin.</p>\n                  <p>• <strong>Ipso facto :</strong> Par le fait même / Automatiquement.</p>\n                  <p>• <strong>De facto :</strong> De fait / Dans la pratique (opposé à <em>de jure</em>).</p>\n                  <p>• <strong>Manu militari :</strong> Par la force armée / Avec rigueur.</p>\n                </div>\n              </div>\n            </div>"
     }
   ],
@@ -6610,3 +6369,33 @@ export function renderMemoTageMageCourse(subtestKey, ficheIdx) {
     html: `<div class="math-card-visual"><div class="math-card-title">Notions de Révision</div><p>• Réviser les automatismes du Grand Manuel.</p></div>`
   };
 }
+
+export function generateOfficialTageMageMockExamDeck() {
+  const badge = (txt) => `<div style="display:inline-block; padding:4px 10px; background:rgba(0,113,227,0.1); color:#0071E3; font-weight:700; border-radius:6px; font-size:12px; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">${txt}</div><br>`;
+  
+  const subtests = [
+    { name: '1. Compréhension', data: TM_COMPREHENSION_QUESTIONS },
+    { name: '2. Calcul', data: TM_CALCUL_QUESTIONS },
+    { name: '3. Raisonnement', data: TM_RAISONNEMENT_QUESTIONS },
+    { name: '4. Conditions Minimales', data: TM_CONDITIONS_MINIMALES_QUESTIONS },
+    { name: '5. Expression', data: TM_EXPRESSION_QUESTIONS },
+    { name: '6. Logique', data: TM_LOGIQUE_QUESTIONS }
+  ];
+
+  const fullDeck = [];
+  subtests.forEach(st => {
+    const picked = shuffleArray(st.data).slice(0, 15).map(item => {
+      const correctText = item.options[item.answerIndex];
+      const shuffledOpts = shuffleArray(item.options);
+      return {
+        prompt: `${badge(st.name)}${item.prompt}`,
+        options: shuffledOpts,
+        answerIndex: shuffledOpts.indexOf(correctText)
+      };
+    });
+    fullDeck.push(...picked);
+  });
+
+  return fullDeck;
+}
+
