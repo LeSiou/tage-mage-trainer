@@ -2242,9 +2242,30 @@ function stopPractice() {
   views.resultsModal.classList.add('active');
 }
 
+const EXAM_SUBTESTS = {
+  tage: [
+    { key: 'tm_calcul', title: '1. Calcul & Problèmes' },
+    { key: 'tm_raisonnement', title: '2. Raisonnement & Argumentation' },
+    { key: 'tm_comprehension', title: '3. Compréhension de Texte' },
+    { key: 'tm_conditions', title: '4. Conditions Minimales' },
+    { key: 'tm_expression', title: '5. Expression & Français' },
+    { key: 'tm_logique', title: '6. Logique Chiffres & Lettres' },
+    { key: 'tm_mock_exam', title: '7. Test Blanc Officiel (90 Q)' }
+  ],
+  iae: [
+    { key: 'iae_culture_g', title: '1. Culture Générale, Éco & Mgmt' },
+    { key: 'iae_francais', title: '2. Compréhension & Expression en Français' },
+    { key: 'iae_raisonnement', title: '3. Raisonnement Logique & Numérique' },
+    { key: 'iae_anglais', title: '4. Compréhension & Expression en Anglais' },
+    { key: 'iae_mock_exam', title: '5. Épreuve Blanche Officielle (100 Q)' }
+  ]
+};
+
 function openStatsDashboard(exam) {
-  if (exam) {
+  if (exam === 'tage' || exam === 'iae') {
     activeStatsExamFilter = exam;
+  } else {
+    activeStatsExamFilter = currentExam || 'tage';
   }
   activeStatsSubKey = 'all';
   renderStatsDashboard();
@@ -2254,48 +2275,51 @@ function openStatsDashboard(exam) {
 function renderStatsDashboard() {
   const history = getResultsHistory();
   
+  if (!activeStatsExamFilter || activeStatsExamFilter === 'all') {
+    activeStatsExamFilter = currentExam || 'tage';
+  }
+
   // 1. Update Exam Selector Active Buttons
   const btnTage = document.getElementById('btn-stats-exam-tage');
   const btnIae = document.getElementById('btn-stats-exam-iae');
-  const btnAll = document.getElementById('btn-stats-exam-all');
 
   if (btnTage) btnTage.classList.toggle('active', activeStatsExamFilter === 'tage');
   if (btnIae) btnIae.classList.toggle('active', activeStatsExamFilter === 'iae');
-  if (btnAll) btnAll.classList.toggle('active', activeStatsExamFilter === 'all');
 
-  // 2. Filter History by Exam Mode
-  const examFilteredHistory = activeStatsExamFilter === 'all'
-    ? history
-    : history.filter(item => item.exam === activeStatsExamFilter);
+  // 2. Filter History Strictly by Active Exam Mode ('tage' or 'iae')
+  const examFilteredHistory = history.filter(item => item.exam === activeStatsExamFilter);
 
-  // 3. Render Sub-Test Filter Pills (only for the active exam!)
+  // 3. Render Sub-Test Filter Pills ONLY for the Active Exam
   const elSubSelector = document.getElementById('dash-sub-selector');
   if (elSubSelector) {
-    const uniqueSubs = new Map();
+    const examSubs = EXAM_SUBTESTS[activeStatsExamFilter] || EXAM_SUBTESTS.tage;
+    
+    // Count history entries per subKey for active exam
     const subCounts = new Map();
-
     examFilteredHistory.forEach(item => {
-      if (!uniqueSubs.has(item.subKey)) {
-        uniqueSubs.set(item.subKey, item.subTitle || item.subKey);
-      }
       subCounts.set(item.subKey, (subCounts.get(item.subKey) || 0) + 1);
     });
 
     let pillsHtml = '';
+    const examLabel = activeStatsExamFilter === 'tage' ? 'TAGE MAGE' : 'Score IAE Message';
     const totalCount = examFilteredHistory.length;
     const isAllActive = activeStatsSubKey === 'all' ? 'active' : '';
-    pillsHtml += `<button class="sub-pill-btn ${isAllActive}" data-subkey="all">🌐 Tous (${totalCount})</button>`;
 
-    uniqueSubs.forEach((label, subKey) => {
-      const count = subCounts.get(subKey) || 0;
-      const isActive = subKey === activeStatsSubKey ? 'active' : '';
+    // First pill: "Tous les sous-tests [Exam]"
+    pillsHtml += `<button class="sub-pill-btn ${isAllActive}" data-subkey="all">🌐 Tous les sous-tests ${examLabel} (${totalCount})</button>`;
+
+    // Sub-test pills belonging strictly to the active exam
+    examSubs.forEach(sub => {
+      const count = subCounts.get(sub.key) || 0;
+      const isActive = sub.key === activeStatsSubKey ? 'active' : '';
       
-      let cleanLabel = label;
-      if (cleanLabel.length > 26) {
-        cleanLabel = cleanLabel.substring(0, 24) + '...';
+      let cleanLabel = sub.title;
+      if (cleanLabel.length > 28) {
+        cleanLabel = cleanLabel.substring(0, 26) + '...';
       }
-      pillsHtml += `<button class="sub-pill-btn ${isActive}" data-subkey="${subKey}">${cleanLabel} (${count})</button>`;
+      pillsHtml += `<button class="sub-pill-btn ${isActive}" data-subkey="${sub.key}">${cleanLabel} (${count})</button>`;
     });
+
     elSubSelector.innerHTML = pillsHtml;
 
     elSubSelector.querySelectorAll('.sub-pill-btn').forEach(btn => {
@@ -2337,18 +2361,17 @@ function renderStatsDashboard() {
   const elHistoryList = document.getElementById('dash-history-list');
   if (elHistoryList) {
     if (filteredHistory.length === 0) {
-      const examName = activeStatsExamFilter === 'tage' ? 'TAGE MAGE' : (activeStatsExamFilter === 'iae' ? 'Score IAE Message' : 'concours');
+      const examName = activeStatsExamFilter === 'tage' ? 'TAGE MAGE' : 'Score IAE Message';
       elHistoryList.innerHTML = `<p style="color:var(--text-apple-sub); font-size:13px; text-align:center; padding:20px 0;">Aucun historique enregistré pour ${examName}. Réalisez un quizz pour suivre vos scores !</p>`;
     } else {
       const reversed = [...filteredHistory].reverse().slice(0, 15);
       let listHtml = '';
       reversed.forEach(item => {
         const passClass = item.percentage >= 60 ? 'pass' : 'fail';
-        const badgeTag = item.exam === 'iae' ? ' [IAE]' : ' [TAGE]';
         listHtml += `
           <div class="history-item-row">
             <div class="history-item-left">
-              <span class="history-item-title">${item.subTitle}<span style="font-size:11px; opacity:0.6; margin-left:4px;">${activeStatsExamFilter === 'all' ? badgeTag : ''}</span></span>
+              <span class="history-item-title">${item.subTitle}</span>
               <span class="history-item-date">${item.date}</span>
             </div>
             <span class="history-badge ${passClass}">${item.score}/${item.total} (${item.percentage}%)</span>
@@ -2653,7 +2676,7 @@ function init() {
   document.getElementById('btn-back-start').addEventListener('click', () => showView('subcategory'));
 
   const btnOpenStatsPortal = document.getElementById('btn-open-stats-portal');
-  if (btnOpenStatsPortal) btnOpenStatsPortal.addEventListener('click', () => openStatsDashboard('all'));
+  if (btnOpenStatsPortal) btnOpenStatsPortal.addEventListener('click', () => openStatsDashboard(currentExam || 'tage'));
   const btnOpenStatsMenu = document.getElementById('btn-open-stats-menu');
   if (btnOpenStatsMenu) btnOpenStatsMenu.addEventListener('click', () => openStatsDashboard('tage'));
   const btnOpenStatsIae = document.getElementById('btn-open-stats-iae');
@@ -2669,13 +2692,6 @@ function init() {
   const btnStatsExamIae = document.getElementById('btn-stats-exam-iae');
   if (btnStatsExamIae) btnStatsExamIae.addEventListener('click', () => {
     activeStatsExamFilter = 'iae';
-    activeStatsSubKey = 'all';
-    renderStatsDashboard();
-  });
-
-  const btnStatsExamAll = document.getElementById('btn-stats-exam-all');
-  if (btnStatsExamAll) btnStatsExamAll.addEventListener('click', () => {
-    activeStatsExamFilter = 'all';
     activeStatsSubKey = 'all';
     renderStatsDashboard();
   });
