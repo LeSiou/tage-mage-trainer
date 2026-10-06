@@ -199,6 +199,20 @@ const CATEGORIES = {
         desc: "Tableau visuel des 25 nombres premiers (< 100)",
         type: 'memo_direct',
         renderMemo: () => renderMemoTableauNombresPremiers()
+      },
+      {
+        id: 'squares_table',
+        title: 'Tableau des Carrés',
+        desc: "Tableau visuel des carrés parfaits (1 à 30)",
+        type: 'memo_direct',
+        renderMemo: () => renderMemoTableauCarres()
+      },
+      {
+        id: 'cubes_table',
+        title: 'Tableau des Cubes',
+        desc: "Tableau visuel des cubes parfaits (1 à 15)",
+        type: 'memo_direct',
+        renderMemo: () => renderMemoTableauCubes()
       }
     ]
   },
@@ -874,6 +888,81 @@ function renderMemoTableauNombresPremiers() {
   return {
     title: 'Tableau des Nombres Premiers',
     subtitle: 'Les 25 nombres premiers inférieurs à 100 à connaître par cœur',
+    html
+  };
+}
+
+function renderMemoTableauCarres() {
+  const squaresList = Array.from({ length: 30 }, (_, i) => {
+    const n = i + 1;
+    return `<div class="math-table-cell" style="justify-content:center; flex-direction:column; background:rgba(0,113,227,0.04); border-radius:8px; padding:10px 0; border:1px solid rgba(0,113,227,0.1);">
+      <span style="font-size:13px; color:#86868B; font-weight:500;">${n}²</span>
+      <span style="font-weight:800; font-size:18px; color:#0071E3; margin-top:2px;">${n * n}</span>
+    </div>`;
+  }).join('');
+
+  const html = `
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div class="math-card-visual">
+        <div class="math-card-title">Tableau des Carrés (1 à 30)</div>
+        <p class="math-desc-list" style="margin-bottom:12px; font-size:14px; color:#1D1D1F;">
+          Connaître ces carrés parfaits vous fera gagner un temps précieux en calcul mental et pour les simplifications de racines.
+        </p>
+        <div class="math-table-grid" style="grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap:10px;">
+          ${squaresList}
+        </div>
+      </div>
+      <div class="math-card-visual">
+        <div class="math-card-title">Astuces & Repères Mnémoniques</div>
+        <div class="math-desc-list">
+          <p>• <strong>15² = 225</strong> et <strong>25² = 625</strong> (Astuce x5 : Multiplier les dizaines par leur nombre suivant, puis ajouter 25). Pour 25² : 2 × 3 = 6 ➔ 625.</p>
+          <p>• <strong>Terminaison des carrés :</strong> Un carré parfait ne se termine jamais par 2, 3, 7 ou 8.</p>
+          <p>• <strong>Écarts successifs :</strong> La différence entre n² et (n+1)² est (n + n + 1). Ex: 10² = 100, 11² = 100 + 10 + 11 = 121.</p>
+        </div>
+      </div>
+    </div>
+  `;
+  return {
+    title: 'Tableau des Carrés',
+    subtitle: 'Les carrés parfaits de 1 à 30 à connaître par cœur',
+    html
+  };
+}
+
+function renderMemoTableauCubes() {
+  const cubesList = Array.from({ length: 15 }, (_, i) => {
+    const n = i + 1;
+    return `<div class="math-table-cell" style="justify-content:center; flex-direction:column; background:rgba(217,70,239,0.04); border-radius:8px; padding:10px 0; border:1px solid rgba(217,70,239,0.1);">
+      <span style="font-size:13px; color:#86868B; font-weight:500;">${n}³</span>
+      <span style="font-weight:800; font-size:18px; color:#D946EF; margin-top:2px;">${n * n * n}</span>
+    </div>`;
+  }).join('');
+
+  const html = `
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div class="math-card-visual">
+        <div class="math-card-title">Tableau des Cubes (1 à 15)</div>
+        <p class="math-desc-list" style="margin-bottom:12px; font-size:14px; color:#1D1D1F;">
+          Indispensable pour simplifier les racines cubiques, résoudre les équations de volume et anticiper les suites logiques.
+        </p>
+        <div class="math-table-grid" style="grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap:10px;">
+          ${cubesList}
+        </div>
+      </div>
+      <div class="math-card-visual">
+        <div class="math-card-title">Astuces & Repères Mnémoniques</div>
+        <div class="math-desc-list">
+          <p>• <strong>5³ = 125</strong>.</p>
+          <p>• <strong>10³ = 1000</strong>.</p>
+          <p>• <strong>Puissances de 2 :</strong> 2³ = 8, 4³ = 64, 8³ = 512.</p>
+          <p>• <strong>Puissances de 3 :</strong> 3³ = 27, 9³ = 729.</p>
+        </div>
+      </div>
+    </div>
+  `;
+  return {
+    title: 'Tableau des Cubes',
+    subtitle: 'Les cubes parfaits de 1 à 15 à mémoriser',
     html
   };
 }
