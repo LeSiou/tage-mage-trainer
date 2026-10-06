@@ -203,14 +203,14 @@ const CATEGORIES = {
       {
         id: 'squares_table',
         title: 'Tableau des Carrés',
-        desc: "Tableau visuel des carrés parfaits (1 à 30)",
+        desc: "Tableau visuel des carrés parfaits (1 à 25)",
         type: 'memo_direct',
         renderMemo: () => renderMemoTableauCarres()
       },
       {
         id: 'cubes_table',
         title: 'Tableau des Cubes',
-        desc: "Tableau visuel des cubes parfaits (1 à 15)",
+        desc: "Tableau visuel des cubes parfaits (1 à 20)",
         type: 'memo_direct',
         renderMemo: () => renderMemoTableauCubes()
       }
@@ -893,7 +893,7 @@ function renderMemoTableauNombresPremiers() {
 }
 
 function renderMemoTableauCarres() {
-  const squaresList = Array.from({ length: 30 }, (_, i) => {
+  const squaresList = Array.from({ length: 25 }, (_, i) => {
     const n = i + 1;
     return `<div class="math-table-cell" style="justify-content:center; flex-direction:column; background:rgba(0,113,227,0.04); border-radius:8px; padding:10px 0; border:1px solid rgba(0,113,227,0.1);">
       <span style="font-size:13px; color:#86868B; font-weight:500;">${n}²</span>
@@ -904,7 +904,7 @@ function renderMemoTableauCarres() {
   const html = `
     <div style="display:flex; flex-direction:column; gap:16px;">
       <div class="math-card-visual">
-        <div class="math-card-title">Tableau des Carrés (1 à 30)</div>
+        <div class="math-card-title">Tableau des Carrés (1 à 25)</div>
         <p class="math-desc-list" style="margin-bottom:12px; font-size:14px; color:#1D1D1F;">
           Connaître ces carrés parfaits vous fera gagner un temps précieux en calcul mental et pour les simplifications de racines.
         </p>
@@ -924,13 +924,13 @@ function renderMemoTableauCarres() {
   `;
   return {
     title: 'Tableau des Carrés',
-    subtitle: 'Les carrés parfaits de 1 à 30 à connaître par cœur',
+    subtitle: 'Les carrés parfaits de 1 à 25 à connaître par cœur',
     html
   };
 }
 
 function renderMemoTableauCubes() {
-  const cubesList = Array.from({ length: 15 }, (_, i) => {
+  const cubesList = Array.from({ length: 20 }, (_, i) => {
     const n = i + 1;
     return `<div class="math-table-cell" style="justify-content:center; flex-direction:column; background:rgba(217,70,239,0.04); border-radius:8px; padding:10px 0; border:1px solid rgba(217,70,239,0.1);">
       <span style="font-size:13px; color:#86868B; font-weight:500;">${n}³</span>
@@ -941,7 +941,7 @@ function renderMemoTableauCubes() {
   const html = `
     <div style="display:flex; flex-direction:column; gap:16px;">
       <div class="math-card-visual">
-        <div class="math-card-title">Tableau des Cubes (1 à 15)</div>
+        <div class="math-card-title">Tableau des Cubes (1 à 20)</div>
         <p class="math-desc-list" style="margin-bottom:12px; font-size:14px; color:#1D1D1F;">
           Indispensable pour simplifier les racines cubiques, résoudre les équations de volume et anticiper les suites logiques.
         </p>
@@ -962,7 +962,7 @@ function renderMemoTableauCubes() {
   `;
   return {
     title: 'Tableau des Cubes',
-    subtitle: 'Les cubes parfaits de 1 à 15 à mémoriser',
+    subtitle: 'Les cubes parfaits de 1 à 20 à mémoriser',
     html
   };
 }
