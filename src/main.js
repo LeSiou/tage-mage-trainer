@@ -150,11 +150,34 @@ const CATEGORIES = {
     title: 'Automatismes & Calcul Mental',
     options: [
       {
-        id: 'memo_automatismes_all',
-        title: 'Fiche : Tables & Constantes',
-        desc: "Carrés parfaits, cubes, puissances de 2 et 25 nombres premiers",
-        type: 'memo_direct',
-        renderMemo: () => renderMemoFicheAutomatismes()
+        id: 'squares_roots',
+        title: 'Carrés & Racines Carrées',
+        desc: "Entraînement direct en mode infini (1² à 25² et √1 à √625)",
+        type: 'quiz',
+        isInfinite: true,
+        generateDeck: () => {
+          const items = [];
+          for (let i = 1; i <= 25; i++) {
+            items.push({ prompt: `${i}²`, expectedAnswer: i * i });
+            items.push({ prompt: `√${i * i}`, expectedAnswer: i });
+          }
+          return shuffleArray(items);
+        }
+      },
+      {
+        id: 'cubes_roots',
+        title: 'Cubes & Racines Cubiques',
+        desc: "Entraînement direct en mode infini (1³ à 20³ et ∛1 à ∛8000)",
+        type: 'quiz',
+        isInfinite: true,
+        generateDeck: () => {
+          const items = [];
+          for (let i = 1; i <= 20; i++) {
+            items.push({ prompt: `${i}³`, expectedAnswer: i * i * i });
+            items.push({ prompt: `∛${i * i * i}`, expectedAnswer: i });
+          }
+          return shuffleArray(items);
+        }
       },
       {
         id: 'alphabet_ranks',
@@ -171,370 +194,11 @@ const CATEGORIES = {
         }
       },
       {
-        id: 'squares_all',
-        title: 'Carrés (1 à 25)',
-        desc: "Entraînement direct en mode infini (1² à 25²)",
-        type: 'quiz',
-        isInfinite: true,
-        generateDeck: () => {
-          const items = [];
-          for (let i = 1; i <= 25; i++) items.push({ prompt: `${i}²`, expectedAnswer: i * i });
-          return shuffleArray(items);
-        }
-      },
-      {
-        id: 'cubes_all',
-        title: 'Cubes (1 à 20)',
-        desc: "Entraînement direct en mode infini (1³ à 20³)",
-        type: 'quiz',
-        isInfinite: true,
-        generateDeck: () => {
-          const items = [];
-          for (let i = 1; i <= 20; i++) items.push({ prompt: `${i}³`, expectedAnswer: i * i * i });
-          return shuffleArray(items);
-        }
-      },
-      {
-        id: 'mult_all',
-        title: 'Multiplications (1 à 20)',
-        desc: "Entraînement direct en mode infini (tables 1 à 20)",
-        type: 'quiz',
-        isInfinite: true,
-        generateDeck: () => {
-          const items = [];
-          for (let i = 1; i <= 20; i++) {
-            for (let j = 1; j <= 20; j++) items.push({ prompt: `${i} × ${j}`, expectedAnswer: i * j });
-          }
-          return shuffleArray(items);
-        }
-      },
-      {
-        id: 'primes_quiz',
-        title: 'Nombres Premiers (2 à 101)',
-        desc: "Quiz Oui / Non direct en mode infini",
-        type: 'quiz_yesno',
-        isInfinite: true,
-        generateDeck: () => {
-          const items = [];
-          for (let i = 2; i <= 101; i++) {
-            items.push({ prompt: `${i}`, subPrompt: 'est-il premier ?', expectedAnswer: isPrime(i) ? 'OUI' : 'NON' });
-          }
-          return shuffleArray(items);
-        }
-      },
-      {
-        id: 'quiz_decomposition',
-        title: 'Faux Premiers & Décompositions',
-        desc: "Entraînement direct en mode infini sur les décompositions",
-        type: 'quiz_qcm',
-        isInfinite: true,
-        generateDeck: () => {
-          return shuffleArray(DECOMPOSITION_QUIZ_DATA).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return {
-              prompt: item.prompt,
-              options: shuffledOpts,
-              answerIndex: shuffledOpts.indexOf(correctText)
-            };
-          });
-        }
-      }
-    ]
-  },
-  tm_comprehension: {
-    title: '1. Compréhension de Texte',
-    options: [
-      { id: 'memo_tm_comp_0', title: 'Fiche 1 : Lecture & Mots-Clés', desc: "Lecture active et pivots argumentatifs", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 0) },
-      { id: 'memo_tm_comp_1', title: 'Fiche 2 : Thèse & Idée Principale', desc: "Distinguer l'idée centrale des détails", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 1) },
-      { id: 'memo_tm_comp_2', title: 'Fiche 3 : Ton & Inférences', desc: "Nuances de ton et déductions logiques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 2) },
-      { id: 'memo_tm_comp_3', title: 'Fiche 4 : Pièges de Reformulation', desc: "Adverbes absolus et pièges de texte", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_comprehension', 3) },
-      {
-        id: 'quiz_tm_comprehension',
-        title: 'Quiz : Compréhension de Texte',
-        desc: "Questions QCM d'analyse de texte et d'inférence",
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(TM_COMPREHENSION_QUESTIONS).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return { prompt: item.prompt, options: shuffledOpts, answerIndex: shuffledOpts.indexOf(correctText) };
-          });
-        }
-      }
-    ]
-  },
-  tm_calcul: {
-    title: '2. Calcul & Mathématiques',
-    options: [
-      { id: 'memo_tm_calc_0', title: 'Fiche 1 : Fractions & Pourcentages', desc: "Fractions usuelles et variations", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 0) },
-      { id: 'memo_tm_calc_1', title: 'Fiche 2 : Vitesses & Débits', desc: "Formules V=D/T, conversions et robinets", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 1) },
-      { id: 'memo_tm_calc_2', title: 'Fiche 3 : Barycentres & Mélanges', desc: "Moyennes pondérées et concentrations", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 2) },
-      { id: 'memo_tm_calc_3', title: 'Fiche 4 : Géométrie & Pythagore', desc: "Triples pythagoriciens, aires et volumes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_calcul', 3) },
-      {
-        id: 'quiz_tm_calcul',
-        title: 'Quiz : Calcul & Équations',
-        desc: "Problèmes de calcul, pourcentages et géométrie",
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(TM_CALCUL_QUESTIONS).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return { prompt: item.prompt, options: shuffledOpts, answerIndex: shuffledOpts.indexOf(correctText) };
-          });
-        }
-      }
-    ]
-  },
-  tm_raisonnement: {
-    title: '3. Raisonnement & Logique',
-    options: [
-      { id: 'memo_tm_rais_0', title: 'Fiche 1 : Logigrammes & Grilles', desc: "Grilles 2D/3D et exclusion binaire", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 0) },
-      { id: 'memo_tm_rais_1', title: 'Fiche 2 : Ensembles & Diagrammes', desc: "Inclusion, intersection et formule de Venn", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 1) },
-      { id: 'memo_tm_rais_2', title: 'Fiche 3 : Syllogismes & Logique', desc: "Contraposée et règles de déduction", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 2) },
-      { id: 'memo_tm_rais_3', title: 'Fiche 4 : Épreuves de Vérité', desc: "Méthode par élimination des contradictions", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_raisonnement', 3) },
-      {
-        id: 'quiz_tm_raisonnement',
-        title: 'Quiz : Raisonnement & Logique',
-        desc: "Exercices de déduction et vérités/mensonges",
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(TM_RAISONNEMENT_QUESTIONS).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return { prompt: item.prompt, options: shuffledOpts, answerIndex: shuffledOpts.indexOf(correctText) };
-          });
-        }
-      }
-    ]
-  },
-  tm_conditions_minimales: {
-    title: '4. Conditions Minimales',
-    options: [
-      { id: 'memo_tm_cm_0', title: 'Fiche 1 : Méthode & Choix (A-E)', desc: "Signification des 5 choix et méthode en 3 étapes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 0) },
-      { id: 'memo_tm_cm_1', title: 'Fiche 2 : Équations & Inconnues', desc: "Nombre d'équations indépendantes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 1) },
-      { id: 'memo_tm_cm_2', title: 'Fiche 3 : Géométrie & Figures', desc: "Données suffisantes pour aires et volumes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 2) },
-      { id: 'memo_tm_cm_3', title: 'Fiche 4 : Pièges & Fausses Évidences', desc: "Solutions multiples x²=K et cas pièges", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_conditions_minimales', 3) },
-      {
-        id: 'quiz_tm_cm',
-        title: 'Quiz : Conditions Minimales',
-        desc: "Questions officielles (1) & (2) - Choix A à E",
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(TM_CONDITIONS_MINIMALES_QUESTIONS).map(item => {
-            const idx = item.answerIndex !== undefined ? item.answerIndex : 0;
-            return { prompt: item.prompt, options: item.options, answerIndex: idx };
-          });
-        }
-      }
-    ]
-  },
-  tm_expression: {
-    title: '5. Expression & Français',
-    options: [
-      { id: 'memo_tm_exp_0', title: 'Fiche 1 : Accords & Participe Passé', desc: "Tout, Même, Demi, Leur et verbes pronominaux", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 0) },
-      { id: 'memo_tm_exp_1', title: 'Fiche 2 : Syntaxe & Tournures', desc: "Formulations fautives, pallier et se rappeler", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 1) },
-      { id: 'memo_tm_exp_2', title: 'Fiche 3 : Orthographe & Genre', desc: "Genre des noms (aphte, acné) et dilemme", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 2) },
-      { id: 'memo_tm_exp_3', title: 'Fiche 4 : Paronymes & Locutions', desc: "In fine, ipso facto, démythifier / démystifier", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_expression', 3) },
-      {
-        id: 'quiz_tm_expression',
-        title: 'Quiz : Expression & Français',
-        desc: "Questions de correction grammaticale et syntaxe",
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(TM_EXPRESSION_QUESTIONS).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return { prompt: item.prompt, options: shuffledOpts, answerIndex: shuffledOpts.indexOf(correctText) };
-          });
-        }
-      }
-    ]
-  },
-  tm_logique: {
-    title: '6. Logique & Séries',
-    options: [
-      { id: 'memo_tm_log_0', title: 'Fiche 1 : Rang des Lettres & Séries', desc: "Rangs A-Z et méthode EJOTY", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 0) },
-      { id: 'memo_tm_log_1', title: 'Fiche 2 : Séries Numériques & Carrés', desc: "Carrés, cubes et Fibonacci", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 1) },
-      { id: 'memo_tm_log_2', title: 'Fiche 3 : Matrices 3x3 & Grilles', desc: "Lecture horizontale, verticale et sommes", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 2) },
-      { id: 'memo_tm_log_3', title: 'Fiche 4 : Séries Doubles & Leurres', desc: "Séries croisées et pièges phoniques", type: 'memo_direct', renderMemo: () => renderMemoTageMageCourse('tm_logique', 3) },
-      {
-        id: 'quiz_tm_logique',
-        title: 'Quiz : Logique & Séries',
-        desc: "Séries numériques, alphabétiques et matrices",
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(TM_LOGIQUE_QUESTIONS).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return { prompt: item.prompt, options: shuffledOpts, answerIndex: shuffledOpts.indexOf(correctText) };
-          });
-        }
-      }
-    ]
-  },
-  tm_mock_exam: {
-    title: '7. Test Blanc TAGE MAGE',
-    options: [
-      {
-        id: 'quiz_tm_mock_exam_90',
-        title: 'Test Blanc Officiel (90 Q)',
-        desc: "Session chrono de 90 questions TAGE MAGE",
-        type: 'quiz_qcm',
-        generateDeck: () => generateOfficialTageMageMockExamDeck()
-      }
-    ]
-  },
-    fiches_memo: {
-    title: 'Fiches Mémo (Synthèse)',
-    options: [
-      {
-        id: 'memo_1_automatismes',
-        title: 'Fiche 1 : Divisibilité & Nombres Pièges',
-        desc: 'Divisibilité et décompositions des faux premiers',
-        type: 'memo',
-        ficheIdx: 0,
-        renderMemo: () => renderMemoFiche1()
-      },
-      {
-        id: 'memo_2_fractions',
-        title: 'Fiche 2 : Fractions & Pourcentages',
-        desc: 'Fractions usuelles et variations',
-        type: 'memo',
-        ficheIdx: 1,
-        renderMemo: () => renderMemoFiche2()
-      },
-      {
-        id: 'memo_3_vitesses',
-        title: 'Fiche 3 : Vitesses & Débits',
-        desc: 'V=D/T, vitesses moyennes et croisement',
-        type: 'memo',
-        ficheIdx: 2,
-        renderMemo: () => renderMemoFiche3()
-      },
-      {
-        id: 'memo_4_barycentre',
-        title: 'Fiche 4 : Barycentres & Moyennes',
-        desc: 'Technique du barycentre et moyennes pondérées',
-        type: 'memo',
-        ficheIdx: 3,
-        renderMemo: () => renderMemoFiche4()
-      },
-      {
-        id: 'memo_5_geometrie',
-        title: 'Fiche 5 : Géométrie & Pythagore',
-        desc: 'Triples pythagoriciens, aires et volumes',
-        type: 'memo',
-        ficheIdx: 4,
-        renderMemo: () => renderMemoFiche5()
-      },
-      {
-        id: 'memo_6_denombrement',
-        title: 'Fiche 6 : Dénombrement & Combinaisons',
-        desc: 'Permutations, arrangements et combinaisons',
-        type: 'memo',
-        ficheIdx: 5,
-        renderMemo: () => renderMemoFiche6()
-      },
-      {
-        id: 'memo_7_astuces',
-        title: 'Fiche 7 : Calcul Rapide & Identités',
-        desc: 'Astuce de l\'écart et identités remarquables',
-        type: 'memo',
-        ficheIdx: 6,
-        renderMemo: () => renderMemoFiche7()
-      },
-      {
-        id: 'memo_8_interets',
-        title: 'Fiche 8 : Intérêts Simples & Composés',
-        desc: 'Placement, capitalisation et règle de 72',
-        type: 'memo',
-        ficheIdx: 7,
-        renderMemo: () => renderMemoFiche8()
-      },
-      {
-        id: 'memo_9_rattrapages',
-        title: 'Fiche 9 : Croisements & Trains',
-        desc: 'Vitesses relatives, poursuite et croisement',
-        type: 'memo',
-        ficheIdx: 8,
-        renderMemo: () => renderMemoFiche9()
-      }
-    ]
-  },
-  francais: {
-    title: 'Français & Orthographe',
-    options: [
-      {
-        id: 'memo_fr_grammaire',
-        title: 'Fiche 1 : Grammaire & Accords',
-        desc: 'Tout, Même, Demi, Leur et participe passé',
+        id: 'primes_table',
+        title: 'Tableau des Nombres Premiers',
+        desc: "Tableau visuel des 25 nombres premiers (< 100)",
         type: 'memo_direct',
-        renderMemo: () => renderMemoFicheGrammaire()
-      },
-      {
-        id: 'memo_fr_syntaxe',
-        title: 'Fiche 2 : Syntaxe & Pléonasmes',
-        desc: 'Fautes de syntaxe et pléonasmes à bannir',
-        type: 'memo_direct',
-        renderMemo: () => renderMemoFicheSyntaxe()
-      },
-      {
-        id: 'memo_fr_orthographe',
-        title: 'Fiche 3 : Orthographe & Genre',
-        desc: 'Genre des noms pièges et consonnes doubles',
-        type: 'memo_direct',
-        renderMemo: () => renderMemoFicheOrthographe()
-      },
-      {
-        id: 'memo_fr_proverbes',
-        title: 'Fiche 4 : Proverbes & Locutions',
-        desc: 'Proverbes classiques et locutions latines',
-        type: 'memo_direct',
-        renderMemo: () => renderMemoFicheProverbes()
-      },
-      {
-        id: 'quiz_fr_syntaxe',
-        title: 'Quiz : Syntaxe & Tournures',
-        desc: 'Pièges de formulation et de syntaxe',
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(FRENCH_SYNTAX_QUIZ_DATA).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return {
-              prompt: item.prompt,
-              options: shuffledOpts,
-              answerIndex: shuffledOpts.indexOf(correctText)
-            };
-          });
-        }
-      },
-      {
-        id: 'quiz_fr_gender',
-        title: 'Quiz : Genre des Noms (M/F)',
-        desc: 'Entraînement sur les mots au genre piège',
-        type: 'quiz_gender',
-        generateDeck: () => {
-          return shuffleArray(FRENCH_GENDER_QUIZ_DATA);
-        }
-      },
-      {
-        id: 'quiz_fr_proverbes',
-        title: 'Quiz : Proverbes & Locutions',
-        desc: 'Vocabulaire, proverbes et locutions latines',
-        type: 'quiz_qcm',
-        generateDeck: () => {
-          return shuffleArray(FRENCH_PROVERBES_QUIZ_DATA).map(item => {
-            const correctText = item.options[item.answerIndex];
-            const shuffledOpts = shuffleArray(item.options);
-            return {
-              prompt: item.prompt,
-              options: shuffledOpts,
-              answerIndex: shuffledOpts.indexOf(correctText)
-            };
-          });
-        }
+        renderMemo: () => renderMemoTableauNombresPremiers()
       }
     ]
   },
@@ -1165,6 +829,53 @@ function renderMemoFicheAutomatismes() {
     </div>
   `;
   return { title: 'Fiche : Automatismes (Carrés, Cubes, Puissances de 2 & Premiers)', subtitle: 'Carrés (1-25), Cubes (1-20), 2ⁿ (2¹-2¹⁰) & Nombres Premiers (2-101)', html };
+}
+
+function renderMemoTableauNombresPremiers() {
+  const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+  const primesList = primes.map((n, idx) => 
+    `<div class="math-table-cell" style="justify-content:center; font-weight:800; font-size:16px; color:#0071E3; background:rgba(0,113,227,0.06); border-radius:8px; padding:10px 0;">
+      <span style="font-size:11px; color:#86868B; font-weight:500; margin-right:4px;">#${idx+1}</span> ${n}
+    </div>`
+  ).join('');
+
+  const html = `
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div class="math-card-visual">
+        <div class="math-card-title">Tableau des 25 Nombres Premiers (< 100)</div>
+        <p class="math-desc-list" style="margin-bottom:12px; font-size:14px; color:#1D1D1F;">
+          Un nombre premier est un entier naturel supérieur à 1 qui n'admet que deux diviseurs distincts : 1 et lui-même.<br>Voici la liste complète des <strong>25 nombres premiers inférieurs à 100</strong> :
+        </p>
+        <div class="math-table-grid" style="grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); gap:8px;">
+          ${primesList}
+        </div>
+      </div>
+      
+      <div class="math-card-visual">
+        <div class="math-card-title">Astuces & Repères Mnémoniques</div>
+        <div class="math-desc-list">
+          <p>• <strong>Seul nombre premier pair :</strong> <strong>2</strong> (tous les autres sont impairs).</p>
+          <p>• <strong>Seul nombre premier fini par 5 :</strong> <strong>5</strong> (les autres multiples de 5 finissent par 0 ou 5).</p>
+          <p>• <strong>Répartition par dizaine (Règle 4-4-2-2-3-2-2-3-2-1) :</strong></p>
+          <p>&nbsp;&nbsp;– 1 à 10 : <strong>2, 3, 5, 7</strong> (4)</p>
+          <p>&nbsp;&nbsp;– 11 à 20 : <strong>11, 13, 17, 19</strong> (4)</p>
+          <p>&nbsp;&nbsp;– 21 à 30 : <strong>23, 29</strong> (2)</p>
+          <p>&nbsp;&nbsp;– 31 à 40 : <strong>31, 37</strong> (2)</p>
+          <p>&nbsp;&nbsp;– 41 à 50 : <strong>41, 43, 47</strong> (3)</p>
+          <p>&nbsp;&nbsp;– 51 à 60 : <strong>53, 59</strong> (2)</p>
+          <p>&nbsp;&nbsp;– 61 à 70 : <strong>61, 67</strong> (2)</p>
+          <p>&nbsp;&nbsp;– 71 à 80 : <strong>71, 73, 79</strong> (3)</p>
+          <p>&nbsp;&nbsp;– 81 à 90 : <strong>83, 89</strong> (2)</p>
+          <p>&nbsp;&nbsp;– 91 à 100 : <strong>97</strong> (1 seul ! Piège : 91 = 7 × 13 n'est PAS premier !)</p>
+        </div>
+      </div>
+    </div>
+  `;
+  return {
+    title: 'Tableau des Nombres Premiers',
+    subtitle: 'Les 25 nombres premiers inférieurs à 100 à connaître par cœur',
+    html
+  };
 }
 
 function renderMemoFiche1() {
@@ -2321,13 +2032,9 @@ function getNormalizedSubKey(item) {
   const key = (item.subKey || '').toLowerCase();
   const title = (item.subTitle || '').toLowerCase();
 
-  if (key === 'tm_calcul' || key.includes('calcul') || title.includes('calcul')) return 'tm_calcul';
-  if (key === 'tm_conditions' || key.includes('condition') || title.includes('condition')) return 'tm_conditions';
-  if (key === 'tm_logique' || (key.includes('logique') && !key.includes('iae')) || title.includes('chiffres & lettres')) return 'tm_logique';
-  if (key === 'tm_comprehension' || key.includes('comprehension') || title.includes('compréhension de texte')) return 'tm_comprehension';
-  if (key === 'tm_raisonnement' || (key.includes('raisonnement') && !key.includes('iae')) || title.includes('argumentation')) return 'tm_raisonnement';
-  if (key === 'tm_expression' || key.includes('expression') || title.includes('expression')) return 'tm_expression';
-  if (key === 'tm_mock_exam' || key.includes('tm_mock') || title.includes('test blanc')) return 'tm_mock_exam';
+  if (item.exam === 'tage' || key.includes('automat') || key.startsWith('squares') || key.startsWith('cubes') || key.startsWith('alphabet') || key.startsWith('primes')) {
+    return 'automatismes';
+  }
 
   if (key === 'iae_culture_g' || key.includes('culture_g') || title.includes('culture générale') || title.includes('management')) return 'iae_culture_g';
   if (key === 'iae_francais' || (key.includes('francais') && key.includes('iae')) || title.includes('français')) return 'iae_francais';
@@ -2380,13 +2087,7 @@ function stopPractice() {
 
 const EXAM_SUBTESTS = {
   tage: [
-    { key: 'tm_calcul', title: '1. Calcul' },
-    { key: 'tm_raisonnement', title: '2. Raisonnement' },
-    { key: 'tm_comprehension', title: '3. Compréhension' },
-    { key: 'tm_conditions', title: '4. Conditions Minimales' },
-    { key: 'tm_expression', title: '5. Expression' },
-    { key: 'tm_logique', title: '6. Logique' },
-    { key: 'tm_mock_exam', title: '7. Test Blanc' }
+    { key: 'automatismes', title: 'Automatismes' }
   ],
   iae: [
     { key: 'iae_culture_g', title: '1. Culture Générale' },
@@ -2763,7 +2464,7 @@ function init() {
   if (btnSelectTage) {
     btnSelectTage.addEventListener('click', () => {
       currentExam = 'tage';
-      showView('menu');
+      openCategory('automatismes');
     });
   }
 
@@ -2786,7 +2487,7 @@ function init() {
   }
 
   document.getElementById('btn-back-categories').addEventListener('click', () => {
-    showView(currentExam === 'iae' ? 'iaeMenu' : 'menu');
+    showView(currentExam === 'iae' ? 'iaeMenu' : 'portal');
   });
   document.getElementById('btn-back-subcat').addEventListener('click', () => showView('subcategory'));
   document.getElementById('btn-back-start').addEventListener('click', () => showView('subcategory'));
