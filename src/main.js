@@ -23,6 +23,12 @@ import {
   generateOfficialTageMageMockExamDeck
 } from './tageMageData.js';
 
+import {
+  renderMemoFiguresDeStyleCourse,
+  FIGURES_DE_STYLE_FLASHCARDS,
+  FIGURES_DE_STYLE_QUIZ_DATA
+} from './figuresDeStyleData.js';
+
 
 
 function shuffleArray(array) {
@@ -216,6 +222,38 @@ const CATEGORIES = {
       }
     ]
   },
+  tm_expression: {
+    title: 'Français & Expression',
+    options: [
+      {
+        id: 'memo_figures_de_style',
+        title: 'Fiche de Cours : Les Figures de Style',
+        desc: 'Toutes les figures du Grand Manuel classées par familles & pièges',
+        type: 'memo_direct',
+        renderMemo: () => renderMemoFiguresDeStyleCourse()
+      },
+      {
+        id: 'flashcards_figures_de_style',
+        title: 'Flashcards : Figures de Style',
+        desc: 'Mémorisation active : Citations du concours & définitions clés (25 cartes)',
+        type: 'flashcards',
+        deck: FIGURES_DE_STYLE_FLASHCARDS
+      },
+      {
+        id: 'quiz_figures_de_style',
+        title: 'Quiz Entraînement : Figures de Style',
+        desc: 'QCM d’annales officielles et pièges récurrents (Grand Manuel)',
+        type: 'quiz_qcm',
+        generateDeck: () => {
+          return shuffleArray(FIGURES_DE_STYLE_QUIZ_DATA).map(item => {
+            const correctText = item.options[item.answerIndex];
+            const shuffledOpts = shuffleArray(item.options);
+            return { prompt: item.prompt, options: shuffledOpts, answerIndex: shuffledOpts.indexOf(correctText) };
+          });
+        }
+      }
+    ]
+  },
   iae_culture_g: {
     title: '1. Culture Générale & Éco',
     options: [
@@ -286,6 +324,20 @@ const CATEGORIES = {
         desc: 'Vocabulaire soutenu, pléonasmes & paronymes',
         type: 'memo_direct',
         renderMemo: () => renderMemoIAECourse('francais', 3)
+      },
+      {
+        id: 'memo_iae_figures_de_style',
+        title: 'Fiche 5 : Figures de Style (Grand Manuel)',
+        desc: 'Les 5 familles de figures et pièges FNEGE/SIM',
+        type: 'memo_direct',
+        renderMemo: () => renderMemoFiguresDeStyleCourse()
+      },
+      {
+        id: 'flashcards_iae_figures_de_style',
+        title: 'Flashcards : Figures de Style',
+        desc: 'Mémorisation active : 25 cartes pour le concours',
+        type: 'flashcards',
+        deck: FIGURES_DE_STYLE_FLASHCARDS
       },
       {
         id: 'quiz_iae_francais',
@@ -1676,6 +1728,7 @@ const views = {
   iaeMenu: document.getElementById('iae-menu-view'),
   subcategory: document.getElementById('subcategory-view'),
   memo: document.getElementById('memo-view'),
+  flashcard: document.getElementById('flashcard-view'),
   start: document.getElementById('start-view'),
   practice: document.getElementById('practice-view'),
   stats: document.getElementById('stats-view'),
@@ -1751,6 +1804,8 @@ function selectOption(option) {
     openMemoFiche(option.ficheIdx !== undefined ? option.ficheIdx : 0);
   } else if (option.type === 'memo_direct') {
     openDirectMemo(option.renderMemo());
+  } else if (option.type === 'flashcards') {
+    openFlashcards(option.deck, option.title);
   } else if (option.isInfinite) {
     startPracticeInfinite();
   } else {
@@ -1762,11 +1817,97 @@ function selectOption(option) {
 
 function openDirectMemo(data) {
   elMemoTabsContainer.innerHTML = '';
-  elMemoTitle.textContent = 'Fiche d\'Automatismes';
+  elMemoTitle.textContent = data.title.includes('Figures') ? 'Figures de Style' : 'Fiche de Révision';
   elMemoCardTitle.textContent = data.title;
   elMemoCardSubtitle.textContent = data.subtitle;
   elMemoTableContainer.innerHTML = data.html;
   showView('memo');
+}
+
+// ---------------------------------------------------------
+// FLASHCARDS ENGINE
+// ---------------------------------------------------------
+let currentFlashcardDeck = [];
+let currentFlashcardIndex = 0;
+let isCardFlipped = false;
+
+const elFlashcardTitle = document.getElementById('flashcard-title');
+const elFlashcardProgressText = document.getElementById('flashcard-progress-text');
+const elFlashcardCategoryTag = document.getElementById('flashcard-category-tag');
+const elFlashcardCard = document.getElementById('flashcard-element');
+const elFlashcardFrontContent = document.getElementById('flashcard-front-content');
+const elFlashcardBackName = document.getElementById('flashcard-back-name');
+const elFlashcardBackDef = document.getElementById('flashcard-back-def');
+const elFlashcardBackTrap = document.getElementById('flashcard-back-trap');
+const btnFlashcardPrev = document.getElementById('btn-flashcard-prev');
+const btnFlashcardFlip = document.getElementById('btn-flashcard-flip');
+const btnFlashcardNext = document.getElementById('btn-flashcard-next');
+const btnShuffleFlashcard = document.getElementById('btn-shuffle-flashcard');
+const btnBackFlashcard = document.getElementById('btn-back-flashcard');
+
+function openFlashcards(deck, title) {
+  currentFlashcardDeck = [...deck];
+  currentFlashcardIndex = 0;
+  isCardFlipped = false;
+  if (elFlashcardTitle) elFlashcardTitle.textContent = title || 'Flashcards';
+  renderCurrentFlashcard();
+  showView('flashcard');
+}
+
+function renderCurrentFlashcard() {
+  if (!currentFlashcardDeck || !currentFlashcardDeck.length) return;
+  const card = currentFlashcardDeck[currentFlashcardIndex];
+  isCardFlipped = false;
+  if (elFlashcardCard) elFlashcardCard.classList.remove('is-flipped');
+
+  if (elFlashcardProgressText) {
+    elFlashcardProgressText.textContent = `Carte ${currentFlashcardIndex + 1} / ${currentFlashcardDeck.length}`;
+  }
+  if (elFlashcardCategoryTag) {
+    elFlashcardCategoryTag.textContent = card.category || 'Figures de Style';
+  }
+  if (elFlashcardFrontContent) {
+    elFlashcardFrontContent.textContent = card.front;
+  }
+  if (elFlashcardBackName) {
+    elFlashcardBackName.textContent = card.backName;
+  }
+  if (elFlashcardBackDef) {
+    elFlashcardBackDef.textContent = card.backDef;
+  }
+  if (elFlashcardBackTrap) {
+    elFlashcardBackTrap.textContent = card.backTrap;
+  }
+
+  if (btnFlashcardPrev) {
+    btnFlashcardPrev.disabled = currentFlashcardIndex === 0;
+    btnFlashcardPrev.style.opacity = currentFlashcardIndex === 0 ? '0.4' : '1';
+  }
+  if (btnFlashcardNext) {
+    btnFlashcardNext.disabled = currentFlashcardIndex === currentFlashcardDeck.length - 1;
+    btnFlashcardNext.style.opacity = currentFlashcardIndex === currentFlashcardDeck.length - 1 ? '0.4' : '1';
+  }
+}
+
+function toggleFlashcardFlip() {
+  isCardFlipped = !isCardFlipped;
+  if (elFlashcardCard) {
+    elFlashcardCard.classList.toggle('is-flipped', isCardFlipped);
+  }
+}
+
+function nextFlashcard() {
+  if (currentFlashcardIndex < currentFlashcardDeck.length - 1) {
+    currentFlashcardIndex++;
+    renderCurrentFlashcard();
+  }
+}
+
+function prevFlashcard() {
+  if (currentFlashcardIndex > 0) {
+    currentFlashcardIndex--;
+    renderCurrentFlashcard();
+  }
 }
 
 function openMemoFiche(index) {
@@ -2121,6 +2262,10 @@ function getNormalizedSubKey(item) {
   const key = (item.subKey || '').toLowerCase();
   const title = (item.subTitle || '').toLowerCase();
 
+  if (key === 'tm_expression' || key.includes('figures') || title.includes('figures de style')) {
+    return item.exam === 'iae' ? 'iae_francais' : 'tm_expression';
+  }
+
   if (item.exam === 'tage' || key.includes('automat') || key.startsWith('squares') || key.startsWith('cubes') || key.startsWith('alphabet') || key.startsWith('primes')) {
     return 'automatismes';
   }
@@ -2176,7 +2321,8 @@ function stopPractice() {
 
 const EXAM_SUBTESTS = {
   tage: [
-    { key: 'automatismes', title: 'Automatismes' }
+    { key: 'automatismes', title: 'Automatismes' },
+    { key: 'tm_expression', title: 'Français & Expression' }
   ],
   iae: [
     { key: 'iae_culture_g', title: '1. Culture Générale' },
@@ -2553,7 +2699,7 @@ function init() {
   if (btnSelectTage) {
     btnSelectTage.addEventListener('click', () => {
       currentExam = 'tage';
-      openCategory('automatismes');
+      showView('menu');
     });
   }
 
@@ -2576,10 +2722,34 @@ function init() {
   }
 
   document.getElementById('btn-back-categories').addEventListener('click', () => {
-    showView(currentExam === 'iae' ? 'iaeMenu' : 'portal');
+    showView(currentExam === 'iae' ? 'iaeMenu' : 'menu');
   });
   document.getElementById('btn-back-subcat').addEventListener('click', () => showView('subcategory'));
   document.getElementById('btn-back-start').addEventListener('click', () => showView('subcategory'));
+
+  // Flashcards event listeners
+  if (btnBackFlashcard) {
+    btnBackFlashcard.addEventListener('click', () => showView('subcategory'));
+  }
+  if (btnFlashcardFlip) {
+    btnFlashcardFlip.addEventListener('click', toggleFlashcardFlip);
+  }
+  if (elFlashcardCard) {
+    elFlashcardCard.addEventListener('click', toggleFlashcardFlip);
+  }
+  if (btnFlashcardPrev) {
+    btnFlashcardPrev.addEventListener('click', prevFlashcard);
+  }
+  if (btnFlashcardNext) {
+    btnFlashcardNext.addEventListener('click', nextFlashcard);
+  }
+  if (btnShuffleFlashcard) {
+    btnShuffleFlashcard.addEventListener('click', () => {
+      currentFlashcardDeck = shuffleArray(currentFlashcardDeck);
+      currentFlashcardIndex = 0;
+      renderCurrentFlashcard();
+    });
+  }
 
   const btnOpenStatsPortal = document.getElementById('btn-open-stats-portal');
   if (btnOpenStatsPortal) btnOpenStatsPortal.addEventListener('click', () => openStatsDashboard(currentExam || 'tage'));
@@ -2637,6 +2807,22 @@ function init() {
   });
 
   document.addEventListener('keydown', (e) => {
+    if (views.flashcard && views.flashcard.classList.contains('active')) {
+      if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Enter') {
+        e.preventDefault();
+        toggleFlashcardFlip();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevFlashcard();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextFlashcard();
+      } else if (e.key === 'Escape') {
+        showView('subcategory');
+      }
+      return;
+    }
+
     if (!views.practice.classList.contains('active')) return;
 
     if (currentOption.type === 'quiz_yesno') {
