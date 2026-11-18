@@ -68,6 +68,7 @@ function notion(html) {
   body = body.replace(/<em>\s*(Ex\s*:|Exemple\s*:)\s*([\s\S]*?)<\/em>/gi, (_, __, t) => { exs.push(t); return ''; })
              .replace(/\s*(Ex\s*:)\s*<em>([\s\S]*?)<\/em>/gi, (_, __, t) => { exs.push(t); return ''; })
              .replace(/\s+([.;,])/g, '$1').trim();
+  if (/^[\s.;,:]*$/.test(body.replace(/<[^>]+>/g, ''))) body = '';
   el.innerHTML = `<div class="notion-term">${term}</div>` +
     (body ? `<div class="notion-body">${capFirst(body)}</div>` : '') +
     exs.map(t => `<div class="notion-ex">${t}</div>`).join('');

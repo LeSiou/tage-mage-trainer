@@ -55,6 +55,7 @@ import {
 } from './tmCtData.js';
 
 import { LATIN_FICHE, LATIN_FLASHCARDS, LATIN_COUNT, generateLatinQuizDeck } from './latinData.js';
+import { CONCORDANCE_FICHE, CONCORDANCE_QCM } from './concordanceData.js';
 import { mountLesson, getDoneLessons } from './lessonReader.js';
 
 
@@ -282,8 +283,11 @@ const CATEGORIES = {
   tm_expression: {
     title: 'Français & Expression',
     options: [
-      ...ficheOptions(TM_EXPR_FICHES),
+      ...ficheOptions(TM_EXPR_FICHES.slice(0, 3)),
+      ...ficheOptions([CONCORDANCE_FICHE]),
+      ...ficheOptions(TM_EXPR_FICHES.slice(3)),
       ...ficheOptions([LATIN_FICHE]),
+      qcmOption('quiz_tm_concordance', 'Quiz : Concordance des temps', 'Principale au passé, si, subjonctif, discours indirect', CONCORDANCE_QCM),
       flashOption('flashcards_tm_latin', 'Flashcards : Locutions latines', 'Locution au recto, sens + exemple + piège au verso', LATIN_FLASHCARDS),
       { id: 'quiz_tm_latin', title: 'Quiz : Locutions latines', desc: `Dans les deux sens : locution → sens et sens → locution (${LATIN_COUNT} questions)`, type: 'quiz_qcm', generateDeck: () => qcmDeck(generateLatinQuizDeck()) },
       flashOption('flashcards_tm_vocab', 'Flashcards : Vocabulaire du concours', 'Mots soutenus, sens, synonymes et paronymes', TM_EXPR_VOCAB_FLASHCARDS),
