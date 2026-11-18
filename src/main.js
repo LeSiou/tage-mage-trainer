@@ -29,6 +29,31 @@ import {
   FIGURES_DE_STYLE_QUIZ_DATA
 } from './figuresDeStyleData.js';
 
+import {
+  TM_EXPR_FICHES,
+  TM_EXPR_VOCAB_FLASHCARDS,
+  TM_EXPR_VOCAB_QCM,
+  TM_EXPR_REGLES_QCM,
+  TM_EXPR_EXPRESSIONS_QCM,
+  TM_EXPR_GENRES
+} from './tmExpressionData.js';
+
+import {
+  TM_CALC_FICHES,
+  TM_CALC_FLASHCARDS,
+  TM_CALC_GEO_QCM,
+  TM_CALC_PROBLEMES_QCM,
+  TM_CM_QCM
+} from './tmCalculData.js';
+
+import {
+  TM_CT_FICHES,
+  TM_CT_FLASHCARDS,
+  TM_CT_QCM,
+  TM_RA_QCM,
+  TM_PROVERBES_QCM
+} from './tmCtData.js';
+
 
 
 function shuffleArray(array) {
@@ -151,6 +176,35 @@ const MEMO_FICHES_LIST = [
   { id: 8, tabLabel: 'F9 : Croisements', title: 'Fiche 9 : Croisements & Trains', render: () => renderMemoFiche9() }
 ];
 
+// Mélange les options d'un QCM (sauf ordre imposé, ex. Conditions Minimales A–E)
+function qcmDeck(data) {
+  return shuffleArray(data).map(item => {
+    if (item.fixedOrder) return { ...item };
+    const correctText = item.options[item.answerIndex];
+    const opts = shuffleArray(item.options);
+    return { ...item, options: opts, answerIndex: opts.indexOf(correctText) };
+  });
+}
+
+// Fiches de cours → options memo_direct
+function ficheOptions(fiches) {
+  return fiches.map(f => ({
+    id: f.id,
+    title: f.title,
+    desc: f.desc,
+    type: 'memo_direct',
+    renderMemo: () => ({ title: f.title, subtitle: f.subtitle || '', html: f.html })
+  }));
+}
+
+function qcmOption(id, title, desc, data) {
+  return { id, title, desc: `${desc} (${data.length} questions)`, type: 'quiz_qcm', generateDeck: () => qcmDeck(data) };
+}
+
+function flashOption(id, title, desc, deck) {
+  return { id, title, desc: `${desc} (${deck.length} cartes)`, type: 'flashcards', deck };
+}
+
 const CATEGORIES = {
   automatismes: {
     title: 'Automatismes & Calcul Mental',
@@ -225,6 +279,19 @@ const CATEGORIES = {
   tm_expression: {
     title: 'Français & Expression',
     options: [
+      ...ficheOptions(TM_EXPR_FICHES),
+      flashOption('flashcards_tm_vocab', 'Flashcards : Vocabulaire du concours', 'Mots soutenus, sens, synonymes et paronymes', TM_EXPR_VOCAB_FLASHCARDS),
+      qcmOption('quiz_tm_vocab', 'Quiz : Vocabulaire', 'Sens, synonymes, antonymes', TM_EXPR_VOCAB_QCM),
+      qcmOption('quiz_tm_regles', 'Quiz : Règles, accords & conjugaison', 'Orthographe, accords, concordance, phrase correcte', TM_EXPR_REGLES_QCM),
+      {
+        id: 'quiz_tm_genres',
+        title: 'Drill : Masculin ou féminin ?',
+        desc: `Noms au genre piège, en mode infini (${TM_EXPR_GENRES.length} mots)`,
+        type: 'quiz_gender',
+        isInfinite: true,
+        generateDeck: () => shuffleArray(TM_EXPR_GENRES)
+      },
+      qcmOption('quiz_tm_expressions', 'Quiz : Expressions & locutions', 'Expressions idiomatiques, proverbes, locutions latines', TM_EXPR_EXPRESSIONS_QCM),
       {
         id: 'memo_figures_de_style',
         title: 'Fiche de Cours : Les Figures de Style',
@@ -252,6 +319,26 @@ const CATEGORIES = {
           });
         }
       }
+    ]
+  },
+  tm_calcul: {
+    title: 'Calcul, Géométrie & CM',
+    options: [
+      ...ficheOptions(TM_CALC_FICHES),
+      flashOption('flashcards_tm_formules', 'Flashcards : Formules & réflexes', 'Géométrie, vitesses, %, dénombrement, arithmétique', TM_CALC_FLASHCARDS),
+      qcmOption('quiz_tm_geo', 'Quiz : Géométrie', 'Triangles, cercles, volumes, échelles', TM_CALC_GEO_QCM),
+      qcmOption('quiz_tm_problemes', 'Quiz : Problèmes', 'Vitesses, travail, %, moyennes, probas', TM_CALC_PROBLEMES_QCM),
+      qcmOption('quiz_tm_cm', 'Quiz : Conditions Minimales', 'Format officiel A à E', TM_CM_QCM)
+    ]
+  },
+  tm_ct: {
+    title: 'Compréhension & Raisonnement',
+    options: [
+      ...ficheOptions(TM_CT_FICHES),
+      flashOption('flashcards_tm_pieges', 'Flashcards : Types de pièges', 'Reconnaître un distracteur en 2 secondes', TM_CT_FLASHCARDS),
+      qcmOption('quiz_tm_ct', 'Exercices : Compréhension de texte', 'Extraits courts, correction typée de chaque option', TM_CT_QCM),
+      qcmOption('quiz_tm_ra', 'Exercices : Raisonnement & Argumentation', 'Soutient, affaiblit, conclusion, présupposé', TM_RA_QCM),
+      qcmOption('quiz_tm_proverbes', 'Quiz : Proverbes & aphorismes', 'Sens et équivalents', TM_PROVERBES_QCM)
     ]
   },
   iae_culture_g: {
@@ -2035,6 +2122,7 @@ let isInfiniteMode = false;
 
 function startPracticeInfinite() {
   isInfiniteMode = true;
+  sessionErrors = [];
   const rawDeck = currentOption.generateDeck();
   currentDeck = shuffleArray(rawDeck);
   deckIndex = 0;
@@ -2049,6 +2137,7 @@ function startPracticeInfinite() {
 
 function startPractice() {
   isInfiniteMode = false;
+  sessionErrors = [];
   const rawDeck = currentOption.generateDeck();
   currentDeck = getNonRepeatingDeck(currentOption.id, rawDeck, selectedQuestionCount);
   deckIndex = 0;
@@ -2135,8 +2224,10 @@ function nextQuestion() {
 
   currentQuestion = currentDeck[deckIndex];
   
+  hideFeedback();
   if (currentOption.type === 'quiz_qcm') {
     elQuestionDisplay.innerHTML = currentQuestion.prompt;
+    elQuestionDisplay.classList.toggle('is-long', currentQuestion.prompt.replace(/<[^>]+>/g, '').length > 110);
 
     const letters = ['A', 'B', 'C', 'D', 'E'];
     let html = '';
@@ -2151,6 +2242,7 @@ function nextQuestion() {
     elKeypadGrid.innerHTML = html;
     attachKeypadListeners();
   } else {
+    elQuestionDisplay.classList.remove('is-long');
     if (currentQuestion.subPrompt) {
       elQuestionDisplay.innerHTML = `<span class="math-op">${currentQuestion.prompt}</span><br><span style="font-size: 22px; font-weight: 800; color: var(--text-apple-main);">${currentQuestion.subPrompt}</span>`;
     } else {
@@ -2235,6 +2327,14 @@ function submitAnswer() {
     elQuestionCard.classList.add('flash-correct');
   } else {
     elQuestionCard.classList.add('flash-wrong');
+    sessionErrors.push(currentQuestion);
+  }
+
+  // QCM, genres, ou erreur en drill : on affiche la correction et on attend « Continuer »
+  const isChoice = currentOption.type === 'quiz_qcm' || currentOption.type === 'quiz_gender';
+  if (isChoice || !isCorrect) {
+    showFeedback(isCorrect);
+    return;
   }
 
   setTimeout(() => {
@@ -2246,6 +2346,73 @@ function submitAnswer() {
     isProcessingFeedback = false;
     nextQuestion();
   }, 220);
+}
+
+// ---------------------------------------------------------
+// CORRECTION APRÈS CHAQUE RÉPONSE
+// ---------------------------------------------------------
+let sessionErrors = [];
+let awaitingContinue = false;
+const elFeedbackPanel = document.getElementById('feedback-panel');
+const elFeedbackVerdict = document.getElementById('feedback-verdict');
+const elFeedbackBody = document.getElementById('feedback-body');
+
+function showFeedback(isCorrect) {
+  const q = currentQuestion;
+  let answerText = '';
+  if (currentOption.type === 'quiz_qcm') {
+    const letters = ['A', 'B', 'C', 'D', 'E'];
+    answerText = `${letters[q.answerIndex]}. ${q.options[q.answerIndex]}`;
+    elKeypadGrid.classList.add('is-locked');
+    elKeypadGrid.querySelectorAll('.btn-qcm').forEach(btn => {
+      const i = parseInt(btn.getAttribute('data-key'), 10);
+      if (i === q.answerIndex) btn.classList.add('is-correct');
+      else if (i === userAnswer) btn.classList.add('is-wrong');
+    });
+  } else if (currentOption.type === 'quiz_gender') {
+    answerText = q.expectedAnswer.toLowerCase();
+  } else {
+    answerText = String(q.expectedAnswer);
+  }
+  elFeedbackVerdict.className = 'feedback-verdict ' + (isCorrect ? 'ok' : 'ko');
+  elFeedbackVerdict.innerHTML = isCorrect ? '✓ Juste' : `✗ Réponse : ${answerText}`;
+  elFeedbackBody.innerHTML = q.explanation || '';
+  elFeedbackPanel.hidden = false;
+  requestAnimationFrame(() => elFeedbackPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
+  awaitingContinue = true;
+  isProcessingFeedback = true;
+}
+
+function hideFeedback() {
+  if (elFeedbackPanel) elFeedbackPanel.hidden = true;
+  if (elKeypadGrid) elKeypadGrid.classList.remove('is-locked');
+  awaitingContinue = false;
+}
+
+function continueAfterFeedback() {
+  if (!awaitingContinue) return;
+  elQuestionCard.classList.remove('flash-correct', 'flash-wrong');
+  hideFeedback();
+  deckIndex++;
+  userAnswer = '';
+  updateAnswerDisplay();
+  isProcessingFeedback = false;
+  nextQuestion();
+}
+
+function startErrorsReview() {
+  const errs = [...sessionErrors];
+  if (!errs.length) return;
+  isInfiniteMode = false;
+  currentDeck = currentOption.type === 'quiz_qcm' ? qcmDeck(errs) : shuffleArray(errs);
+  deckIndex = 0;
+  totalCorrect = 0;
+  sessionErrors = [];
+  userAnswer = '';
+  isProcessingFeedback = false;
+  renderKeypadUI();
+  showView('practice');
+  nextQuestion();
 }
 
 function getResultsHistory() {
@@ -2265,6 +2432,8 @@ function getNormalizedSubKey(item) {
   if (key === 'tm_expression' || key.includes('figures') || title.includes('figures de style')) {
     return item.exam === 'iae' ? 'iae_francais' : 'tm_expression';
   }
+
+  if (key === 'tm_calcul' || key === 'tm_ct') return key;
 
   if (item.exam === 'tage' || key.includes('automat') || key.startsWith('squares') || key.startsWith('cubes') || key.startsWith('alphabet') || key.startsWith('primes')) {
     return 'automatismes';
@@ -2308,6 +2477,12 @@ function clearResultsHistory() {
 }
 
 function stopPractice() {
+  if (awaitingContinue) { hideFeedback(); deckIndex++; isProcessingFeedback = false; elQuestionCard.classList.remove('flash-correct', 'flash-wrong'); }
+  const btnRetry = document.getElementById('btn-retry-errors');
+  if (btnRetry) {
+    btnRetry.hidden = sessionErrors.length === 0;
+    btnRetry.textContent = `Refaire mes erreurs (${sessionErrors.length})`;
+  }
   if (isInfiniteMode && deckIndex === 0) {
     showView('subcategory');
     return;
@@ -2322,7 +2497,9 @@ function stopPractice() {
 const EXAM_SUBTESTS = {
   tage: [
     { key: 'automatismes', title: 'Automatismes' },
-    { key: 'tm_expression', title: 'Français & Expression' }
+    { key: 'tm_expression', title: 'Français & Expression' },
+    { key: 'tm_calcul', title: 'Calcul & CM' },
+    { key: 'tm_ct', title: 'CT & R&A' }
   ],
   iae: [
     { key: 'iae_culture_g', title: '1. Culture Générale' },
@@ -2796,6 +2973,12 @@ function init() {
   document.getElementById('btn-commencer').addEventListener('click', startPractice);
   document.getElementById('btn-stop').addEventListener('click', stopPractice);
 
+  document.getElementById('btn-feedback-next').addEventListener('click', () => continueAfterFeedback());
+  document.getElementById('btn-retry-errors').addEventListener('click', () => {
+    views.resultsModal.classList.remove('active');
+    startErrorsReview();
+  });
+
   document.getElementById('btn-restart').addEventListener('click', () => {
     views.resultsModal.classList.remove('active');
     startPractice();
@@ -2824,6 +3007,16 @@ function init() {
     }
 
     if (!views.practice.classList.contains('active')) return;
+
+    if (awaitingContinue) {
+      if (e.key === 'Enter' || e.key === 'NumpadEnter' || e.key === ' ' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        continueAfterFeedback();
+      } else if (e.key === 'Escape') {
+        stopPractice();
+      }
+      return;
+    }
 
     if (currentOption.type === 'quiz_yesno') {
       if (e.key === 'o' || e.key === 'O' || e.key === 'y' || e.key === 'Y' || e.key === '1') {

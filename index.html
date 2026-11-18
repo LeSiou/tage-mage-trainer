@@ -68,7 +68,25 @@
           <button class="category-card" data-category="tm_expression">
             <div class="category-info">
               <h2>Français & Expression</h2>
-              <p>Figures de Style (Grand Manuel) : Cours, Flashcards & Quiz</p>
+              <p>Vocabulaire, règles, genres, expressions, figures de style</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Calcul, Géométrie & Conditions Minimales -->
+          <button class="category-card" data-category="tm_calcul">
+            <div class="category-info">
+              <h2>Calcul, Géométrie & CM</h2>
+              <p>Fiches de cours, formules en flashcards, quiz géométrie, problèmes et CM</p>
+            </div>
+            <span class="chevron">›</span>
+          </button>
+
+          <!-- Compréhension de texte & Raisonnement -->
+          <button class="category-card" data-category="tm_ct">
+            <div class="category-info">
+              <h2>Compréhension & Raisonnement</h2>
+              <p>Méthode d’élimination, types de pièges, exercices CT et R&A, proverbes</p>
             </div>
             <span class="chevron">›</span>
           </button>
@@ -276,6 +294,13 @@
           </div>
         </div>
 
+        <!-- Correction après chaque réponse -->
+        <div id="feedback-panel" class="feedback-panel" hidden>
+          <div id="feedback-verdict" class="feedback-verdict"></div>
+          <div id="feedback-body" class="feedback-body"></div>
+          <button id="btn-feedback-next" class="btn-apple-primary feedback-next">Continuer ↵</button>
+        </div>
+
         <div class="keyboard-hint">
           <span id="keyboard-hint-text">Clavier physique activé.</span>
         </div>
@@ -299,6 +324,7 @@
         </div>
 
         <div class="modal-actions-apple">
+          <button id="btn-retry-errors" class="btn-apple-primary" hidden>Refaire mes erreurs</button>
           <button id="btn-restart" class="btn-apple-primary">Recommencer</button>
           <button id="btn-modal-menu" class="btn-apple-secondary">Retour aux options</button>
         </div>

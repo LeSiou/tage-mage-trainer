@@ -1625,3 +1625,27 @@ sub {
 
 
 
+
+/* ---------- Correction après chaque réponse ---------- */
+.feedback-panel {
+  margin-top: 14px;
+  background: var(--card-apple);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-large);
+  box-shadow: var(--card-shadow);
+  padding: 16px 18px;
+  text-align: left;
+}
+.feedback-panel[hidden] { display: none; }
+.feedback-verdict { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
+.feedback-verdict.ok { color: var(--correct-text); }
+.feedback-verdict.ko { color: var(--wrong-text); }
+.feedback-body { font-size: 14.5px; line-height: 1.5; color: var(--text-apple-main); }
+.feedback-body:empty { display: none; }
+.feedback-next { width: 100%; margin-top: 14px; }
+.btn-qcm.is-correct { border-color: var(--correct-border); background: var(--correct-bg); color: var(--correct-text); }
+.btn-qcm.is-wrong { border-color: var(--wrong-border); background: var(--wrong-bg); color: var(--wrong-text); }
+.qcm-grid-apple.is-locked .btn-qcm { cursor: default; }
+.question-text-apple em { font-style: italic; font-weight: 500; }
+.question-text-apple.is-long { font-size: 16px; font-weight: 500; letter-spacing: 0; text-align: left; line-height: 1.55; }
+.question-text-apple.is-long strong { font-weight: 700; }
