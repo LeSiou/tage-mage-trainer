@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
@@ -53,10 +53,16 @@
       </header>
 
       <div class="scroll-container">
+        <div class="menu-hero">
+          <div class="kicker">TAGE MAGE · Objectif 420</div>
+          <h1>Qu’est-ce qu’on révise aujourd’hui ?</h1>
+          <p>Un cours, puis les flashcards, puis le quiz : dans cet ordre.</p>
+        </div>
         <div class="categories-list">
           
           <!-- Automatismes (Calcul Mental & Rang A-Z) -->
           <button class="category-card" data-category="automatismes">
+            <span class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M13 3 5 14h6l-1 7 8-11h-6z" stroke-linejoin="round"/></svg></span>
             <div class="category-info">
               <h2>Automatismes & Calcul Mental</h2>
               <p>Carrés & Racines, Cubes & Racines, Rang A-Z, Nombres Premiers</p>
@@ -66,6 +72,7 @@
 
           <!-- Français & Expression : Figures de Style -->
           <button class="category-card" data-category="tm_expression">
+            <span class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 9.5 5h1L16 20"/><path d="M6.3 14h7.4"/><path d="M17 9.5c.8-.6 1.6-.9 2.4-.9 1.2 0 1.9.7 1.9 1.9V20"/><path d="M21.3 14.2c-2.6 0-4.3.7-4.3 2.9 0 1.6 1.1 2.4 2.3 2.4 1 0 1.6-.5 2-1.2"/></svg></span>
             <div class="category-info">
               <h2>Français & Expression</h2>
               <p>Vocabulaire, règles, genres, expressions, figures de style</p>
@@ -75,6 +82,7 @@
 
           <!-- Calcul, Géométrie & Conditions Minimales -->
           <button class="category-card" data-category="tm_calcul">
+            <span class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16L4 4z"/><path d="M4 15h5v5"/></svg></span>
             <div class="category-info">
               <h2>Calcul, Géométrie & CM</h2>
               <p>Fiches de cours, formules en flashcards, quiz géométrie, problèmes et CM</p>
@@ -84,6 +92,7 @@
 
           <!-- Compréhension de texte & Raisonnement -->
           <button class="category-card" data-category="tm_ct">
+            <span class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/><path d="M8 10.5h5"/></svg></span>
             <div class="category-info">
               <h2>Compréhension & Raisonnement</h2>
               <p>Méthode d’élimination, types de pièges, exercices CT et R&A, proverbes</p>

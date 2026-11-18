@@ -54,6 +54,9 @@ import {
   TM_PROVERBES_QCM
 } from './tmCtData.js';
 
+import { LATIN_FICHE, LATIN_FLASHCARDS, LATIN_COUNT, generateLatinQuizDeck } from './latinData.js';
+import { mountLesson, getDoneLessons } from './lessonReader.js';
+
 
 
 function shuffleArray(array) {
@@ -280,6 +283,9 @@ const CATEGORIES = {
     title: 'Français & Expression',
     options: [
       ...ficheOptions(TM_EXPR_FICHES),
+      ...ficheOptions([LATIN_FICHE]),
+      flashOption('flashcards_tm_latin', 'Flashcards : Locutions latines', 'Locution au recto, sens + exemple + piège au verso', LATIN_FLASHCARDS),
+      { id: 'quiz_tm_latin', title: 'Quiz : Locutions latines', desc: `Dans les deux sens : locution → sens et sens → locution (${LATIN_COUNT} questions)`, type: 'quiz_qcm', generateDeck: () => qcmDeck(generateLatinQuizDeck()) },
       flashOption('flashcards_tm_vocab', 'Flashcards : Vocabulaire du concours', 'Mots soutenus, sens, synonymes et paronymes', TM_EXPR_VOCAB_FLASHCARDS),
       qcmOption('quiz_tm_vocab', 'Quiz : Vocabulaire', 'Sens, synonymes, antonymes', TM_EXPR_VOCAB_QCM),
       qcmOption('quiz_tm_regles', 'Quiz : Règles, accords & conjugaison', 'Orthographe, accords, concordance, phrase correcte', TM_EXPR_REGLES_QCM),
@@ -1856,25 +1862,51 @@ function showView(viewName) {
   });
 }
 
+const OPTION_GROUPS = [
+  { key: 'cours', label: 'Cours', hint: 'Lire et comprendre', test: o => o.type === 'memo' || o.type === 'memo_direct' },
+  { key: 'flash', label: 'Flashcards', hint: 'Mémoriser', test: o => o.type === 'flashcards' },
+  { key: 'quiz', label: 'Entraînement', hint: 'Se tester', test: () => true }
+];
+
+const OPTION_ICONS = {
+  cours: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg>',
+  flash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="14" height="13" rx="2"/><path d="M7 4h12a2 2 0 0 1 2 2v11"/></svg>',
+  quiz: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.6"/><circle cx="12" cy="16.8" r=".6" fill="currentColor"/></svg>'
+};
+
 function openCategory(catKey) {
   currentCategory = catKey;
   const category = CATEGORIES[catKey];
   elSubcategoryTitle.textContent = category.title;
+  const done = getDoneLessons();
+
+  const buckets = OPTION_GROUPS.map(g => ({ ...g, items: [] }));
+  category.options.forEach((opt, idx) => {
+    buckets.find(b => b.test(opt)).items.push({ opt, idx });
+  });
 
   let html = '';
-  category.options.forEach((opt, idx) => {
-    html += `
-      <button class="category-card" data-opt-idx="${idx}">
-        <div class="category-info">
-          <h2>${opt.title}</h2>
-          <p>${opt.desc}</p>
-        </div>
-        <span class="chevron">›</span>
+  buckets.filter(b => b.items.length).forEach(b => {
+    html += `<div class="option-group"><div class="option-group-head"><span>${b.label}</span><small>${b.hint} · ${b.items.length}</small></div>`;
+    b.items.forEach(({ opt, idx }, n) => {
+      const title = opt.title.replace(/^(Fiche de Cours|Flashcards|Quiz Entraînement|Quiz|Exercices|Drill)\s*:\s*/i, '');
+      const isDone = b.key === 'cours' && done.has(opt.title);
+      const tag = b.key === 'cours' ? `<span class="opt-num">${String(n + 1).padStart(2, '0')}</span>` : `<span class="opt-icon">${OPTION_ICONS[b.key]}</span>`;
+      html += `
+      <button class="option-card option-${b.key}${isDone ? ' is-done' : ''}" data-opt-idx="${idx}">
+        ${tag}
+        <span class="option-info">
+          <span class="option-title">${title}</span>
+          <span class="option-desc">${opt.desc.replace(/«\s/g, '«\u00a0').replace(/\s»/g, '\u00a0»')}</span>
+        </span>
+        <span class="option-end">${isDone ? '<span class="done-pill">Lu ✓</span>' : '›'}</span>
       </button>`;
+    });
+    html += '</div>';
   });
   elSubcategoryOptionsList.innerHTML = html;
 
-  elSubcategoryOptionsList.querySelectorAll('.category-card').forEach(btn => {
+  elSubcategoryOptionsList.querySelectorAll('.option-card').forEach(btn => {
     btn.addEventListener('click', () => {
       const idx = parseInt(btn.getAttribute('data-opt-idx'), 10);
       selectOption(category.options[idx]);
@@ -1908,6 +1940,18 @@ function openDirectMemo(data) {
   elMemoCardTitle.textContent = data.title;
   elMemoCardSubtitle.textContent = data.subtitle;
   elMemoTableContainer.innerHTML = data.html;
+  const memoView = document.getElementById('memo-view');
+  const cat = currentCategory && CATEGORIES[currentCategory];
+  const isLesson = mountLesson(elMemoTableContainer, {
+    title: data.title.replace(/^Fiche de Cours\s*:\s*/i, ''),
+    subtitle: data.subtitle,
+    kicker: cat ? `Cours · ${cat.title}` : 'Cours',
+    key: data.title,
+    scrollEl: memoView.querySelector('.scroll-container'),
+    onExit: () => openCategory(currentCategory)
+  });
+  memoView.classList.toggle('is-lesson', isLesson);
+  if (isLesson) elMemoTitle.textContent = '';
   showView('memo');
 }
 
@@ -2004,6 +2048,7 @@ function openMemoFiche(index) {
   const fiche = MEMO_FICHES_LIST[activeFicheIndex];
   const data = fiche.render();
 
+  document.getElementById('memo-view').classList.remove('is-lesson');
   elMemoTitle.textContent = 'Fiches Mémo de Révision';
   elMemoCardTitle.textContent = data.title;
   elMemoCardSubtitle.textContent = data.subtitle;
@@ -2901,7 +2946,9 @@ function init() {
   document.getElementById('btn-back-categories').addEventListener('click', () => {
     showView(currentExam === 'iae' ? 'iaeMenu' : 'menu');
   });
-  document.getElementById('btn-back-subcat').addEventListener('click', () => showView('subcategory'));
+  document.getElementById('btn-back-subcat').addEventListener('click', () => {
+    if (currentCategory && CATEGORIES[currentCategory]) openCategory(currentCategory); else showView('subcategory');
+  });
   document.getElementById('btn-back-start').addEventListener('click', () => showView('subcategory'));
 
   // Flashcards event listeners
